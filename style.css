@@ -1,0 +1,681 @@
+body
+{
+    font-family: Arial, Helvetica, FreeSans, sans-serif;  /* Type de police */
+}
+
+p  /* Balise des paragraphes */
+{
+    color : black ; /* Couleur de la police */
+    /*font-family: Arial, Helvetica, FreeSans, sans-serif;  /* Type de police */
+    font-size : 16px ;  /* Taille de police */
+}
+
+h1 /* Balise des titres h1 */
+{
+    color : red ; /* Couleur des titres h1 */
+    text-align : left ;  /* Alignés à gauche */
+    font-weight : bold ;  /* En gras */
+}
+
+
+h2 /* Balise des titres h2 */
+{
+    color : green ; /* Couleur des titres h2 */
+    text-align : left ;  /* Alignés à gauche */
+    font-weight : bold ;  /* En gras */
+    font-size : 20px ;  /* Taille de police */
+}
+
+h3 /* Balise des titres h3 */
+{
+    color : rgb(253, 63, 146) ; /* Couleurs des titres h3 */
+    text-align : left ;  /* Alignés à gauche */
+    font-weight : bold ;  /* En gras */
+    font-size : 20px ;  /* Taille de police */
+}
+
+h5 /* Balise des titres h5 */
+{
+    color : black ; /* Couleurs des titres h3 */
+    text-align : left ;  /* Alignés à gauche */
+    font-weight : bold ;  /* En gras */
+    font-size : 18px ;  /* Taille de police */
+}
+
+h6 /* Balise des titres h6 */
+{
+    color : green ; /* Couleurs des titres h3 */
+    text-align : left ;  /* Alignés à gauche */
+    font-size : 18px ;  /* Taille de police */
+}
+
+ul /* Balise pour les listes */
+{
+    /* color : rgb(90,94,107) ; /* Couleurs */
+    color : black;
+    font-size : 16px;
+}
+
+header /* Balise pour l'en tête de la page */
+{
+    background: radial-gradient(rgb(15, 157, 232),rgb(16, 52, 166));
+    border:2px black solid;  /* Taille, couleur, styles de la bordure */
+    border-radius:4px;  /* Bordure arrondie */
+    padding:4px 4px 4px 4px;  /* Marges internes */
+    margin-bottom:10px;  /* Marge externe basse */
+    font-size:40px;  /* Taille de la police */
+    font-weight:bold;  /* En gras */
+    text-align:center;  /* Centré */
+    min-width:700px;  /* Largeur minimum du bloc */
+    color : white;  /* Couleur du texte */
+}
+
+footer /* Balise pour le pied de la page */
+{
+    background: radial-gradient(rgb(15, 157, 232),rgb(16, 52, 166));
+    border:2px black solid;  /* Taille, couleur, styles de la bordure */
+    border-radius:4px;  /* Bordure arrondie */
+    padding:4px 4px 4px 4px;  /* Marges internes */
+    margin-bottom:10px;  /* Marge externe basse */
+    font-size:16px;  /* Taille de la police */
+    text-align:center;  /* Centré */
+    min-width:700px;  /* Largeur minimum du bloc */
+    color : white;  /* Couleur du texte */
+}
+
+nav  /* Balise pour la barre de menu */
+{
+    float:left;  /* Flottant à gauche */
+    padding:4px 4px 4px 4px;  /* Marges internes */
+    margin-bottom:10px;  /* Marge externe en bas */
+    width:160px;  /* Largeur de ce bloc */
+}
+
+section  /* Balise pour la section principale */
+{
+    background-image:radial-gradient(circle at top left,rgb(253, 241, 184) ,rgb(240, 227, 107),rgb(255, 244, 141)) ;
+    /*background-color:rgb(253, 241, 184);*/
+    border:2px rgb(0,0,0) solid;  /* Taille couleur styles de la bordure */
+    border-radius:4px;  /* Bordure arrondie */
+    padding:4px 4px 4px 4px;  /* Marges internes */
+    margin-left:180px;  /* Marge externe gauche */
+    margin-bottom:10px;  /* Marge externe en bas */
+    min-width:550px;  /* Largeur minimum du bloc */
+    min-height:400px;  /* Hauteur minimum du bloc */
+}
+
+a  /* Balise pour les liens */
+{
+    color:blue;  /* Couleur des liens */
+    text-decoration : none;  /* Les liens ne seront pas soulignés */
+    font-size:16px;
+}
+
+a:hover  /* Mise en forme quand on passe la souris sur un lien */
+{
+    color:fuchsia;  /* Couleur des liens quand la souris passe dessus */
+    text-decoration : underline ;  /* Soulignés */
+}
+
+.abas
+{
+    font-size:20px;
+}
+
+.quizz
+{
+    background: radial-gradient(rgb(255, 203, 96),rgb(247,167,58));
+	/*background-color:rgb(247,167,58);  /* Couleur quizz */
+    color:black;
+}
+
+.exo
+{
+    /*background-color:rgb(199, 44, 72);  */
+    background: radial-gradient(rgb(199,44,72),#780318);
+    color:white;
+}
+
+.squizz
+{
+    background-color:rgb(253, 241, 184);
+}
+
+.sexo
+{
+    /*background-color:rgb(243, 223, 214);*/
+    background:linear-gradient(rgb(243, 223, 214), #fdf1b8);
+    min-height:200px;  /* Hauteur minimum du bloc */
+}
+
+.exoh1
+{
+    color:rgb(199, 44, 72);
+    text-decoration : underline ;  /* Soulignés */
+}
+
+.saisie
+{
+    margin-left : 6px;
+    /* color:rgb(141, 64, 36); */
+    color:#CC5500;
+    font-weight : bold;
+    font-size:18px;
+}
+
+.saisir
+{
+    font-size:18px;
+    border: 2px #bbb inset;
+}
+
+.url
+{
+    color:rgb(100,0,150);
+    font-size:20px;
+}
+
+.bouton
+{
+    border:none;
+    padding:6px 0 6px 0;
+    border-radius:3px;
+    width:100px;
+    box-shadow:6px 6px 4px #666;
+    background: linear-gradient(180deg, #444, #000,#000, #222);
+    font:bold 16px Arial;
+    color:white;
+    width:180px;
+    font-weight : bold ;
+}
+
+.bouton:hover
+{
+    background: linear-gradient(180deg, #066, #022,#011, #033);
+}
+
+.bouton:active
+{
+    background: linear-gradient(180deg, #999, #666,#666, #999);
+}
+
+.bout
+{
+    border:none;
+    padding:6px 0 6px 0;
+    border-radius:4px;
+    width:100px;
+    height:28px;
+    box-shadow:6px 6px 4px #666;
+    background: linear-gradient(180deg, #f8f99d, #e7dc04, #dcd43b);
+    font:bold 16px Arial;
+    color:teal;
+}
+
+.bout:hover 
+{
+    background: linear-gradient(180deg, #f0f184, #f6f94c, #f5f766);
+}
+
+.bout:active 
+{
+    background: linear-gradient(180deg,#FFA07A, #FA8072,#FFA07A);
+}
+
+.pquizz
+{
+    color:rgb(121, 28, 248);
+}
+
+.pexo
+{
+    font-size: 16px;
+}
+
+.zone_saisie
+{
+    font-size: 18px;
+    font-family: Arial;
+    border: 2px #bbb inset;
+}
+
+.reponse_juste
+{
+    font-size: 18px;
+    color: green;
+    font-weight: bold;
+}
+
+.reponse_fausse
+{
+    font-size: 18px;
+    color: rgb(255,0,0);
+    font-weight: bold;
+}
+
+.spanquiz
+{
+    float : left;
+}
+
+h4
+{
+    margin-left : 15px;
+    color : rgb(102, 0, 153) ;
+    text-align : left ;
+    font-weight : bold ;
+    font-size : 20px;
+}
+
+.quizzForm
+{
+    margin-left: 40px;
+    color:rgb(136, 66, 29);
+}
+
+.question
+{
+    margin-left: 80px;
+    font-weight : bold ;
+}
+
+
+.bouton2
+{
+    margin: auto;
+    font-weight : bold ;
+    background-color:yellow;
+    font-size:16px;
+    text-align: center;
+}
+
+.afficheur
+{
+    width: auto;
+    height: auto;
+    background: rgb(220, 220, 220);
+    border-radius: 5px;
+    border-color: #000;
+    border: 2px solid #000000;
+    margin: auto;
+    padding: 5px;
+    color: rgb(128,0,128);
+    text-align: center;
+    font-size:20px;
+    font-weight : bold ;
+}
+
+
+.affmain
+{
+    width: auto;
+    height: auto;
+    background: radial-gradient(rgb(255, 215, 0),#fa9103);
+    border-radius: 5px;
+    border-color: #000;
+    border: 2px solid #000000;
+    margin: auto;
+    padding: 5px;
+    color: rgb(121, 28, 200);
+    text-align: left;
+    font-size:24px;
+    font-weight : bold ;
+    margin :10px;
+    box-shadow:6px 6px 5px #666;
+}
+
+.point
+{
+    color: green;
+    text-align: left;
+    font-size:30px;
+}
+
+.afficheur1
+{
+    width: 500px;
+    height: auto;
+    /*background: rgb(220, 220, 220);*/
+    background:radial-gradient(#eee, #aaa);
+    border-radius: 5px;
+    border-color: #000;
+    border: 2px solid #000000;
+    margin: auto;
+    padding: 5px;
+    color: rgb(128,0,128);
+    text-align: center;
+    font-size:20px;
+    font-weight : bold ;
+    float : left;
+    box-shadow:6px 6px 4px #666;
+}
+
+.afficheur3
+{
+    width: auto;
+    height: auto;
+    /*background: rgb(115, 194, 251);*/
+    background:radial-gradient(circle at top left,rgb(49, 140, 231), rgb(115, 194, 251));
+    border-radius: 5px;
+    border-color: #000;
+    border: 2px solid #000000;
+    margin: auto;
+    padding: 5px;
+    color: rgb(128,0,128);
+    text-align: right;
+    font-size:20px;
+    font-weight : bold ;
+    float : left;
+    box-shadow:6px 6px 4px #666;
+    font-family: Arial;
+}
+
+.afficheur4
+{
+    width: 520px;
+    height: auto;
+    background: rgb(220, 220, 255);
+    border-radius: 5px;
+    border-color: #000;
+    border: 2px solid #000000;
+    margin: auto;
+    padding: 5px;
+    color: rgb(128,0,128);
+    text-align: left;
+    font-size:30px;
+    font-weight : bold ;
+    float : left;
+}
+
+.input1
+{
+    font-size:30px;
+    text-transform: lowercase;
+    width:300px;
+}
+
+.input2
+{
+    width: 200px;
+    height: 30px;
+}
+
+.lab1
+{
+    font-size:30px;
+}
+
+.input3
+{
+    width: 400px;
+    height: 30px;
+    background: rgb(150, 150, 150);
+    color:rgb(150, 150, 150);
+}
+
+.input5
+{
+    width: 200px;
+    height: 30px;
+    background: rgb(0, 0, 0);
+    color:rgb(150, 150, 150);
+}
+
+.input6
+{
+    width: 100px;
+    background: rgb(0, 0, 0);
+}
+
+.selrvb
+{
+    width:142px;
+}
+
+.input4
+{
+    width: 380px;
+}
+
+.afficheur2
+{
+    width: auto;
+    height: auto;
+    background: rgb(220, 220, 220);
+    border-radius: 5px;
+    border-color: #000;
+    border: 2px solid #000000;
+    margin: auto;
+    padding: 5px;
+    color: black;
+    text-align: left;
+    font-size:18px;
+}
+
+.afficher_reponse
+{
+    min-width: 600px;
+    height: auto;
+    background: rgb(220, 220, 220);
+    border-radius: 5px;
+    border-color: #000;
+    border: 2px solid #000000;
+    margin: auto;
+    padding: 5px;
+    color: rgb(128,0,128);
+    text-align: center;
+    font-size:20px;
+    font-weight : bold ;
+}
+
+.col
+{
+    border: 1px solid black;
+    text-align: left;
+    min-width: 450px;
+}
+
+.ncol
+{
+    border: none;
+    text-align: left;
+    background: rgb(220, 220, 220);
+}
+
+.colb
+{
+    background: white;
+}
+
+.colg
+{
+    background: rgb(0,187,255);
+}
+
+.exofeuille
+{
+    color: red;
+    font-weight : bold ;
+}
+
+table 
+{
+    border: medium solid black;
+    border-collapse: collapse;
+    width: auto;
+    box-shadow:6px 6px 4px #666;
+}
+
+th
+{
+    font-family: arial;
+    border: 2px solid black;
+    color:white;
+    width: auto;
+    padding: 5px 10px 5px 10px;
+    background-color: #1A8BBF;
+    font-size:16px;
+    text-align: left;
+    /*max-width:300px;*/
+}
+td 
+{
+    font-family: sans-serif;
+    border: 2px solid black;
+    color:rgb(0, 51, 102);
+    width: auto;
+    padding: 5px 10px 5px 10px;
+    text-align: left;
+    background-color: #E0E5E7;
+    /*max-width: 400px;*/
+}
+
+.sel
+{
+    color:white;
+    font-size:24px;
+    background-color: rgb(49, 140, 231);
+    margin-left: 50px;
+    margin-top: 10px;
+    min-width: 400px;
+}
+
+.pq
+{
+    /*color:rgb(126, 51, 0);*/
+    color:rgb(78, 22, 9);
+    font-size:18px;
+}
+
+.sel2
+{
+    color:teal;
+    font-size:24px;
+}
+
+.sel3
+{
+    background-color: rgb(48,48,48);
+    color:white;
+    font-size:24px;
+    width:200px;
+}
+
+.sel4
+{
+    background-color: grey;
+    color:white;
+    font-size:18px;
+    width:400px;
+}
+
+.carreR
+{
+    background-color: red;
+    color:black;
+    font-size:24px;
+    width:100px;
+    height:100px;
+    text-align: center;
+}
+
+.carreV
+{
+    background-color: green;
+    color:black;
+    font-size:24px;
+    width:100px;
+    height:100px;
+    text-align: center;
+}
+
+.carreB
+{
+    background-color: blue;
+    color:black;
+    font-size:24px;
+    width:100px;
+    height:100px;
+    text-align: center;
+}
+
+.carre
+{
+    color:black;
+    font-size:24px;
+    width:200px;
+    height:200px;
+    text-align: center;
+}
+
+.carB
+{
+    background-color: white;
+    color:black;
+    font-size:20px;
+    width:40px;
+    height:30px;
+    text-align: center;
+    border: none;
+    margin: 0px;
+    padding:0px;
+}
+
+.carP
+{
+    background-color: white;
+    color:black;
+    font-size:20px;
+    width:50px;
+    height:30px;
+    text-align: center;
+    border: none;
+    margin: 0px;
+    padding:0px;
+}
+
+.tpbm
+{
+    background-color: white;
+    color:black;
+    font-size:20px;
+    width:200px;
+    height:auto;
+    text-align: left;
+    margin-left: 20px;
+    font-family: sans-serif;
+}
+
+.tpbmg
+{
+    background-color: white;
+    color:black;
+    font-size:20px;
+    text-align: left;
+    margin-left: 20px;
+    width:80px;
+    height:50px;
+}
+
+.caseP
+{
+    background-color: white;
+    color:black;
+    font-size:20px;
+    height:30px;
+    border: none;
+    margin: 0px;
+    padding:0px;
+    font-family: sans-serif;
+}
+
+.caseL
+{
+    background-color: white;
+    color:black;
+    font-size:20px;
+    height:30px;
+    border: none;
+    margin-left: 20px;
+    margin-bottom: 0px;
+}
