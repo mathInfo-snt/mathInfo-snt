@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>  <!-- Balise principale qui englobe tout le contenu de la page -->
+
+    <head>  <!-- Balise d'en tête -->
+        <meta charset="utf-8" />  <!-- Balise qui définit l'encodage standard utf-8 -->
+        <link rel="stylesheet" href="style.css" /> <!-- Mise en place du CSS qui se trouve dans .style.css -->
+    </head>
+
+    <header> SNT : Réseaux Sociaux : page 3 </header> <!-- Balise pour le titre de la page -->
+
+    <body>  <!-- Balise qui englobe le corps de la page, c'est à dire la partie principale -->
+
+        <title>SNT RS page 3</title> <!-- Balise qui définit l'onglet de la page -->
+
+        <nav> <!-- Balise pour le menu de gauche -->
+            <h2>Liens :</h2>
+            <ul>    <!-- Balise pour afficher une liste -->
+                <li> 
+                    <a href="exercices/SNT_RS_exercice3.1.html" target="_blank"> Exercice 3.1 </a> 
+                </li> <!-- Balise pour afficher un lien -->
+                <li> 
+                    <a href="exercices/SNT_RS_exercice3.2.html"> Exercice 3.2 </a> 
+                </li> <!-- Balise pour afficher un lien -->
+                <li> 
+                    <a href="exercices/SNT_RS_exercice3.3.html"> Exercice 3.3 </a> 
+                </li> <!-- Balise pour afficher un lien -->
+                <li>
+                    <a href="index.html"> Retour Index </a>
+                </li>
+            </ul>
+        </nav>
+
+        <section>
+                
+            <h2>Représenter un réseau social avec un graphe</h2> <!-- Balise titre h1 -->
+                <p>
+                    Le graphe ci-dessous représente les relations entre huit individus 
+                    ayant créé leur profil sur un réseau social.<br>
+                    
+                    Chaque individus représentent un <b>sommet</b> du <b>graphe</b>.<br> 
+                    Un lien entre deux individus est représenté par une <b>arêtes</b> et indique qu'ils sont amis sur le réseau.
+                </p>
+                <center>
+                    <img src="images/graphe1.png">
+                </center>
+                <br><br>
+                
+            <h2>Quelques définition sur les graphes</h2>
+                <p>
+                    On va prendre comme exemple le même graphe que celui ci-dessus, mais pour simplifier les sommets, 
+                    on ne garde que la première lettre du prénom.
+                </p>
+                <center>
+                    <img src="images/graphe2.png">
+                </center>
+                <br><br>
+                <b style="color:blue;">Définition (Graphe) : </b>Un <b>graphe</b> est constitué de <b>sommets</b> 
+                dont certains sont reliés par des <b>arêtes</b>.<br>
+                Par exemple, dans ce graphe, on a huit sommets : A, B, C, D, E , F , G , H et 10 arêtes.
+                <br><br>
+
+                <b style="color:blue;">Définition (Ordre) : </b>L'<b>ordre</b> d'un <b>graphe</b> 
+                est le nombre de <b>sommets</b> de ce graphe.<br>
+                Par exemple, ce graphe est d'ordre 8, car il a 8 sommets.
+                <br><br>
+
+                <b style="color:blue;">Définition (Chaîne) : </b>Une <b>chaîne</b> est une liste ordonnée de <b>sommets</b> reliés deux à deux par une <b>arête</b>. Le nombre d'<b>arêtes</b> de la <b>chaîne</b> s'appelle sa <b>longueur</b>.<br>
+                Par exemple, la chaîne D-A-G-H est une chaîne de longueur 3 qui relie le sommet D au sommet H.
+                <br><br>
+
+                <b style="color:blue;">Définition (Distance) : </b>La <b>distance</b> entre deux <b>sommets</b> est 
+                la longueur de la <b>chaîne</b> la plus courte entre ces deux sommets.<br>
+                Par exemple, la distance entre les sommets A et B est 1 ; la distance entre les sommets B et G est 2 ;
+                la distance entre les sommets B et H est 3.
+                <br><br>
+
+                <b style="color:blue;">Définition (Excentricité) : </b>L'<b>excentricité</b> d'un sommet est 
+                la <b>distance maximale</b> existant entre ce sommet et les autres sommets du graphe.<br>
+                Par exemple, l'excentricité des sommets A, F et G est 2 et l'excentricité des autres sommets B, C, D, E et H est 3.
+                <br><br>
+
+                <b style="color:blue;">Définition (Centre) : </b> On appelle <b>centre</b> d'un graphe, 
+                 le (ou les) sommet(s) d'<b>excentricité minimale</b> (le centre n'est pas nécessairement unique).<br>
+                Par exemple, les sommets A, F et G sont tous les trois des centres de ce graphe.
+                <br><br>
+
+                <b style="color:blue;">Définition (Rayon) : </b> On appelle <b>rayon</b> d'un graphe, 
+                l'<b>excentricité</b> d'un <b>centre</b> de ce graphe.<br>
+                Par exemple, le rayon de ce graphe est 2 : c'est l'excentricité des centres A, F et G.
+                <br><br>
+
+                 <b style="color:blue;">Définition (Diamètre) : </b> On appelle <b>diamètre</b> d'un graphe, 
+                 la <b>distance maximale</b> entre deux sommets de ce graphe.<br>
+                Par exemple, le diamètre de ce graphe est 3.
+                <br><br>
+
+        <h2>Tableau pour trouver les caractéristiques d'un graphe</h2>
+
+                <p>
+                    Pour déterminer le <b>rayon</b>, le <b>diamètre</b> et les <b>centres</b> d'un graphe,
+                    on peut utiliser un <b style="color:red;">tableau</b> comme ci-dessous.
+                </p>
+
+
+                <center>
+                    <img src="images/graphe2.png">
+                </center>
+                <br><br>
+
+                <center>
+                    <table>
+                        <tr>
+                            <th> </th>
+                            <th>A</th>
+                            <th>B</th>
+                            <th>C</th>
+                            <th>D</th>
+                            <th>E</th>
+                            <th>F</th>
+                            <th>G</th>
+                            <th>H</th>
+                            <th>Excentricité</th>
+                        </tr>
+                        <tr>
+                            <th>A</th>
+                            <td>0</td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>2</td>
+                            <td style="color:red;">2</td>
+                        </tr>
+                        <tr>
+                            <th>B</th>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>2</td>
+                            <td>2</td>
+                            <td>3</td>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <th>C</th>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>2</td>
+                            <td>2</td>
+                            <td>2</td>
+                            <td>2</td>
+                            <td>3</td>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <th>D</th>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>0</td>
+                            <td>2</td>
+                            <td>2</td>
+                            <td>2</td>
+                            <td>3</td>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <th>E</th>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>2</td>
+                            <td>2</td>
+                            <td>0</td>
+                            <td>2</td>
+                            <td>2</td>
+                            <td>3</td>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <th>F</th>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>2</td>
+                            <td>2</td>
+                            <td>2</td>
+                            <td>0</td>
+                            <td>1</td>
+                            <td>2</td>
+                            <td style="color:red;">2</td>
+                        </tr>
+                        <tr>
+                            <th>G</th>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>2</td>
+                            <td>2</td>
+                            <td>2</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>1</td>
+                            <td style="color:red;">2</td>
+                        </tr>
+                        <tr>
+                            <th>H</th>
+                            <td>2</td>
+                            <td>3</td>
+                            <td>3</td>
+                            <td>3</td>
+                            <td>3</td>
+                            <td>2</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>3</td>
+                        </tr>
+                            <th colspan=9>Excentricité maximum = Diamètre : </th>
+                            <td><b style="color:green;">3</b></td>
+                        <tr>
+
+                        </tr>
+                    </table>
+                </center>
+                <br><br>
+                
+            <h3>Explications pour remplir le tableau</h3>
+                        <ul>
+                            <li>
+                                On trace un tableau avec une colonne et une ligne pour chaque <b>sommet</b> du graphe, on rajoute une colonne à droite pour noter les <b>excentricités</b> de chaque sommet et on rajoute une ligne en bas
+                                pour noter le <b>diamètre</b> du graphe.
+                            </li>
+                            <li>
+                                Pour toutes les cases à l'intérieur du tableau, on note la <b>distance</b> entre le sommet mentionné en début de ligne et celui mentionné en début de colonne.
+                            </li>
+                            <li>
+                                On remplit ensuite la dernière colonne avec les <b>excentricités</b> de chaque sommet, c'est à dire qu'on reporte la <b>valeur maximum située sur cette ligne</b>.
+                            </li>
+                            <li>
+                                On peut ensuite déterminer le <b>diamètre</b> du graphe qui correspond à la 
+                                <b>valeur maximum de la colonne des excentricités</b>.
+                            </li>
+                            <li>
+                                On repère enfin les <b>centres</b> du graphe, c'est à dire les sommets 
+                                dont <b>l'excentricité est minimum</b>. Dans cet exemple il y en a trois : les sommets A, F et G dont l'excentricité vaut 2 et est en rouge dans le tableau.
+                            </li>
+                            <li>
+                                L'<b>excentricité minimum</b> est alors le <b>rayon</b> du graphe, ici c'est 2.
+                            </li>
+                        </ul>
+                </p>
+                <br><br>
+                <a class="abas" href="exercices/SNT_RS_exercice3.1.html" target="_blank"> Exercice 3.1 </a>
+                <!-- target="_blank" permet d'ouvrir le lien dans un nouvel onglet -->
+                <br>
+                <br>
+        </section>
+    </body>
+
+    <footer> Cours de SNT au Lycée Anna de Noailles (Evian) </footer> <!-- Balise pour le pied de page -->
+
+</html>
