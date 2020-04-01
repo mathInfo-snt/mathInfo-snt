@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html>  <!-- Balise principale elle englobe tout le contenu de la page -->
+
+    <head>  <!-- Balise d'en tête -->
+        <meta charset="utf-8" />  <!-- Balise qui définit l'encodage standard utf-8 -->
+        <link rel="stylesheet" href="../style.css" /> <!-- Mise en place du CSS qui se trouve dans style.css -->
+        <script src="script_saisie3.1.js"></script>
+    </head>
+
+    <header class="exo"> SNT : Réseaux Sociaux : <br>
+        Exercice 3.1 : Caractéristiques d'un graphe</header>  <!-- Balise pour le titre de la page -->
+
+    <body>  <!-- Balise qui englobe le corps de la page, c'est à dire la partie principale -->
+
+        <title>SNT RS exercice 3.1</title> <!-- Balise qui définit l'onglet de la page -->
+
+        <nav>  <!-- Balise pour le menu -->
+            <h2>Liens :</h2>
+            <ul>    <!-- Balise pour afficher une liste -->
+                <li> <a href="../SNT_RS_page3.html" target="_blank">Retour page3</a> </li>
+            </ul>
+        </nav>
+
+        <section class="sexo">
+            <h1 class="exoh1">Exercice 3.1 : Caractéristiques d'un graphe</h1>
+               	<p>
+            		On considère le réseau social représenté par le graphe suivant.
+            	</p>
+
+                <span id='ima1' style="margin-left:100px;"> </span>
+                <script type='text/javascript' language='javascript'>init1();</script><br><br>
+
+                <p>
+                    <b>&ensp;1.</b> Compléter le tableau ci-dessous :
+                </p>
+                        <span id="icr1" style="color:red;font-size:18px;margin-left:50px;"> 
+                            <img src="../images/vide.png" width='20' height='20'> 
+                        </span><br><br>
+                        <table>
+                            <tr>
+                                <th> </th>
+                                <th>A</th>
+                                <th>B</th>
+                                <th>C</th>
+                                <th>D</th>
+                                <th>E</th>
+                                <th>Excentricité</th>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <b>A</b>
+                                </th>
+                                <td>
+                                    <input type="text" class="carT" id="0" name="n1" autocomplete="off"
+                                            onkeypress="javascript:if (event.keyCode == 13){verific(0);return false;}" 
+                                            onChange="verific(0)" />
+                                </td>
+                                <td>
+                                    <input type="text" class="carT" id="1" name="n1" autocomplete="off"
+                                            onkeypress="javascript:if (event.keyCode == 13){verific(1);return false;}" 
+                                            onChange="verific(1)" />
+                                </td>
+                                <td>
+                                    <input type="text" class="carT" id="2" name="n1" autocomplete="off"
+                                            onkeypress="javascript:if (event.keyCode == 13){verific(2);return false;}" 
+                                            onChange="verific(2)" />
+                                </td>
+                                <td>
+                                    <input type="text" class="carT" id="3" name="n1" autocomplete="off"
+                                            onkeypress="javascript:if (event.keyCode == 13){verific(3);return false;}" 
+                                            onChange="verific(3)" />
+                                </td>
+                                <td>
+                                    <input type="text" class="carT" id="4" name="n1" autocomplete="off"
+                                            onkeypress="javascript:if (event.keyCode == 13){verific(4);return false;}" 
+                                            onChange="verific(4)" />
+                                </td>
+                                <td>
+                                    <center>
+                                    <input type="text" class="carT" id="5" name="n1" autocomplete="off"
+                                            onkeypress="javascript:if (event.keyCode == 13){verific(5);return false;}" 
+                                            onChange="verific(5)" style="width:110px;" />
+                                    </center>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <b>B</b>
+                                </th>
+                                <td>
+                                    <input type="text" class="carT" id="6" name="n1" autocomplete="off"
+                                            onkeypress="javascript:if (event.keyCode == 13){verific(6);return false;}" 
+                                            onChange="verific(6)" />
+                                </td>
+                                <td>
+                                    <input type="text" class="carT" id="7" name="n1" autocomplete="off"
+                                            onkeypress="javascript:if (event.keyCode == 13){verific(7);return false;}" 
+                                            onChange="verific(7)" />
+                                </td>
+                                <td>
+                                    <input type="text" class="carT" id="8" name="n1" autocomplete="off"
+                                            onkeypress="javascript:if (event.keyCode == 13){verific(8);return false;}" 
+                                            onChange="verific(8)" />
+                                </td>
+                                <td>
+                                    <input type="text" class="carT" id="9" name="n1" autocomplete="off"
+                                            onkeypress="javascript:if (event.keyCode == 13){verific(9);return false;}" 
+                                            onChange="verific(9)" />
+                                </td>
+                                <td>
+                                    <input type="text" class="carT" id="10" name="n1" autocomplete="off"
+                                            onkeypress="javascript:if (event.keyCode == 13){verific(10);return false;}" 
+                                            onChange="verific(10)" />
+                                </td>
+                                <td>
+                                    <center>
+                                    <input type="text" class="carT" id="11" name="n1" autocomplete="off"
+                                            onkeypress="javascript:if (event.keyCode == 13){verific(11);return false;}" 
+                                            onChange="verific(11)" style="width:110px;" />
+                                    </center>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <b>C</b>
+                                </th>
+                                <td>
+                                    <input type="text" class="carT" id="12" name="n1" autocomplete="off"
+                                            onkeypress="javascript:if (event.keyCode == 13){verific(12);return false;}" 
+                                            onChange="verific(12)" />
+                                </td>
+                                <td>
+                                    <input type="text" class="carT" id="13" name="n1" autocomplete="off"
+                                            onkeypress="javascript:if (event.keyCode == 13){verific(13);return false;}" 
+                                            onChange="verific(13)" />
+                                </td>
+                                <td>
+                                    <input type="text" class="carT" id="14" name="n1" autocomplete="off"
+                                            onkeypress="javascript:if (event.keyCode == 13){verific(14);return false;}" 
+                                            onChange="verific(14)" />
+                                </td>
+                                <td>
+                                    <input type="text" class="carT" id="15" name="n1" autocomplete="off"
+                                            onkeypress="javascript:if (event.keyCode == 13){verific(15);return false;}" 
+                                            onChange="verific(15)" />
+                                </td>
+                                <td>
+                                    <input type="text" class="carT" id="16" name="n1" autocomplete="off"
+                                            onkeypress="javascript:if (event.keyCode == 13){verific(16);return false;}" 
+                                            onChange="verific(16)" />
+                                </td>
+                                <td>
+                                    <center>
+                                    <input type="text" class="carT" id="17" name="n1" autocomplete="off"
+                                            onkeypress="javascript:if (event.keyCode == 13){verific(17);return false;}" 
+                                            onChange="verific(17)" style="width:110px;" />
+                                    </center>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <b>D</b>
+                                </th>
+                                <td>
+                                    <input type="text" class="carT" id="18" name="n1" autocomplete="off"
+                                            onkeypress="javascript:if (event.keyCode == 13){verific(18);return false;}" 
+                                            onChange="verific(18)" />
+                                </td>
+                                <td>
+                                    <input type="text" class="carT" id="19" name="n1" autocomplete="off"
+                                            onkeypress="javascript:if (event.keyCode == 13){verific(19);return false;}" 
+                                            onChange="verific(19)" />
+                                </td>
+                                <td>
+                                    <input type="text" class="carT" id="20" name="n1" autocomplete="off"
+                                            onkeypress="javascript:if (event.keyCode == 13){verific(20);return false;}" 
+                                            onChange="verific(20)" />
+                                </td>
+                                <td>
+                                    <input type="text" class="carT" id="21" name="n1" autocomplete="off"
+                                            onkeypress="javascript:if (event.keyCode == 13){verific(21);return false;}" 
+                                            onChange="verific(21)" />
+                                </td>
+                                <td>
+                                    <input type="text" class="carT" id="22" name="n1" autocomplete="off"
+                                            onkeypress="javascript:if (event.keyCode == 13){verific(22);return false;}" 
+                                            onChange="verific(22)" />
+                                </td>
+                                <td>
+                                    <center>
+                                    <input type="text" class="carT" id="23" name="n1" autocomplete="off"
+                                            onkeypress="javascript:if (event.keyCode == 13){verific(23);return false;}" 
+                                            onChange="verific(23)" style="width:110px;" />
+                                    </center>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <b>E</b>
+                                </th>
+                                <td>
+                                    <input type="text" class="carT" id="24" name="n1" autocomplete="off"
+                                            onkeypress="javascript:if (event.keyCode == 13){verific(24);return false;}" 
+                                            onChange="verific(24)" />
+                                </td>
+                                <td>
+                                    <input type="text" class="carT" id="25" name="n1" autocomplete="off"
+                                            onkeypress="javascript:if (event.keyCode == 13){verific(25);return false;}" 
+                                            onChange="verific(25)" />
+                                </td>
+                                <td>
+                                    <input type="text" class="carT" id="26" name="n1" autocomplete="off"
+                                            onkeypress="javascript:if (event.keyCode == 13){verific(26);return false;}" 
+                                            onChange="verific(26)" />
+                                </td>
+                                <td>
+                                    <input type="text" class="carT" id="27" name="n1" autocomplete="off"
+                                            onkeypress="javascript:if (event.keyCode == 13){verific(27);return false;}" 
+                                            onChange="verific(27)" />
+                                </td>
+                                <td>
+                                    <input type="text" class="carT" id="28" name="n1" autocomplete="off"
+                                            onkeypress="javascript:if (event.keyCode == 13){verific(28);return false;}" 
+                                            onChange="verific(28)" />
+                                </td>
+                                <td>
+                                    <center>
+                                    <input type="text" class="carT" id="29" name="n1" autocomplete="off"
+                                            onkeypress="javascript:if (event.keyCode == 13){verific(29);return false;}" 
+                                            onChange="verific(29)" style="width:110px;" />
+                                    </center>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th colspan=6>
+                                    Excentricité max = Diamètre :
+                                </th>
+                                <th>
+                                    <center>
+                                    <input type="text" class="carT" id="30" name="n1" autocomplete="off"
+                                            onkeypress="javascript:if (event.keyCode == 13){verific(30);return false;}" 
+                                            onChange="verific(30)" style="width:110px;" />
+                                    </center>
+                                </th>
+                            </tr>
+                            
+                        </table>
+                        <br>
+                    <span id="icr2" style="color:red;font-size:18px;margin-left:50px;"> 
+                        <img src="../images/vide.png" width='20' height='20'> 
+                    </span>
+                    <br><br>
+                    
+                    <form name="saisie_0">
+                        <span id="ic1" class="spanquiz" name="span_1" > 
+                            <img src="../images/vide.png" width='20' height='20'> 
+                        </span>
+                        &emsp; <input class="bout" type="button" value="Valider" onClick="verif('saisie_0')" 
+                            onFocus="this.blur();" />
+                        &ensp;
+                        <span id="m1"></span>
+                    </form>
+                    <br><br>
+
+            	<p>
+            		<b>&ensp;2.</b> Saisir dans la zone ci-dessous le diamètre de ce graphe.</b>
+            	</p>
+            	 <form name="saisie_1">
+                    <span id="icone" class="spanquiz" name="span_1" > <img src="../images/vide.png" width='20' height='20'> </span>
+                    <label class="saisie" for="lab_1">Diamètre :</label><br>
+                    <input type="text" class="zone_saisie" id="id_1" name="name_1" autocomplete="off" size='20'
+                        onkeypress="javascript:if (event.keyCode == 13) {verif1('saisie_1','name_1',0);return false;}"/>
+                    &ensp;
+                    <input class="bout" type="button" value="Valider" onClick="verif1('saisie_1','name_1',0)" 
+                        onFocus="this.blur();" />
+                    &ensp;
+                    <span id="red" name="message1"></span>
+                </form><br>
+
+                <p>
+                    <b>&ensp;3.</b> Saisir dans la zone ci-dessous le rayon de ce graphe.</b>
+                </p>
+                 <form name="saisie_2">
+                    <span id="icone" class="spanquiz" name="span_2" > <img src="../images/vide.png" width='20' height='20'> </span>
+                    <label class="saisie" for="lab_2">Rayon :</label><br>
+                    <input type="text" class="zone_saisie" id="id_2" name="name_2" autocomplete="off" size='20'
+                        onkeypress="javascript:if (event.keyCode == 13) {verif1('saisie_2','name_2',1);return false;}"/>
+                    &ensp;
+                    <input class="bout" type="button" value="Valider" onClick="verif1('saisie_2','name_2',1)" 
+                        onFocus="this.blur();" />
+                    &ensp;
+                    <span id="red" name="message2"></span>
+                </form>
+
+                <p>
+                    <b>&ensp;4.</b> Saisir dans la zone ci-dessous un centre de ce graphe.</b>
+                </p>
+                 <form name="saisie_3">
+                    <span id="icone" class="spanquiz" name="span_3" > <img src="../images/vide.png" width='20' height='20'> </span>
+                    <label class="saisie" for="lab_3">Centre :</label><br>
+                    <input type="text" class="zone_saisie" id="id_3" name="name_3" autocomplete="off" size='20'
+                        onkeypress="javascript:if (event.keyCode == 13) {verif1('saisie_3','name_3',2);return false;}"/>
+                    &ensp;
+                    <input class="bout" type="button" value="Valider" onClick="verif1('saisie_3','name_3',2)" 
+                        onFocus="this.blur();" />
+                    &ensp;
+                    <span id="red" name="message3"></span>
+                </form>
+				
+                
+
+                <br><br>
+                <input class="bouton" type="button" value="Valider l'exercice" onClick="verif_exo(4)" onFocus="this.blur();" />
+                <br>
+                <br>
+                 <span class="reponse" name="reponse"> </span>
+                <br>
+                <br>
+        </section>
+    </body>
+
+    <footer class="exo"> Cours de SNT au Lycée Anna de Noailles (Evian) </footer>
+
+</html>
