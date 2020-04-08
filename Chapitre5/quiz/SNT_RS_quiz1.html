@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <meta charset="utf-8" />
+        <title>SNT RS quiz 1</title>
+        <link rel="stylesheet" href="../../style.css" />
+        <script src="script_quiz1.js"></script>
+    </head>
+
+    <header class="quizz"> Quiz 1 sur les réseaux sociaux </header>
+
+    <body>
+        <nav>
+            <h2>Liens :</h2>
+            <ul>
+                <li> <a href="../SNT_RS_page1.html">Page1</a> </li>
+            </ul>
+        </nav>
+        <section class="squizz" >
+            <form name="quizz" action="javascript:check();" class="quizzForm">
+                <div name="quiz">
+
+                    <div>
+                        <span class="spanquiz" name="s1"> <img src="../images/vide.png" width='20' height='20'> </span>
+                        <h4>Question 1 : le réseau social WhatsApp a été lancé en :</h4>
+                        <div class="question" id='q1'>
+                            <script type='text/javascript' language='javascript'>init(0);</script>
+                        </div>
+                    </div>
+
+                    <div>
+                    <span class="spanquiz" name="s2"> <img src="../images/vide.png" width='20' height='20'> </span>
+                    <h4>Question 2 : Le réseau social Facebook a été ouvert au public en :</h4>
+                        <div class="question" id='q2'>
+                            <script type='text/javascript' language='javascript'>init(1);</script>
+                        </div>
+                    </div>
+
+                    <div>
+                    <span class="spanquiz" name="s3"> <img src="../images/vide.png" width='20' height='20'> </span>
+                    <h4>Question 3 : Le réseau social Instagram est né en :</h4>
+                        <div class="question" id='q3'>
+                            <script type='text/javascript' language='javascript'>init(2);</script>
+                        </div>
+                    </div>
+                    <div>
+                    <span class="spanquiz" name="s4"> <img src="../images/vide.png" width='20' height='20'> </span>
+                    <h4>Question 4 : Parmi les réseaux sociaux suivants quel est le plus ancien ?</h4>
+                        <div class="question" id='q4'>
+                            <script type='text/javascript' language='javascript'>init(3);</script>
+                        </div>
+                    </div>
+                 
+                </div>
+            </form>
+            <br><br>
+            <input class="bouton" type="button" value="Valider" onClick="verification(4,'Toutes les réponses sont correctes ! Vous pouvez passer à la page suivante : ', '../SNT_RS_page2.html','Page 2')" />
+            <br>
+            <br>
+            <span name="message"> </span>
+            <br>
+            <br>
+        </section>
+    </body>
+
+    <footer class="quizz"> Cours de SNT au Lycée Anna de Noailles (Evian) </footer>
+
+</html>
