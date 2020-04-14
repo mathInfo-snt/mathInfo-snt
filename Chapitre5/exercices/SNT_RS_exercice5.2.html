@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="../../style.css" />
+        <script src="script_saisie5.2.js"></script>
+    </head>
+
+    <header class="exo"> SNT : Réseaux Sociaux : <br>
+        Exercice 5.2 : Revenus de twitter</header>
+
+    <body>
+
+        <title>SNT RS exercice 5.2</title>
+
+        <nav>
+            <h2>Liens :</h2>
+            <ul>
+                <li> <a href="../SNT_RS_page5.html">Page5</a> </li>
+            </ul>
+        </nav>
+
+        <section class="sexo">
+            <h1 class="exoh1">Exercice 5.2 : Revenus de Twitter</h1>
+               	<p>
+            		Le diagramme ci-dessous donne les revenus de Twitter pour les années de 2016 à 2019 en millions de dollars.<br>
+                    On peut voir que là aussi la publicité constitue l'essentiel des revenus de Twitter.
+            	</p>
+            	<center>
+                    <img src="../images/RE-Twitter.png">
+                </center>
+                <br><br>
+                <p>
+                    <b style="color:blue;font-size:22px;">1.</b> Pour les deux questions suivantes, on considère les revenus de Twitter pour l'année
+                        <b style="color:blue;">
+                            <script type='text/javascript' language='javascript'>init1();</script>
+                        </b>.<br><br>
+            		<b>&ensp;a.</b> Saisir dans la zone ci-dessous le montant total en millions de dollars, 
+                    des revenus de Twitter pour cette année.
+            	</p>
+            	<form name="saisie_1">
+                    <span id="icone" class="spanquiz" name="span_1" > <img src="../images/vide.png" width='20' height='20'> </span>
+                    <label class="saisie" for="lab_1">Total des revenus :</label><br>
+                    <input type="text" class="zone_saisie" id="id_1" name="name_1" autocomplete="off" size='20'
+                        onkeypress="javascript:if (event.keyCode == 13) {verif1('saisie_1','name_1',0);return false;}"/>
+                    &ensp;
+                    <input class="bout" type="button" value="Valider" onClick="verif1('saisie_1','name_1',0)" 
+                        onFocus="this.blur();" />
+                    &ensp;
+                    <span id="red" name="message1"></span>
+                </form>
+				<br>
+                <p>
+                    <b>&ensp;b.</b> Saisir dans la zone ci-dessous la part en pourcentage des revenus publicitaires 
+                    de Twitter pour cette année.<br> 
+                        &emsp;<i>(Arrondir à 0,1 % près, en saisissant au format 32,8 % par exemple)</i>.
+                </p>
+                <form name="saisie_2">
+                    <span id="icone" class="spanquiz" name="span_2" > <img src="../images/vide.png" width='20' height='20'> </span>
+                    <label class="saisie" for="lab_2">Pourcentage des revenus publicitaires :</label><br>
+                    <input type="text" class="zone_saisie" id="id_2" name="name_2" autocomplete="off" size='20'
+                        onkeypress="javascript:if (event.keyCode == 13) {verif1('saisie_2','name_2',1);return false;}"/>
+                    &ensp;
+                    <input class="bout" type="button" value="Valider" onClick="verif1('saisie_2','name_2',1)" 
+                        onFocus="this.blur();" />
+                    &ensp;
+                    <span id="red" name="message2"></span>
+                </form><br>
+                <br><br>
+                <p>
+                    <b style="color:blue;font-size:22px;">2.</b> Saisir dans la zone ci-dessous la part en pourcentage des revenus publicitaires de Twitter pour l'année 
+                        <b style="color:blue;">
+                            <script type='text/javascript' language='javascript'>init2();</script>
+                        </b> .<br>
+                        &emsp;<i>(Arrondir à 0,1 % près, en saisissant au format 32,8 % par exemple)</i>.
+                </p>
+                <form name="saisie_3">
+                    <span id="icone" class="spanquiz" name="span_3" > <img src="../images/vide.png" width='20' height='20'> </span>
+                    <label class="saisie" for="lab_3">Pourcentage des revenus publicitaires :</label><br>
+                    <input type="text" class="zone_saisie" id="id_3" name="name_3" autocomplete="off" size='20'
+                        onkeypress="javascript:if (event.keyCode == 13) {verif1('saisie_3','name_3',2);return false;}"/>
+                    &ensp;
+                    <input class="bout" type="button" value="Valider" onClick="verif1('saisie_3','name_3',2)" 
+                        onFocus="this.blur();" />
+                    &ensp;
+                    <span id="red" name="message1"></span>
+                </form>
+                <br>
+
+                <br><br>
+                <input class="bouton" type="button" value="Valider l'exercice" onClick="verif_exo(3)" onFocus="this.blur();" />
+                <br>
+                <br>
+                 <span class="reponse" name="reponse"> </span>
+                <br>
+                <br>
+        </section>
+    </body>
+
+    <footer class="exo"> Cours de SNT au Lycée Anna de Noailles (Evian) </footer>
+
+</html>
