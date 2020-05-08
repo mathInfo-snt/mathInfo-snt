@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="../../style.css" />
+        <script src="script_saisie2.3.js"></script>
+    </head>
+
+    <header class="exo"> SNT : Géolocalisation : Exercice 2.3 </header>
+
+    <body>
+
+        <title>SNT GL exercice 2.3</title>
+
+        <nav>
+            <h2>Liens :</h2>
+            <ul>
+                <li> <a href="../SNT_GL_page2.html">Page 2</a> </li>
+            </ul>
+        </nav>
+
+        <section class="sexo">
+            <h1 class="exoh1">Exercice 2.3 : Lire des coordonnées GPS sur une carte du monde</h1>
+                
+                <p>
+                    On considère la carte du monde suivante :
+
+                    <center>
+                        <img src="../images/monde.png">
+                    </center>
+                </p><br>
+
+                <b>A.</b> Saisir dans la zone ci-dessous, les coordonnées GPS au format ( 30°Nord , 15°Est ) du point  
+                    <b style="color:blue;"><script type='text/javascript' language='javascript'>init1();</script></b>.
+                </p>
+                 <form name="saisie_1">
+                    <span id="icone" class="spanquiz"> <img src="../images/vide.png" width='20' height='20'> </span>
+                    <input type="text" class="zone_saisie" id="id_1" name="name_1" autocomplete="off" size='40'
+                        onkeypress="javascript:if (event.keyCode == 13) {verif1('saisie_1','name_1',0);return false;}"/>
+                    &ensp;
+                    <input class="bout" type="button" value="Valider" onClick="verif1('saisie_1','name_1',0)" 
+                        onFocus="this.blur();" />
+                    &ensp;
+                    <span id="red1"></span>
+                </form>
+                
+                <br>
+                <p>              
+                    <b>B.</b> Saisir dans la zone ci-dessous, les coordonnées GPS au format ( 30°Nord , 15°Est ) du point 
+                    <b style="color:blue;"><script type='text/javascript' language='javascript'>init2();</script></b>.
+                </p>
+                 <form name="saisie_2">
+                    <span id="icone" class="spanquiz"> <img src="../images/vide.png" width='20' height='20'> </span>
+                    <input type="text" class="zone_saisie" id="id_2" name="name_2" autocomplete="off" size='40'
+                        onkeypress="javascript:if (event.keyCode == 13) {verif1('saisie_2','name_2',1);return false;}"/>
+                    &ensp;
+                    <input class="bout" type="button" value="Valider" onClick="verif1('saisie_2','name_2',1)" 
+                        onFocus="this.blur();" />
+                    &ensp;
+                    <span id="red2"></span>
+                </form>
+                
+                <br>
+                <p>              
+                    <b>C.</b> Saisir dans la zone ci-dessous, les coordonnées GPS au format ( 30°Nord , 15°Est ) du point   
+                    <b style="color:blue;"><script type='text/javascript' language='javascript'>init3();</script></b>.
+                </p>
+                 <form name="saisie_3">
+                    <span id="icone" class="spanquiz"> <img src="../images/vide.png" width='20' height='20'> </span>
+                    <input type="text" class="zone_saisie" id="id_3" name="name_3" autocomplete="off" size='40'
+                        onkeypress="javascript:if (event.keyCode == 13) {verif1('saisie_3','name_3',2);return false;}"/>
+                    &ensp;
+                    <input class="bout" type="button" value="Valider" onClick="verif1('saisie_3','name_3',2)" 
+                        onFocus="this.blur();" />
+                    &ensp;
+                    <span id="red3"></span>
+                </form><br>
+                <br><br>
+                <input class="bouton" type="button" value="Valider l'exercice" onClick="verif_exo(3)" onFocus="this.blur();" />
+                <br>
+                <br>
+                 <span class="reponse" name="reponse"> </span>
+                <br><br>
+                
+        </section>
+    </body>
+
+    <footer class="exo"> Cours de SNT au Lycée Anna de Noailles (Evian) </footer>
+
+</html>

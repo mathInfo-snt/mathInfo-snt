@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="../../style.css" />
+        <script src="script_saisie2.2.js"></script>
+        <script src="../script/script_page2.js"></script>
+    </head>
+
+    <header class="exo"> SNT : Géolocalisation : <br>
+        Exercice 2.2 : Trouver des coorodnnées GPS</header>
+
+    <body>
+
+        <title>SNT GL exercice 2.2</title>
+
+        <nav>
+            <h2>Liens :</h2>
+            <ul>
+                <li> <a href="../SNT_GL_page2.html">Page2</a> </li>
+            </ul>
+        </nav>
+
+        <section class="sexo">
+            <h1 class="exoh1">Exercice 2.2 : Trouver des coordonnées GPS</h1>
+               	<p>
+            		En faisant des recherches, selon <b>la procédure ci-dessous</b>, sur le site 
+                    <a href="https://www.geoportail.gouv.fr" target="_blank">Géoportail</a>,
+                    déterminer les coordonnées GPS des villes affichées en bleu.
+                    <ul>
+                        <li>
+                            taper le nom de la ville dans la barre de recherche de Géoportail ;
+                        </li>
+                        <li>
+                            faire un clic droit au centre du point orange qui s'affiche ;
+                        </li>
+                        <li>
+                            choisir <b>Adresse/coordonnées du lieu</b> ;
+                        </li>
+                        <li>
+                            lire les coordonnées GPS (latitude,longitude) sur la première ligne du petit rectangle qui s'affiche ;
+                        </li>
+                        <li>
+                            vous pouvez utiliser les <b>convertisseurs</b> qui se trouvent en bas de la page ;
+                        </li>
+                        <li> 
+                            on rappelle aussi qu'on peut copier avec le racourci <b>Ctrl C</b>, et coller avec le racourci <b>Ctrl V</b>.
+                        </li>
+                    </ul>
+                </p>
+                <br>
+
+                <b>1.</b> Les coordonnées GPS de la ville de 
+                    <b style="color:blue;"><span id="v1"></span></b> sont :<br><br>
+                <form name="saisie1" id="s1"></form>
+                <script type='text/javascript' language='javascript'>init(0);initd(0);</script>
+                <br>
+
+                <b>2.</b> Les coordonnées GPS de la ville de 
+                    <b style="color:blue;"><span id="v2"></span></b> sont :<br><br>
+                <form name="saisie2" id="s2"></form>
+                <script type='text/javascript' language='javascript'>init(1);initd(1);</script>
+                <br>
+
+                <b>3.</b> Les coordonnées GPS de la ville de 
+                    <b style="color:blue;"><span id="v3"></span></b> sont :<br><br>
+                <form name="saisie3" id="s3"></form>
+                <script type='text/javascript' language='javascript'>init(2);initd(2);</script>
+                <br>
+
+                   <span id="icone" class="spanquiz"> <img src="../images/vide.png" width='20' height='20'> </span>
+                    &ensp;
+                    <input class="bout" type="button" value="Valider" onClick="verif()" 
+                        onFocus="this.blur();" />
+                    &ensp;
+                    <span id="reponse" class="reponse2"> </span>
+                <br><br><br>
+
+                        <form action="" class="afficheur3">
+                            <p>
+                                <label for="decimal">Latitude sexagésimale&#160;: </label> 
+                                <input type="text" id="sexa" name="decimal" autocomplete="off" class="saisir"
+                                    onkeypress="javascript:if (event.keyCode == 13) {xdeci();return false;}" 
+                                    value="25°30'36&quot;Nord"/>
+                            </p>
+                            <p>
+                                <label for="binaire">Latitude décimale&#160;: </label> 
+                                <input type="text" id="deci" name="binaire" autocomplete="off" class="saisir"
+                                    onkeypress="javascript:if (event.keyCode == 13) {xsexa();return false;}" 
+                                    value="25.51"/>
+                            </p>
+                        </form>
+
+                        <form action="" class="afficheur3" >
+                            <p>
+                                <label for="decimal">Longitude sexagésimale&#160;: </label> 
+                                <input type="text" id="sexa2" name="decimal" autocomplete="off" class="saisir"
+                                    onkeypress="javascript:if (event.keyCode == 13) {xdeci2();return false;}" 
+                                    value="13°15'36&quot;Est"/>
+                            </p>
+                            <p>
+                                <label for="binaire">Longitude décimale&#160;: </label> 
+                                <input type="text" id="deci2" name="binaire" autocomplete="off" class="saisir"
+                                    onkeypress="javascript:if (event.keyCode == 13) {xsexa2();return false;}" 
+                                    value="13.26"/>
+                            </p>
+                        </form>
+                <br><br><br><br><br>
+
+                <br><br><br><br>
+                <input class="bouton" type="button" value="Valider l'exercice" onClick="verif_exo(1)" onFocus="this.blur();" />
+                <br>
+                <br>
+                 <span class="reponse" name="reponse"> </span>
+                <br>
+                <br>
+        </section>
+    </body>
+
+    <footer class="exo"> Cours de SNT au Lycée Anna de Noailles (Evian) </footer>
+
+</html>
