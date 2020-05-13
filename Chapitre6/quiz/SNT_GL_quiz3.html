@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <meta charset="utf-8" />
+        <title>SNT GL quiz 3</title>
+        <link rel="stylesheet" href="../../style.css" />
+        <script src="script_quiz3.js"></script>
+    </head>
+
+    <header class="quizz"> Quiz 3 sur la géolocalisation </header>
+
+    <body>
+        <nav>
+            <h2>Liens :</h2>
+            <ul>
+                <li> <a href="../SNT_GL_page3.html">Page3</a> </li>
+            </ul>
+        </nav>
+        <section class="squizz" >
+            <form name="quizz" action="javascript:check();" class="quizzForm">
+                <div name="quiz">
+
+                    <div>
+                        <span class="spanquiz" name="s1"> <img src="../images/vide.png" width='20' height='20'> </span>
+                        <h4>Question 1 : Pour repérer la position d'une puce GPS, le nombre minimum de satellites nécessaires est :</h4>
+                        <div class="question" id='q1'>
+                            <script type='text/javascript' language='javascript'>init(0);</script>
+                        </div>
+                    </div>
+
+                    <div>
+                    <span class="spanquiz" name="s2"> <img src="../images/vide.png" width='20' height='20'> </span>
+                    <h4>Question 2 : Dans le système GPS, le nombre total de satellites utilisés aujourd'hui est :</h4>
+                        <div class="question" id='q2'>
+                            <script type='text/javascript' language='javascript'>init(1);</script>
+                        </div>
+                    </div>
+
+                    <div>
+                    <span class="spanquiz" name="s3"> <img src="../images/vide.png" width='20' height='20'> </span>
+                    <h4>Question 3 : L'altitude des satellites du système GPS est de :</h4>
+                        <div class="question" id='q3'>
+                            <script type='text/javascript' language='javascript'>init(2);</script>
+                        </div>
+                    </div>
+                 
+                </div>
+            </form>
+            <br><br>
+            <input class="bouton" type="button" value="Valider" onClick="verification(3,'Toutes les réponses sont correctes ! Vous pouvez passer à la suite : ', '../exercices/SNT_GL_exercice3.1.html','Exercice 3.1')" />
+            <br>
+            <br>
+            <span name="message"> </span>
+            <br>
+            <br>
+        </section>
+    </body>
+
+    <footer class="quizz"> Cours de SNT au Lycée Anna de Noailles (Evian) </footer>
+
+</html>
