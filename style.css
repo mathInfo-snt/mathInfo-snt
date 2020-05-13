@@ -15,6 +15,7 @@ h1 /* Balise des titres h1 */
     color : red ; /* Couleur des titres h1 */
     text-align : left ;  /* Alignés à gauche */
     font-weight : bold ;  /* En gras */
+    font-size :22px;
 }
 
 
@@ -23,7 +24,7 @@ h2 /* Balise des titres h2 */
     color : green ; /* Couleur des titres h2 */
     text-align : left ;  /* Alignés à gauche */
     font-weight : bold ;  /* En gras */
-    font-size : 20px ;  /* Taille de police */
+    font-size : 19px ;  /* Taille de police */
 }
 
 h3 /* Balise des titres h3 */
@@ -31,7 +32,7 @@ h3 /* Balise des titres h3 */
     color : rgb(253, 63, 146) ; /* Couleurs des titres h3 */
     text-align : left ;  /* Alignés à gauche */
     font-weight : bold ;  /* En gras */
-    font-size : 20px ;  /* Taille de police */
+    font-size : 18px ;  /* Taille de police */
 }
 
 h5 /* Balise des titres h5 */
@@ -39,14 +40,14 @@ h5 /* Balise des titres h5 */
     color : black ; /* Couleurs des titres h3 */
     text-align : left ;  /* Alignés à gauche */
     font-weight : bold ;  /* En gras */
-    font-size : 18px ;  /* Taille de police */
+    font-size : 16px ;  /* Taille de police */
 }
 
 h6 /* Balise des titres h6 */
 {
     color : green ; /* Couleurs des titres h3 */
     text-align : left ;  /* Alignés à gauche */
-    font-size : 18px ;  /* Taille de police */
+    font-size : 15px ;  /* Taille de police */
 }
 
 ul /* Balise pour les listes */
