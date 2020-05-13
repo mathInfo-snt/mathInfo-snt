@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="../style.css" />
+    </head>
+
+    <header> SNT : Calculs d'itinéraires : page 6 </header>
+
+    <body>
+
+        <title>SNT GL page 6</title>
+
+        <nav>
+            <h2>Feuille :</h2>
+                <ul>
+                    <li>
+                        <a href="COURS/5-COURS-Géolocalisation-Feuille5.pdf" download target="blank">Feuille 5</a>
+                    </li>
+                </ul>
+            <h2>Liens :</h2>
+            <ul>
+                <li> 
+                    <a href="exercices/SNT_GL_exercice6.1.html">Exercice 6.1</a> 
+                </li>
+                <li> 
+                    <a href="exercices/SNT_GL_exercice6.2.html">Exercice 6.2</a> 
+                </li>
+                <li> 
+                    <a href="exercices/SNT_GL_exercice6.3.html">Exercice 6.3</a> 
+                </li>
+                <li>
+                    <a href="../index.html">Index</a>
+                </li>
+            </ul>
+        </nav>
+
+        <section>
+
+            <h2 style="color:red;">Généralités</h2>
+                <p>
+                    Le principe est le même, quelle que soit l'application utilisée : le logiciel a besoin de connaître <b>le lieu
+                    de départ</b>, soit en la configurant manuellement, soit grâce à la puce GPS du téléphone ou de l'appareil utilisé.
+                    Il faut ensuite saisir <b>le lieu d'arrivée</b> manuellement et éventuellement des étapes.
+                    le logiciel déterminera le temps de trajet en fonction de la distance entre les deux points choisis. 
+                    Il tient compte des limitations de vitesse des routes empruntées.
+                </p>
+                <br>
+
+            <h2 style="color:red;">Algorithme de Dijkstra</h2>
+                <p>
+                   Pour trouver le chemin le plus court les applications représentent la carte par un <b>graphe</b> et utilisent 
+                   <b>l'algorithme de Dijkstra</b> pour trouver le chemin le plus court entre deux sommets.
+                   <br><br>
+                   <b style="color:blue;">Exemple :</b> On va appliquer l'algorithme de Dijkstra pour trouver le plus court chemin pour aller du sommet <b>A</b> au sommet <b>F</b> dans le graphe suivant.
+                   <center>
+                        <img src="images/grapheDijkstra.png">
+                   </center>
+                   <br>
+                   Pour cela on applique la méthode suivante :
+                   <ul>
+                        <li>
+                            On dessine d'abord un tableau avec une colonne pour chaque sommet du graphe, plus une colonne à droite pour indiquer le sommet sélectionné à chaque étape.
+                        </li>
+                        <li>
+                            Sur la première ligne, on affecte le coefficient  0  à l'origine du trajet et le coefficient  ∞  à tous les autres sommets. On sélectionne le sommet de départ et on raye toutes les cases de sa colonne.
+                        </li>
+                        <li>
+                            Pour la deuxième ligne, pour tous les sommets adjacents au sommet de départ, on reporte le poids de l'arête correspondante dans le tableau en mettant en indice le point d'origine. Pour tous les autres sommets on reporte le coefficient  ∞ . On sélectionne ensuite le sommet ayant le coefficient le plus faible et on raye les cases suivantes de sa colonne.
+                        </li>
+                        <li>
+                            Pour les lignes suivantes, pour tous les sommets adjacents au dernier sommet sélectionné, on calcule par somme la longueur du trajet depuis le point d'origine et on reporte ce calcul, <b>uniquement si il est plus petit que le coefficient situé au dessus</b>. On mentionne en indice le sommet précédent. On sélectionne le sommet dont le coefficient est le plus faible et on raye les cases suivantes de sa colonne. etc ...
+                        </li>
+                        <li>
+                            On s'arrête quand on a atteint le sommet d'arrivé du trajet. On obtient alors le trajet le plus court en partant du point d'arrivé (ici F) et on remonte jusqu'au point de départ (ici A) en utilisant les sommets mentionnés en indice
+                            (ceux qui sont soulignés) de bas en haut.
+                        </li>
+                   </ul>
+                   <center>
+                        <img src="images/tableauD.png">
+                   </center>
+                </p>            
+
+                <br>
+                <a class="abas" href="exercices/SNT_GL_exercice6.1.html" target="_blank">Exercice 6.1</a>
+                <br>
+                <br>
+        </section>
+    </body>
+
+    <footer> Cours de SNT au Lycée Anna de Noailles (Evian) </footer>
+
+</html>
