@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="../../style.css" />
+        <script src="script_saisie6.2.js"></script>
+    </head>
+
+    <header class="exo"> SNT : Géolocalisation : Exercice 6.2</header>
+
+    <body>
+
+        <title>SNT GL exercice 6.2</title>
+
+        <nav>
+            <h2>Liens :</h2>
+            <ul>
+                <li> <a href="../SNT_GL_page6.html">Page6</a> </li>
+            </ul>
+        </nav>
+
+        <section class="sexo">
+            <h1 class="exoh1">Exercice 6.2 : Calculer un itinéraire avec Géoportail</h1>
+               	<p>
+                    <ul>
+                        <li>
+                            Cliquer sur le lien suivant :
+                            <a href="https://www.google.com/maps/@46.398939,6.578024,15z" target="_blank">Google Map</a>.
+                        </li>
+                        <li>
+                            Cliquer sur le bouton <b>itinéraire</b> en haut à gauche : 
+                            <img src="../images/itiGM.png" width="20px" height="20px">
+                        </li>
+                        <li>
+                            Cliquer sur le bouton <b>voiture</b>.
+                        </li>
+                        <li>
+                            Comme point de départ, entrer l'adresse du lycée :
+                            <b>2 Avenue Anna de Noailles, 74500 Évian-les-Bains</b>.
+                        </li>
+                        <li>
+                            Comme point de d'arrivée, entrer l'adresse du rectorat de Grenoble :
+                            <b>Académie de Grenoble, 7 Place Bir Hakeim, 38000 Grenoble</b>.
+                        </li>
+                    </ul>
+                </p>
+                    <br>
+
+            		<b style="color:blue;font-size:22px;">1.</b>  <br><br>
+
+                        <b>A.</b> Déplacer le curseur ci-dessous pour qu'il indique la distance en km, 
+                        du trajet voiture le plus court proposé, à 1 km près.<br><br>
+                        <form name="saisie_1">
+                            <span id="icone" class="spanquiz"> <img src="../images/vide.png" width='20' height='20'> </span>
+                            <label class="saisie" for="lab_1">Distance en km :</label><br>
+                            <input type="range" id="cur1" name="volume" min="0" max="250" step="1" class="input4"
+                                oninput="curseur('cur1','vcur1')" value="50" /><br>
+                            &emsp;<b id="vcur1" style="color:teal;font-size:22px;text-decoration:bold;">50</b>
+                            <b style="color:teal;font-size:22px;text-decoration:bold;">km</b><br><br>
+                            &ensp;
+                            <input class="bout" type="button" value="Valider" onClick="verif1('saisie_1','cur1',0)" 
+                            onFocus="this.blur();" />
+                            &ensp;
+                            <span id="red1"></span>
+                        </form><br><br>
+
+                        <b style="color:blue;font-size:22px;">1.</b> Cliquer cette fois sur le bouton <b>vélo</b>. <br><br>
+
+                        <b>B.</b> Déplacer le curseur ci-dessous pour qu'il indique lla distance en km, 
+                        du trajet vélo le plus court proposé, à 1 km près.<br><br>
+                        <form name="saisie_2">
+                            <span id="icone" class="spanquiz"> <img src="../images/vide.png" width='20' height='20'> </span>
+                            <label class="saisie" for="lab_2">Distance en km :</label><br>
+                            <input type="range" id="cur2" name="volume" min="0" max="250" step="1" class="input4"
+                                oninput="curseur('cur2','vcur2')" value="1" /><br>
+                            &emsp;<b id="vcur2" style="color:teal;font-size:22px;text-decoration:bold;">1</b>
+                            <b style="color:teal;font-size:22px;text-decoration:bold;">km</b><br><br>
+                            &ensp;
+                            <input class="bout" type="button" value="Valider" onClick="verif1('saisie_2','cur2',1)" 
+                            onFocus="this.blur();" />
+                            &ensp;
+                            <span id="red2"></span>
+                        </form><br><br>
+
+                    
+
+                        <b>C.</b> Déplacer le curseur ci-dessous pour qu'il indique la dénivelé positif m, 
+                        pour ce trajet vélo, à 10 m près.<br><br>
+                        <form name="saisie_3">
+                            <span id="icone" class="spanquiz"> <img src="../images/vide.png" width='20' height='20'> </span>
+                            <label class="saisie" for="lab_3">Dénivelé positif en m :</label><br>
+                            <input type="range" id="cur3" name="volume" min="0" max="1500" step="10" class="input4"
+                                oninput="curseur('cur3','vcur3')" value="10" /><br>
+                            &emsp;<b id="vcur3" style="color:teal;font-size:22px;text-decoration:bold;">10</b>
+                            <b style="color:teal;font-size:22px;text-decoration:bold;">m</b><br><br>
+                            &ensp;
+                            <input class="bout" type="button" value="Valider" onClick="verif1('saisie_3','cur3',2)" 
+                            onFocus="this.blur();" />
+                            &ensp;
+                            <span id="red3"></span>
+                        </form><br><br>
+
+            	 
+               
+               
+                <br><br>
+                <input class="bouton" type="button" value="Valider l'exercice" onClick="verif_exo(3)" onFocus="this.blur();" />
+                <br>
+                <br>
+                 <span class="reponse" name="reponse"> </span>
+                <br>
+                <br>
+        </section>
+    </body>
+
+    <footer class="exo"> Cours de SNT au Lycée Anna de Noailles (Evian) </footer>
+
+</html>
