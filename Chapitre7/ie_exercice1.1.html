@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="../style.css" />
+        <script src="script/script_ex1.1.js"></script>
+        <script src="script/script1.js"></script>
+    </head>
+
+    <header class="exo"> SNT : Informatique embarqué : Exercice 1.1</header>
+
+    <body>
+
+        <title>SNT IE exercice 1.1</title>
+
+        <nav>
+            <h2>Liens :</h2>
+                <ul>
+                    <li> <a href="ie_page1.html">Page 1</a> </li>
+                </ul>
+            <h2>Exercices :</h2>
+                <ul>
+                    <span id='nf'></span>
+                    <script type='text/javascript' language='javascript'>fait();</script>
+                </ul>
+        </nav>
+
+        <section class="sexo">
+            <h1 class="exoh1">Exercice 1.1 : &Eacute;volution des microprocesseurs</h1>
+               	<p>
+                    
+            		Le microprocesseur Intel 4004 avait une fréquence de 108 kHz.
+                    <center>
+                        <img src="images/Intel_C4004_b.jpg">
+                    </center><br><br>
+                    Actuellement le processeur Intel Pentium G4560 a une fréquence de 3,5 GHz.<br><br>
+                    <center>
+                        <img src="images/Pentium-G4560.jpg" width="350" height="200">
+                    </center>
+            	</p>
+            	 <br>
+                 <b style="color:22px;">1.</b>
+                 Le processeur Intel pentium G4560 est combien de fois plus rapide que le microprocesseur Intel 4004.<br>
+                 Déplacer le curseur ci-dessous pour qu'il indique à la centaine près, ce facteur multiplicatif.<br><br>
+                 <form name="saisie_1">
+                    <span class="spanquiz"> <img src="images/vide.png" width='20' height='20'> </span>
+                    <label class="saisie">Facteur :</label><br>
+                    <input type="range" id="cur1" name="volume" min="0" max="40000" step="100" class="input4"
+                            oninput="curseur('cur1','vcur1')" value="200" /><br>
+                    &emsp;<b id="vcur1" style="color:teal;font-size:22px;text-decoration:bold;">200</b>
+                    <b style="color:teal;font-size:22px;text-decoration:bold;">fois</b><br><br>
+                    &ensp;
+                    <input class="bout" type="button" value="Valider" onClick="verif1('saisie_1','cur1')" 
+                        onFocus="this.blur();" />
+                    &ensp;
+                    <span id="red1"></span>
+                </form><br><br>
+
+                Voici un diagramme en bâtons montrant l'évolution des fréquences des processeurs Intel de 1993 à 2017.<br>
+                On observe une certaine stagnation depuis les années 2000 dû à une limite physique. Jusqu'aux début des années 2000, 
+                les gains de rapidité étaient liés à la miniaturisation des <b>transistors</b>
+                (les minuscules composants électroniques qui constituent le processeur). 
+                Mais cette taille a une limite physique : la taille des électrons, ce qui explique la stagnation. 
+                Pour palier à ce problème, les constructeurs utilisent plusieurs processeurs qui tournent en <b>parallèle</b> dans un même ordinateur, on parle de machine à plusieurs coeurs.<br><br>
+                <center>
+                    <img src="images/HistProc.png">
+                </center><br><br>
+                <b style="color:22px;">2.</b>
+                Saisir dans la zone ci-dessous le pourcentage d'augmentation de la fréquence de processeur entre 1999 et 2000
+                (au format 51%) à 1% près.<br><br>
+
+                <form name="saisie_2">
+                    <span class="spanquiz"> <img src="images/vide.png" width='20' height='20'> </span>
+                    <label class="saisie">Pourcentage d'augmentation de 1999 à 2000 :</label><br>
+                    <input type="text" class="zone_saisie" id="id_2" name="name_2" autocomplete="off" size='40'
+                        onkeypress="javascript:if (event.keyCode == 13) {verif2('saisie_2','name_2',0);return false;}"/>
+                    &ensp;
+                    <input class="bout" type="button" value="Valider" onClick="verif2('saisie_2','name_2',0)" 
+                        onFocus="this.blur();" />
+                    &ensp;
+                    <span id="red2"></span>
+                </form>
+                <br><br>
+                 <b style="color:22px;">2.</b>
+                Saisir dans la zone ci-dessous le pourcentage d'augmentation de la fréquence de processeur entre 2000 et 2017
+                (au format 51%) à 1% près.<br><br>
+
+                <form name="saisie_3">
+                    <span class="spanquiz"> <img src="images/vide.png" width='20' height='20'> </span>
+                    <label class="saisie">Pourcentage d'augmentation de 2000 à 2017 :</label><br>
+                    <input type="text" class="zone_saisie" id="id_3" name="name_3" autocomplete="off" size='40'
+                        onkeypress="javascript:if (event.keyCode == 13) {verif2('saisie_3','name_3',1);return false;}"/>
+                    &ensp;
+                    <input class="bout" type="button" value="Valider" onClick="verif2('saisie_3','name_3',1)" 
+                        onFocus="this.blur();" />
+                    &ensp;
+                    <span id="red3"></span>
+                </form>
+                <br><br>
+                <br><br>
+                <input class="bouton" type="button" value="Valider l'exercice" onClick="verif_exo(3)" onFocus="this.blur();" />
+                <br>
+                <br>
+                 <span class="reponse" name="reponse"> </span>
+                <br>
+                <br>
+        </section>
+    </body>
+
+    <footer class="exo"> Cours de SNT au Lycée Anna de Noailles (Evian) </footer>
+
+</html>
