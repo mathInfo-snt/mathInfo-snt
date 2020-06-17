@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <meta charset="utf-8" />
+        <title>SNT IE quiz 3</title>
+        <link rel="stylesheet" href="../style.css" />
+        <script src="script/script_q3.js"></script>
+        <script src="script/script3.js"></script>
+    </head>
+
+    <header class="quizz"> Quiz 3 sur l'informatique embarqué</header>
+
+    <body>
+        <nav>
+            <h2>Liens :</h2>
+                <ul>
+                    <li> <a href="ie_page3.html">Page 3</a> </li>
+                </ul>
+            <h2>Exercices :</h2>
+                <ul>
+                    <span id='nf'></span>
+                    <script type='text/javascript' language='javascript'>fait();</script>
+                </ul>
+        </nav>
+        <section class="squizz" >
+            <form name="quizz" action="javascript:check();" class="quizzForm">
+                <div name="quiz">
+
+                    <div>
+                        <span class="spanquiz" name="sq"> <img src="images/vide.png" width='20' height='20'> </span>
+                        <h4>Question 1 : La norme qui décrit les symboles utilisés pour les algorigrammes est la norme :</h4>
+                        <div class="question" id='q1'>
+                            <script type='text/javascript' language='javascript'>init(0);</script>
+                        </div>
+                    </div>
+
+                    <div>
+                        <span class="spanquiz" name="sq"> <img src="images/vide.png" width='20' height='20'> </span>
+                        <h4>Question 2 : Un système informatique embarqué agit sur un phénomène réel à l'aide d'un :</h4>
+                        <div class="question" id='q2'>
+                            <script type='text/javascript' language='javascript'>init(1);</script>
+                        </div>
+                    </div>
+
+                    <div>
+                        <span class="spanquiz" name="sq"> <img src="images/vide.png" width='20' height='20'> </span>
+                        <h4>Question 3 : Dans un algorigramme le symbole utilisé pour un test est un :</h4>
+                        <div class="question" id='q3'>
+                            <script type='text/javascript' language='javascript'>init(2);</script>
+                        </div>
+                    </div>
+
+                </div>
+            </form>
+            <br><br>
+            <input class="bouton" type="button" value="Valider" onClick="verification(3)" />
+            <br>
+            <br>
+            <span id="message"> </span>
+            <br>
+            <br>
+        </section>
+    </body>
+
+    <footer class="quizz"> Cours de SNT au Lycée Anna de Noailles (Evian) </footer>
+
+</html>
