@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="../style.css" />
+        <script src="script/script4.js"></script>
+    </head>
+
+    <header> SNT : Interface Homme-Machine (IHM) : page 4 </header>
+
+    <body>
+
+        <title>SNT IE page 4</title>
+
+        <nav>
+           <h2>Feuille :</h2>
+                <ul>
+                    <li>
+                        <a href="COURS/PDF/4-COURS-IE-Feuille4.pdf" download target="blank">Feuille 4</a>
+                    </li>
+                </ul>
+            <h2>Liens :</h2>
+                <ul>
+                    <li> <a href="chapitre7.html">Chapitre 7</a> </li>
+                </ul>
+            <h2>Exercices :</h2>
+                <ul>
+                    <span id='nf'></span>
+                    <script type='text/javascript' language='javascript'>fait();</script>
+                </ul>
+        </nav>
+
+        <section>
+        	<br>
+            <h1>Généralités</h1>
+                <p>
+                    <b style="color:blue;">Définition (IHM) :</b>                     
+                    Une <b>IHM</b> (<u>I</u>nterface <u>H</u>omme-<u>M</u>achine) est une interface utilisateur permettant de connecter une personne à une machine ou à un système.<br><br> 
+                    C'est le cas des différentes applications mobiles sur <b>smartphone</b> qui permettent d'interagir avec un appareil. Les données utiles sont affichées de façon visuelle, falicitant l'utilisation d'un équipement.<br>
+                    Les <b>systèmes embarqués</b> complètement autonomes n'ont pas besoin de communiquer. 
+                    Il est cependant souvent indispensable et prudent de placer les systèmes sous contrôle humain.<br>
+                    Les <b>IHM</b> étaient des dispositifs spécifiques jusqu'à l'arrivée d'internet, puis des <b>smartphones</b>.<br>
+                    Actuellement, si le système embarqué dispose d'une liaison permettant de se connecter au réseau, l'interface peut être programmée soit sous forme de page web, soit sous forme d'application pour smartphone.<br>
+                    Les IHM deviennent ainsi génériques : un même appareil (smartphone) peut contrôler différents <b>systèmes embarqués</b>.
+                    <center>
+                        <img src="images/sieIHM.png">
+                    </center>
+                    <br><br>
+                    <b style="color:blue;">Exemple important d'IHM :</b> <b>L'écran tactile</b> permet d'interagir avec le téléphone, les bornes interactives et bien d'autres objets, en gérant à la fois l'affichage et le pointage.<br>
+                    Un smartphone est un système informatique embarqué comportant un grand nombre de composants. C'est l'objet connecté le plus utilisé en tant qu'IHM.
+                </p>
+                <br><br>
+
+            <h2 style="color:red;">Les liaisons sans fil</h2>
+                <p>
+                    On retrouve de nombreuses IHM sur smartphone, ce qui nécessite une liaison sans fil avec les objets connectés.
+                    Il existe plusieurs <b>protocoles de communication</b> sans fil.
+                    Le choix du protocole de communication se fait selon le <b>débit (en bits par seconde)</b> et la <b>portée (en mètres)</b>
+                    souhaités.<br>
+                    
+                    <h2 style="margin-left:20px;">Les technologies de courte portée</h2>
+
+                        <h3 style="margin-left:40px;">Le protocole NFC</h3>
+                        <p style="margin-left:40px;">
+                            Les <b>protocoles NFC</b> (<u>N</u>ear <u>F</u>ield <u>C</u>ommunication) sont fondés sur la technologie d’identification par radio fréquence RFID (Radio frequency identification). Les objets équipés d’une puce électronique RFID possèdent une « étiquette » et sont automatiquement identifiés par radio fréquence lorsqu’ils se trouvent à proximité d’un équipement appelé interrogateur. Le protocole NFC est un standard de communication radiofréquence sans contact à très courte distance, de l’ordre de quelques centimètres, permettant une communication simple entre deux équipements électroniques. Il est par exemple utilisé dans de nombreuses entreprises pour les <b>badges</b> d’accès aux locaux, comme <b>support d’un abonnement</b> à un réseau de transport en commun, ou pour les <b>cartes de paiement</b>.
+                        </p>
+
+                        <h3 style="margin-left:40px;">Le protocole Bluetooth</h3>
+                        <p style="margin-left:40px;">
+                            Inventé en 1994 par la société suédoise Ericsson, le <b>protocole Bluetooth</b> est 
+                            un standard de transfert de données sans fil. 
+                            Il utilise une faible bande passante, ce qui ne lui permet de transférer que peu de données à de courtes distances, mais est également très peu énergivore. Inclus à l’immense majorité des téléphones mobiles, afin de réaliser une communication entre deux téléphones, ou entre un téléphone et un objet connecté de nature différente, il possède désormais de nombreuses applications : oreillette de discussion téléphonique sans fil, montre intelligente, moniteur de fréquence cardiaque, enceinte portative de diffusion de musique, station météo, thermostat, etc. Ce protocole est également utilisé sur des capteurs statiques appelés beamers pour mesurer des flux, par exemple des clients dans un magasin.
+                        </p>
+
+                        <h3 style="margin-left:40px;">Le protocole Zigbee</h3>
+                        <p style="margin-left:40px;">
+                            le <b>protocole Zigbee</b> est un protocole de communication radio développé spécifiquement pour les applications de <b>domotique</b>. D’une portée moyenne de 10 mètres, il utilise une faible bande passante et est idéal pour le transfert de données en faible volume. Peu énergivore et conçu pour des échanges de données à bas débit, le dispositif Zigbee convient aux appareils alimentés par une pile ou une batterie, et en particulier aux capteurs. Il est conçu pour fonctionner en réseau maillé : chaque nœud reçoit, envoie et relaie des données. Il est par exemple utilisé par certains détecteurs de fumée.
+                        </p>
+
+                    <h2 style="margin-left:20px;">Les technologies de moyenne portée</h2>
+
+                        <h3 style="margin-left:40px;">Le protocole Z-Wave</h3>
+                        <p style="margin-left:40px;">
+                            Le <b>protocole Z-Wave</b> est un protocole de communication sans fil principalement dédié à la <b>domotique</b>. Il permet de transmettre des données sur des distances allant de 30 mètres en intérieur à 100 mètres en plein air. Il fonctionne en réseau maillé, chaque appareil connecté pouvant relayer les informations émises par ses voisins, ce qui lui permet d’élargir sa portée. Le protocole Z-Wave a été développé pour des usages peu énergivores nécessitant un faible débit de données. Tout comme le protocole Zigbee, l’utilisation de Z-Wave ne nécessite que très peu de puissance et les appareils peuvent donc communiquer pendant plusieurs années avec une simple pile.
+                        </p>
+
+                        <h3 style="margin-left:40px;">Le protocole Wi-Fi</h3>
+                        <p style="margin-left:40px;">
+                            Le <b>protocole Wi-Fi</b> désigne un ensemble de protocoles de communications sans fil, permettant des connexions à haut débit sur des distances de 20 à 100 mètres. Il s’agit d’un réseau local sans fil très énergivore, qui ne convient que pour les appareils branchés sur secteur ou dont l’alimentation électrique peut être aisée et fréquente. Il permet de transférer rapidement beaucoup de données. Il existe différentes normes Wi-Fi correspondant à une portée et un débit variables.
+                        </p>
+
+                        <h3 style="margin-left:40px;">Le protocole BLE</h3>
+                        <p style="margin-left:40px;">
+                            Le <b>protocole BLE</b> aussi connue sous l’appellation Wibree, la technologie Bluetooth Low Energy (BLE) est un protocole de réseau personnel sans fil à très basse consommation. Comme la technologie Bluetooth originelle, le BLE ne permet de transférer qu’une quantité limitée de donnée à une distance moyenne de 60 mètres. La différence entre les dispositifs Bluetooth et BLE se situe au niveau de la consommation électrique nécessaire à la communication, qui est dix fois moindre pour BLE.
+                        </p>
+
+                    <h2 style="margin-left:20px;">Les technologies de longue portée</h2>
+
+                        <h3 style="margin-left:40px;">Les protocoles réseaux mobiles 2G, 3G, 4G</h3>
+                        <p style="margin-left:40px;">
+                            Fournis par les opérateurs de télécommunication, les réseaux cellulaires mobiles, basés sur la technologie GSM, permettent de transférer une quantité importante de données à une longue portée. Ils nécessitent l’installation d’une carte SIM dans l’appareil à connecter, afin d’identifier celui-ci sur le réseau de communication. Succédant aux premières générations des standards pour la téléphonie mobile, qui ont progressivement permis d’accroître le débit de communication, la quatrième génération (4G) permet une communication mobile à très haut débit.
+                        </p>
+
+                        <h3 style="margin-left:40px;">Les protocoles Réseaux radio bas-débit</h3>
+                        <p style="margin-left:40px;">
+                            <b>Sigfox</b> est un réseau de communication radio sans fil à bas débit et à basse fréquence, d’une portée moyenne de 10 kilomètres en milieu urbain et de 30 à 50 kilomètres en milieu rural. Il est également une technologie créée par l’entreprise du même nom. Ce réseau convient à des appareils à basse consommation, dotés ainsi d’une grande autonomie, qui transfèrent une faible quantité de données.<br>
+                            <b>LoRa</b> est un protocole de communication radio à très basse consommation, qui permet de transmettre des données en petite quantité, à des distances de 2 à 5 kilomètres en ville et jusqu’à 45 kilomètres en milieu urbain. À l’instar de Sigfox, il s’agit d’un dispositif qui convient particulièrement aux équipements peu énergivores n’émettant que périodiquement, notamment les capteurs.
+                        </p>
+
+                        <h3 style="margin-left:40px;">Les protocoles Réseaux propriétaires</h3>
+                        <p style="margin-left:40px;">
+                            Certains grands groupes industriels, dotés de moyens financiers conséquents, préfèrent installer leur propre réseau de communication. Le déploiement de ces réseaux dits privés ou propriétaires est particulièrement intéressants en cas de déploiement à très grande échelle d’appareils communicants. C’est ainsi que m2ocity, filiale de Veolia Eau et d’Orange, a choisi d’installer son propre réseau de communication pour connecter les compteurs d’eau intelligents et réaliser des opérations de télé-relevé, de même que Suez.<br>
+                            Le système de comptage évolué à destination des clients résidentiels de gaz naturel de GRDF se fonde également sur un protocole radio à longue portée spécifique et propriétaire : une bande de fréquence radio réservée (169 MHz) est utilisée pour assurer la communication des données entre les compteurs et les concentrateurs de données, eux-mêmes chargés de transmettre au système d’information central les informations qu’ils ont collectées.
+                        </p>
+                        <br><br>
+                    
+                    <center>
+                        <img src="images/liaison1.jpg">
+                    </center><br><br>
+                    <center>
+                        <img src="images/liaison2.jpg">
+                    </center>
+
+                </p>
+                <br><br>
+            
+                <br>
+                <br>
+                <a class="abas" href="ie_quiz4.html" target="_blank">Quiz 4</a>
+                <br>
+                <br>
+        </section>
+    </body>
+
+    <footer> Cours de SNT au Lycée Anna de Noailles (Evian) </footer>
+
+</html>
