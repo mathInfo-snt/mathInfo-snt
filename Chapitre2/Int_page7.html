@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+     	<meta charset="utf-8"/>
+        <title>SNT internet page 7</title>
+        <link rel="stylesheet" href="../style/style.css"/>
+        <script src="../style/scriptfooter.js"></script>
+        <script src="script/script7.js"></script>
+   	</head>
+
+    <header> SNT : Internet : page 7 : Le routage</header>
+
+    <body>
+
+        <nav>
+      		<h2>Liens :</h2>
+                <ul>
+                    <li> <a href="chapitre2.html">Chapitre 2</a> </li>
+                </ul>
+            <h2>Exercices :</h2>
+                <ul>
+                    <span id='nf'></span>
+                    <script type='text/javascript' language='javascript'>fait();</script>
+                </ul>
+    	</nav>
+
+        <section>
+
+            <h1>Le routage</h1>
+
+                <p>
+                    <b class="def">Définition (Routage) :</b>
+                    Le <b>routage</b> permet de transmettre des données d'un ordinateur <b>A</b> situé dans un 
+                    sous réseau <b>R1</b> vers un ordinateur <b>B</b> 
+                    situé dans un autre sous réseau <b>R2</b>. Les <b>données encapsulées</b> sont transmises de routeurs en routeurs 
+                    pour passer d'un sous réseau à un autre. 
+                </p>  
+                
+                <center>
+                    <img src="images/routeurs.png"/>
+                </center>
+
+            <h1>Routeur</h1>
+
+                <p>
+                    <b class="def">Définition (Routeur) :</b>
+                    Un <b>routeur</b> est un matériel réseau spécifique, conçu
+                    spécialement pour le routage. Ces <b>routeurs</b> sont des <b>machines informatiques</b> 
+                    qui utilisent des <b>tables de routage</b>, afin de transmettre les données d'un <b>sous-réseau</b> vers un autre.
+
+                    <br><br> 
+
+                    Ces routeurs disposent de plusieurs cartes réseaux et donc de plusieurs <b>adresses MAC</b>.<br> 
+                    On leur attribue aussi plusieurs <b>adresses IP</b> pour pouvoir être raccordés 
+                    à chacun des sous-réseau avec lesquels ils échangent des données.
+                </p>
+
+            <h1>Table de routage</h1>
+
+                <p>
+                    <b class="def">Définition (Table de routage) :</b>
+                    Une <b>table de routage</b> est un tableau qui indique pour un routeur <b>A</b> recevant un paquet à destination d'un autre routeur qui n'est pas dans son voisinage, vers quel routeur de son voisinage il doit envoyer ce paquet.
+
+                    <br><br>
+
+                    Par exemple, on a ci-dessous la table de routage du routeur <b>A</b>.<br><br>
+                    <img src="images/tables_de_routage_A.png"/><br><br>
+                    Ainsi si le routeur <b>A</b> reçoit un <b>paquet</b> à destibation du routeur <b>F</b> qui n'est pas dans son voisinage, 
+                    il va l'envoyer au routeur <b>C</b> qui est dans son voisinage.
+                    <br>
+                    Si le routeur <b>A</b> reçoit un <b>paquet</b> à destination du routeur <b>G</b> qui n'est pas dans son voisinage, 
+                    il va l'envoyer au routeur <b>B</b> qui est dans son voisinage.<br><br>
+                    
+                    <b class="def">Définition (Algorithme de routage) :</b>
+                    Les <b>tables de routage</b> sont recalculées régulièrement à l'aide d'<b>algorithmes de routage</b>. Ce système est très souple, car si un routeur tombe en panne ou qu'une connexion entre deux routeurs ne fonctionne plus, les tables de routage se mettent à jour automatiquement grâce aux algorithmes de routages et cela permet de trouver de nouveaux chemins pour acheminer le <b>paquet</b>.
+                </p>
+
+            <h1>Passerelle</h1>
+        
+                <p>
+                    <b class="def">Définition (Passerelle) :</b>
+                    Une <b>passerelle</b> (en anglais, gateway) est le nom générique d'un dispositif permettant de relier deux réseaux informatiques. Une passerelle est souvent un routeur et cela permet à deux ordinateurs situés 
+                    dans deux sous-réseaux différents de communiquer.<br><br>
+
+                    <b class="def">Définition (Passerelle par défaut) :</b>
+                    La <b>passerelle par défaut</b>, c’est l’adresse IP du routeur vers lequel on va transmettre des données pour un destinataire hors de son sous-réseau.
+                </p>    
+        
+                <br>
+                <br>
+                <a class="abas" href="int_quiz7.html" target="_blank"> Quiz 7</a>
+                <br>
+                <br>
+
+        </section>
+    </body>
+
+    <footer> 
+        <script type='text/javascript' language='javascript'>pied();</script>
+    </footer>
+
+</html>

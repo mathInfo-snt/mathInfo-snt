@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+  	<head>
+     	<meta charset="utf-8"/>
+        <title>SNT internet page 2</title>
+        <link rel="stylesheet" href="../style/style.css"/>
+        <script src="../style/scriptfooter.js"></script>
+        <script src="script/script2.js"></script>
+   	</head>
+
+  	<header> SNT : Internet : page 2 : L'adresse IP </header>
+
+  	<body>
+
+       	<nav>
+      		<h2>Liens :</h2>
+                <ul>
+                    <li> <a href="chapitre2.html">Chapitre 2</a> </li>
+                </ul>
+            <h2>Exercices :</h2>
+                <ul>
+                    <span id='nf'></span>
+                    <script type='text/javascript' language='javascript'>fait();</script>
+                </ul>
+    	</nav>
+
+    	<section>
+      		<h1>L'adresse IP</h1>
+		    	<p>
+          			<b class="def">Définition (adresse IP) :</b>
+          			Tous les appareils connectés sur Internet (ordinateurs, tablettes, smartphones, etc...) sont associés à un 
+		  			numéro d'identification appelé <b>adresse IP</b>. C'est une adresse unique attribuée à chaque appareil 
+		  			connecté sur un réseau informatique de façon permanente ou temporaire.<br><br>
+		  			<b class="def">Version d'adresse IP :</b>
+		  			Il existe des adresses IP de version 4 (<b>IPv4</b>) sur 32 bits (<b>4 octets</b>), et de version 6 
+		  			(<b>IPv6</b>) sur 128 bits (<b>16 octets</b>). 
+		  			La version 4 est actuellement la plus utilisée : elle est généralement représentée en notation 
+		  			décimale avec quatre nombres compris entre 0 et 255, séparés par des points, ce qui donne par exemple 
+		  			<b>172.16.254.1</b>.
+        		</p>
+          	<center>
+            	<img src="images/ipv4.png" alt="IPv4" title="IPv4" width="400" height="240"/>
+          	</center>
+        	<br>
+      	<h1>Ecritures décimale, binaire et hexadécimale</h1>
+		    <h2>Ecriture décimale</h2>
+          		<p>
+            		L'écriture décimale est l'écriture des nombres en <b>base 10</b>. C'est l'écriture habituellement utilisé par les humains.
+            		Pour cela on utilise <b>dix symboles</b>, les chiffres : <b>0</b>, <b>1</b>, <b>2</b>, <b>3</b>, <b>4</b>, <b>5</b>, 
+            		<b>6</b>, <b>7</b>, <b>8</b> et <b>9</b>.<br><br>
+            		<u>Exemple d'adresse IP en écriture décimale :</u> 172.16.254.1 .
+
+          		</p>
+        	<h2>Ecriture binaire</h2>
+          		<p>
+            		L'écriture binaire est l'écriture des nombres en <b>base 2</b>. C'est l'<b>écriture machine</b> utilisée pour coder toutes les informations numériques. Pour cela on utilise <b>deux symboles</b> : <b>0</b> et <b>1</b>
+            		appelés <b>bit</b> (<u>bi</u>nary digi<u>t</u>) ou chiffre binaire. Un <b>octet</b> est une suite de <b>8 bits</b> c'est une unité informatique. Avec un octet on peut écrire <b>256</b> valeurs différentes.<br><br>
+            		<u>Exemple d'adresse IP en écriture binaire :</u> 10101100.00010000.11111110.00000001 .
+          		</p>
+        	<h2>Ecriture hexadécimale</h2>
+          		<p>
+            		L'écriture hexadécimale est l'écriture des nombres en <b>base 16</b>. C'est une écriture intermédiaire un peu plus facile à lire que l'écriture binaire.
+            		Pour cela on utilise <b>seize symboles</b>, les chiffres et les 6 premières lettres de l'alphabet : 
+            		<b>0</b>, <b>1</b>, <b>2</b>, <b>3</b>, <b>4</b>, <b>5</b>, <b>6</b>,
+            		<b>7</b>, <b>8</b>, <b>9</b>, <b>a</b>, <b>b</b>, <b>c</b>, <b>d</b>, <b>e</b> et <b>f</b>.<br><br>
+            		<u>Exemple d'adresse IP en écriture hexadécimale :</u> ac.10.fe.01 .
+          		</p>
+          	<p>
+            	Ci-dessous un petit convertisseur décimal/binaire/hexadécimal (Entrer une valeur décimale ou binaire
+            	ou hexadécimale, puis appuyer sur <b>Entrée</b> pour convertir).
+          	</p>
+          	<h3>Convertisseur Décimal/binaire/hexadécimal :</h3>
+          		<form action="" class="afficheur3">
+            		<p>
+              			<label for="decimal">Décimal&#160;: </label> 
+              			<input type="text" id="decimal" name="decimal" autocomplete="off" class="saisir"
+                			onkeypress="javascript:if (event.keyCode == 13) {xdecimal();return false;}" />
+            		</p>
+            		<p>
+              			<label for="binaire">Binaire&#160;: </label> 
+              			<input type="text" id="binaire" name="binaire" autocomplete="off" class="saisir"
+                			onkeypress="javascript:if (event.keyCode == 13) {xbinaire();return false;}" />
+            		</p>
+            		<p>
+              			<label for="hexadécimal">Hexadécimal&#160;: </label> 
+              			<input type="text" id="hexa" class="saisir"
+                			name="hexa" autocomplete="off" style="text-transform: lowercase;"
+                			onkeypress="javascript:if (event.keyCode == 13) {xhexa();return false;}" />
+            		</p>
+          		</form>
+          	<br><br><br><br><br><br><br><br><br>
+
+    	<h1>Adresse IPv4 et adresse IPv6</h1>
+        	<p>
+            	Une adresse <b>IPv4</b> est écrite sur <b>32 bits</b> (4 octets), on dispose de 2<sup>32</sup> adresses différentes, 
+      			c'est à dire environ <b>4,3 milliards d'adresses IPv4</b>. <br>
+      			La multiplication du nombre de machines connectées a entraîné l'épuisement de ce type d'adresse, 
+      			d'où la création des adresses <b>IPv6</b>. Les adresses <b>IPv6</b> sont écrites sur <b>128 bits</b> (16 octets), 
+      			donc on dispose de 2<sup>128</sup> adresses différentes, c'est à dire environ <b>3,4×10<sup>38</sup> 
+      			adresses IPv6</b>.<br>
+            	Les adresses <b>IPv6</b> sont en général donnée en <b>écriture hexadécimale</b>, avec 8 nombres écrit 
+            	en hexadécimal, c'est à dire avec 4 symboles hexadécimaux.
+            	Voici un exemple d'adresse IPv6 en écriture hexadécimale : <b>2001.0db8.00f1.001a.0000.0000.ac3f.2003</b>.
+        	</p>
+      	<h1>Adresse IP locale, adresse IP publique</h1>
+        	<p> Une machine connectée sur internet possède plusieurs adresses IP. <br>
+            	L'adresse <b>IP publique</b> est une adresse unique au 
+           	 	niveau mondial, la machine est identifiée par cette adresse sur le réseau internet mondial. <br>
+            	L'adresse <b>IP locale</b> est l'adresse de la machine dans le réseau local, <b>LAN</b> en anglais 
+            	(<u>L</u>ocal <u>A</u>rea <u>N</u>etwork). Cette adresse locale est unique dans 
+            	le réseau local uniquement. (Exemple d'adresse IP locale : <b>192.168.1.15</b>).<br>
+            	Par exemple chez vous si vous avez deux ordinateurs connectés sur une box, ces deux ordinateurs seront identifiés par deux adresses IP locales différentes : <b>192.168.1.10</b> et <b>192.168.1.11</b> par exemple.
+            	Par contre sur internet, les deux ordinateurs seront identifiés par la même adresse IP publique :
+            	<b>90.41.187.19</b> par exemple.
+        	</p>
+      		<br>
+            <br>
+            <a class="abas" href="int_quiz2.html" target="_blank"> Quiz 2 </a>
+            <br>
+            <br>
+    </section>
+  </body>
+
+  <footer> 
+        <script type='text/javascript' language='javascript'>pied();</script>
+  </footer>
+
+</html>

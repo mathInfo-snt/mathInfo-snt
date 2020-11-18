@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+     	<meta charset="utf-8"/>
+        <title>SNT internet page 10</title>
+        <link rel="stylesheet" href="../style/style.css"/>
+        <script src="../style/scriptfooter.js"></script>
+        <script src="script/script10.js"></script>
+   	</head>
+
+    <header> SNT : Internet : page 10 : les réseaux physiques</header>
+
+    <body>
+
+        <nav>
+      		<h2>Liens :</h2>
+                <ul>
+                    <li> <a href="chapitre2.html">Chapitre 2</a> </li>
+                </ul>
+            <h2>Exercices :</h2>
+                <ul>
+                    <span id='nf'></span>
+                    <script type='text/javascript' language='javascript'>fait();</script>
+                </ul>
+    	</nav>
+
+        <section>
+
+            <h1>Signification du terme réseau</h1>
+            
+                <p>
+                    Le terme <b>réseau</b> en fonction de son contexte peut désigner plusieurs choses.<br>
+                    Il peut désigner l'ensemble des machines, ou l'infrastructure informatique 
+                    d'une organisation avec les protocoles qui sont utilisés, ce qui est le cas lorsque 
+                    l'on parle du <b>réseau Internet</b>.<br>
+                    Le terme réseau peut également être utilisé pour décrire la façon dont les machines 
+                    d'un site sont interconnectées, c'est le cas lorsque l'on dit que les machines 
+                    d'un site sont sur un réseau local (<b>LAN</b>).<br>
+                    Le terme réseau peut également être utilisé pour spécifier le <b>protocole</b> (<b>TCP/IP</b>) 
+                    qui est utilisé pour que les machines communiquent. <br>
+                </p>
+
+            <h1>Les différents types de réseaux</h1>
+           
+                <p>
+                    Il existe différents types de réseaux ; suivant la localisation, les distances entre les systèmes
+                    informatiques et les débits maximum, on peut distinguer plusieurs types de réseaux.
+                    <ul>
+                        <li>
+                            Les <b>réseaux locaux personnel</b> ou <b>PAN</b> (<u>P</u>ersonal <u>A</u>rea <u>N</u>etwork) 
+                            qui comprennent généralement des équipements qui appartiennent à une même personne ou famille, 
+                            qui sont regroupés dans la même maison, sur une étendue d'une dizaine de mètres. C'est le réseau
+                            que vous avez chez vous et qui comprend votre box internet et tout ce qui est connecté dessus.
+                        </li>
+                        <li>
+                            Les <b>réseaux locaux</b> ou <b>LAN</b> (<u>L</u>ocal <u>A</u>rea <u>N</u>etwork) 
+                            qui correspondent par leur taille aux réseaux intra-entreprise et qui permettent 
+                            l’échange de données informatiques ou le partage de ressources (Ethernet, Token ring, ATM).
+                            Par exemple, le réseau du lycée Anna de Noailles est un LAN.
+                        </li>
+                        <li>
+                            Les <b>réseaux métropolitains</b> ou <b>MAN</b> (<u>M</u>etropolitan <u>A</u>rea <u>N</u>etwork) qui permettent l'interconnexion de plusieurs sites (ou de LAN) à l'échelle d'une ville.
+                        </li>
+                        <li>
+                            Les <b>réseaux longues distances</b> ou <b>WAN</b> (<u>W</u>ide <u>A</u>rea <u>N</u>etwork),
+                            généralement réseaux d'opérateurs, et qui assurent la transmission des données sur des 
+                            distances à l'échelle d'un pays.
+                        </li>
+                        <li>
+                            Les <b>réseaux locaux industriels</b> avec principalement les réseaux <b>CAN</b> 
+                            (<u>C</u>ontroller <u>A</u>rea <u>N</u>etwork) et <b>VAN</b>
+                            (<u>V</u>ehicule <u>A</u>rea <u>N</u>etwork) développés pour les véhicules automobiles.
+                        </li>
+                    </ul>
+                    Par exemple, dans une très grande entreprise, un réseau est généralement une combinaison 
+                    plus ou moins complexe de <b>Lan</b> et de <b>Wan</b>.<br>
+                    <br>
+                    <center>
+                        <img src="images/wan.png"/>
+                    </center>
+                    <br>
+                </p>
+
+            <h1>Les réseaux locaux LAN</h1>
+                <p>
+                    Un <b>réseau local</b> peut être défini comme l'ensemble des ressources informatiques 
+                    permettant l'échange à haut débit de données entre équipements au sein d'une entreprise, 
+                    d'une société ou de tout autre établissement.<br>
+                    Le type et le volume des informations à transmettre, ainsi que le nombre d'utilisateurs simultanés,
+                    constituent la charge du réseau et vont déterminer le débit minimum nécessaire, et donc les types de
+                    supports possibles.
+                </p>
+
+                <h2>Topologie d'un réseau local</h2>
+                
+                    <p>
+                        La <b>topologie</b> représente la manière dont les équipements sont reliés entre eux 
+                        par le support physique.<br> 
+                        Les topologies les plus utilisées sont les suivantes :
+                    </p>
+
+                    <h3>Topologie en étoile</h3>
+                        
+                        <p>
+                            La <b>topologie en étoile</b> permet d'ajouter aisément des équipements. 
+                            La gestion du réseau se trouve facilitée par le fait que les équipements sont directement
+                            interrogeables par le serveur. En revanche, elle peut entraîner des
+                            longueurs importantes de câbles.
+                            <br>
+                            <center>
+                                <img src="images/etoile.png"/>
+                            </center>
+                            <br>
+                        </p>
+
+                    <h3>Topologie en bus</h3>
+
+                        <p>
+                            La <b>topologie en bus</b> est économique en câblage et permet facilement
+                            l'extension du réseau par ajout d'équipement. 
+                            En cas de rupture du câble commun, tous les équipements en aval 
+                            par rapport au serveur sont bloqués.
+                            <br>
+                            <center>
+                                <img src="images/bus.png"/>
+                            </center>
+                            <br>
+                        </p>
+
+                    <h3>Topologie en anneau</h3>
+                        
+                        <p>
+                            Dans la <b>topologie en anneau</b>, les informations transitent d'équipement en
+                            équipement jusqu'à destination. Un double anneau permet d'éviter une
+                            panne en cas de rupture de l'un des câbles.
+                            <br>
+                            <center>
+                                <img src="images/anneau.png"/>
+                            </center>
+                            <br>
+                        </p>
+
+                <h2>Eléments d'un réseau local</h2>
+                
+                    <p>
+                        Un réseau est constitué d’un ensemble d’ordinateurs connectés entre eux par des 
+                        liaisons physiques. Physiquement les réseaux sont constitués de quatre types d'éléments.
+                    </p>
+
+                    <h3>Les équipements terminaux</h3>
+                        <p>
+                            La fonction principale d'un <b>équipement terminal</b> est de permettre à l'utilisateur 
+                            d'accéder aux ressources du réseau. Cette famille comprend les <b>terminaux</b>, 
+                            les <b>imprimantes</b>, les <b>ordinateurs</b> (souvent appelées <b>stations</b>) 
+                            et les <b>serveurs</b>.
+                        </p>
+
+                    <h3>Les supports de communication</h3>
+                        
+                        <p>
+                            Les <b>supports de communication</b> : câbles, fibres, faisceaux, liaisons physiques, lignes de transmissions permettent de connecter les différents éléments du réseau.
+                        </p>
+
+                    <h3>les contrôleurs de communication</h3>
+
+                        <p>
+                            Les <b>contrôleurs de communication</b> gèrent l'accès d'un équipement terminal à la ligne de transmission du réseau. La famille comprend les cartes d'interface série 
+                            (asynchrones ou synchrones), 
+                            les cartes d'interface réseau et les contrôleurs pour le raccordement aux réseau public 
+                            (ex: modem). Les <b>cartes d'interface réseau</b> ou <b>NIC</b> 
+                            (<u>N</u>etwork <u>I</u>nterface <u>C</u>ard) sont spécifiques au réseau utilisé et au
+                            type d'ordinateur. Ces <b>cartes réseaux</b> possèdent une adresse unique appelée 
+                            <b>adresse MAC</b> codée sur 6 octets (exemple : <b>00:1B:44:11:3A:B7</b>.
+                        </p>
+
+                    <h3>Les équipements d'interconnexion</h3>
+
+                        <p>
+                            Les <b>équipements d'interconnexion</b> sont tous les appareils intermédiaires connectés aux réseaux, c'est à dire tous les appareils non terminaux. On distingue plusieurs types d'équipement
+                            d'interconnexion :
+                        </p>
+
+                        <h4>Les répéteurs</h4>
+                       
+                            <p>
+                                Le <b>répéteur</b> reçoit et restitue l'information sans modification. 
+                                Il peut adapter des types de supports différents tels que coaxial,
+                                paire torsadée ou coaxial, fibre optique.
+                            </p>
+                    
+                        <h4>Les MAU</h4>
+                            
+                            <p>
+                                Le <b>MAU</b> (<u>M</u>edium <u>A</u>ccess <u>U</u>nit) est une unité ou 
+                                interface de raccordement au support.
+                            </p>
+                    
+                        <h4>Les HUB</h4>
+                        
+                            <p>
+                                Un <b>hub</b> récupère les trames Ethernet en provenance d’un port et les renvoie 
+                                vers tous les autres ports.<br>
+                                Toutes les trames en provenance d’une interface Ethernet sont envoyées à 
+                                toutes les autres interfaces présentes sur ce hub.
+                                Ainsi on est sur que le destinataire recevra l’information.
+                            </p>
+
+                        <h4>Les switch</h4>
+                        
+                            <p>
+                                Le <b>switch</b> possède les mêmes fonctionnalités que le <b>hub</b> et permet en plus 
+                                de regrouper dans un même segment les stations liées par des trafics importants.
+                                Les switchs sont capables de connaître la destination en consultant 
+                                dans chaque trame l’<b>adresse MAC</b> de l’expéditeur et du destinataire.
+                                En conservant la trace de ces adresses MAC dans sa table d’adresse, 
+                                un switch est capable de transférer exactement la trame sur le port 
+                                où est raccordé le destinataire.
+                            </p>
+                    
+                        <h4>Les routeurs</h4>
+                            <p>
+                                C’est une <b>passerelle</b> entre le <b>LAN</b> (réseau local) et un autre réseau 
+                                (Internet par exemple). Ils sont employés pour relier 2 réseaux ensemble et 
+                                diriger le trafic des réseaux basés sur les <b>adresses IP</b>. 
+                                Beaucoup de routeurs sont employés pour créer <b>Internet</b>.
+                            </p>
+        
+            <br>
+            <br>
+            <a class="abas" href="int_quiz10.html" target="_blank"> Quiz 10</a>
+            <br>
+            <br>
+
+        </section>
+        
+    </body>
+
+    <footer> 
+        <script type='text/javascript' language='javascript'>pied();</script>
+    </footer>
+
+</html>

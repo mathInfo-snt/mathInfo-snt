@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="../style/style.css" />
+        <script src="../style/scriptfooter.js"></script>
+        <script src="script/script_ex12.2.js"></script>
+        <script src="script/script12.js"></script>
+    </head>
+
+    <header class="exo"> SNT : Internet : Exercice 12.2 </header>
+
+    <body>
+
+        <title>SNT internet exercice 12.2</title>
+
+        <nav>
+            <h2>Liens :</h2>
+            <ul>
+                <li> <a href="int_page12.html">Page 12</a> </li>
+            </ul>
+            <h2>Exercices :</h2>
+                <ul>
+                    <span id='nf'></span>
+                    <script type='text/javascript' language='javascript'>fait();</script>
+                </ul>
+        </nav>
+
+        <section class="sexo">
+
+            <h1 class="exoh1">Exercice 12.2 : Le bit de parité</h1>
+            
+                <p class="pq">
+                    On considère l'octet ci-dessous.
+                    Compléter la zone ci-dessous avec le bit de parité correspondant à cet octet.<br>
+                    Pour valider l'exercice, il faut obtenir <b>5 bonnes réponses d'affilée</b>.
+                </p>
+                            
+                <form name="saisie_1">
+                    <span class="sel2" name="afficher1" id="id_21"></span><br><br>
+                    <script type='text/javascript' language='javascript'>init1();</script>
+                    <span id="icone" class="spanquiz" name="span_1" > <img src="images/vide.png" width='20' height='20'> </span>
+                    <label class="saisie" for="lab_1">Bit de parité :</label>
+                    <input type="text" class="zone_saisie" id="id_1" name="name_1" autocomplete="off" size='10'
+                        style="text-transform: lowercase;"
+                        onkeypress="javascript:if (event.keyCode == 13) {verif1('saisie_1','name_1',0);return false;}"/>
+                    <input class="bout" type="button" value="Valider" onClick="verif1('saisie_1','name_1',0)" />
+                    <span name="message1"></span>
+                </form><br>
+                
+                <span class="sel2" name="reponse" id="id_22"> </span><br><br>
+                <span class="reponse_juste" name="reponse" id="id_23"> </span>
+
+        </section>
+
+    </body>
+
+    <footer class="exo"> 
+        <script type='text/javascript' language='javascript'>pied();</script>
+    </footer>
+
+</html>

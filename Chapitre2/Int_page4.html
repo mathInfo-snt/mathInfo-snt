@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+     	<meta charset="utf-8"/>
+        <title>SNT internet page 4</title>
+        <link rel="stylesheet" href="../style/style.css"/>
+        <script src="../style/scriptfooter.js"></script>
+        <script src="script/script4.js"></script>
+   	</head>
+
+    <header> SNT : Internet : page 4 : Le protocole TCP/IP </header>
+
+    <body>
+
+        <nav>
+      		<h2>Liens :</h2>
+                <ul>
+                    <li> <a href="chapitre2.html">Chapitre 2</a> </li>
+                </ul>
+            <h2>Exercices :</h2>
+                <ul>
+                    <span id='nf'></span>
+                    <script type='text/javascript' language='javascript'>fait();</script>
+                </ul>
+    	</nav>
+
+        <section>
+            <h1>Le protocole TCP/IP</h1>
+                <p>
+                    <b>TCP/IP</b> est un <b>protocole</b>, c'est à dire un ensemble de règles de communication.
+                </p>
+                <br>
+
+                <h2>Le protocole IP</h2>
+                    <p>
+                        <b class="def">Définition (Protocole IP) :</b> IP (<u>I</u>nternet <u>P</u>rotocol) veut dire "le protocole d'Internet". C'est le principal protocole utilisé sur Internet.<br>
+                        <b>Internet</b> signifie <b>Inter-networks</b>, c'est à dire "entre réseaux". 
+                        Internet est donc l'interconnexion des réseaux de la planète. C'est un super réseau.<br>
+                        Le <b>protocole IP</b> permet aux ordinateurs reliés à ces réseaux de dialoguer entre eux.
+                    </p>
+                    <h3>Règles du protocole IP</h3>
+                        <p>
+                            On va faire un parallèle entre ce protocole IP et celui de la poste.<br>
+                            Quand on veut envoyer une lettre par la poste:
+                            <ul>
+                                <li>on place la lettre dans une enveloppe,</li>
+                                <li>sur le recto on inscrit l'adresse du destinataire,</li>
+                                <li>au dos (au verso), on écrit l'adresse de l'expéditeur (la nôtre).</li>
+                            </ul>
+                            <br>
+                            <center>
+                                <img src="images/laposte.gif"/>
+                            </center>
+                            <br>
+                            Ce sont des règles utilisées par tout le monde. On appelle ça un <b>protocole</b>.<br>
+                            Sur Internet, c'est à peu près la même chose: chaque message (chaque <b>paquet</b> de données) est enveloppé par la <b>couche IP</b> qui y ajoute différentes informations, dont les deux premières sont essentielles :
+                            <ul>
+                                <li><b style="color:blue;">l'adresse IP de l'expéditeur</b>,</li>
+                                <li><b style="color:blue;">l'adresse IP du destinataire</b>,</li>
+                                <li>différentes données supplémentaires (qui permettent de bien contrôler 
+                                    l'acheminement du message).</li>
+                            </ul>
+                            <p align="center">
+                                <img src="images/coucheIP.gif"/>
+                            </p>
+                        </p>
+                    <h3>Routage IP</h3>
+                        <p>
+                            Pour envoyer une lettre, on la poste dans la boîte aux lettres la plus proche. Ce courrier est relevé, envoyé au centre de tri de notre ville, puis transmis à d'autres centres de tri jusqu'à atteindre le destinataire.
+                            <p align="center">
+                                <img src="images/centres_tri.gif"/>
+                            </p>
+                            Pour <b>Internet</b> c'est un peu la même chose.<br><br>
+                            <b class="def">Définition (Routage IP) :</b>
+                            On transmet le <b>paquet IP</b> au <b>routeur</b> le plus proche (celui de notre <b>FAI</b>, fournisseur d'accès internet en général). Le <b>paquet IP</b> va transiter ensuite de routeur en routeur jusqu'à atteindre le destinataire.
+                            <p align="center">
+                                <img src="images/routageIP.png"/>
+                            </p>
+                        </p>
+                    <h2>Les numéros de port et le protocole UDP</h2>
+                        <p>
+                            Avec le <b>protocole IP</b>, on peut envoyer et recevoir des paquets de données 
+                            d'un ordinateur à un autre.<br>
+                            Mais imaginons maintenant que nous ayons plusieurs programmes qui fonctionnent en même temps sur le même ordinateur: un navigateur, un logiciel d'email et un logiciel pour écouter la radio sur Internet.<br>
+                            Si l'ordinateur reçoit un <b>paquet IP</b>, comment savoir à quel logiciel donner ce paquet IP ?
+                            <p align="center">
+                                <img src="images/ports.gif"/>
+                            </p>
+                            Pour résoudre ce problème, on attribue un numéro unique à chaque logiciel dans l'ordinateur.<br>
+                            Il suffit alors de mettre ce numéro dans chaque paquet IP pour pouvoir 
+                            s'adresser à tel ou tel logiciel.<br>
+                            Ces numéros sont appelé <b>numéros de port</b> (pensez aux "portes" d'une maison: 
+                            à une adresse donnée, on va pouvoir déposer les lettres à différentes portes à cette adresse).
+                            <br><br>
+                            <b class="def">Définition (Numéro de port) :</b>
+                            Un <b>numéro de port</b> est un numéro qui sert à identifier l'<b>application</b> concernée (mail, page web, 
+                            transfert de fichiers, etc ...) lorsqu'un paquet de données arrive vers un ordinateur. Le protocole qui s'occupe des
+                            numéro de port est le protocole <b>UDP</b>.
+                            <p align="center">
+                                <img src="images/ports2.gif"/>
+                            </p>
+                            Pour <b>Internet</b> c'est un peu la même chose.<br>
+                            On rajoute en plus des informations du protocole IP un <b>numéro de port</b>, c'est à dire une deuxième couche d'informations, qui permet d'identifier l'<b>application</b> concernée.
+                            <p align="center">
+                                <img src="images/ports3.gif"/>
+                            </p>
+                            Ainsi, <b>l'adresse IP</b> permet de s'adresser à un ordinateur donné, et le <b>numéro de port</b> permet de s'adresser à un logiciel particulier sur cet ordinateur.<br>
+                            Le protocole <b>UDP/IP</b> est un protocole qui permet justement d'utiliser des numéros de ports en plus des adresses IP (On l'appelle UDP/IP car il fonctionne au dessus d'IP).<br>
+                            Le protocole <b>IP</b> s'occupe des <b>adresses IP</b> et le protocole <b>UDP</b> 
+                            s'occupe des <b>numéro de ports</b>.<br><br>
+                            Avec le <b>protocole IP</b> on peut envoyer des données d'un ordinateur A à un ordinateur B.
+                            <p align="center">
+                                <img src="images/com-IP.gif"/>
+                            </p>
+                            Avec le <b>protocole UDP/IP</b>, on est plus précis : 
+                            on envoie des données d'une application x sur l'ordinateur A vers une application y 
+                            sur l'ordinateur B.<br>
+                            Par exemple, votre navigateur peut envoyer un message à un serveur HTTP (un serveur Web):
+                            <p align="center">
+                                <img src="images/com-UDP-IP.gif"/>
+                            </p>
+                        </p>
+                    <h2>Les sockets</h2>
+                        <p>
+                            Chaque <b>couche</b> de protocole (<b>UDP</b> et <b>IP</b>) va ajouter ses informations.
+                            Les informations de IP vont permettre d'acheminer le paquet à destination du bon ordinateur. Une fois arrivé à l'ordinateur en question, la couche UDP va délivrer le paquet au bon logiciel 
+                            (ici: au serveur HTTP).
+                            Les deux logiciels se contentent d'émettre et de recevoir des données ("Hello !"). Les couches UDP et IP en dessous s'occupent de tout.<br>
+                            Ce couple <b>(199.7.55.3:1057, 204.66.224.82:80)</b> est appelé un <b>socket</b>. <br>
+                            Un <b>socket</b> identifie de façon unique une communication entre deux logiciels et se 
+                            présente sous la forme :
+                            <center>
+                                 ( <b>adresse_IP_source</b> : <b>port_source</b> , 
+                                    <b>adresse_IP_destination</b> : <b>port_destination</b> )
+                            </center>
+                        </p>
+                        <p>
+                            Voici les numéros de ports des applications les plus courantes :
+                            <ul>
+                                <li><b>20</b> et <b>21</b> pour le transfert de fichiers via le protocole <b>FTP</b>.</li>
+                                <li><b>25</b> pour l'envoie de courier éléctronique (email) via le protocole <b>SMTP</b>.</li>
+                                <li><b>53</b> pour la résolution de nom de domaine en adresse IP via le protocole <b>DNS</b>.</li>
+                                <li><b>80</b> pour consulter un serveur HTTP par le biais d'un navigateur via le protocole <b>HTTP</b>.</li>
+                                <li><b>110</b> pour la récupération de son courier éléctronique (email) via le protocole
+                                    <b>POP</b>.</li>
+                            </ul>
+                        </p>
+                    <h2>Le protocole TCP</h2>
+                        <p>
+                            On peut faire communiquer 2 logiciels situés sur des ordinateurs différents, grâce au protocole
+                            <b>UDP/IP</b>.<br>
+                            Mais il y a encore de petits problèmes:
+                            <ul>
+                                <li>Quand vous envoyez un paquet IP sur Internet, il passe par des dizaines d'ordinateurs
+                                    (essentiellement des routeurs). 
+                                    Et il   arrive que des paquets IP se perdent ou arrivent en double exemplaire.</li>
+                                <li>Même si le paquet arrive à destination, rien ne vous permet de savoir si le 
+                                paquet est bien arrivé (aucun accusé de réception).</li>
+                                <li>La taille des paquets IP est limitée (environ 1500 octets).
+                                Comment faire pour envoyer une photo JPEG qui fait 62000 octets ? </li>
+                            </ul>
+                            C'est pour cela qu'a été conçu le <b>protocole TCP</b>, afin résoudre ce genre de problèmes.<br><br>
+                            
+                            <b class="def">Objectifs du protocole TCP :</b>
+                            Le protocole <b>TCP</b> permet :
+                            <ul>
+                                <li>de faire tout ce que <b>UDP</b> sait faire (traiter les numéros de ports notamment) ;</li>
+                                <li>de vérifier que le destinataire est prêt à recevoir les données ;</li>
+                                <li>de découper les gros paquets de données en paquets plus petits pour que le protocole IP 
+                                    les accepte ;</li>
+                                <li>de numéroter les paquets, et à la réception de vérifier qu'ils sont tous bien arrivés, de redemander les paquets manquants et de les réassembler avant de les donner aux logiciels. Des accusés de réception sont envoyés pour prévenir l'expéditeur que les données sont bien arrivées.</li>
+                            </ul>
+                            Par exemple, pour envoyer le message "Salut, comment ça va ?", voilà ce que fait le <b>protocole TCP</b> 
+                            (Chaque flèche représente 1 paquet IP):
+                            <p align="center">
+                                <img src="images/com-TCP.gif"/>
+                            </p>
+                            A l'arrivée, sur l'ordinateur 204.66.224.82, la couche TCP reconstitue le message "Salut, comment ça va ?" à partir des 3 paquets IP reçus et le donne au logiciel qui est sur le port 80.
+                        </p>
+                    <h2>Conclusion sur le protocole TCP/IP et encapsulation</h2>
+                        <p>
+                            Avec le protocole <b>TCP/IP</b>, on peut communiquer de façon fiable entre logiciels situés sur des ordinateurs différents.<br><br>
+                            Ce protocole <b>TCP/IP</b> est utilisé pour des tas de choses :
+                            <ul>
+                                <li>Dans votre navigateur, le <b>protocole HTTP</b> utilise le <b>protocole TCP/IP</b> pour envoyer     et recevoir des pages HTML, des images GIF, JPG et toutes sortes d'autres données.</li>
+                                <li><b>FTP</b> est un protocole qui permet d'envoyer et recevoir des fichiers. Il utilise également
+                                    le protocole <b>TCP/IP</b>.</li>
+                                <li>Votre logiciel de courrier électronique utilise les <b>protocoles SMTP</b> et <b>POP3</b> 
+                                    pour envoyer et recevoir des emails. SMTP et POP3 utilisent eux aussi <b>TCP/IP</b>.</li>
+                                <li>Votre navigateur (et d'autres logiciels) utilisent le <b>protocole DNS</b> pour trouver 
+                                l'adresse IP d'un ordinateur à partir de son nom (par exemple, de trouver 216.32.74.52 à partir de 'www.yahoo.com'). Le protocole DNS utilise UDP/IP et TCP/IP en fonction de ses besoins.</li>
+                            </ul>
+                            Il existe ainsi des centaines de protocoles différents qui utilisent les protocoles <b>TCP/IP</b> ou 
+                            <b>UDP/IP</b>. Ces protocoles vont rajouter une nouvelle <b>couche</b> d'informations qui seront tranmises avec les données de départ.<br>
+                            Cette structure en couches successives s'appelle <b>l'encapsulation</b> : on dit que les données à transmettre sont encapsulées, c'est à dire qu'on leur ajoute plusieurs couches d'informations qui correspondent à des <b>protocoles</b> différents.  <br><br>
+                            L'avantage de <b>TCP</b> sur <b>UDP</b> est que TCP permet des communications fiables. L'inconvénient est qu'il nécessite une négociation ("Bonjour, prêt à communiquer ?" etc.), ce qui prend du temps, donc TCP est plus lent que UDP.
+                        </p>
+                <br>
+                <br>
+                <a class="abas" href="int_quiz4.html" target="_blank"> Quiz 4 </a>
+                <br>
+                <br>
+        </section>
+    </body>
+
+    <footer> 
+        <script type='text/javascript' language='javascript'>pied();</script>
+    </footer>
+
+</html>

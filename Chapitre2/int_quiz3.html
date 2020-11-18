@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <meta charset="utf-8"/>
+        <title>SNT Internet quiz 3</title>
+        <link rel="stylesheet" href="../style/style.css"/>
+        <script src="../style/scriptfooter.js"></script>
+        <script src="script/script_q3.js"></script>
+        <script src="script/script3.js"></script>
+    </head>
+
+    <header class="quizz"> Quiz 3 sur Internet </header>
+
+    <body>
+        <nav>
+            <h2>Liens :</h2>
+                <ul>
+                    <li> <a href="int_page3.html">Page 3</a> </li>
+                </ul>
+            <h2>Exercices :</h2>
+                <ul>
+                    <span id='nf'></span>
+                    <script type='text/javascript' language='javascript'>fait();</script>
+                </ul>
+        </nav>
+        <section class="squizz" >
+            <form name="quizz" action="javascript:check();" class="quizzForm">
+                <div name="quiz">
+
+                    <div>
+                        <span class="spanquiz" name="sq"> <img src="images/vide.png" width='20' height='20'> </span>
+                        <h4>Question 1 : On considère l'adresse IP suivante avec son masque de sous-réseau :
+                            192.75.101.7 (255.255.255.0)<br>
+                            la partie réseau de l'adresse IP est :
+                        </h4>
+                        <div class="question" id='q1'>
+                            <script type='text/javascript' language='javascript'>init(0);</script>
+                        </div>
+                    </div>
+
+                    <div>
+                        <span class="spanquiz" name="sq"> <img src="images/vide.png" width='20' height='20'> </span>
+                        <h4>
+                            Question 2 : On considère l'adresse IP suivante avec son masque de sous-réseau :
+                            192.75.101.7 (255.255.0.0)<br>
+                            la partie machine de l'adresse IP est :</h4>
+                        <div class="question" id='q2'>
+                            <script type='text/javascript' language='javascript'>init(1);</script>
+                        </div>
+                    </div>
+
+                    <div>
+                        <span class="spanquiz" name="sq"> <img src="images/vide.png" width='20' height='20'> </span>
+                        <h4>
+                            Question 3 : La partie machine d'un ordinateur est 125.11 et sa partie réseau est 192.135<br>
+                            son adresse IP avec le masque de sous-réseau est :
+                        </h4>
+                        <div class="question" id='q3'>
+                            <script type='text/javascript' language='javascript'>init(2);</script>
+                        </div>
+                    </div>
+
+                    <div>
+                        <span class="spanquiz" name="sq"> <img src="images/vide.png" width='20' height='20'> </span>
+                        <h4>Question 4 : Avec des adresses de classe C, le nombre d'adresses utilisables est de :</h4>
+                        <div class="question" id='q4'>
+                            <script type='text/javascript' language='javascript'>init(3);</script>
+                        </div>
+                    </div>
+
+                    <div>
+                        <span class="spanquiz" name="sq"> <img src="images/vide.png" width='20' height='20'> </span>
+                        <h4>Question 5 :  Avec des adresses de classe B, le nombre d'adresses utilisables est de :</h4>
+                        <div class="question" id='q5'>
+                            <script type='text/javascript' language='javascript'>init(4);</script>
+                        </div>
+                    </div>
+
+                 </div>
+            </form>
+
+            <br>
+            <br>
+            <input class="bouton" type="button" value="Valider" onClick="verification(5)" />
+            <br>
+            <br>
+            <span id="message"> </span>
+            <br>
+            <br>
+        </section>
+    </body>
+
+    <footer class="quizz"> 
+        <script type='text/javascript' language='javascript'>pied();</script>
+    </footer>
+
+</html>

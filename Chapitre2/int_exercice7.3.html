@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="../style/style.css" />
+        <script src="../style/scriptfooter.js"></script>
+        <script src="script/script_ex7.3.js"></script>
+        <script src="script/script7.js"></script>
+    </head>
+
+    <header class="exo"> SNT : Internet : Exercice 7.3</header>
+
+    <body>
+
+        <title>SNT internet exercice 7.3</title>
+
+        <nav>
+            <h2>Liens :</h2>
+            <ul>
+                <li> <a href="int_page7.html">Page 7</a> </li>
+            </ul>
+            <h2>Exercices :</h2>
+                <ul>
+                    <span id='nf'></span>
+                    <script type='text/javascript' language='javascript'>fait();</script>
+                </ul>
+        </nav>
+
+        <section class="sexo">
+
+            <h1 class="exoh1">Exercice 7.3 : Chemin d'un routeur vers un autre</h1>
+
+                <p>
+                    On considère toujours le réseau "mini-internet" ci-dessous.<br>
+                    <img src="images/mini_internet.png"/><br><br>
+                    Les tables de routage de chaque routeur sont rappelées ci-après. <br><br>
+                    <img src="images/tables_de_routage.png"/><br><br>
+                    D'après ces tables de routage, le chemin pour envoyer un paquet du <b>routeur A</b> vers le <b>routeur F</b>
+                    est : <b>A-C-E-F</b>.<br>
+                    Il faut regarder dans l'ordre la table de A, puis celle de C, puis celle de E et enfin celle de F, 
+                    en se limitant à l'avant dernière ligne de ces tables, c'est à dire celle "Pour F".<br><br>
+                    Compléter les zones ci-dessous avec les chemins permettant d'envoyer un paquet d'un routeur vers un autre.
+                </p>
+                
+                <form name="saisie_1">
+                    <span class="spanquiz"> <img src="images/vide.png" width='20' height='20'> </span>
+                    <label class="saisie">
+                        <script type='text/javascript' language='javascript'>init1();</script>
+                    </label><br>
+                    <input type="text" class="zone_saisie" name="in" autocomplete="off" size='40'
+                        onkeypress="javascript:if (event.keyCode == 13) {verif('saisie_1',0);return false;}"/>
+                    &ensp;<input class="bout" type="button" value="Valider" onClick="verif('saisie_1',0);" />
+                    <span class="spanmes"></span>
+                </form><br>
+
+                <form name="saisie_2">
+                    <span class="spanquiz"> <img src="images/vide.png" width='20' height='20'> </span>
+                    <label class="saisie">
+                        <script type='text/javascript' language='javascript'>init2();</script>
+                    </label><br>
+                    <input type="text" class="zone_saisie" name="in" autocomplete="off" size='40'
+                        onkeypress="javascript:if (event.keyCode == 13) {verif('saisie_2',1);return false;}"/>
+                    &ensp;<input class="bout" type="button" value="Valider" onClick="verif('saisie_2',1);" />
+                    <span class="spanmes"></span>
+                </form><br>
+
+                <form name="saisie_3">
+                    <span class="spanquiz"> <img src="images/vide.png" width='20' height='20'> </span>
+                    <label class="saisie">
+                        <script type='text/javascript' language='javascript'>init3();</script>
+                    </label><br>
+                    <input type="text" class="zone_saisie" name="in" autocomplete="off" size='40'
+                        onkeypress="javascript:if (event.keyCode == 13) {verif('saisie_3',2);return false;}"/>
+                    &ensp;<input class="bout" type="button" value="Valider" onClick="verif('saisie_3',2);" />
+                    <span class="spanmes"></span>
+                </form>
+
+                <br>
+                <br>
+                <input class="bouton" type="button" value="Valider l'exercice" onClick="verif_exo(3)" onFocus="this.blur();" />
+                <br>
+                <br>
+                 <span class="reponse" name="reponse"> </span>
+                <br>
+                <br>
+        </section>
+
+    </body>
+
+    <footer class="exo"> 
+        <script type='text/javascript' language='javascript'>pied();</script>
+    </footer>
+
+</html>

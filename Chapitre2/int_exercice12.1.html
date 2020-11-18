@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="../style/style.css" />
+        <script src="../style/scriptfooter.js"></script>
+        <script src="script/script_ex12.1.js"></script>
+        <script src="script/script12.js"></script>
+    </head>
+
+    <header class="exo"> SNT : Internet : Exercice 12.1 </header>
+
+    <body>
+
+        <title>SNT internet exercice 12.1</title>
+
+        <nav>
+            <h2>Liens :</h2>
+            <ul>
+                <li> <a href="int_page12.html">Page 12</a> </li>
+            </ul>
+            <h2>Exercices :</h2>
+                <ul>
+                    <span id='nf'></span>
+                    <script type='text/javascript' language='javascript'>fait();</script>
+                </ul>
+        </nav>
+
+        <section class="sexo">
+
+            <h1 class="exoh1">Exercice 12.1 : Le code Manchester</h1>
+
+                <p>
+                    On considère le code Manchester suivant :
+                </p>
+
+                <center>
+                    <img src="images/codeManchester2.png"/>
+                </center>
+
+                <p class="pq">  
+                    Déterminer dans la zone ci-dessous le code binaire (1 octet) correspondant au code Manchester ci-dessus.
+                </p>
+
+                <form name="saisie_1">
+                    <span class="spanquiz"> <img src="images/vide.png" width='20' height='20'> </span>
+                    <label class="saisie">Code binaire :</label><br>
+                    <input type="text" class="zone_saisie" name="in" autocomplete="off" size='40'
+                        onkeypress="javascript:if (event.keyCode == 13) {verif('saisie_1',0);return false;}"/>
+                    &ensp;<input class="bout" type="button" value="Valider" onClick="verif('saisie_1',0);" />
+                    <span class="spanmes"></span>
+                </form><br>
+               
+                <br>
+                <br>
+                <input class="bouton" type="button" value="Valider l'exercice" onClick="verif_exo(1)" onFocus="this.blur();" />
+                <br>
+                <br>
+                <span class="reponse" name="reponse"> </span>
+                <br>
+                <br>
+
+        </section>
+
+    </body>
+
+    <footer class="exo"> 
+        <script type='text/javascript' language='javascript'>pied();</script>
+    </footer>
+
+</html>

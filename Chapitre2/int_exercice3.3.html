@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="../style/style.css" />
+        <script src="../style/scriptfooter.js"></script>
+        <script src="script/script_ex3.3.js"></script>
+        <script src="script/script3.js"></script>
+    </head>
+
+    <header class="exo"> SNT : Internet : Exercice 3.3</header>
+
+    <body>
+
+        <title>SNT internet exercice 3.3</title>
+
+        <nav>
+            <h2>Liens :</h2>
+            <ul>
+                <li> <a href="int_page3.html">Page 3</a> </li>
+            </ul>
+            <h2>Exercices :</h2>
+                <ul>
+                    <span id='nf'></span>
+                    <script type='text/javascript' language='javascript'>fait();</script>
+                </ul>
+        </nav>
+
+        <section class="sexo">
+            <h1 class="exoh1">Exercice 3.3 : Configuration d'un réseau</h1>
+                
+                <p>
+                    Lancer le logiciel <b>Filius</b> que l'on trouve dans <b>/Appli/</b> et ouvrir le fichier
+                    nommé <b>reseau1.fls</b> qui se trouve dans le dossier <b style='color:blue';>Ressources</b> <br>
+                    dont le chemin est :
+                    <b>/Echanges/Votre_Classe/SNT/COURS/Ressources/</b><br><br>
+                    L'image du réseau suivant s'affiche dans le logiciel <b>Filius</b>.<br><br>
+                    <img src="images/im-reseau1-fls.png" alt="reseau1" title="reseau1" /><br><br>
+                    Nous avons ici deux sous-réseaux de trois machines reliés par un routeur.
+                </p><br>
+
+                <h3>Premier sous-réseau</h3>
+
+                    Dans <b>Filius</b>, double-cliquer sur l'ordinateur
+                    <b><script type='text/javascript' language='javascript'>init1();</script></b>
+                    du premier sous-réseau, puis compléter les zones ci-dessous.<br><br>
+
+                    <form name="saisie_1">
+                        <span class="spanquiz"> <img src="images/vide.png" width='20' height='20'> </span>
+                        <label class="saisie">Adresse IP de cet ordinateur en écriture décimale :</label><br>
+                        <input type="text" class="zone_saisie" name="in" autocomplete="off" size='40'
+                            onkeypress="javascript:if (event.keyCode == 13) {verif1('saisie_1',0);return false;}"/>
+                        &ensp;<input class="bout" type="button" value="Valider" onClick="verif1('saisie_1',0)" />
+                        <span class="spanmes"></span>
+                    </form>
+
+                    <br>
+                
+                    <form name="saisie_2">
+                        <span class="spanquiz"> <img src="images/vide.png" width='20' height='20'> </span>
+                        <label class="saisie">Masque de sous-réseau pour le premier sous-réseau en écriture décimale :</label><br>
+                        <input type="text" class="zone_saisie" name="in" autocomplete="off" size='40'
+                            onkeypress="javascript:if (event.keyCode == 13) {verif1('saisie_2',1);return false;}"/>
+                        &ensp;<input class="bout" type="button" value="Valider" onClick="verif1('saisie_2',1)" />
+                        <span class="spanmes"></span>
+                    </form>
+
+                    <br>
+
+                    <form name="saisie_3">
+                        <span class="spanquiz"> <img src="images/vide.png" width='20' height='20'> </span>
+                        <label class="saisie">Partie réseau de cette adresse IP en écriture décimale :</label><br>
+                        <input type="text" class="zone_saisie" name="in" autocomplete="off" size='40'
+                            onkeypress="javascript:if (event.keyCode == 13) {verif1('saisie_3',2);return false;}"/>
+                        &ensp;<input class="bout" type="button" value="Valider" onClick="verif1('saisie_3',2)" />
+                        <span class="spanmes"></span>
+                    </form>
+
+                    <br>
+
+                    <form name="saisie_4">
+                        <span class="spanquiz"> <img src="images/vide.png" width='20' height='20'> </span>
+                        <label class="saisie">Partie machine de cette adresse IP en écriture décimale :</label>
+                        <br>
+                        <input type="text" class="zone_saisie" name="in" autocomplete="off" size='40'
+                            onkeypress="javascript:if (event.keyCode == 13) {verif1('saisie_4',3);return false;}"/>
+                        &ensp;<input class="bout" type="button" value="Valider" onClick="verif1('saisie_4',3)" />
+                        <span class="spanmes"></span>
+                    </form>
+
+                    <br><br>
+
+                <h3>Deuxième sous-réseau</h3>
+                    Dans <b>Filius</b>, cliquer sur l'ordinateur
+                    <b><script type='text/javascript' language='javascript'>init2();</script></b>
+                    du deuxième sous-réseau, puis compléter les zones ci-dessous.<br><br>
+
+                    <form name="saisie_5">
+                        <span class="spanquiz"> <img src="images/vide.png" width='20' height='20'> </span>
+                        <label class="saisie">Adresse IPv4 de l'ordinateur en écriture <b>décimale</b> :</label>
+                        (ne pas oublier les "." entre chaque nombre)<br>
+                        <input type="text" class="zone_saisie" name="in" autocomplete="off" size='40'
+                            onkeypress="javascript:if (event.keyCode == 13) {verif1('saisie_5',4);return false;}"/>
+                        &ensp;<input class="bout" type="button" value="Valider" onClick="verif1('saisie_5',4)" />
+                        <span class="spanmes"></span>
+                    </form>
+
+                    <br>
+                
+                    <form name="saisie_6">
+                        <span class="spanquiz"> <img src="images/vide.png" width='20' height='20'> </span>
+                        <label class="saisie">Masque de sous réseau en écriture <b>décimale</b> :</label>
+                        (ne pas oublier les "." entre chaque nombre)<br>
+                        <input type="text" class="zone_saisie" name="in" autocomplete="off" size='40'
+                            onkeypress="javascript:if (event.keyCode == 13) {verif1('saisie_6',5);return false;}"/>
+                        &ensp;<input class="bout" type="button" value="Valider" onClick="verif1('saisie_6',5)" />
+                        <span class="spanmes"></span>
+                    </form>
+
+                    <br>
+
+                    <form name="saisie_7">
+                        <span class="spanquiz"> <img src="images/vide.png" width='20' height='20'> </span>
+                        <label class="saisie">Partie réseau de cette adresse IP en écriture décimale :</label>
+                        (ne pas oublier les "." entre chaque nombre)<br>
+                        <input type="text" class="zone_saisie" name="in" autocomplete="off" size='40'
+                            onkeypress="javascript:if (event.keyCode == 13) {verif1('saisie_7',6);return false;}"/>
+                        &ensp;<input class="bout" type="button" value="Valider" onClick="verif1('saisie_7',6)" />
+                        <span class="spanmes"></span>
+                    </form>
+
+                    <br>
+
+                    <form name="saisie_8">
+                        <span class="spanquiz"> <img src="images/vide.png" width='20' height='20'> </span>
+                        <label class="saisie">Partie machine de cette adresse IP en écriture décimale :</label>
+                        <br>
+                        <input type="text" class="zone_saisie" name="in" autocomplete="off" size='40'
+                            onkeypress="javascript:if (event.keyCode == 13) {verif1('saisie_8',7);return false;}"/>
+                        &ensp;<input class="bout" type="button" value="Valider" onClick="verif1('saisie_8',7)" />
+                        <span class="spanmes"></span>
+                    </form>
+
+                    <br><br>
+
+                    
+                <br>
+                <br>
+                <input class="bouton" type="button" value="Valider l'exercice" onClick="verif_exo(5)" onFocus="this.blur();" />
+                <br>
+                <br>
+                 <span class="reponse" name="reponse"> </span>
+                <br>
+                <br>
+        </section>
+
+    </body>
+
+    <footer class="exo"> 
+        <script type='text/javascript' language='javascript'>pied();</script>
+    </footer>
+
+</html>

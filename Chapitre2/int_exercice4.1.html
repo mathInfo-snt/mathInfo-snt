@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="../style/style.css" />
+        <script src="../style/scriptfooter.js"></script>
+        <script src="script/script_ex4.1.js"></script>
+        <script src="script/script4.js"></script>
+    </head>
+
+    <header class="exo"> SNT : Internet : Exercice 4.1 </header>
+
+    <body>
+
+        <title>SNT internet exercice 4.1</title>
+
+        <nav>
+            <h2>Liens :</h2>
+            <ul>
+                <li> <a href="int_page4.html">Page 4</a> </li>
+            </ul>
+            <h2>Exercices :</h2>
+                <ul>
+                    <span id='nf'></span>
+                    <script type='text/javascript' language='javascript'>fait();</script>
+                </ul>
+        </nav>
+
+        <section class="sexo">
+            <h1 class="exoh1">Exercice 4.1 : Ecriture d'un socket</h1>
+
+                <h3>Premier socket</h3> 
+
+                   <p>
+                        Ecrire un socket correspondant à la situation suivante, un ordinateur dont l'adresse IP est
+                        <b style='color:blue;'><script type='text/javascript' language='javascript'>init1(0);</script></b>
+                        veut consulter une page web via un navigateur qui fonctionne avec le port
+                        <b style='color:blue;'><script type='text/javascript' language='javascript'>init2(0);</script></b>.
+                        La page web est située sur un serveur HTTP hébergé sur un ordinateur dont l'adresse IP est 
+                        <b style='color:blue;'><script type='text/javascript' language='javascript'>init3(0);</script></b> 
+                         et le port est <b style='color:blue;'>80</b> car il s'agit d'un serveur HTTP.<br>
+                        Compléter la zone ci-dessous en écrivant le socket correspondant à cette situation.
+                   </p>
+
+                    <form name="saisie_1">
+                        <span class="spanquiz"> <img src="images/vide.png" width='20' height='20'> </span>
+                        <label class="saisie">Socket 1 :</label>
+                        <input type="text" class="zone_saisie" name="in" autocomplete="off" size='40'
+                            onkeypress="javascript:if (event.keyCode == 13) {verif('saisie_1',0);return false;}"/>
+                        &ensp;<input class="bout" type="button" value="Valider" onClick="verif('saisie_1',0)" />
+                        <span class="spanmes"></span>
+                    </form>
+
+                <h3>Deuxième socket</h3>
+
+                   <p>
+                        Ecrire un socket correspondant à la situation suivante, un ordinateur dont l'adresse IP est
+                        <b style='color:blue;'><script type='text/javascript' language='javascript'>init1(1);</script></b>
+                        veut consulter une page web via un navigateur qui fonctionne avec le port
+                        <b style='color:blue;'><script type='text/javascript' language='javascript'>init2(1);</script></b>.
+                        La page web est située sur un serveur HTTP hébergé sur un ordinateur dont l'adresse IP est 
+                        <b style='color:blue;'><script type='text/javascript' language='javascript'>init3(1);</script></b>.<br>
+                        Compléter la zone ci-dessous en écrivant le socket correspondant à cette situation.
+                   </p>
+
+                    <form name="saisie_2">
+                        <span class="spanquiz"> <img src="images/vide.png" width='20' height='20'> </span>
+                        <label class="saisie">Socket 2 :</label>
+                        <input type="text" class="zone_saisie" name="in" autocomplete="off" size='40'
+                            onkeypress="javascript:if (event.keyCode == 13) {verif('saisie_2',1);return false;}"/>
+                        &ensp;<input class="bout" type="button" value="Valider" onClick="verif('saisie_2',1)" />
+                        <span class="spanmes"></span>
+                    </form>
+            
+                <br>
+                <br>
+                <input class="bouton" type="button" value="Valider l'exercice" onClick="verif_exo(2)" onFocus="this.blur();" />
+                <br>
+                <br>
+                 <span class="reponse" name="reponse"> </span>
+                <br>
+                <br>
+        </section>
+
+    </body>
+
+    <footer class="exo"> 
+        <script type='text/javascript' language='javascript'>pied();</script>
+    </footer>
+
+</html>

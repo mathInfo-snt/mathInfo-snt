@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="../style/style.css" />
+        <script src="../style/scriptfooter.js"></script>
+        <script src="script/script_ex7.1.js"></script>
+        <script src="script/script7.js"></script>
+    </head>
+
+    <header class="exo"> SNT : Internet : Exercice 7.1 </header>
+
+    <body>
+
+        <title>SNT internet exercice 7.1</title>
+
+        <nav>
+            <h2>Liens :</h2>
+            <ul>
+                <li> <a href="int_page7.html">Page 7</a> </li>
+            </ul>
+            <h2>Exercices :</h2>
+                <ul>
+                    <span id='nf'></span>
+                    <script type='text/javascript' language='javascript'>fait();</script>
+                </ul>
+        </nav>
+
+        <section class="sexo">
+
+            <h1 class="exoh1">Exercice 7.1 : Adresse passerelle par défaut</h1>
+
+                <p>
+                    Lancer le logiciel <b>Filius</b> que l'on trouve dans <b>/Appli/</b> et ouvrir le fichier
+                    nommé <b>reseau1.fls</b> qui se trouve dans le dossier <b>Filius</b> donné en ressource.<br><br>
+                    L'image du réseau suivant s'affiche dans le logiciel <b>Filius</b>.<br><br>
+                    <img src="images/im-reseau1-fls.png"/><br><br>
+                    Nous avons ici deux sous-réseaux de trois machines reliés par un routeur.<br><br>
+
+                    <h3>Premier sous-réseau</h3>
+
+                        <p>
+                            Dans <b>Filius</b>, double-cliquer sur l'ordinateur
+                            <b><script type='text/javascript' language='javascript'>init1();</script></b>
+                            du premier sous-réseau, puis compléter la zone ci-dessous par l'adresse <b>Passerelle</b> de cet ordinateur.
+                        </p>
+
+                        <form name="saisie_1">
+                            <span class="spanquiz"> <img src="images/vide.png" width='20' height='20'> </span>
+                            <label class="saisie">Adresse Passerelle de cet ordinateur :</label><br>
+                            <input type="text" class="zone_saisie" name="in" autocomplete="off" size='40'
+                                onkeypress="javascript:if (event.keyCode == 13) {verif('saisie_1',0);return false;}"/>
+                            &ensp;<input class="bout" type="button" value="Valider" onClick="verif('saisie_1',0);" />
+                            <span class="spanmes"></span>
+                        </form>
+
+                        <br><br>
+
+                    <h3>Deuxième sous-réseau</h3>
+
+                        <p>
+                            Dans <b>Filius</b>, double-cliquer sur l'ordinateur
+                            <b><script type='text/javascript' language='javascript'>init2();</script></b>
+                            du deuxième sous-réseau, puis compléter la zone ci-dessous par l'adresse 
+                            <b>Passerelle</b> de cet ordinateur.
+                        </p>
+
+                        <form name="saisie_2">
+                            <span class="spanquiz"> <img src="images/vide.png" width='20' height='20'> </span>
+                            <label class="saisie">Adresse Passerelle de cet ordinateur :</label><br>
+                            <input type="text" class="zone_saisie" name="in" autocomplete="off" size='40'
+                                onkeypress="javascript:if (event.keyCode == 13) {verif('saisie_2',1);return false;}"/>
+                            &ensp;<input class="bout" type="button" value="Valider" onClick="verif('saisie_2',1);" />
+                            <span class="spanmes"></span>
+                        </form>
+            
+                <br>
+                <br>
+                <input class="bouton" type="button" value="Valider l'exercice" onClick="verif_exo(2)" onFocus="this.blur();" />
+                <br>
+                <br>
+                 <span class="reponse" name="reponse"> </span>
+                <br>
+                <br>
+        </section>
+
+    </body>
+
+    <footer class="exo"> 
+        <script type='text/javascript' language='javascript'>pied();</script>
+    </footer>
+
+</html>

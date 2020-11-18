@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+     	<meta charset="utf-8"/>
+        <title>SNT internet page 8</title>
+        <link rel="stylesheet" href="../style/style.css"/>
+        <script src="../style/scriptfooter.js"></script>
+        <script src="script/script8.js"></script>
+   	</head>
+
+    <header> SNT : Internet : page 8 : Adresse symbolique et serveur DNS</header>
+
+    <body>
+
+        <nav>
+      		<h2>Liens :</h2>
+                <ul>
+                    <li> <a href="chapitre2.html">Chapitre 2</a> </li>
+                </ul>
+            <h2>Exercices :</h2>
+                <ul>
+                    <span id='nf'></span>
+                    <script type='text/javascript' language='javascript'>fait();</script>
+                </ul>
+    	</nav>
+
+        <section>
+
+            <h1>DNS</h1>
+            
+                <p>
+                    <b class="def">Définition (Le système DNS) : </b>
+                    Le <b>DNS</b> (<u>D</u>omain <u>N</u>ame <u>S</u>ystem), qu'on peut traduire 
+                    en « système de noms de domaine », est le service informatique utilisé pour 
+                    traduire les <b>noms de domaine</b> Internet (adresse symbolique) en <b>adresse IP</b> 
+                    et réciproquement. <br><br>
+
+                    Les équipements connectés à un réseau IP, possède une adresse IP 
+                    qui les identifie sur le réseau. Ces adresses sont numériques afin de faciliter 
+                    leur traitement par les machines, mais elles sont plus difficiles à manipuler pour les internautes. 
+                    Pour faciliter l'accès aux <b>hôtes</b> sur un réseau IP, le système <b>DNS</b> 
+                    a été mis en place pour associer à une <b>adresse IP</b> un <b>nom de domaine</b>. 
+                    Une adresse IP est difficile à retenir, il est plus facile de se souvenir d'un nom de domaine.<br>
+                    Le système DNS fonctionne comme un <b>annuaire</b>.<br>
+                    <img src="images/dns.png"/><br>
+                </p>
+
+            <h1>Serveur DNS</h1>
+        
+                <p>
+                    <b class="def">Définition (Le serveur DNS) : </b>
+                    Le <b>serveur DNS</b> est un ordinateur <b>serveur</b> dont le rôle est de traduire un <b>nom de domaine</b>
+                    (adresse symbolique) en <b>adresse IP</b>. <br><br>
+
+                    Par exemple si vous avez lancé votre navigateur Internet et que vous avez <b>www.google.fr</b> comme moteur de recherche par défaut, alors la page <b>recherche google</b> s’est affichée.<br> 
+                    Voici le mécanisme complet : <br>
+                    <img src="images/serveur_dns.png"/><br>
+                    Ainsi, c'est complètement équivalent de taper dans la barre d'adresse URL du navigateur : <br>
+                    <b>http://www.google.fr</b> ou <b>http://216.58.206.227</b><br>
+                    dans les deux cas cela va afficher la page <b>recherche google</b> : <br><br>
+                    <img src="images/google.png"width="700" height="520"/><br>
+                </p><br>
+
+            <h1>Fonctionnement des serveurs DNS de votre ordinateur</h1>
+                <p>
+                    Les <b>serveurs DNS</b> fonctionnent en cascade. Pour expliquer cela on pourrait dire que lorsque qu’un serveur DNS ne connait pas la réponse, il va demander à son <b>serveur DNS parent</b>.<br>
+                    Chez vous, le serveur DNS est par défaut votre <b>box</b> (sauf si vous avez renseigné autre chose), et si votre box ne sait pas répondre, elle va interroger son parent : le(s) <b>serveur(s) DNS de votre FAI</b>. Cela peut remonter comme ça jusqu’aux <b>serveurs DNS racines</b> qui sont les serveurs de base du système DNS : on ne peut pas remonter plus haut.)<br>
+                    La configuration DNS de votre ordinateur (ou tablette, et tout autre équipement connecté chez vous) est fournie par le serveur DHCP.
+                </p><br>
+
+            <h1>Serveur DHCP</h1>
+
+                <p>
+                    <b class="def">Définition (Serveur DHCP) : </b>
+                    Un <b>serveur DHCP</b> () (ou service DHCP) est un serveur (ou service) qui délivre des <b>adresses IP</b> aux ordinateurs qui se connectent sur le réseau. <b>DHCP</b> est l’abréviation de 
+                    <u>D</u>ynamic <u>H</u>ost <u>C</u>onfiguration <u>P</u>rotocol (en français : Protocole de Configuration Dynamique d’Hôte).<br> <br>
+                    Les <b>cartes réseaux</b> des ordinateurs doivent être paramétrées pour recevoir automatiquement des 
+                    <b>adresses IP</b> lorsque l’ordinateur démarre ou qu'on le connecte au réseau. 
+                    Chez vous c'est votre box qui s'en charge, 
+                    votre <b>box internet</b> remplit donc ce rôle de <b>serveur DHCP</b> sans que vous le sachiez !<br>
+                    On rappelle que l’adresse IP doit être unique sur un réseau donc le serveur DHCP (ou service DHCP) va gérer les adresses IP et n’attribuer que des adresses IP non utilisées à tout nouvel ordinateur qui en fait la demande.
+                    <br>
+                    Plus précisément, le <b>serveur DHCP</b> (ou service DHCP) va délivrer un <b>bail DHCP</b> à l’ordinateur qui en fait la demande.<br>
+
+                    Ce <b>bail DHCP</b> est constitué de trois éléments :
+
+                    <ul>
+                        <li>
+                            une durée de vie (4h, 6h, … cela dépend du réglage de l’administrateur du service)
+                        </li>
+                        <li>
+                            une adresse IP dynamique (car elle change régulièrement)
+                        </li>
+                        <li>
+                            les paramètres du réseau (adresse de la passerelle, adresse du serveur DNS, ...)
+                        </li>
+                    </ul>
+
+                    L'avantage de ce système est de libérer une adresse IP quand un ordinateur se déconnecte du réseau. 
+                    Cela fonctionne un peu comme un parking public ou les places ne sont pas privées et attribuées 
+                    à une seule personne. 
+                </p>
+
+            <h1>Le fichier hosts</h1>
+
+                <p>
+                    <b class="def">Définition (Fichier hosts) : </b>
+                    Le <b>fichier hosts</b> est un fichier présent sur la plupart des <b>systèmes d'exploitation</b>, 
+                    permettant de transposer un <b>nom de domaine</b> en <b>adresse IP</b>, avant même l'interrogation 
+                    du <b>serveur DNS</b>. <br><br>
+
+                    Ce fichier peut être très pratique pour indiquer manuellement au système 
+                    quel est le comportement à adopter vis-à-vis de telle ou telle adresse.<br>
+                    Le <b>fichier hosts</b> est consulté en premier à chaque connexion à un site web, un peu comme un répertoire d'adresses ou un annuaire. Si le site est répertorié dans la liste du fichier hosts, l'accès est bloqué si l'adresse est <b>127.0.0.1</b>. Par contre, s'il n'est pas trouvé dans le fichier, c'est votre fournisseur d'accès (<b>FAI</b>) qui met en relation avec l'adresse IP du site demandé.<br>
+                    En modifiant le <b>fichier hosts</b>, il est possible notamment de réaliser les actions suivantes :
+
+                    <ul>
+                        <li>
+                            interdire l'accès à certains sites,
+                        </li>
+                        <li>
+                            accélérer l'accès à certains sites préférés dont vous connaissez l'adresse IP. Attention toutefois, car en cas de changement de l'adresse IP du site, celui-ci deviendra inaccessible tant que la ligne sera présente dans le fichier host.
+                        </li>
+                        <li>
+                            contourner l'interdiction d'accès à des sites de sécurité provoquée par certains programmes nuisibles.
+                        </li>
+                    </ul>
+
+                    Voici un exemple de fichier hosts avec plusieurs sites bloqués en mettant l'adresse IP : 127.0.0.1 
+                    suivi d'une <b>tabulation</b>, puis du nom de domaine du site bloqué :<br><br>
+                    <img src="images/fichier_host.png"/><br>
+
+                </p>
+
+            <h1>Changement de DNS</h1>
+          
+                <p>
+                    Il est possible de changer de <b>DNS</b>. Lorsque vous utilisez votre connexion Internet, 
+                    les adresses des <b>serveurs DNS</b> sont généralement ceux de votre <b>FAI</b>, 
+                    mais il est possible d’en changer, soit parce qu'on a peur d'être espionné, soit pour accélérer
+                    l'accès aux sites internets.
+                </p>
+        
+            <br>
+            <br>
+            <a class="abas" href="int_quiz8.html" target="_blank"> Quiz 8</a>
+            <br>
+            <br>
+
+        </section>
+        
+    </body>
+
+    <footer> 
+        <script type='text/javascript' language='javascript'>pied();</script>
+    </footer>
+
+</html>

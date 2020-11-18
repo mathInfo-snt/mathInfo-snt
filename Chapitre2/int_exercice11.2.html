@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="../style/style.css" />
+        <script src="../style/scriptfooter.js"></script>
+        <script src="script/script_ex11.2.js"></script>
+        <script src="script/script11.js"></script>
+    </head>
+
+    <header class="exo"> SNT : Internet : Exercice 11.2 </header>
+
+    <body>
+
+        <title>SNT internet exercice 11.2</title>
+
+        <nav>
+            <h2>Liens :</h2>
+            <ul>
+                <li> <a href="int_page11.html">Page 11</a> </li>
+            </ul>
+            <h2>Exercices :</h2>
+                <ul>
+                    <span id='nf'></span>
+                    <script type='text/javascript' language='javascript'>fait();</script>
+                </ul>
+        </nav>
+
+        <section class="sexo">
+
+            <h1 class="exoh1">Exercice 11.2 : Les câbles sous-marins</h1>
+
+                <p>
+                    Le lien suivant 
+                    <a href="https://www.submarinecablemap.com" target="_blank">carte des câbles sous-marins</a>
+                    donne une carte interactive sur le réseau mondial des câbles sous-marins.
+                </p>
+
+                <p class="pq">
+                    Ouvrir le lien ci-dessus, puis zoomer pour pouvoir ensuite repérer et cliquer sur le câble qui relie 
+                    <b>Saint-Hilaire-de-Riez</b> situé sur la côte vendéenne en France avec <b>Virginia Beach</b> situé aux USA. 
+                    Puis compléter la zone ci-dessous avec la longueur en km de ce câble.
+                </p>
+
+                <form name="saisie_1">
+                    <span class="spanquiz"> <img src="images/vide.png" width='20' height='20'> </span>
+                    <label class="saisie">Longueur du câble en km :</label><br>
+                    <input type="text" class="zone_saisie" name="in" autocomplete="off" size='40'
+                        onkeypress="javascript:if (event.keyCode == 13) {verif('saisie_1',0);return false;}"/>
+                    &ensp;<input class="bout" type="button" value="Valider" onClick="verif('saisie_1',0);" />
+                    <span class="spanmes"></span>
+                </form><br>
+
+                <p class="pq">
+                    Ouvrir le lien ci-dessus, puis zoomer pour pouvoir ensuite repérer et cliquer sur le câble qui relie 
+                    <b>Killala</b> situé en Irlande avec <b>Shirley</b> situé aux USA. 
+                    Puis compléter la zone ci-dessous avec la longueur en km de ce câble.
+                </p>
+
+                <form name="saisie_2">
+                    <span class="spanquiz"> <img src="images/vide.png" width='20' height='20'> </span>
+                    <label class="saisie">Longueur du câble en km :</label><br>
+                    <input type="text" class="zone_saisie" name="in" autocomplete="off" size='40'
+                        onkeypress="javascript:if (event.keyCode == 13) {verif('saisie_2',1);return false;}"/>
+                    &ensp;<input class="bout" type="button" value="Valider" onClick="verif('saisie_2',1);" />
+                    <span class="spanmes"></span>
+                </form>
+                                
+                <br>
+                <br>
+                <input class="bouton" type="button" value="Valider l'exercice" onClick="verif_exo(2)" onFocus="this.blur();" />
+                <br>
+                <br>
+                 <span class="reponse" name="reponse"> </span>
+                <br>
+                <br>
+        </section>
+
+    </body>
+
+    <footer class="exo"> 
+        <script type='text/javascript' language='javascript'>pied();</script>
+    </footer>
+
+</html>

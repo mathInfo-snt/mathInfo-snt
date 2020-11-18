@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+     	<meta charset="utf-8"/>
+        <title>SNT internet page 6</title>
+        <link rel="stylesheet" href="../style/style.css"/>
+        <script src="../style/scriptfooter.js"></script>
+        <script src="script/script6.js"></script>
+   	</head>
+
+    <header> SNT : Internet : page 6 : La couche lien et les adresses MAC</header>
+
+    <body>
+
+        <nav>
+      		<h2>Liens :</h2>
+                <ul>
+                    <li> <a href="chapitre2.html">Chapitre 2</a> </li>
+                </ul>
+            <h2>Exercices :</h2>
+                <ul>
+                    <span id='nf'></span>
+                    <script type='text/javascript' language='javascript'>fait();</script>
+                </ul>
+    	</nav>
+
+        <section>
+
+            <h1>La couche Lien</h1>
+
+                <p>
+                    La couche <b>lien</b> appelée aussi couche <b>accès réseau</b> spécifie la forme sous laquelle les données doivent être acheminées quel que soit le type de réseau. Au niveau de cette couche les machines sont identifiées par leur
+                    adresse <b>MAC</b>.
+                </p>
+
+                <h2>L'adressage MAC</h2>
+                    <p>
+                        Les adresses <b>MAC</b> (<u>M</u>edia <u>A</u>ccess <u>C</u>ontrol) sont codées sur <b>6 octets</b> soit <b>48 bits</b> et sont en général données en éciture hexadécimale.<br>
+                        Voici un exemple d'adresse <b>MAC</b> : 00:0f:b5:e8:13:40 .<br>
+                        Les adresses <b>MAC</b> sont appelées aussi <b>adresse physique</b> ou <b>adresse matérielle</b>.
+                        Il s'agit d'un identifiant physique unique stocké dans une carte réseau lors de sa fabrication.
+                        En fait cette adresse <b>MAC</b> est divisée en deux parties égales de 3 octets:
+                        <ul>
+                            <li>
+                                Les trois premiers octets désignent le <b>constructeur</b>.
+                            </li>
+                            <li>
+                                Les trois derniers octets désignent le <b>numéro d'identifiant de la carte réseau</b>, dont la valeur est laissée à l'initiative du constructeur qui possède le préfixe.
+                            </li>
+                        </ul>
+                        <h3>Exemple de décomposition d'une adresse MAC :</h3>
+                        <center>
+                            <img src="images/mac.png"/><br>
+                        </center>
+                    </p>
+
+                <h2>Le protocole ethernet</h2>
+                    <p>
+                        Le protocole <b>ethernet</b> définit le format des messages échangés.
+                        Le message de base utilisé par ce protocole s'appelle une <b>trame ethernet</b>.
+                        Cette trame contient un <b>en-tête</b> et une <b>charge utile</b>.
+                        La <b>charge utile</b> correspond aux données à transmettre et l'<b>en-tête</b> contient des informations
+                        nécessaires au bon fonctionnement de la couche <b>lien</b>, notamment les adresses <b>MAC</b> des machines source et destination.
+                    </p>
+
+                <h2>Format d'une trame ethernet</h2>
+                    <p>
+                        La description ci-dessous est un schéma simplifié d'une <b>trame ethernet</b> et
+                        donne les informations les plus importantes, le format complet est plus étoffé.<br>
+                        <center>
+                            <img src="images/trame.png"/><br>
+                        </center>
+                        L'adresse <b>MAC source</b> est l'adresse de la machine qui envoie la <b>trame</b> et
+                        l'adresse <b>MAC destination</b> est celle de la machine qui doit recevoir la trame.
+                    </p>
+        
+                <br>
+                <br>
+                <a class="abas" href="int_quiz6.html" target="_blank"> Quiz 6</a>
+                <br>
+                <br>
+
+        </section>
+    </body>
+
+    <footer> 
+        <script type='text/javascript' language='javascript'>pied();</script>
+    </footer>
+
+</html>

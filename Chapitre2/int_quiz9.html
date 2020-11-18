@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <meta charset="utf-8"/>
+        <title>SNT Internet quiz 9</title>
+        <link rel="stylesheet" href="../style/style.css"/>
+        <script src="../style/scriptfooter.js"></script>
+        <script src="script/script_q9.js"></script>
+        <script src="script/script9.js"></script>
+    </head>
+
+    <header class="quizz"> Quiz 9 sur Internet </header>
+
+    <body>
+        <nav>
+            <h2>Liens :</h2>
+                <ul>
+                    <li> <a href="int_page9.html">Page 9</a> </li>
+                </ul>
+            <h2>Exercices :</h2>
+                <ul>
+                    <span id='nf'></span>
+                    <script type='text/javascript' language='javascript'>fait();</script>
+                </ul>
+        </nav>
+        <section class="squizz" >
+            <form name="quizz" action="javascript:check();" class="quizzForm">
+                <div name="quiz">
+
+                    <div>
+                        <span class="spanquiz" name="sq"> <img src="images/vide.png" width='20' height='20'> </span>
+                        <h4>
+                            Question 1 : Qu'est ce que le P2P ?
+                        </h4>
+                        <div class="question" id='q1'>
+                            <script type='text/javascript' language='javascript'>init(0);</script>
+                        </div>
+                    </div>
+
+                    <div>
+                        <span class="spanquiz" name="sq"> <img src="images/vide.png" width='20' height='20'> </span>
+                        <h4>
+                            Question 2 : Pour trouver des fichiers dans le modèle P2P on peut utiliser un logiciel comme :
+                        </h4>
+                        <div class="question" id='q2'>
+                            <script type='text/javascript' language='javascript'>init(1);</script>
+                        </div>
+                    </div>
+
+                    <div>
+                        <span class="spanquiz" name="sq"> <img src="images/vide.png" width='20' height='20'> </span>
+                        <h4>
+                            Question 3 : Dans le modèle P2P les fichiers ressources sont sur :
+                        </h4>
+                        <div class="question" id='q3'>
+                            <script type='text/javascript' language='javascript'>init(2);</script>
+                        </div>
+                    </div>                 
+
+                 </div>
+            </form>
+
+            <br>
+            <br>
+            <input class="bouton" type="button" value="Valider" onClick="verification(3)" />
+            <br>
+            <br>
+            <span id="message"> </span>
+            <br>
+            <br>
+        </section>
+    </body>
+
+    <footer class="quizz"> 
+        <script type='text/javascript' language='javascript'>pied();</script>
+    </footer>
+
+</html>

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+     	<meta charset="utf-8"/>
+        <title>SNT internet page 9</title>
+        <link rel="stylesheet" href="../style/style.css"/>
+        <script src="../style/scriptfooter.js"></script>
+        <script src="script/script9.js"></script>
+   	</head>
+
+    <header> SNT : Internet : page 9 : Réseau pair à pair</header>
+
+    <body>
+
+        <nav>
+      		<h2>Liens :</h2>
+                <ul>
+                    <li> <a href="chapitre2.html">Chapitre 2</a> </li>
+                </ul>
+            <h2>Exercices :</h2>
+                <ul>
+                    <span id='nf'></span>
+                    <script type='text/javascript' language='javascript'>fait();</script>
+                </ul>
+    	</nav>
+
+        <section>
+
+            <h1>A quoi sert le pair à pair</h1>
+
+                <p>
+                    <u>Exemple :</u> Un éditeur veut distribuer une version de démonstration d'un jeu très attendu. 
+                    Habituellement, il va placer le fichier sur son site web, et tous les internautes vont venir le télécharger. 
+                    Ce serveur web va donc être la seule source du fichier.<br>
+                    <center>
+                        <img src="images/serveur_central.gif"/>
+                    </center>
+                    <br>
+                    <u>Problème :</u> Comme le fichier est très populaire, il y a énormément d'internautes qui viennent le télécharger en même temps.
+                    Du coup, le serveur a de plus en plus de mal à répondre aux demandes, au point de ne plus pouvoir répondre du tout 
+                    et les téléchargements deviennent de plus en plus compliqués.<br>
+                    Dans ce cas le réseau <b>pair à pair</b> est plus efficace.
+                </p>
+
+            <h1>Le modèle P2P</h1>
+            
+                <p>
+                    <b class="def">Définition (Le modèle P2P) : </b>
+                    Le <b>pair-à-pair</b>, <b>peer-to-peer</b> en anglais ou <b>P2P</b> (les trois termes désignent 
+                    la même chose), 
+                    définit un modèle de réseau informatique d'égal à égal entre ordinateurs, 
+                    qui distribuent et reçoivent des données ou des fichiers.
+                    Dans un réseau <b>P2P</b> chaque ordinateur est à la fois <b>client</b> et <b>serveur</b>.<br><br>
+
+                    Chaque internaute est capable d'envoyer des données, 
+                    il peut fournir aux autres internautes les bouts du fichier qu'il possède déjà. 
+                    Cela allège le serveur. C'est sur ce principe qu'est basé le Peer-to-Peer (P2P).
+                    Chaque fois qu'un internaute télécharge un fichier, il partage en même temps les bouts du fichier 
+                    qu'il a déjà reçu avec les autres internautes.
+                    L'ordinateur de chaque internaute se comporte automatiquement en petit serveur, 
+                    même s'il ne possède qu'une toute petite partie du fichier.
+                    (Le fait qu'il donne des bouts de son fichier à d'autres internautes ne ralentit pratiquement 
+                    pas son téléchargement.)
+                    Le serveur d'origine n'est plus la seule source du fichier : 
+                    La charge est répartie sur tout ceux qui sont en train de télécharger.
+                    <br>
+                    <center>
+                        <img src="images/p2p.gif"/>
+                    </center>
+                    <br>
+                    La particularité des <b>architectures pair-à-pair</b> réside dans le fait que les échanges 
+                    peuvent se faire directement entre deux ordinateurs connectés au système, 
+                    sans transiter par un <b>serveur central</b>, comme c'est le cas dans le modèle classique 
+                    <b>client/serveur</b>. <br>
+                    Le système  permet ainsi à tous les ordinateurs de jouer directement le rôle de <b>client</b> et 
+                    de <b>serveur</b>. Le P2P facilite et accélère les échanges entre plusieurs ordinateurs 
+                    au sein d'un réseau.<br><br>
+                </p>
+
+            <h1>Comparaison des deux modèles client/serveur et P2P</h1>
+
+                <p>
+                    <b class="def">Schéma de comparaison des deux modèles client/serveur et P2P : </b>
+                    <br><br>
+                    <center>
+                        <img src="images/p2p-schema.png"/>
+                    </center>
+                    <br><br>
+                    Dans le <b>modèle client/serveur</b>, les fichiers ressources sont sur le serveur et chaque client peut les télécharger depuis ce serveur.<br>
+                    Dans le <b>modèle P2P</b>, les fichiers ressources sont répartis chez différents clients et chaque client peut les télécharger depuis un autre client.
+                </p>
+
+            <h1>Utilisation du P2P</h1>
+            
+                <p>
+                    <b class="def">Utilisation principale du P2P : </b>
+                    L'une des utilisations les plus fréquentes du <b>P2P</b> est le <b>partage de fichiers</b>. <br><br>
+
+                    Un <b>client</b> qui possède un fichier (comme un film, par exemple, ou un document quelconque) 
+                    le met à disposition d'autres clients via une plateforme de téléchargement (il devient alors serveur). 
+                    Il peut simultanément aussi télécharger d'autres fichiers partagés par d'autres clients. 
+                    Les bouts de fichiers téléchargés sont immédiatement partagés avec d'autres ordinateurs, 
+                    jusqu'à ce que le fichier soit complet. Cette technique augmente la rapidité de téléchargement et 
+                    diminue la charge sur le serveur central. <br>
+                    La pratique s'est notamment répandue avec les applications telles que Emule, BitTorrent ou encore MTorrent, 
+                    souvent à des fins de partage illégal de fichiers multimédias comme des films ou des albums de musique. 
+                    Deux techniques de peer-to-peer existent. La première, centralisée, laisse un ou plusieurs serveurs 
+                    diriger chaque ordinateur vers ceux qui possèdent le fichier qu'il recherche. 
+                    La seconde, décentralisée ne connaît pas de serveur fixe. Chaque ordinateur fait office de mini serveur, 
+                    ce qui répartit la responsabilité, notamment dans le cas de partage illégal de documents protégés. 
+                    L'une des particularités de ce type de réseau est d'offrir un relatif anonymat aux utilisateurs.<br>
+                </p>
+
+            <h1>Distribuer un fichier par P2P</h1>
+            
+                <p>
+                    Il y a plusieurs méthodes.<br>
+                    Généralement, les logiciels de P2P partagent un dossier sur le <b>disque dur</b> des internautes. 
+                    C'est à dire que tout fichier placé dans ce répertoire est automatiquement accessible à toute la planète. 
+                    Il faut donc faire très attention aux fichiers qu'on place dans ce répertoire : 
+                    Une fois qu'un fichier est dans la nature, impossible d'empêcher sa diffusion !
+                    Il faut également être attentifs à la configuration du logiciel de P2P pour qu'il ne partage 
+                    pas tout votre disque dur.
+                </p>
+
+            <h1>Trouver un fichier par P2P</h1>
+            
+                <p>
+                    Pour trouver un fichier avec <b>P2P</b> on peut :
+                    <ul>
+                        <li>
+                            soit utiliser le moteur de recherche intégré au logiciel de P2P.
+                        </li>
+                        <li>
+                            soit suivre des liens spéciaux qu'on trouve (par exemple) dans les pages web.
+                        </li>
+                        <li>
+                            soit utiliser d'autres logiciels comme <b>BitTorrent</b> qui se servent de <b>tracker</b>.
+                            Ce sont des petits programmes installés sur un serveur qui permettent de tenir à jour la liste 
+                            des ordinateurs en train de télécharger un fichier.
+                        </li>
+                    </ul>
+                </p>
+
+            <h1>Légalité du P2P</h1>
+      
+                <p>
+                    L'utilisation de logiciels de <b>Peer-to-peer</b> est légale.
+                    Ce qui est illégale, c'est d'utiliser des logiciels de Peer-to-peer pour télécharger ou distribuer des oeuvres protégées par le droit d'auteur.
+                    Il ne faut pas confondre l'outils et les utilisations qui en sont faites.
+                </p>
+        
+            <br>
+            <br>
+            <a class="abas" href="int_quiz9.html" target="_blank"> Quiz 9</a>
+            <br>
+            <br>
+
+        </section>
+        
+    </body>
+
+    <footer> 
+        <script type='text/javascript' language='javascript'>pied();</script>
+    </footer>
+
+</html>

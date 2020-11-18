@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="../style/style.css" />
+        <script src="../style/scriptfooter.js"></script>
+        <script src="script/script_ex7.2.js"></script>
+        <script src="script/script7.js"></script>
+    </head>
+
+    <header class="exo"> SNT : Internet : Exercice 7.2</header>
+
+    <body>
+
+        <title>SNT internet exercice 7.2</title>
+
+        <nav>
+            <h2>Liens :</h2>
+            <ul>
+                <li> <a href="int_page7.html">Page 7</a> </li>
+            </ul>
+            <h2>Exercices :</h2>
+                <ul>
+                    <span id='nf'></span>
+                    <script type='text/javascript' language='javascript'>fait();</script>
+                </ul>
+        </nav>
+
+        <section class="sexo">
+
+            <h1 class="exoh1">Exercice 7.2 : table de routage</h1>
+
+                <h2>Présentation</h2>
+
+                    <p>
+                        <b>Internet</b> est un réseau de <b>sous-réseau</b>. On a représenté ci-dessous un "mini-internet".
+                        On suppose que l'on a quatre sous-réseaux locaux dans quatre villes différentes et que
+                        ces sous-réseaux sont reliés par un certain nombre de <b>routeurs</b>.
+                        Les quatre sous-réseaux portent ici le nom des villes où ils se situent.
+                        Le sous-réseau Evian contient par exemple les machines <b>E1</b>, <b>E2</b> et 
+                        <b>E3</b>.<br>
+                        <img src="images/mini_internet.png"/><br><br>
+                        Remplir la zone ci-dessous par le nom d'une machine du sous-réseau Annecy.
+                    </p>
+                  
+                    <form name="saisie_1">
+                        <span class="spanquiz"> <img src="images/vide.png" width='20' height='20'> </span>
+                        <label class="saisie">Nom d'une machine du sous-réseau Annecy :</label><br>
+                        <input type="text" class="zone_saisie" name="in" autocomplete="off" size='40'
+                            onkeypress="javascript:if (event.keyCode == 13) {verif1('saisie_1');return false;}"/>
+                        &ensp;<input class="bout" type="button" value="Valider" onClick="verif1('saisie_1');" />
+                        <span class="spanmes"></span>
+                    </form>
+
+                    <br>
+                
+                <h2>Communication interne à un sous-réseau</h2>
+
+                    <p>
+                        La machine <b>E1</b> souhaite envoyer un <b>paquet</b> à la machine <b>E3</b>. 
+                        Le paquet est envoyé de <b>E1</b> au switch <b>S1</b> qui indique que <b>E3</b> 
+                        est dans son réseau local. Le <b>parcours du paquet</b> est donc <b>E1-S1-E3</b>.<br><br>
+                        La machine <script type='text/javascript' language='javascript'>init1();</script>. 
+                        En utilisant le même type de notation, compléter la zone ci-dessous en donnant le parcours de ce paquet.
+                    </p>
+
+                    <form name="saisie_2">
+                        <span class="spanquiz"> <img src="images/vide.png" width='20' height='20'> </span>
+                        <label class="saisie">Parcours du paquet :</label><br>
+                        <input type="text" class="zone_saisie" name="in" autocomplete="off" size='40'
+                                onkeypress="javascript:if (event.keyCode == 13) {verif2('saisie_2');return false;}"/>
+                        &ensp;<input class="bout" type="button" value="Valider" onClick="verif2('saisie_2');" />
+                        <span class="spanmes"></span>
+                    </form>
+
+                    <br>
+                
+                <h2>Communication entre deux sous-réseaux</h2>
+
+                    <p>
+                        La machine <b>E1</b> souhaite envoyer un paquet à la machine <b>T2</b>.<br> 
+                        Le paquet est envoyé de <b>E1</b> au switch <b>S1</b>.<br>
+                        Il constate que <b>T2</b> n'est pas dans son réseau local et l'envoie 
+                        donc au routeur <b>A</b>.<br>
+                        Celui-ci sait que le réseau contenant <b>T2</b> est relié au routeur <b>B</b>.<br>
+                        Le paquet est donc envoyé au routeur <b>B</b>.<br>
+                        Le routeur <b>B</b> sait que dans son réseau local il y la machine <b>T2</b>.<br>
+                        Le paquet est donc envoyé au switch <b>S2</b>.<br>
+                        Le switch <b>S2</b> envoie le paquet à la machine <b>T2</b>.<br>
+                        Le parcours complet est donc : <b>E1-S1-A-B-S2-T2</b>.<br><br>
+                    </p>
+
+                <h2>Table de routage</h2>
+                
+                    <p>
+                        Pour aller d'une machine à l'autre, il peut y avoir plusieurs chemins possibles.<br>
+                        Par exemple, voici deux parcours différents, pour aller de <b>E1</b> à <b>T2</b> :<br>
+                        <ul>
+                            <li>
+                                <b>E1-S1-A-B-S2-T2</b>
+                            </li>
+                            <li>
+                                <b>E1-S1-A-C-B-S2-T2</b>
+                            </li>
+                        </ul>
+                    </p>
+
+                    <h3>Lecture d'une table de routage</h3>
+
+                        <p>
+                            Chaque routeur utilise une <b>table de routage</b> qui lui indique la marche à suivre.<br>
+                            Voici les tables de routage de chacun des routeurs :<br><br>
+                            <img src="images/tables_de_routage.png"/><br><br>
+                            Par exemple si un message arrive au <b>Routeur A</b> 
+                            (on regarde la <b>Table de A</b>) et est à destination du <b>Routeur G</b>, 
+                            celui-ci est d'abord transmis au <b>Routeur B</b>.
+                            <br><br>
+                            <b style="color:teal;">Premier exemple de lecture d'une table de routage : </b>
+                            On suppose qu'un message arrive au <b>Routeur 
+                            <script type='text/javascript' language='javascript'>init2();</script></b> 
+                            et est à destination du <b>Routeur F</b>.<br>
+                            Indiquer dans la zone ci-dessous la lettre du <b>Routeur</b> vers lequel sera 
+                            d'abord transmis le message.<br>
+                        </p>
+                    
+                        <form name="saisie_3">
+                            <span class="spanquiz"> <img src="images/vide.png" width='20' height='20'> </span>
+                            <label class="saisie">Lettre du Routeur :</label><br>
+                            <input type="text" class="zone_saisie" name="in" autocomplete="off" size='40'
+                                onkeypress="javascript:if (event.keyCode == 13) {verif3('saisie_3',0);return false;}"/>
+                            &ensp;<input class="bout" type="button" value="Valider" onClick="verif3('saisie_3',0);" />
+                            <span class="spanmes"></span>
+                        </form>
+                    
+                        <p>
+                            <b style="color:teal;">Deuxième exemple de lecture d'une table de routage : </b>
+                            On suppose qu'un message arrive au <b>Routeur 
+                            <script type='text/javascript' language='javascript'>init21();</script></b> 
+                            et est à destination du <b>Routeur F</b>.<br>
+                            Indiquer dans la zone ci-dessous la lettre du <b>Routeur</b> vers lequel sera 
+                            d'abord transmis le message.<br>
+                        </p>
+
+                        <form name="saisie_4">
+                            <span class="spanquiz"> <img src="images/vide.png" width='20' height='20'> </span>
+                            <label class="saisie">Lettre du Routeur :</label><br>
+                            <input type="text" class="zone_saisie" name="in" autocomplete="off" size='40'
+                                onkeypress="javascript:if (event.keyCode == 13) {verif3('saisie_4',1);return false;}"/>
+                            &ensp;<input class="bout" type="button" value="Valider" onClick="verif3('saisie_4',1);" />
+                            <span class="spanmes"></span>
+                        </form>
+
+                <br>
+                <br>
+                <input class="bouton" type="button" value="Valider l'exercice" onClick="verif_exo(4)" onFocus="this.blur();" />
+                <br>
+                <br>
+                 <span class="reponse" name="reponse"> </span>
+                <br>
+                <br>
+        </section>
+
+    </body>
+
+    <footer class="exo"> 
+        <script type='text/javascript' language='javascript'>pied();</script>
+    </footer>
+
+</html>

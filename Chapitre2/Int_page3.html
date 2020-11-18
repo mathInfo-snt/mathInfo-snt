@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+     	<meta charset="utf-8"/>
+        <title>SNT internet page 3</title>
+        <link rel="stylesheet" href="../style/style.css"/>
+        <script src="../style/scriptfooter.js"></script>
+        <script src="script/script3.js"></script>
+   	</head>
+
+    <header> SNT : Internet : page 3 : le masque de sous-réseau </header>
+
+    <body>
+
+        <nav>
+      		<h2>Liens :</h2>
+                <ul>
+                    <li> <a href="chapitre2.html">Chapitre 2</a> </li>
+                </ul>
+            <h2>Exercices :</h2>
+                <ul>
+                    <span id='nf'></span>
+                    <script type='text/javascript' language='javascript'>fait();</script>
+                </ul>
+    	</nav>
+
+        <section>
+            <h1>Adresse IPv4 locale et masque de sous-réseau</h1>
+				<p>
+                    Une <b>adresse IP locale</b> identifie à la fois une machine et le réseau sur lequel elle est connectée. Pour distinguer la partie de l'adresse IP locale qui correspond au <b>réseau</b> de celle qui correspond à la <b>machine</b>, on a besoin du <b>masque de sous-réseau</b>.
+                    <br><br>
+                    <b class="def">Définition (Masque de sous-réseau) :</b> Le masque de sous-réseau permet de distinguer 
+                    les deux parties de l'adresse IP  :  <b>la partie réseau</b>,  puis <b>la partie machine</b>.
+                </p>
+                <h2>Ecriture de l'adresse IP et du masque de sous-réseau</h2>
+                	<p>
+                		En général, le <b>masque de sous réseau</b> est renseigné à la suite de l'<b>adresse IP</b>, 
+                		le masque de sous-réseau est lui aussi représenté sur <b>32 bits</b> (c'est à dire 4 octets). 
+                		Le couple (adresse IP, masque de sous-réseau) se note de deux façons différentes : <br>
+                        <center>
+                            <table>
+                                <tr>
+                                    <th>Première notation</th>
+                                    <th>Deuxième notation</th>
+                                </tr>
+                                <tr>
+                                    <td><b>192.51.24.1</b> (<b>255.0.0.0</b>)</td>
+                                    <td><b>192.51.24.1/8</b></td>
+                                </tr>
+                            </table>
+                        </center>
+                        <br><br>
+                        Pour la première notation, on écrit d'abord l'adresse IP, puis le masque de sous-réseau entre parenthèses.
+                        <br><br>
+                        <center>
+                            <img src="images/masque.png" alt="IPv4" title="Masque de classe A" width=440 height=110/>
+                        </center>
+                  	</p>
+                <h2>Partie réseau et partie machine de l'adresse IP</h2>
+                	<p>
+                		Le <b>masque de sous-réseau</b> permet de distinguer les deux parties de l'<b>adresse IP</b> : 
+                		la <b>partie réseau</b> et la <b>partie machine</b>.<br>
+                		Le masque est constitué de <b>4 octets</b> qui ne prennent que deux valeurs : <b>255</b> ou <b>0</b>.<br>
+                		Les premiers octets du masque qui sont égaux à 
+                		<b style="color:red;">255</b> indique que les octets correspondants dans 
+                		l'<b>adresse IP</b> font partie de la <b style="color:red;">partie réseau</b>.<br>
+                		Les octets suivants du masque qui sont égaux à 
+                		<b style="color:blue;">0</b> indique que les octets correspondant dans 
+                		l'<b>adresse IP</b> font partie de la <b style="color:blue;">partie machine</b>.<br>
+
+                        <h4>Exemple d'adresse de classe A : Couple : 192.51.24.1 (255.0.0.0)</h4>
+                        	<center>
+                				<img src="images/masqueA.png" alt="IPv4" title="Masque de classe A" width=400 height=150/>
+                			</center>
+                			<br>
+                			Pour cette adresse de <b>classe A</b>, la <b>partie réseau</b> est <b style="color:red;">192</b> 
+                			et la <b>partie machine</b> est <b style="color:blue;">51.24.1</b>. <br>
+                			La <b>deuxième notation</b> : &ensp; <b style="color:teal;font-size:20px;">192.51.24.1/8</b> 
+                			&ensp; signifie que les 8 premier bits correspondent
+                			à la <b>partie réseau</b> puisque un seul octet (<b>1 &#215; 8 = 8 bits</b>)
+                			est consacré à la partie réseau.
+                			Par complément les 24 (32-8) dernier bits correspondent à la <b>partie machine</b>.<br>
+                			Le masque de sous-réseau permet ainsi de déterminer le nombre de postes connectables dans un sous-réseau spécifique : on dispose de <b>24 bits</b> pour l'écriture de la partie machine. On obtient donc
+                			<b>2<sup>24</sup> = 16 777 216 </b> adresses machines, auquel on retranche 2,
+                			car la première (<b>192.0.0.0</b>) et la dernière adresse (<b>192.255.255.255</b>) du réseau sont
+                			toujours réservées.<br>
+                			Avec des adresses de <b>classe A</b>, on obtient finalement :
+                			&ensp; <b style="color:teal;font-size:20px;">16 777 214</b> &ensp; <b>adresses utilisables</b> 
+                            dans ce réseau.<br>
+
+                        <h4>Exemple d'adresse de classe B : Couple : 192.168.11.2 (255.255.0.0)</h4>
+                			<center>
+                				<img src="images/masqueB.png" alt="IPv4" title="Masque de classe B" width=400 height=150 />
+                			</center>
+                			<br>
+                			Pour cette adresse de <b>classe B</b>, la <b>partie réseau</b> est <b style="color:red;">192.168</b> 
+                			et la <b>partie machine</b> est <b style="color:blue;">11.2</b>. <br>
+                			La <b>deuxième notation</b> : &ensp;  <b style="color:teal;font-size:20px;">192.168.11.2/16</b> 
+                			&ensp; signifie que les 16 premier bits correspondent
+                			à la <b>partie réseau</b> puisque deux octets (<b>2 &#215; 8 = 16 bits</b>) 
+                			sont consacrés à la partie réseau.
+                			Par complément les 16 (32-16) dernier bits correspondent à la <b>partie machine</b>.<br>
+                			Le masque de sous-réseau permet ainsi de déterminer le nombre de postes connectables dans un sous-réseau spécifique : on dispose de <b>16 bits</b> pour l'écriture de la partie machine. On obtient donc
+                			<b>2<sup>16</sup> = 65 536 </b> adresses machines, auquel on retranche 2,
+                			car la première (<b>192.168.0.0</b>) et la dernière adresse (<b>192.168.255.255</b>) du réseau sont
+                			toujours réservées.<br>
+                			Avec des adresses de <b>classe B</b>, on obtient finalement : &ensp; 
+                			<b style="color:teal;font-size:20px;">65 534</b> &ensp; <b>adresses utilisables</b> 
+                            dans ce réseau.<br>
+
+                		<h4>Exemple d'adresse de classe C : Couple : 192.168.0.1 (255.255.255.0)</h4>
+                			<center>
+                				<img src="images/masqueC.png" alt="IPv4" title="Masque de classe C" width=400 height=150 />
+                			</center>
+                			<br>
+                			Pour cette adresse de <b>classe C</b>, la <b>partie réseau</b> est <b style="color:red;">192.168.0</b> 
+                			et la <b>partie machine</b> est <b style="color:blue;">1</b>. <br>
+                			La <b>deuxième notation</b> :&ensp;  <b style="color:teal;font-size:20px;">192.168.0.1/24</b> 
+                			&ensp; signifie que les 24 premier bits correspondent
+                			à la <b>partie réseau</b> puisque trois octets (<b>3 &#215; 8 = 24 bits</b>) 
+                			sont consacrés à la partie réseau.
+                			Par complément les 8 (32-24) dernier bits correspondent à la <b>partie machine</b>.<br>
+                			Le masque de sous-réseau permet ainsi de déterminer le nombre de postes connectables dans un sous-réseau spécifique : on dispose de <b>8 bits</b> pour l'écriture de la partie machine. On obtient donc
+                			<b>2<sup>8</sup> = 256 </b> adresses machines, auquel on retranche 2,
+                			car la première (<b>192.168.0.0</b>) et la dernière adresse (<b>192.168.0.255</b>) du réseau sont
+                			toujours réservées.<br>
+                			Avec des adresses de <b>classe C</b>, on obtient finalement : &ensp; 
+                			<b style="color:teal;font-size:20px;">254</b> &ensp;  <b>adresses utilisables</b> dans ce réseau.<br>
+                	</p>
+                <h2>Classes d'adresse IP</h2>
+                	<p>
+                		Il existe cinq <b>classes d'adresses IP</b>. 
+                		Chaque classe est identifiée par une lettre allant de A à E.<br>
+                		Ces différentes classes ont chacune leurs spécificités quant à la répartition du nombre d'octets servant à identifier le réseau ou les ordinateurs connectés à ce réseau :
+                		<ul>
+                			<li>
+                				Une adresse IP de <b>classe A</b> dispose d'un seul octet pour la <b>partie réseau</b>
+                				et de trois octets pour la <b>partie machine</b>.
+                			</li>
+                			<li>
+                				Une adresse IP de <b>classe B</b> dispose de deux octets pour la <b>partie réseau</b>
+                				et de deux octets pour la <b>partie machine</b>.
+                			</li>
+                			<li>
+                				Une adresse IP de <b>classe C</b> dispose de trois octets pour la <b>partie réseau</b>
+                				et de un seul octet pour la <b>partie machine</b>.
+                			</li>
+                			<li>
+                				Les adresses IP de <b>classes D et E</b> correspondent à des adresses IP particulières.
+                			</li>
+                		</ul>
+                	</p>
+                    <center>
+                        <table>
+                            <tr>
+                                <th>Classe</th>
+                                <th>Masque</th>
+                                <th>Partie réseau</th>
+                                <th>Partie machine</th>
+                                <th>Adresses utilisables</th>
+                            </tr>
+                            <tr>
+                                <td><b>Classe A</b></td>
+                                <td>255.0.0.0</td>
+                                <td>1 octet (8 bits)</td>
+                                <td>3 octets (24 bits)</td>
+                                <td>16 777 214</td>
+                            </tr>
+                            <tr>
+                                <td><b>Classe B</b></td>
+                                <td>255.255.0.0</td>
+                                <td>2 octet (16 bits)</td>
+                                <td>2 octets (16 bits)</td>
+                                <td>65534</td>
+                            </tr>
+                            <tr>
+                                <td><b>Classe C</b></td>
+                                <td>255.255.255.0</td>
+                                <td>3 octets (24 bits)</td>
+                                <td>1 octet (8 bits)</td>
+                                <td>254</td>
+                            </tr>
+                        </table>
+                    </center>
+                <br>
+                <br>
+                <a class="abas" href="int_quiz3.html" target="_blank"> Quiz 3 </a>
+                <br>
+                <br>
+        </section>
+    </body>
+
+    <footer> 
+        <script type='text/javascript' language='javascript'>pied();</script>
+    </footer>
+
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+     	<meta charset="utf-8"/>
+        <title>SNT internet page 12</title>
+        <link rel="stylesheet" href="../style/style.css"/>
+        <script src="../style/scriptfooter.js"></script>
+        <script src="script/script12.js"></script>
+   	</head>
+
+    <header> SNT : Internet : page 12 : le signal électrique</header>
+
+    <body>
+
+        <nav>
+      		<h2>Liens :</h2>
+                <ul>
+                    <li> <a href="chapitre2.html">Chapitre 2</a> </li>
+                </ul>
+            <h2>Exercices :</h2>
+                <ul>
+                    <span id='nf'></span>
+                    <script type='text/javascript' language='javascript'>fait();</script>
+                </ul>
+    	</nav>
+
+        <section>
+
+            <h1>Le code binaire</h1>
+			
+				<p>
+					Les données numériques sont transportées par les <b>câbles</b> d'une machine informatique vers une autre. 
+					On a déjà vu que ces données numériques sont organisées en <b>paquets</b> dans lesquels on a ajouté des informations
+					correspondants aux différentes couches. Au niveau du codage informatique, on a vu qu'on utilise toujours 
+					le <b>codage binaire</b>. Autrement dit un paquet est une suite de <b>0</b> et de <b>1</b>. 
+					C'est cette suite de 0 et de 1 que l'on doit coder dans un signal électrique pour pouvoir le transporter
+					par un câble. Il existe plusieurs façons de coder une suite de <b>0</b> et de <b>1</b> dans un signal électrique.
+					Pour le protocole <b>ethernet</b> on utilise le <b>code Manchester</b>. 
+				</p>
+
+			<h1>Code de Manchester</h1>
+
+				<p>
+					Le principe du <b>code de Manchester</b> qui est utilisé dans le protocole <b>ethernet</b> au niveau 
+					des paires torsadées est de faire varier la <b>tension électrique</b> en fonction du temps. 
+					Dans une paire torsadée le signal est cadensé à environ 10 Mhz ce qui veut dire qu'on transmet 
+					10 millions de bits par seconde. <br>
+					Donc la période est <b>T = 0,1 micro-seconde = 0,0000001 seconde</b>,
+					et c'est ainsi la durée de transmission d'un seul bit. Le principe du <b>code de Manchester</b> est le suivant :
+					un <b>0</b> est codé par un <b>front ascendant</b>, c'est à dire par un changement de tension de - 5 Volts à + 5 Volts,
+					et un <b>1</b> est codé par un <b>front descendant</b>, c'est à dire un changement de tension de + 5 Volts à - 5 Volts.
+					<center>
+						<img src="images/codeManchester.png"/>
+					</center>
+				</p>
+
+			<h1>Code détecteur et correcteur d'erreurs</h1>
+
+				<p>
+					Lorsque des <b>données numériques</b> sont transmises, des perturbations (par exemple électromagnétiques)
+					peuvent les endommager. Les <b>codes détecteurs et correcteurs d’erreurs</b> permettent, 
+					dans une certaine mesure, de détecter si les données ont été altérées et si c’est le cas, 
+					de reconstituer les données d’origine par un mécanisme de correction.
+				</p>
+
+				<h2>Bit de parité</h2>
+
+					<p>
+						Le <b>bit de parité</b> permet d'obtenir un code qui détecte une erreur. 
+						On va regarder son application sur un octet.
+						Le principe est le suivant : on compte le nombre de 1 présent dans l'écriture binaire de l'octet. 
+						Si ce nombre est pair, le bit de parité sera égal à 0 et si ce nombre est impair le bit de parité sera égal à 1.
+					</p>
+
+					<img src="images/bitParité.png"/>
+
+					<p>
+						Ainsi si une erreur de transmission se produit sur un seul bit de l'octet, le bit de parité ne corespondra plus
+						à l'octet, c'est pourquoi on dit qu'il détecte une erreur. Par contre si deux erreurs se produisent sur 
+						deux bits de l'octet, le bit de parité ne va pas le détecter. On dit que le bit de parité est un code 1-détecteur.
+						<br>
+						On reprend ci-dessous les 4 exemples précédents, mais dans l'exemple 2 et dans l'exemple 3 une erreur de
+						transmission s'est produite sur le premier bit. Le bit de parité permet de détecter cette erreur.
+						Par contre dans l'exemple 4 deux erreurs de transmission se sont produites et le bit de parité ne le détecte pas.
+					</p>
+
+					<img src="images/bitParité-erreur.png"/>
+
+				<h2>Code 1-détecteur et 1-correcteur</h2>
+
+					<p>
+						Pour pouvoir corriger une erreur de transmission on utilise le principe de la <b>redondance</b>, c'est à
+						dire qu'on envoie plusieurs fois les données numériques.
+						Dans l'exemple ci-dessous on envoie deux fois l'octet avec son bit de parité. On obtient ainsi
+						une code capable de détecter une erreur de transmission et de la corriger.
+						En effet le code correct est celui pour lequel le bit de parité ne détecte pas d'erreur.
+					</p>
+
+					<img src="images/bitParité-correcteur.png"/>
+                
+            <br>
+            <br>
+            <a class="abas" href="int_quiz12.html" target="_blank">Quiz 12</a>
+            <br>
+            <br>
+
+        </section>
+        
+    </body>
+
+    <footer> 
+        <script type='text/javascript' language='javascript'>pied();</script>
+    </footer>
+
+</html>

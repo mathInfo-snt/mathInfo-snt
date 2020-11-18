@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <meta charset="utf-8"/>
+        <title>SNT Internet quiz 7</title>
+        <link rel="stylesheet" href="../style/style.css"/>
+        <script src="../style/scriptfooter.js"></script>
+        <script src="script/script_q7.js"></script>
+        <script src="script/script7.js"></script>
+    </head>
+
+    <header class="quizz"> Quiz 7 sur Internet </header>
+
+    <body>
+        <nav>
+            <h2>Liens :</h2>
+                <ul>
+                    <li> <a href="int_page7.html">Page 7</a> </li>
+                </ul>
+            <h2>Exercices :</h2>
+                <ul>
+                    <span id='nf'></span>
+                    <script type='text/javascript' language='javascript'>fait();</script>
+                </ul>
+        </nav>
+        <section class="squizz" >
+            <form name="quizz" action="javascript:check();" class="quizzForm">
+                <div name="quiz">
+
+                    <div>
+                        <span class="spanquiz" name="sq"> <img src="images/vide.png" width='20' height='20'> </span>
+                        <h4>
+                            Question 1 : Un routeur est :
+                        </h4>
+                        <div class="question" id='q1'>
+                            <script type='text/javascript' language='javascript'>init(0);</script>
+                        </div>
+                    </div>
+
+                    <p>
+                        On considère la table de routage suivante du routeur A :<br><br>
+                        <img src="images/tables_de_routage_A.png"/>
+                    </p>
+
+                    <div>
+                        <span class="spanquiz" name="sq"> <img src="images/vide.png" width='20' height='20'> </span>
+                        <h4>
+                            Question 2 : Si le routeur A reçoit un paquet à destination du routeur E il va l'envoyer au routeur :
+                        </h4>
+                        <div class="question" id='q2'>
+                            <script type='text/javascript' language='javascript'>init(1);</script>
+                        </div>
+                    </div>
+
+                    <div>
+                        <span class="spanquiz" name="sq"> <img src="images/vide.png" width='20' height='20'> </span>
+                        <h4>
+                            Question 3 : Si le routeur A reçoit un paquet à destination du routeur D il va l'envoyer au routeur :
+                        </h4>
+                        <div class="question" id='q3'>
+                            <script type='text/javascript' language='javascript'>init(2);</script>
+                        </div>
+                    </div>
+
+                 </div>
+            </form>
+
+            <br>
+            <br>
+            <input class="bouton" type="button" value="Valider" onClick="verification(3)" />
+            <br>
+            <br>
+            <span id="message"> </span>
+            <br>
+            <br>
+        </section>
+    </body>
+
+    <footer class="quizz"> 
+        <script type='text/javascript' language='javascript'>pied();</script>
+    </footer>
+
+</html>

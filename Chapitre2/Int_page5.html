@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+     	<meta charset="utf-8"/>
+        <title>SNT internet page 5</title>
+        <link rel="stylesheet" href="../style/style.css"/>
+        <script src="../style/scriptfooter.js"></script>
+        <script src="script/script5.js"></script>
+   	</head>
+
+    <header> SNT : Internet : page 5 : Le protocole TCP/IP </header>
+
+    <body>
+
+        <nav>
+      		<h2>Liens :</h2>
+                <ul>
+                    <li> <a href="chapitre2.html">Chapitre 2</a> </li>
+                </ul>
+            <h2>Exercices :</h2>
+                <ul>
+                    <span id='nf'></span>
+                    <script type='text/javascript' language='javascript'>fait();</script>
+                </ul>
+    	</nav>
+
+        <section>
+            <h1>Les couches du protocole TCP/IP</h1>
+                <p>
+                    Pour transmettre des données numériques sur le réseau <b>Internet</b> on a vu qu'il fallait rajouter
+                    des informations successives : c'est le principe de <b>l'encapsulation</b>.
+                    Pour le protocole <b>TCP/IP</b> il y a <b>quatre couches</b> d'informations que l'on va rajouter successivement aux données de départ. Ces couches sont dans l'ordre :
+                    <ul>
+                        <li>la couche <b>Application</b> qui utilise le protocole <b>HTTP</b> pour les pages Web</li>
+                        <li>la couche <b>Transport</b> qui utilise le protocole <b>TCP</b> ou <b>UDP</b></li>
+                        <li>la couche <b>Internet</b> qui utilise le protocole <b>IP</b></li>
+                        <li>la couche <b>Lien</b> (ou couche accès réseau) qui utilise le protocole <b>ethernet</b></li>
+                    </ul>
+                    Ainsi quand on veut transmettre des données d'un ordinateur A vers un ordinateur B on a le shéma suivant :
+                </p>
+                <img src="images/enc1.png"/>
+                <br>
+                <p>
+                    Chaque couche rajoute des informations selon un certain protocole, ainsi chaque couche fonctionne de façon indépendante.
+                </p>
+                <br>
+        
+                <br>
+                <br>
+                <a class="abas" href="int_quiz5.html" target="_blank"> Quiz 5</a>
+                <br>
+                <br>
+        </section>
+    </body>
+
+    <footer> 
+        <script type='text/javascript' language='javascript'>pied();</script>
+    </footer>
+
+</html>
