@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" href="../style/style.css" />
+        <script src="../style/scriptfooter.js"></script>
+        <script src="script/script_ex5.2.js"></script>
+        <script src="script/script5.js"></script>
+    </head>
+
+    <header class="exo">SNT : Le Web : Exercice 5.2</header>
+
+    <body>
+
+        <title>SNT web exercice 5.2</title>
+
+        <nav>
+            <h2>Liens :</h2>
+            <ul>
+                <li> <a href="web_page5.html">Page 5</a> </li>
+            </ul>
+            <h2>Exercices :</h2>
+                <ul>
+                    <span id='nf'></span>
+                    <script type='text/javascript' language='javascript'>fait();</script>
+                </ul>
+        </nav>
+
+        <section class="sexo">
+            <h1 class="exoh1">Exercice 5.2 : répondre à une requête de recherche</h1>
+                <p class="pexo">
+                    Lorsque le moteur de recherche reçoit une requête, il utilise l'index pour trouver toutes les pages qui contiennent
+                    les mots clés de la requête. Ensuite, il classe les pages par ordre de pertinence, en combinant plusieurs facteurs.
+                </p>
+                <h2>Exemple de requête</h2>
+                    <div class="afficheur2">
+                        <b>Rechercher :</b> &emsp; avocat droit
+                    </div>
+                <p class="pexo">
+                    <b>Index :</b>
+                    <table>
+                        <tr>
+                            <th>&nbsp mot &nbsp</th>
+                            <th>&nbsp (pages,scores) &nbsp</th>
+                        </tr>
+                        <tr>
+                            <td>&nbsp avocat &nbsp</td>
+                            <td>&nbsp (page1,6) &nbsp (page2,7) &nbsp (page3,2)</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp droit &nbsp</td>
+                            <td>&nbsp (page1,2) &nbsp (page2,2) &nbsp (page3,3)</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp juriste &nbsp</td>
+                            <td>&nbsp (page1,1) &nbsp (page2,2) &nbsp (page3,9)</td>
+                        </tr>
+                    </table>
+                </p>
+                <p class="pexo">
+                    <b>Classement :</b><br><br>
+                    Pour la page1 on additionne le score de "avocat" c'est à dire 6 avec le score de "droit" 
+                    c'est à dire 2.<br> 
+                    Et on obtient ainsi le score de la page1 pour cette requête : 6 + 2 = 8 .<br> 
+                    En additionnant les scores des deux mots pour chaque page, on obtient le classement suivant :
+                    <table>
+                        <tr>
+                            <td>&nbsp 1 &nbsp</td>
+                            <td>&nbsp (page2,9) &nbsp </td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp 2 &nbsp</td>
+                            <td>&nbsp (page1,8) &nbsp</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp 3 &nbsp</td>
+                            <td>&nbsp (page3,5) &nbsp</td>
+                        </tr>
+                    </table>
+
+                </p>
+                <h2>Classement pour une autre requête</h2>
+                    Pour le même index, on considère la requête suivante :<br>
+                    <div class="afficheur2">
+                        <b>Rechercher :</b> &emsp;avocat juriste
+                    </div>
+                    Etablir le classement correspondant à cette requête, en complétant les zones dans le tableau ci-dessous,
+                    selon le même format que le classement ci-dessus. <br>
+                    <b style="color:teal;">Valider chaque ligne en appuyant sur Entrée</b>. 
+                    Puis valider l'exercice avec le bouton situé en dessous.         
+                <p class="pexo">
+                    <b>Classement :</b>
+                    <table>
+                        <tr>
+                            <td>&nbsp 1 &nbsp</td>
+                            <td class='col'>
+                                <form name="saisie_1">
+                                    <span class="spanquiz"> <img src="images/vide.png" width='20' height='20'> </span>
+                                    &ensp;<input type="text" class="zone_saisie" name="in" autocomplete="off" size='10'
+                                           onkeypress="javascript:if (event.keyCode == 13) {verif('saisie_1',0);return false;}"/>
+                                    <span class="spanmes"></span>
+                                </form>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp 2 &nbsp</td>
+                            <td class='col'>
+                                <form name="saisie_2">
+                                    <span class="spanquiz"> <img src="images/vide.png" width='20' height='20'> </span>
+                                    &ensp;<input type="text" class="zone_saisie" name="in" autocomplete="off" size='10'
+                                           onkeypress="javascript:if (event.keyCode == 13) {verif('saisie_2',1);return false;}"/>
+                                    <span class="spanmes"></span>
+                                </form>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp 3 &nbsp</td>
+                            <td class='col'>
+                                <form name="saisie_3">
+                                    <span class="spanquiz"> <img src="images/vide.png" width='20' height='20'> </span>
+                                    &ensp;<input type="text" class="zone_saisie" name="in" autocomplete="off" size='10'
+                                           onkeypress="javascript:if (event.keyCode == 13) {verif('saisie_3',2);return false;}"/>
+                                    <span class="spanmes"></span>
+                                </form>
+                            </td>
+                        </tr>
+                    </table>
+                <p><br>
+                <br>
+                <input class="bouton" type="button" value="Valider l'exercice" onClick="verif_exo(3)" />
+                <br>
+                <br>
+                 <span class="reponse" name="reponse"> </span>
+                <br>
+                <br>
+        </section>
+    </body>
+
+    <footer class="exo"> 
+        <script type='text/javascript' language='javascript'>pied();</script>
+    </footer>
+
+</html>

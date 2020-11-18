@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" href="../style/style.css" />
+        <script src="../style/scriptfooter.js"></script>
+        <script src="script/script_ex4.2.js"></script>
+        <script src="script/script4.js"></script>
+    </head>
+
+    <header class="exo"> SNT : Le Web : Exercice 4.2 </header>
+
+    <body>
+
+        <title>SNT web exercice 4.2</title>
+
+        <nav>
+            <h2>Liens :</h2>
+            <ul>
+                <li> <a href="web_page4.html">Page 4</a> </li>
+            </ul>
+            <h2>Exercices :</h2>
+                <ul>
+                    <span id='nf'></span>
+                    <script type='text/javascript' language='javascript'>fait();</script>
+                </ul>
+        </nav>
+
+        <section class="sexo">
+            <h1 class="exoh1">Exercice 4.2 : rédiger une requête HTTP</h1>
+                <p class="pexo">
+                    Un navigateur <b class="def"><script> ecrit(3);</script></b> veut accéder au fichier <b class="def"><script> 
+                    ecrit(1); </script></b> sur le site dont l'hôte est <b class="def"><script> ecrit(2); </script></b> sachant 
+                    que le chemin du fichier sur ce site est <b class="def"><script> ecrit(0); </script></b> .
+                    Le protocole utilisé est : <b class="def">HTTP/1.1</b> .
+                    Le système d'exploitation du client est <b class="def"><script> ecrit(4); </script></b> et le type de contenu demandé
+                    est <b class="def"><script> ecrit(5); </script></b>
+                </p>
+                <p class="pexo">
+                    Compléter ci-dessous les quatre lignes de la requête HTTP correspondante, valider en appuyant sur <b>Entrée</b> ou en 
+                    cliquant sur le bouton <b>Valider</b>.<br>
+                </p>
+
+
+                <form name='f1'>
+                    <div class="afficheur2">
+                        
+                        <input type="text" class="caseP2" id="in1" name="n1" autocomplete="off" value='GET ' 
+                            onkeypress="javascript:if (event.keyCode == 13){return false;}" 
+                        /><br>
+                        
+                        <input type="text" class="caseP2" id="in2" name="n1" autocomplete="off" value='Host: ' 
+                            onkeypress="javascript:if (event.keyCode == 13){return false;}" 
+                        /><br>
+                        
+                        <input type="text" class="caseP2" id="in3" name="n1" autocomplete="off" value='User-Agent: ' 
+                            onkeypress="javascript:if (event.keyCode == 13){return false;}" 
+                        /><br>
+                        
+                        <input type="text" class="caseP2" id="in4" name="n1" autocomplete="off" value='Accept: ' 
+                            onkeypress="javascript:if (event.keyCode == 13){return false;}" 
+                        /><br>
+                    </div>
+                    <span class="spanquiz"> <img src="images/vide.png" width='20' height='20'> </span>
+                    &ensp;<input class="bout" type="button" value="Valider" onClick="verif('f1')" />
+                    <span class="spanmes"></span>
+                </form>
+
+                
+                <br><br><br>
+                <input class="bouton" type="button" value="Valider l'exercice" onClick="verif_exo(1)" />
+                <br>
+                <br>
+                 <span class="reponse" name="reponse"> </span>
+                <br>
+                <br>
+        </section>
+    </body>
+
+    <footer class="exo"> 
+        <script type='text/javascript' language='javascript'>pied();</script>
+    </footer>
+
+</html>

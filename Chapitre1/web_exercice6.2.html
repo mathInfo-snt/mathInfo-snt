@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" href="../style/style.css" />
+        <script src="../style/scriptfooter.js"></script>
+        <script src="script/script_ex6.2.js"></script>
+        <script src="script/script6.js"></script>
+    </head>
+
+    <header class="exo">SNT : Le Web : Exercice 6.2</header>
+
+    <body>
+
+        <title>SNT web exercice 6.2</title>
+
+        <nav>
+            <h2>Liens :</h2>
+            <ul>
+                <li> <a href="web_page6.html">Page 6</a> </li>
+            </ul>
+            <h2>Exercices :</h2>
+                <ul>
+                    <span id='nf'></span>
+                    <script type='text/javascript' language='javascript'>derexo();fait();</script>
+                </ul>
+        </nav>
+
+        <section class="sexo">
+            <h1 class="exoh1">Exercice 6.2 : Fonctionnement du protocole HTTPS</h1>
+
+                <h2>1. Protocole HTTP</h2>
+                    <p class="pexo">
+                        L'échange d'information entre serveur et client se fait à l'aide de protocoles. Le protocole <b>HTTP</b>
+                        permet d'échanger des données qui sont visibles par tout le monde et qui ne sont pas confidentielles. 
+                        Une personne peut intercepter ces données et éventuellement les utiliser ensuite.
+                        <img src='images/HTTP1.png'>
+                    </p>
+
+                <h2>2. Protocole HTTPS</h2>
+                    <p> 
+                        Au cours d'une connexion <b>HTTPS</b>, les données échangées sont cryptées. Ces données peuvent être interceptées, mais comme elles sont cryptées, elles sont inutilisables.<br>
+                        <img src='images/HTTPS1.png'>
+                    </p>
+
+                <h2>3. &Eacute;tapes du protocole HTTPS</h2>
+                    <p>
+                        Lors d'une connexion <b>HTTPS</b>, le serveur envoie au client un <b>certificat SSL</b> contenant une <b>clé publique</b> qui sert à crypter les données. Le serveur lui possède la <b>clé privée</b> qui sert à décrypter les données et lui seul la possède. Le <b>certificat SSL</b> doit être validé par une <b>Autorité de Certification</b> reconnue. Le certfificat SSL étant validé, la communication HTTPS cryptée peut se mettre en place.<br>
+                        <img src='images/HTTPS2.png'>
+                    </p>
+                    
+                    <p> 
+                    Sur votre cours (<b style="color:red;">Exercice 6.2 de la feuille 6</b>), compléter le schéma donnant les différentes étapes du protocole HTTPS.
+                </p>
+                <div class="affmain"> 
+                    <div class="point">Point 6 :</div>
+                    Lever la main pour que le professeur vérifie que tous les exercices ont été faits (liste complètement verte à gauche) et que la feuille du cours a été complétée correctement. 
+                </div>
+                <br>
+                Puis vous passerez à la page suivante : 
+                <a href="web_page7.html" target="_blank"><b class="exofeuille">Page 7</b></a>.
+                <br><br>  
+        </section>
+    </body>
+
+    <footer class="exo"> 
+        <script type='text/javascript' language='javascript'>pied();</script>
+    </footer>
+
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8" />
+        <title>SNT web page 8</title>
+        <link rel="stylesheet" href="../style/style.css" />
+        <script src="script/script8.js"></script>
+        <script src="../style/scriptfooter.js"></script>
+    </head>
+
+    <header> SNT : Le Web : page 8 : Langage HTML</header>
+
+    <body>
+
+  
+
+        <nav>
+            <h2>Liens :</h2>
+                <ul>
+                    <li> <a href="chapitre1.html">Chapitre 1</a> </li>
+                </ul>
+            <h2>Exercices :</h2>
+                <ul>
+                    <span id='nf'></span>
+                    <script type='text/javascript' language='javascript'>fait();</script>
+                </ul>
+        </nav>
+
+        <section>
+
+            <p>
+                Le langage <b>HTML</b> (<u>H</u>yper<u>T</u>ext <u>M</u>arkup <u>L</u>anguage) 
+                a été crée en 1990 et sert a rédiger des pages Web. <br>
+                Ce language est structuré avec des <b>balises</b> qui sont reconnaissables par la notation suivante :
+               <b style="color:teal;"> <"balise ouvrante"> ... <&#47;"balise fermante"> </b>.
+            </p>
+
+            <h1>Code HTML</h1>
+                <p>
+                    Voici un exemple de code HTML minimal.
+                </p>
+		        <img src="images/CodeHTMLmin.png"/>
+
+		        <h2>Les balises</h2>
+		            <p>
+                        Dans l'exemple ci-dessus les balises sont en rouges et sont encadrées par les symboles 
+                        <b style="color:teal;"> <...> </b>. <br><br>
+
+                        <b class='def'>Définition (Balises ouvrantes) :</b>
+                        Les <b>balises ouvrantes</b> sont reconnaissables car elles n'ont pas le symbole "slash" 
+                        (<b style="color:teal;"><...></b>).<br>
+                        <u>Exemple :</u> <b style="color:teal;">&lt;h1&gt;</b> est la balise ouvrante pour les titres importants.
+                        <br><br>
+
+                        <b class='def'>Définition (Balises fermantes) :</b>
+                        les <b>balises fermantes</b> sont reconnaissables car elles ont le symbole "slash" 
+                        (<b style="color:teal;"><&#47;...></b>). <br>
+                        <u>Exemple :</u> <b style="color:teal;">&lt;&#47;h1&gt;</b> est la balise fermante pour les titres importants.
+                        <br><br>
+                        <b class='def'>Remarque :</b>
+                        Certaines balises comme la balise <b style="color:teal;">&lt;br&gt;</b> qui permet d'obtenir un retour à la ligne ne nécessite qu'une balise ouvrante et on n'a pas de balise fermante à rédiger, car il n'y a rien à mettre entre les deux.
+            	   </p>
+
+                <h2>Les commentaires</h2>
+                    <p>
+                	   les commentaires sont facultatifs et sont en gris dans l'exemple ci-dessus. Ils sont encadrés par les symboles : 
+                       <b style="color:grey;"> &lt;!-- ... --&gt; </b> .
+                    </p>
+
+                <h2>Quelques balises importantes</h2>
+                	<h3>Balise de structure</h3>
+                	    <ul>
+                    	    <li> 
+                    		  <b style="color:teal;">&lt;html&gt; ... &lt;/html&gt; </b> 
+                    		  <em>(Début et fin de fichier HTML)</em> 
+                    	    </li>
+                    	<li> 
+                    		<b style="color:teal;">&lt;head&gt; ... &lt;/head&gt; </b> 
+                    		<em>(Début et fin de l'en tête du fichier HTML)</em> 
+                    	</li>
+                    	<li> 
+                    		<b style="color:teal;">&lt;title&gt; ... &lt;/title&gt; </b> 
+                    		<em>(Onglet de la page Web)</em> 
+                    	</li>
+                    	<li> 
+                    		<b style="color:teal;">&lt;body&gt; ... &lt;/body&gt; </b> 
+                    		<i>(Début et fin du corps du fichier HTML)</i> 
+                    	</li>
+                    </ul>
+                    <h3>Balise de mise en forme des caractères</h3>
+                    <ul>
+                    	<li> 
+                    		<b style="color:teal;">&lt;b&gt; ... &lt;/b&gt; </b> 
+                    		<i>(Texte en gras)</i> 
+                    	</li>
+                    	<li> 
+                    		<b style="color:teal;">&lt;i&gt; ... &lt;/i&gt; </b> 
+                    		<i>(Texte en italique)</i> 
+                    	</li>
+                    	<li> 
+                    		<b style="color:teal;">&lt;u&gt; ... &lt;/u&gt; </b> 
+                    		<i>(Texte souligné)</i> 
+                    	</li>
+            		</ul>
+            		<h3>Balise de mise en forme du texte</h3>
+            		<ul>
+            			<li> 
+                    		<b style="color:teal;">&lt;br&gt; </b> 
+                    		<i>(Saut de ligne)</i> 
+                    	</li>
+                    	<li> 
+                    		<b style="color:teal;">&lt;p&gt; ... &lt;/p&gt; </b> 
+                    		<i>(Début et fin de paragraphe)</i> 
+                    	</li>
+            		</ul>
+            		<h3>Autres balises importantes</h3>
+            		<ul>
+            			<li> 
+                    		<b style="color:teal;">&lt;a href=... &gt;</b> 
+                    		<i>(Balise pour afficher un hyperlien)</i> 
+                    	</li>
+                    	<li> 
+                    		<b style="color:teal;">&lt;img src=... &gt; </b> 
+                    		<i>(Balise pour afficher une image)</i> 
+                    	</li>
+            		</ul>
+            <a class="abas" href="web_quiz8.html" target="_blank"> Quiz 8</a>
+        </section>
+    </body>
+
+    <footer> 
+        <script type='text/javascript' language='javascript'>pied();</script>
+    </footer>
+
+</html>

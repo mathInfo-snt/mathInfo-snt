@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" href="../style/style.css"/>
+        <script src="script/script4.js"></script>
+        <script src="../style/scriptfooter.js"></script>
+    </head>
+
+    <header> SNT : Le Web : page 4 : requête et réponse HTTP</header>
+
+    <body>
+
+        <title>SNT web page 4</title>
+
+        <nav>
+            <h2>Liens :</h2>
+            <ul>
+                <li> <a href="chapitre1.html">Chapitre 1</a> </li>
+            </ul>
+            <h2>Exercices :</h2>
+                <ul>
+                    <span id='nf'></span>
+                    <script type='text/javascript' language='javascript'>fait();</script>
+                </ul>
+        </nav>
+
+        <section>
+            
+            <h1>Description d'une requête HTTP du client</h1>
+
+		        <p>
+                    Voici un exemple de requête HTTP : 
+                
+
+                    <div class="afficheur2">
+                        GET /dossier/index.html HTTP/1.1<br>
+                        Host: www.example.com<br>
+                        User-Agent: Mozilla Firefox/65.0 (compatible; windows 10)<br>
+                        Accept: text/html<br>
+                    </div>
+                </p>
+                
+                <h2>Explications de la première ligne :</h2>
+                    <p>
+                        <ul>
+                            <li>
+                                <b>GET</b> est la méthode utilisée, ici obtenir le <b style="color:blue;">fichier</b>
+                                <b>index.html</b> dont le <b style="color:blue;">chemin</b> est <b>/dossier/</b>. 
+                            </li>
+                            <li> 
+                                <b>HTTP/1.1</b> est la version du <b style="color:blue;">protocole</b> utilisé.
+                            </li>
+                        </ul>
+                    </p> 
+                
+                <h2>Explications de la deuxième ligne :</h2>
+                    <p>
+                        <ul>
+                            <li> 
+                                <b>Host</b> précède l'<b style="color:blue;">hôte</b> qui détient le fichier demandé.
+                            </li>
+                        </ul>
+                    </p>
+                    
+                <h2>Explications de la troisième ligne :</h2>
+                    <p>
+                        <ul>
+                            <li> 
+                                <b>User-Agent</b> est une chaîne donnant des informations sur le client : 
+                            </li>
+                            <li> 
+                                <b>Mozilla Firefox/65.0</b> est le <b style="color:blue;">navigateur</b> utilisé par le client. 
+                            </li>
+                            <li> 
+                                <b>Windows 10</b> est le <b style="color:blue;">système d'exploitation</b> du client. 
+                            </li>
+                        </ul>
+                    </p>
+                    
+                <h2>Explications de la quatrième ligne :</h2>
+                    <p>
+                        <ul>
+                            <li> 
+                                <b>Accept: text/html</b> est le <b style="color:blue;">type de contenu</b> demandé et accepté par le navigateur
+                                (ici des pages html). 
+                            </li>
+                        </ul>
+                    </p>
+                
+                <br><br>
+
+            <h1>Description d'une réponse HTTP du serveur</h1>
+		        <p>
+                    Voici un exemple de réponse HTTP : 
+                
+                    <div class="afficheur2">
+                        HTTP/1.1 200 OK<br>
+                        Date: Sat, 18 Jan 2019 15:36:21 GMT Server: Microsoft-IIS/10.0.17763.1<br>
+                        Content-Type : text/html<br>
+                        Content-Length : 1245
+                    </div>
+                </p>
+
+                <h2>Explications de la première ligne :</h2>
+                    <p>
+                        <ul>
+                            <li> 
+                                <b>HTTP/1.1</b> est la version du protocole utilisé.
+                            </li>
+                            <li> 
+                                <b>200 OK</b> est le code de statut, ici il signifie que la requête 
+                                s'est accomplie correctement.
+                            </li>
+                        </ul>
+                    </p>
+
+                <h2>Explications de la deuxième ligne :</h2>
+                    <p>
+                        <ul>
+                            <li> 
+                                <b>Date</b> précède la date de transfert des données, ici le <b>18 janvier 2019 à 
+                                15h36m12s</b>. 
+                            </li>
+                            <li> 
+                                <b>Server</b> précède les caractéristiques du serveur avec notamment son adresse 
+                                <b>IP</b>,  
+                                ici <b>Microsoft-IIS</b> à l'adresse <b>IP : 10.0.17763.1</b>. 
+                            </li>
+                        </ul>
+                    </p>
+
+                <h2>Explications de la troisième ligne :</h2>
+                    <p>
+                        <ul>
+                            <li> 
+                                <b>Content-Type</b> donne le type de contenu du corps de la réponse HTTP. 
+                            </li>
+                        </ul> 
+                    </p>
+                    
+                <h2>Explications de la quatrième ligne :</h2>
+                    <p>
+                        <ul>
+                            <li> 
+                                <b>Content-Length</b> donne la longueur en nombre d'octets, du corps de la réponse HTTP,
+                                ici 1245 octets. 
+                            </li>
+                        </ul>
+                    </p> 
+                
+                <br><br>
+
+            <h1>Précisions supplémentaires</h1>
+
+                <h2>Quelques exemples de méthodes dans une requête HTTP</h2>
+                    <p>
+                        <ul> 
+                            <li> 
+                                <b>GET</b> : méthode utilisée pour obtenir des données, par exemple une page html. 
+                            </li>
+                            <li> 
+                                <b>POST</b> : méthode utilisée pour envoyer des données vers le fichier indiqué, 
+                                par exemple des identifiants. 
+                            </li>
+                            <li> 
+                                <b>DELETE</b> : méthode utilisée pour supprimer le fichier indiqué. 
+                            </li>
+                        </ul>
+                    </p>
+
+                <h2>Quelques exemples de type de contenu accepté dans une requête HTTP</h2>
+                    <p>
+                        <ul> 
+                            <li> 
+                                <b>text/html</b> : des pages web avec l'extension .html. 
+                            </li>
+                            <li> 
+                                <b>image/png</b> : des fichiers images de type png avec l'extension .png. 
+                            </li>
+                            <li> 
+                                <b>video/mpeg</b> : des fichiers vidéos de type mpeg avec l'extension .mpeg. 
+                            </li>
+                        </ul>
+                    </p>
+
+                <h2> Quelques exemples de code de statut dans une réponse HTTP </h2>
+                    <p>
+                        <ul> 
+                            <li> 
+                                <b>200 OK</b> : la requête a réussi. 
+                            </li>
+                            <li> 
+                                <b>300 Multiple Choice</b> : la requête a plusieurs réponses possibles. 
+                            </li>
+                            <li> 
+                                <b>400 Bad Request</b> : le serveur n'a pas pu comprendre la requête à cause 
+                                d'une syntaxe invalide. 
+                            </li>
+                            <li> 
+                                <b>404 Not Found</b> : le serveur n'a pas trouvé le fichier demandé. 
+                            </li>
+                        </ul>
+                    </p>
+
+                <br><br>
+                <a class="abas" href="web_quiz4.html" target="_blank">Quiz 4</a>
+                <br><br>
+        </section>
+    </body>
+
+    <footer> 
+        <script type='text/javascript' language='javascript'>pied();</script>
+    </footer>
+
+</html>

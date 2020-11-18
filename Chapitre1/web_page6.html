@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" href="../style/style.css"/>
+        <script src="script/script6.js"></script>
+        <script src="../style/scriptfooter.js"></script>
+    </head>
+
+    <header> SNT : Le Web : page 6 : sécurité sur le Web</header>
+
+    <body>
+
+        <title>SNT web page 6</title>
+
+        <nav>
+            <h2>Liens :</h2>
+                <ul>
+                    <li> <a href="chapitre1.html">Chapitre 1</a> </li>
+                </ul>
+            <h2>Exercices :</h2>
+                <ul>
+                    <span id='nf'></span>
+                    <script type='text/javascript' language='javascript'>fait();</script>
+                </ul>
+        </nav>
+
+        <section>
+           
+            <h1>Historique de navigation</h1>
+		        <p>
+                    Lorsqu'on surfe sur le Web, les navigateurs enregistrent chronologiquement plusieurs données : 
+                    <ul>
+                        <li>
+                            <b>sites visités</b>, 
+                        </li>
+                        <li>
+                            <b>cookies</b>,
+                        </li>
+                        <li>
+                            <b>préférences</b>,
+                        </li>
+                        <li> 
+                            etc... 
+                        </li>
+                    </ul>
+                    <b class="def">Définition (Historique de navigation) : </b>
+                    L'<b>historique de navigation</b> est constitué de toutes ces informations enregistré par le <b>navigateur</b>
+                    (sites visités, cookies, préférences,...).
+                    Ces informations sont sauvegardées dans un fichier sur l'ordinateur de l'internaute.<br><br>
+
+                    L'historique de navigation peut être effacé depuis le navigateur.
+                    Certains navigateurs permettent d’automatiser tout ou partie de cet effacement 
+                    (par exemple, suppression de l’historique à la fermeture de l’application). <br><br>
+
+                    <b class="def">Définition (Navigation privée)</b>
+                    La <b>navigation privée</b> est une option de navigation avec laquelle plusieurs types de données 
+                    ne sont pas enregistrées (pages visités, mots de passes, cookies, etc...).
+                    Mais attention la <b>navigation privée</b> ne rend pas invisible. Les <b>cookies</b> continuent 
+                    d'être déposés et l'historique de navigation est enregistré. Les données ne s'effacent 
+                    qu'une fois que le navigateur sera fermé. De plus le <b>FAI</b> 
+                    a l'obligation de garder les <b>fichiers logs</b>  
+                    de la navigation pendant un an.
+                </p>
+
+                <h2>Quelques exemples de navigateur :</h2>
+                <p>
+                    Google Chrome, Mozilla Firefox, Apple Safari, Internet Explorer...<br>
+                </p>
+            
+            <h1>Historique du moteur de recherche</h1>
+                <p>
+                    <b class="def">Définition (Historique de recherche) : </b>
+                    L'<b>historique de recherche</b> est constitué des <b>requêtes</b> formulées dans un moteur de recherche.
+                    Elles sont enregistrées et peuvent réapparaitre lorsqu'on tape les premières lettres d'une prochaine requête.<br><br>
+                    
+                    Contrairement à l‘historique de navigation, celui du moteur de recherche n’est pas conservé sur le terminal 
+                    (ordinateurs ou smartphones) de l'internaute. Il est stocké sur les serveurs du moteur de recherche, 
+                    ce qui explique qu’il soit accessible depuis les différents terminaux. 
+                    La plupart du temps, cet historique est associé au compte de connexion sur le moteur de recherche utilisé. 
+                    Par défaut, une durée de conservation assez longue est activée (plusieurs mois). 
+                    Une fonction intuitive mais qui peut révéler d’anciennes recherches. 
+                    Pour la plupart des moteur de recherche, on peut désactiver l'historique de recherche. 
+                    A noter que quelques moteurs de recherches ne prévoient pas de conservation d’historique de recherche 
+                    (par exemple <b>DuckduckGo</b> ou encore <b>Qwant</b>).
+                </p>
+
+            <h1>Cookies</h1>
+
+                <h2>Définition</h2>
+                <p>
+                    <b class="def">Définition (Cookies) : </b>
+                    Un <b>cookie</b> est un <b>petit fichier</b> texte (.txt), enregistré sur l'ordinateur d'un internaute lorsqu'il visite une page web. Ce petit fichier ne contenant que du texte est défini par le protocole HTTP. Un même fichier contient en général plusieurs cookies, tous ceux générés par ce site.
+                </p>
+
+                <h2>Fonctionnement</h2>
+                <p>
+                    Les <b>cookies</b> sont écrit par un serveur web et seul le serveur du domaine l'ayant créé peut lire son contenu. 
+                    Le petit fichier ne contenant que des caractères alphanumérique est enregistré par le navigateur sur le disque dur des internautes.<br>
+                    Voici un exemple de fichier .txt qui contient deux cookies (deux car dans le nom il y a <b>[2]</b>).
+                    <center>
+                        <img src="images/cookie.png">
+                    </center>
+                    <br>
+                    Il est possible de paramétrer un navigateur web pour ne pas enregistrer les cookies, mais cela peut nuire à l'utilisation de certains services qui nécessite explicitement des cookies pour fonctionner correctement.
+                </p>
+
+                <h2>Exemples d'utilisation</h2>
+                <p>
+                    Les utilisations des cookies sur le web sont diverses. En voici quelques exemples :
+                    <ul>
+                        <li>
+                            Se souvenir des identifiants de l'utilisateur pour le connecter automatiquement au site lors d'une visite ultérieure.
+                        </li>
+                        <li>
+                            Reconnaître les préférences d'un visiteur pour lui proposer des annonces publicitaires ciblées.
+                        </li>
+                        <li>
+                            Enregistrer le nom d'un visiteur et lui souhaiter la bienvenue la prochaine fois qu'il accède au site.
+                        </li>
+                        <li>
+                            Enregistrer les produits et les quantités d'un panier sur un site d'e-commerce.
+                        </li>
+                    </ul>
+                </p>
+
+                <h2>Durée de vie d'un cookie</h2>
+                <p>
+                    La durée de vie d'un cookie est différente selon les cas. Dans le cas d'un cookie non persistent, le cookie est supprimé à la fermeture du navigateur. Lorsqu'il s'agit d'un cookie persistent, sa date de création est définie lors de sa création. La durée de vie dépend alors d'un des 3 points :
+                    <ul>
+                        <li>
+                            Suppression lorsque la date de fin de vie a été atteinte.
+                        </li>
+                        <li>
+                            Si la date de fin est modifié par le serveur en une date antérieure, le cookie sera supprimé.
+                        </li>
+                        <li>
+                            Suppression manuelle à partir des options du navigateur web.
+                        </li>
+                    </ul>
+                </p>
+
+            <h1>Le protocole sécurisé HTTPS</h1>
+                <p>
+                    Le protocole <b>HTTPS</b> englobe en réalité deux protocoles différents : le protocole habituel <b>HTTP</b> et le protocole <b>SSL</b>, qui lui prodigue le côté sécurisé. Pour mieux comprendre ce qu’est un site en HTTPS, revoyons d’abord ce qu’est le protocole HTTP. Il s’agit d’un protocole qui permet à tous les internautes de recevoir des informations (des pages web par exemple) depuis des serveurs web et d’envoyer d’autres informations vers ces mêmes serveurs. Les échanges se font sans aucun cryptage, c'est à dire que les données reçues ne sont pas confidentielles et restent visibles pour tout le monde. Cette transparence présente un certain danger, surtout si l’utilisateur doit saisir des données confidentielles (identifiants ou mot de passe par exemple). Pour éviter que ces données sensibles ne tombent dans de mauvaises mains, il est indispensable de crypter les échanges, d’où l’ajout du protocole SSL au protocole HTTP déjà existant. <br><br>
+
+                    <b class="def">Définition (Protocole SSL) : </b>
+                    Le protocole <b>SSL</b> (<u>S</u>ecure <u>S</u>ocket <u>L</u>ayer) est une couche supplémentaire sécurisée. 
+                    Les échanges sont cryptés et seuls l’utilisateur et le serveur qui détiennent tous les deux la clé 
+                    de ce cryptage peuvent déchiffrer le contenu des données échangées. 
+                    C’est l’ajout de cette couche supplémentaire qui crée le protocole <b>HTTPS</b>.
+                </p> 
+
+            <h1>Les programmes malveillants</h1>
+                <p>
+                    Un logiciel malveillant est un logiciel destiné à nuire à un système informatique ou directement à son propriétaire. Ces logiciels malveillant s'installent à l'insu de l'utilisateur, souvent par l'intermédiaire de <b>liens</b> ou de fichier joint (<b>téléchargement</b>) situés sur le web ou dans des mails. Par exemple il s’agit de :<br>
+                    <ul>
+                        <li> 
+                            contaminer des fichiers et les rendre ainsi inutilisables (sans compter l’usage d’un      logiciel de désinfection) ;
+                        </li>
+                        <li> 
+                            de gêner ou d’empêcher certaines applications de l’ordinateur cible de fonctionner (voire de bloquer complètement le système d’exploitation) ;
+                        </li>
+                        <li>
+                            de désactiver les logiciels de sécurité de la cible pour mieux l’infecter de supprimer ou crypter des fichiers créés par l’utilisateur (documents textuels, feuilles de calcul, photos, morceaux de musique, etc) ;
+                        </li>
+                        <li> 
+                            d’intercepter les comptes et mots de passe pour usurper l’identité de la victime sur le Web (<b>phishing</b>), voire lui voler de l’argent sur un site Web financier ;
+                        </li>
+                        <li> 
+                            d’installer un relai pour commettre des méfaits ailleurs par son intermédiaire etc .
+                        </li>
+                    </ul>
+                    Il peut s’agir aussi d’un programme inoffensif en tant que tel, dont l’utilisation est détournée à des fins malveillantes.
+                    Le terme anglais est <b>malware</b>, contraction de malicious software, signifiant logiciel malveillant.
+                </p>
+
+                <h2>Exemples de programmes malveillants</h2>
+
+                        <h3>Virus informatique</h3>
+                        <p>
+                            Un <b>virus informatique</b> se reproduit d’un fichier à un autre sur le même ordinateur. C’est le type de logiciel malveillant Internet le plus ancien et le plus répandu.
+                        </p>
+
+                        <h3>Ver informatique</h3>
+                        <p>
+                            Un <b>ver informatique (worm en anglais)</b> ne se reproduit pas d’un fichier à un autre mais d’un ordinateur à un autre, via un réseau local ou le réseau Internet.
+                        </p>
+
+                        <h3>Cheval de Troie</h3>
+                        <p>
+                            Un <b>cheval de Troie (trojan en anglais)</b> cache un logiciel malveillant, dans un autre programme parfaitement sain. L’usage le plus fréquent d’un cheval de Troie est d’installer sur un ordinateur victime une <b>porte dérobée (backdoor en anglais)
+                            </b> pour pouvoir y revenir plus tard, ou un <b>keylogger</b> : voir ci-dessous.
+                        </p>
+
+                        <h3>Porte dérobée</h3>
+                        <p>
+                            Une <b>porte dérobée (backdoor en anglais)</b> est un moyen d’accès caché à un ordinateur, à distance et discrètement, pour y exécuter toutes sortes d’actions nuisibles prévues par ce programme. Autrement dit une porte dérobée permet d’accéder à un ordinateur distant sans que son utilisateur s’en aperçoive.<br>
+                            Comme action nuisible, il est possible de lire les fichiers de l’ordinateur distant, les modifier, les supprimer, et d’installer n’importe quel programme malveillant.<br>
+                            Comme exemple de logiciel malveillant Internet de ce type, on trouve un serveur de spam ou un programme de saturation de site Web. L’ordinateur infecté devient nuisible à l’insu de son utilisateur : on appelle cela un zombie.
+                        </p>
+
+                        <h3>Enregistreur de frappe</h3>
+                        <p>
+                            Un <b>enregistreur de frappe (keylogger en anglais)</b> enregistre toutes les touches frappées au clavier sur l’ordinateur infecté, et les envoie au pirate sur Internet (par exemple par email). Souvent le but est d’intercepter les pseudonymes et mots de passe de la victime sur des sites Web, pour usurper son « identité virtuelle », voire voler son argent sur des sites financiers (banque, enchères en ligne …).
+                        </p>
+
+                        <h3>Programme invisible</h3>
+                        <p>
+                            Un <b>programme invisible (rootkit en anglais)</b> est un programme qui en cache un autre aux yeux de l’utilisateur de l’ordinateur. Il n’est pas nuisible en tant que tel, mais souvent utilisé à des fins malveillantes.
+                        </p>
+
+                        <h3>Logiciel espion</h3>
+                        <p>
+                            Un <b>logiciel espion (spyware en anglais)</b>, enregistre les habitudes de navigation sur le Web de l’utilisateur, si possible avec ses coordonnées, et les envoie à un destinataire peu respectueux de la vie privée des internautes. Tout est fait à l’insu de l’internaute.
+                        </p>
+
+                        <h3>Logiciel rançonneur</h3>
+                        <p>
+                            Un <b>logiciel rançonneur (ransomWare en anglais)</b> est un logiciel rançonneur cryptant certains fichiers sur l’ordinateur de la victime. Le rançonneur propose la clé de décryptage contre de l’argent, autrement dit pour récupérer ses fichiers il faut payer une rançon. On peut citer Lorobot et Gpcode comme spécimens.
+                        </p>
+
+                        <h3>Pirate de navigateur</h3>
+                        <p>
+                            Un <b>pirate de navigateur (hijacker en anglais)</b> est un logiciel qui cherche à vous faire visiter un ou plusieurs sites Web particuliers. Il modifie un paramètre du navigateur, tel que la page de démarrage, les favoris ou la page de recherche. Cela paraît facile à corriger mais un hijacker fait souvent en sorte de bloquer ou d’annuler la correction, en remodifiant le paramètre au démarrage du système, par exemple.
+                        </p>
+
+
+            <a class="abas" href="web_quiz6.html" target="_blank"> Quiz 6</a>
+        </section>
+    </body>
+
+    <footer> 
+        <script type='text/javascript' language='javascript'>pied();</script>
+    </footer>
+
+</html>

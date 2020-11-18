@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" href="../style/style.css" />
+        <script src="../style/scriptfooter.js"></script>
+        <script src="script/script_ex8.1.js"></script>
+        <script src="script/script8.js"></script>
+    </head>
+
+    <header class="exo"> SNT : Le Web : Exercice 8.1 </header>
+
+    <body>
+
+        <title>SNT web exercice 8.1</title>
+
+        <nav>
+            <h2>Liens :</h2>
+            <ul>
+                <li> <a href="web_page8.html">Page 8</a> </li>
+            </ul>
+            <h2>Exercices :</h2>
+                <ul>
+                    <span id='nf'></span>
+                    <script type='text/javascript' language='javascript'>fait();</script>
+                </ul>
+        </nav>
+
+        <section class="sexo">
+            <h1 class="exoh1">Exercice 8.1 : rédiger du code HTML</h1>
+                <p class="pexo">
+                    Dans le code HTML ci-dessous, il faut compléter : <br>
+                    &emsp;- la ligne 5 pour afficher <b class="def"><script>init(0);</script></b> dans l'onglet de cette page HTML ; <br>
+                    &emsp;- la ligne 8 pour afficher un titre important, dont le texte est <b class="def"><script>init(1);</script></b> . 
+                </p>
+
+
+                <form name='f1'>
+                    <div class="afficheur2" style="width:700px;">
+                        
+                        <font color="grey">1</font> &lt;!DOCTYPE html&gt;<br>
+                        <font color="grey">2</font> &lt;html&gt;<br>
+                        <font color="grey">3</font> &emsp;&lt;head&gt;<br>
+                        <font color="grey">4</font> &emsp;&emsp;&lt;meta charset="utf-8"&gt;<br>
+                        <font color="grey">5 &emsp;&emsp;</font> 
+                        <input type="text" class="caseP2" id="in1" name="n1" autocomplete="off"
+                            onkeypress="javascript:if (event.keyCode == 13){return false;}" 
+                        /><br>
+                        <font color="grey">6</font> &emsp;&lt;/head&gt;<br>
+                        <font color="grey">7</font> &emsp;&lt;body&gt;<br>
+                        <font color="grey">8 &emsp;&emsp;</font> 
+                        <input type="text" class="caseP2" id="in2" name="n1" autocomplete="off"
+                            onkeypress="javascript:if (event.keyCode == 13){return false;}" 
+                        /><br>
+                        <font color="grey">9</font> &emsp;&emsp;&lt;p&gt;<br>
+                        <font color="grey">10</font> &emsp;&emsp;&emsp;&lt;Ceci est un paragraphe.<br>
+                        <font color="grey">11</font> &emsp;&emsp;&lt;/p&gt;<br>
+                        <font color="grey">12</font> &emsp;&lt;/body&gt;<br>
+                        <font color="grey">13</font> &emsp;&lt;/html&gt;<br>
+                    </div><br>
+                    <span class="spanquiz"> <img src="images/vide.png" width='20' height='20'> </span>
+                    &ensp;<input class="bout" type="button" value="Valider" onClick="verif('f1')" />
+                    <span class="spanmes"></span>
+                </form>
+
+                
+                <br><br><br>
+                <input class="bouton" type="button" value="Valider l'exercice" onClick="verif_exo(1)" />
+                <br>
+                <br>
+                 <span class="reponse" name="reponse"> </span>
+                <br>
+                <br>
+        </section>
+    </body>
+
+    <footer class="exo"> 
+        <script type='text/javascript' language='javascript'>pied();</script>
+    </footer>
+
+</html>

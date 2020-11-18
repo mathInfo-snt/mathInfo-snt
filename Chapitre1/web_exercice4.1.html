@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" href="../style/style.css" />
+        <script src="../style/scriptfooter.js"></script>
+        <script src="script/script_ex4.1.js"></script>
+        <script src="script/script4.js"></script>
+    </head>
+
+    <header class="exo"> SNT : Le Web : Exercice 4.1 </header>
+
+    <body>
+
+        <title>SNT web exercice 4.1</title>
+
+        <nav>
+            <h2>Liens :</h2>
+            <ul>
+                <li> <a href="web_page4.html">Page 4</a> </li>
+            </ul>
+            <h2>Exercices :</h2>
+                <ul>
+                    <span id='nf'></span>
+                    <script type='text/javascript' language='javascript'>fait();</script>
+                </ul>
+        </nav>
+
+        <section class="sexo">
+            <h1 class="exoh1">Exercice 4.1 : identifier certains éléments dans une requête HTTP</h1>
+                <p class="pexo">
+                    On considère la requête HTTP suivante :
+                </p>
+                    <div class="afficheur2"><script type='text/javascript' language='javascript'>init();</script></div>
+                <p class="pexo">
+                    Compléter les zones ci-dessous, valider en appuyant sur <b>Entrée</b> ou en cliquant sur le bouton <b>Valider</b>.<br>
+                    Attention de ne pas oublier les <b>"/"</b> qui encadrent le chemin et de ne pas oublier
+                    le numéro de version du navigateur.
+                </p> <br>
+
+                <form name="saisie_1">
+                    <span class="spanquiz"> <img src="images/vide.png" width='20' height='20'> </span>
+                    <label class="saisie">Chemin du fichier :</label><br>
+                    <input type="text" class="zone_saisie" name="in" autocomplete="off" size='30'
+                        onkeypress="javascript:if (event.keyCode == 13) {verif('saisie_1',0);return false;}"/>
+                    &ensp;<input class="bout" type="button" value="Valider" onClick="verif('saisie_1',0)" />
+                    <span class="spanmes"></span>
+                </form>
+                <br>
+
+                <form name="saisie_2">
+                    <span class="spanquiz"> <img src="images/vide.png" width='20' height='20'> </span>
+                    <label class="saisie">Nom du fichier :</label><br>
+                    <input type="text" class="zone_saisie" name="in" autocomplete="off" size='30'
+                        onkeypress="javascript:if (event.keyCode == 13) {verif('saisie_2',1);return false;}"/>
+                    &ensp;<input class="bout" type="button" value="Valider" onClick="verif('saisie_2',1)" />
+                    <span class="spanmes"></span>
+                </form>
+                <br>
+
+                <form name="saisie_3">
+                    <span class="spanquiz"> <img src="images/vide.png" width='20' height='20'> </span>
+                    <label class="saisie">Hôte du fichier :</label><br>
+                    <input type="text" class="zone_saisie" name="in" autocomplete="off" size='30'
+                        onkeypress="javascript:if (event.keyCode == 13) {verif('saisie_3',2);return false;}"/>
+                    &ensp;<input class="bout" type="button" value="Valider" onClick="verif('saisie_3',2)" />
+                    <span class="spanmes"></span>
+                </form>
+                <br>
+
+                <form name="saisie_4">
+                    <span class="spanquiz"> <img src="images/vide.png" width='20' height='20'> </span>
+                    <label class="saisie">Navigateur du client :</label><br>
+                    <input type="text" class="zone_saisie" name="in" autocomplete="off" size='30'
+                        onkeypress="javascript:if (event.keyCode == 13) {verif('saisie_4',3);return false;}"/>
+                    &ensp;<input class="bout" type="button" value="Valider" onClick="verif('saisie_4',3)" />
+                    <span class="spanmes"></span>
+                </form>
+                <br>
+
+                <form name="saisie_5">
+                    <span class="spanquiz"> <img src="images/vide.png" width='20' height='20'> </span>
+                    <label class="saisie">Système d'exploitation du client :</label><br>
+                    <input type="text" class="zone_saisie" name="in" autocomplete="off" size='30'
+                        onkeypress="javascript:if (event.keyCode == 13) {verif('saisie_5',4);return false;}"/>
+                    &ensp;<input class="bout" type="button" value="Valider" onClick="verif('saisie_5',4)" />
+                    <span class="spanmes"></span>
+                </form>
+                <br>
+
+                <form name="saisie_6">
+                    <span class="spanquiz"> <img src="images/vide.png" width='20' height='20'> </span>
+                    <label class="saisie">Type de contenu demandé :</label><br>
+                    <input type="text" class="zone_saisie" name="in" autocomplete="off" size='30'
+                        onkeypress="javascript:if (event.keyCode == 13) {verif('saisie_6',5);return false;}"/>
+                    &ensp;<input class="bout" type="button" value="Valider" onClick="verif('saisie_6',5)" />
+                    <span class="spanmes"></span>
+                </form>
+                <br>
+
+                <br><br><br>
+                <input class="bouton" type="button" value="Valider l'exercice" onClick="verif_exo(6)" />
+                <br>
+                <br>
+                 <span class="reponse" name="reponse"> </span>
+                <br>
+                <br>
+        </section>
+    </body>
+
+    <footer class="exo"> 
+        <script type='text/javascript' language='javascript'>pied();</script>
+    </footer>
+
+</html>

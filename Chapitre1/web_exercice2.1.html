@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" href="../style/style.css" />
+        <script src="../style/scriptfooter.js"></script>
+        <script src="script/script_ex2.1.js"></script>
+        <script src="script/script2.js"></script>
+    </head>
+
+    <header class="exo"> SNT : Le Web : Exercice 2.1 </header>
+
+    <body>
+
+        <title>SNT web exercice 2.1</title>
+
+        <nav>
+            <h2>Liens :</h2>
+                <ul>
+                    <li> <a href="web_page2.html">Page 2</a> </li>
+                </ul>
+            <h2>Exercices :</h2>
+                <ul>
+                    <span id='nf'></span>
+                    <script type='text/javascript' language='javascript'>fait();</script>
+                </ul>
+        </nav>
+
+        <section class="sexo">
+            <h1 class="exoh1">Exercice 2.1 : identifier le chemin d'un fichier</h1>
+                <b>1.</b> On considère les noms de fichiers ci-dessous. Glisser avec la souris chacun de ces fichiers 
+                    dans la bonne case grise.<br>
+                    Puis cliquer sur le bouton <b>Valider</b> pour vérifier qu'il n'y a pas d'erreur.<br><br>
+
+                    <div id="o1" class="drop1" ondrop="drop(event)" ondragover="allowDrop(event)">
+                        <div id="dr1" class="drag1" draggable="true" ondragstart="drag(event)">fiche1.pdf</div>
+                    </div>
+                    <div id="o2" class="drop1" ondrop="drop(event)" ondragover="allowDrop(event)">
+                        <div id="dr2" class="drag1" draggable="true" ondragstart="drag(event)">travaux.doc</div>
+                    </div>
+                    <div id="o1" class="drop1" ondrop="drop(event)" ondragover="allowDrop(event)">
+                        <div id="dr3" class="drag1" draggable="true" ondragstart="drag(event)">im1.png</div>
+                    </div>
+                    <div id="o2" class="drop1" ondrop="drop(event)" ondragover="allowDrop(event)">
+                        <div id="dr4" class="drag1" draggable="true" ondragstart="drag(event)">document.odt</div>
+                    </div>
+                    
+                    <br><br><br><br>
+                    
+                    <div style="float:left;">
+                        <label class="saisie">&emsp;Fichier texte libre office</label><br>
+                        <div id="d1" class="drop2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                    </div>
+                    <div style="float:left;">
+                        <label class="saisie">&emsp;Fichier image</label><br>
+                        <div id="d2" class="drop2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                    </div>
+                    <div style="float:left;">
+                        <label class="saisie">&emsp;Fichier présentation</label><br>
+                        <div id="d3" class="drop2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                    </div>
+                    <div style="float:left;">
+                        <label class="saisie">&emsp;Fichier texte word</label><br>
+                        <div id="d4" class="drop2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                    </div>
+
+                    <br><br><br><br><br><br><br><br>
+
+                    <form name="saisie_1">
+                        <span class="spanquiz"> <img src="images/vide.png" width='20' height='20'> </span>
+                        &emsp;<input class="bout" type="button" value="Valider" onClick="verif1('saisie_1')" />
+                        <span class="spanmes"></span>
+                    </form>
+
+                    <br><br>
+
+                <b>2.</b> Compléter les zones ci-dessous par les <b>extensions</b> de chacun des fichiers ci-dessus en respectant
+                le même ordre.<br><br>
+
+                    <form name="saisie_2">
+                        &ensp;
+                        <input type="text" class="zone_saisie" name="in" autocomplete="off" size='20'>&ensp;
+                        <input type="text" class="zone_saisie" name="in" autocomplete="off" size='20'>&ensp;
+                        <input type="text" class="zone_saisie" name="in" autocomplete="off" size='20'>&ensp;
+                        <input type="text" class="zone_saisie" name="in" autocomplete="off" size='20'>
+                        <br><br>
+                        <span class="spanquiz"> <img src="images/vide.png" width='20' height='20'> </span>
+                        &emsp;<input class="bout" type="button" value="Valider" onClick="verif2('saisie_2')" />
+                        <span class="spanmes"></span>
+                    </form>                  
+                    
+                <br><br><br>
+                <input class="bouton" type="button" value="Valider l'exercice" onClick="verif_exo(2)" />
+                <br><br>
+                <span class="reponse" name="reponse"> </span>
+                <br><br>
+        </section>
+    </body>
+
+    <footer class="exo"> 
+        <script type='text/javascript' language='javascript'>pied();</script>
+    </footer>
+
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" href="../style/style.css" />
+        <script src="../style/scriptfooter.js"></script><link rel="stylesheet" href="../style/style.css" />
+        <script src="../style/scriptfooter.js"></script>
+        <script src="script/script_ex2.4.js"></script>
+        <script src="script/script2.js"></script>
+    </head>
+
+    <header class="exo"> SNT : Le Web : Exercice 2.4 </header>
+
+    <body>
+
+        <title>SNT web exercice 2.4</title>
+
+        <nav>
+            <h2>Liens :</h2>
+            <ul>
+                <li> <a href="web_page2.html">Page 2</a> </li>
+            </ul>
+            <h2>Exercices :</h2>
+                <ul>
+                    <span id='nf'></span>
+                    <script type='text/javascript' language='javascript'>fait();</script>
+                </ul>
+        </nav>
+
+        <section class="sexo">
+            <h1 class="exoh1">Exercice 2.4 : Ecrire une adresse URL</h1>
+                On rappelle ci-dessous la construction d'une <b>adresse URL</b>.
+                On rappelle aussi que : <b>Hôte = sous-domaine.nom-de-domaine</b>.<br><br>
+                <img src="images/URL.png"/ width='500' height='116'>
+                <br><br><br>
+                <b>1.</b>
+                    Un navigateur veut accéder via le protocole <b style="color:blue;">http</b>, 
+                    au fichier web <b style="color:blue;"><script> init(fic,2); </script></b>, 
+                    sur le site dont le nom de domaine est <b style="color:blue;"><script> init(dom,0); </script></b> ,
+                    avec le sous-domaine <b style="color:blue;">www</b> et sachant que l'emplacement du fichier web sur ce site est
+                    <b style="color:blue;"><script> init(che,1); </script></b>.<br><br>
+                
+                    Saisir ci-dessous <b>l'adresse URL</b> correspondant à la requête HTTP de ce navigateur.<br><br>
+
+                    <form name="saisie_1">
+                        <span class="spanquiz"> <img src="images/vide.png" width='20' height='20'> </span>
+                        <label class="saisie">Adresse URL :</label><br>
+                        <input type="text" class="zone_saisie" name="in" autocomplete="off" size='60'
+                            onkeypress="javascript:if (event.keyCode == 13) {verif('saisie_1','in',0);return false;}"/>
+                        &ensp;<input class="bout" type="button" value="Valider" onClick="verif('saisie_1','in',0)" />
+                        <span class="spanmes"></span>
+                    </form> <br>
+
+                    <br>
+                <b>2.</b>
+                    Ouvrir la page web suivante : 
+                    <a href="http://info.cern.ch/hypertext/WWW/TheProject.html" target="_blank"> 
+                        première page web 
+                    </a>.
+                    Copier <b>l'adresse URL</b> de cette page depuis la barre d'URL, puis la coller dans la zone ci-dessous.<br><br>
+
+                    <form name="saisie_2">
+                        <span class="spanquiz"> <img src="images/vide.png" width='20' height='20'> </span>
+                        <label class="saisie">Adresse URL :</label><br>
+                        <input type="text" class="zone_saisie" name="in" autocomplete="off" size='60'
+                            onkeypress="javascript:if (event.keyCode == 13) {verif('saisie_2','in',1);return false;}"/>
+                        &ensp;<input class="bout" type="button" value="Valider" onClick="verif('saisie_2','in',1)" />
+                        <span class="spanmes"></span>
+                    </form> <br>
+               
+                <br><br><br>
+                <input class="bouton" type="button" value="Valider l'exercice" onClick="verif_exo(2)" />
+                <br><br>
+                 <span class="reponse" name="reponse"> </span>
+                <br><br>
+        </section>
+    </body>
+
+    <footer class="exo"> 
+        <script type='text/javascript' language='javascript'>pied();</script>
+    </footer>
+
+</html>

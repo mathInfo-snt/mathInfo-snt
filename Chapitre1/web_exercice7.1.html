@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="../style/style.css" />
+        <script src="../style/scriptfooter.js"></script>
+        <script src="script/script_ex7.1.js"></script>
+        <script src="script/script7.js"></script>
+    </head>
+
+    <header class="exo"> SNT : Le Web : Exercice 7.1 </header>
+
+    <body>
+
+        <title>SNT web exercice 7.1</title>
+
+        <nav>
+            <h2>Liens :</h2>
+            <ul>
+                <li> <a href="web_page7.html">Page 7</a> </li>
+            </ul>
+            <h2>Exercices :</h2>
+                <ul>
+                    <span id='nf'></span>
+                    <script type='text/javascript' language='javascript'>fait();</script>
+                </ul>
+        </nav>
+
+        <section class="sexo">
+            <h1 class="exoh1">Exercice 7.1 : Les licences Creative Commons</h1>
+                
+                <b>1.</b> On considère les combinaisons d'options ci-dessous. Glisser avec la souris chacunes de ces combinaisons 
+                    dans la case grise correspondant à la bonne licence Common Creative.
+                    Puis cliquer sur le bouton <b>Valider</b> pour vérifier qu'il n'y a pas d'erreur.<br><br>
+
+                    <div id="o1" class="drop3" ondrop="drop(event)" ondragover="allowDrop(event)">
+                        <div id="dr1" class="drag2" draggable="true" ondragstart="drag(event)">(BY-NC)</div>
+                    </div>
+                    <div id="o2" class="drop3" ondrop="drop(event)" ondragover="allowDrop(event)">
+                        <div id="dr2" class="drag2" draggable="true" ondragstart="drag(event)">(BY-SA)</div>
+                    </div>
+                    <div id="o3" class="drop3" ondrop="drop(event)" ondragover="allowDrop(event)">
+                        <div id="dr3" class="drag2" draggable="true" ondragstart="drag(event)">(BY)</div>
+                    </div>
+                    <div id="o4" class="drop3" ondrop="drop(event)" ondragover="allowDrop(event)">
+                        <div id="dr4" class="drag2" draggable="true" ondragstart="drag(event)">(BY-NC-SA)</div>
+                    </div>
+                    <div id="o5" class="drop3" ondrop="drop(event)" ondragover="allowDrop(event)">
+                        <div id="dr5" class="drag2" draggable="true" ondragstart="drag(event)">(BY-NC-ND)</div>
+                    </div>
+                    <div id="o6" class="drop3" ondrop="drop(event)" ondragover="allowDrop(event)">                       
+                        <div id="dr6" class="drag2" draggable="true" ondragstart="drag(event)">(BY-ND)</div>
+                    </div>
+                    
+                    <br><br><br><br><br><br>
+                    
+                    <div style="float:left;">
+                        &emsp;&emsp;<img src='images/licence1.png'><br>
+                        <div id="d1" class="drop4" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                    </div>
+                    <div style="float:left;">
+                        &emsp;&emsp;<img src='images/licence2.png'><br>
+                        <div id="d2" class="drop4" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                    </div>
+                    <div style="float:left;">
+                        &emsp;&emsp;<img src='images/licence3.png'><br>
+                        <div id="d3" class="drop4" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                    </div>
+                    <div style="float:left;">
+                        &emsp;&emsp;<img src='images/licence4.png'><br>
+                        <div id="d4" class="drop4" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                    </div>
+                    <div style="float:left;">
+                        &emsp;&emsp;<img src='images/licence5.png'><br>
+                        <div id="d5" class="drop4" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                    </div>
+                    <div style="float:left;">
+                        &emsp;&emsp;<img src='images/licence6.png'><br>
+                        <div id="d6" class="drop4" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                    </div>
+
+                    <br><br><br><br><br><br><br><br>
+
+                    <form name="saisie_1">
+                        <span class="spanquiz"> <img src="images/vide.png" width='20' height='20'> </span>
+                        &emsp;<input class="bout" type="button" value="Valider" onClick="verif1('saisie_1')" />
+                        <span class="spanmes"></span>
+                    </form>
+                    <br><br>
+                    <br><br>   
+                <input class="bouton" type="button" value="Valider l'exercice" onClick="verif_exo(1)" />
+                <br>
+                <br>
+                 <span class="reponse" name="reponse"> </span>
+                <br>
+                <br>      
+        </section>
+    </body>
+
+    <footer class="exo"> 
+        <script type='text/javascript' language='javascript'>pied();</script>
+    </footer>
+
+</html>

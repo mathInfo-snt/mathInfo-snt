@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8" />
+    <title>SNT web page 2</title>
+    <link rel="stylesheet" href="../style/style.css" />
+    <script src="script/script2.js"></script>
+    <script src="../style/scriptfooter.js"></script>
+  </head>
+
+  <header> SNT : Le Web : page 2 : L'adresse URL </header>
+
+  <body>
+
+    <nav>
+        <h2>Liens :</h2>
+                <ul>
+                    <li> <a href="chapitre1.html">Chapitre 1</a> </li>
+                </ul>
+        <h2>Exercices :</h2>
+            <ul>
+                <span id='nf'></span>
+                <script type='text/javascript' language='javascript'>fait();</script>
+            </ul>
+    </nav>
+
+    <section>
+            
+      <h1>Construction d'une URL</h1>
+		    <p>
+          <b class="def">Définition (URL) :</b>
+          Une <b>URL</b> (<u>U</u>niform <u>R</u>essource <u>L</u>ocator) est litéralement un localisateur
+          universel de ressources. Il s'agit d'une adresse qui sert à indiquer l'emplacement d'un document web sur 
+          un <b>serveur</b> (un ordinateur).<br><br>
+
+          Une <b>URL</b> est constituée de quatre éléments principaux, comme on peut le voir dans l'exemple ci-dessous.
+          <center>
+             <img src="images/URL.png"/>
+          </center>
+        </p>
+
+       
+        <br>
+        <p>Les quatre éléments de l'<b>URL</b> sont :
+          <ul>
+            <li> 
+              <b style="color:red;">le protocole</b> (<b>http</b> pour les pages Web, 
+                        <b>https</b> pour les pages web sécurisées,
+                        <b>mailto</b> pour les emails) ;
+            </li>
+            <li> 
+              <b style="color:blue;">l'hôte</b> (commence souvent par <b>www.</b> suivi du <b>nom de domaine</b>, ici : <b>webdev.com</b>) ;
+            </li>
+            <li> 
+              <b style="color:darkgreen;">le chemin</b> (il donne l'emplacement de la ressource sur l'ordinateur serveur,
+                        ici dans le dossier : <b>/accueil/</b>) ;
+            </li>
+            <li> 
+              <b style="color:darkorange;">le fichier</b> (le nom du fichier avec son extension, c'est à dire son type,
+                        ici : <b>index.html</b>). 
+            </li>
+          </ul>
+        </p>
+        <br>
+                
+      <h1>Quelques explications</h1>
+
+        <h2>Hôte et nom de domaine</h2>
+          <p>
+            Il ne faut pas confondre <b>l'hôte</b> et le <b>nom de domaine</b>.
+            L'hôte est en général construit de la façon suivante : <b>sous-domaine</b>.<b>nom-de-domaine</b>.<br><br>
+            <center>
+              <img src="images/Hote.png"/>
+            </center>
+          </p>
+
+        <h2>Sous-domaine</h2>
+          <p>
+            Le sous-domaine <b>www</b> indique habituellement des pages webs standards. 
+            C'est le sous-domaine le plus courant.<br>
+            On peut utiliser d'autres sous-domaines comme :
+            <ul>
+              <li> 
+                <b>forum</b>
+              </li> 
+              <li>
+                <b>video</b>
+              </li>
+              <li>
+               <b>webmail</b>
+              </li>
+            </ul>
+            Cela permet d'ordonner davantage son site. Par exemple on pourrait avoir les hôtes :
+            <ul>
+              <li>
+                forum.site-snt.com
+              </li>
+              <li>
+                video.site-snt.com
+              </li>
+              <li>
+                webmail.site.fr
+              </li>
+            </ul>
+            Le nom de <b>sous-domaine</b> n'est pas toujours présent. 
+            De plus en plus de site ne l'utilise plus, exemple :
+            <ul>
+              <li>http://anna-de-noailles.elycee.rhonealpes.fr</li>
+            </ul>
+          </p>
+        
+        <h2>URL sur un site dynamique</h2>
+          <p> 
+            Sur un <b>site dynamique</b> (c'est à dire un site qui utilise une base de données)
+            le document recherché est caractérisé par un ensemble de paramètres. Ces paramètres sont indiqués à la fin
+            de l'URL, après le point d'interrogation, comme dans l'exemple ci-dessous.
+            <ul>
+              <li>
+                https://www.botanic.com/recherche.html?keywords=acer%20palmatum%20dissectum&_r=true 
+              </li>
+            </ul>
+          </p>
+
+        <h2>Nom de fichier</h2>
+          <p>
+            Les documents ou les médias électroniques ont besoin d’un <b>nom de fichier</b> unique pour être identifiés.<br> 
+            Il se compose normalement du vrai <b>nom</b> du fichier suivi d'un point et d'une <b>extension</b> :
+            <b style="color:blue;">nom.extension</b>.<br>
+            
+            L'extension de fichier est indissociable du nom et sert à identifier son format (image, texte, ...). <br>
+            Voici une liste d'extension courante :
+            <ul>
+              <li>
+                <b>.doc</b> : fichier texte word ;
+              </li>
+              <li>
+                <b>.html</b> : fichier pour page web ;
+              </li>
+              <li>
+                <b>.jpg</b> : fichier image au format jpeg ;
+              </li>
+              <li>
+                <b>.mp3</b> : fichier audio au format mp3 ;
+              </li>
+              <li>
+                <b>.odt</b> : fichier texte libre ofice ;
+              </li>
+              <li>
+                <b>.ods</b> : fichier tableur au format libre ofice ;
+              </li>
+              <li>
+                <b>.pdf</b> : fichier présentation au format pdf ;
+              </li>
+              <li>
+                <b>.png</b> : fichier image au format png ;
+              </li>
+              <li>
+                <b>.txt</b> : fichier texte simple ;
+              </li>
+              <li>
+                <b>.xls</b> : fichier tableur au format excel.
+              </li>
+            </ul>       
+          </p>
+            
+            <br><br>
+            
+          <a class="abas" href="web_quiz2.html" target="_blank">Quiz 2</a>
+          <br><br><br>
+    </section>
+  </body>
+
+  <footer> 
+    <script type='text/javascript' language='javascript'>pied();</script>
+  </footer>
+
+</html>

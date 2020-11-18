@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <meta charset="utf-8"/>
+        <title>SNT Web quiz 6</title>
+        <link rel="stylesheet" href="../style/style.css"/>
+        <script src="../style/scriptfooter.js"></script>
+        <script src="script/script_q6.js"></script>
+        <script src="script/script6.js"></script>
+    </head>
+
+    <header class="quizz"> Quiz 6 sur le Web </header>
+
+    <body>
+        <nav>
+            <h2>Liens :</h2>
+            <ul>
+                <li> <a href="web_page6.html">Page 6</a> </li>
+            </ul>
+            <h2>Exercices :</h2>
+                <ul>
+                    <span id='nf'></span>
+                    <script type='text/javascript' language='javascript'>fait();</script>
+                </ul>
+        </nav>
+        <section class="squizz" >
+            <form name="quizz" action="javascript:check();" class="quizzForm">
+                <div name="quiz">
+
+                    <div>
+                        <span class="spanquiz" name="sq"> <img src="images/vide.png" width='20' height='20'> </span>
+                        <h4>Question 1 : Un cookie est :</h4>
+                        <div class="question" id='q1'>
+                            <script type='text/javascript' language='javascript'>init(0);</script>
+                        </div>
+                    </div>
+
+                    <div>
+                        <span class="spanquiz" name="sq"> <img src="images/vide.png" width='20' height='20'> </span>
+                        <h4>Question 2 : L'historique de navigation est conservé sur :</h4>
+                        <div class="question" id='q2'>
+                            <script type='text/javascript' language='javascript'>init(1);</script>
+                        </div>
+                    </div>
+
+                    <div>
+                        <span class="spanquiz" name="sq"> <img src="images/vide.png" width='20' height='20'> </span>
+                        <h4>Question 3 : Parmi les moteurs de recherche suivants, quelle est celui qui ne conserve pas 
+                            l'historique de recherche ?</h4>
+                        <div class="question" id='q3'>
+                            <script type='text/javascript' language='javascript'>init(2);</script>
+                        </div>
+                    </div>
+
+                    <div>
+                        <span class="spanquiz" name="sq"> <img src="images/vide.png" width='20' height='20'> </span>
+                        <h4>Question 4 : Le côté sécurisé du protocole HTTPS est assuré par le protocole :</h4>
+                        <div class="question" id='q4'>
+                            <script type='text/javascript' language='javascript'>init(3);</script>
+                        </div>
+                    </div>
+
+                    <div>
+                        <span class="spanquiz" name="sq"> <img src="images/vide.png" width='20' height='20'> </span>
+                        <h4>Question 5 : En anglais un programme invisible s'appelle :</h4>
+                        <div class="question" id='q5'>
+                            <script type='text/javascript' language='javascript'>init(4);</script>
+                        </div>
+                    </div>
+
+                 </div>
+            </form>
+            </br>
+            <input class="bouton" type="button" value="Valider" onClick="verification(5)" />
+            <br>
+            <br>
+            <span id="message"> </span>
+            <br>
+            <br>
+        </section>
+    </body>
+
+    <footer class="quizz"> 
+        <script type='text/javascript' language='javascript'>pied();</script>
+    </footer>
+
+</html>
