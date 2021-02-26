@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="../style/style.css" />
+        <script src="../style/scriptfooter.js"></script>
+        <script src="script/script_ex5.2.js"></script>
+        <script src="script/script5.js"></script>
+    </head>
+
+    <header class="exo"> SNT : Images : Exercice 5.2 </header>
+
+    <body>
+
+        <title>SNT images exercice 5.2</title>
+
+        <nav>
+            <h2>Liens :</h2>
+            <ul>
+                <li> <a href="ima_page5.html">Page 5</a> </li>
+            </ul>
+            <h2>Exercices :</h2>
+                <ul>
+                    <span id='nf'></span>
+                    <script type='text/javascript' language='javascript'>fait();</script>
+                </ul>
+        </nav>
+
+        <section class="sexo">
+            
+            <h1 class="exoh1">Exercice 5.2 : Notation degrés, minutes, secondes de la latitude et de la longitude </h1>
+                
+                <h4>1. On considère la latitude suivante en notation décimale :</h4>
+
+                    <div class="afficheur1" id="lati">
+                        <script type='text/javascript' language='javascript'>init1();</script>
+                    </div>
+                    <br><br>
+
+                    <p class="pexo">
+                        Compléter la zone ci-dessous avec la latitude en notation degrés, minutes, secondes
+                        (par exemple : 45° 20' 25" Nord).<br>
+                        Pour valider cette question 1. il faut obtenir 
+                        <b style="color:teal;">2 bonnes réponses d'affilée</b>.
+                    </p> 
+
+                    <form name="saisie_1">
+                        <span id="icone" class="spanquiz" name="span_1" > <img src="images/vide.png" width='20' height='20'> </span>
+                        <label class="saisie">Latitude en notation degrés, minutes, secondes :</label><br>
+                        <input type="text" class="zone_saisie" id="id_1" name="name_1" autocomplete="off" size='35'
+                            onkeypress="javascript:if (event.keyCode == 13) {verif1('saisie_1','name_1');return false;}"/>
+                        &ensp;
+                        <input class="bout" type="button" value="Valider" onClick="verif1('saisie_1','name_1')" 
+                            onFocus="this.blur();" />
+                        &ensp;
+                        <span name="message1"></span>
+                    </form>
+
+                    <span class="sel2" name="reponse" id="nrj"> </span><br>
+                    <span class="reponse_juste" name="reponse" id="val1"> </span>
+                
+
+                <h4>2. On considère la longitude suivante en notation décimale :</h4>
+
+                    <div class="afficheur1" id="longi">
+                        <script type='text/javascript' language='javascript'>init2();</script></div>
+                    <br><br>
+
+                    <p class="pexo">
+                        Compléter la zone ci-dessous avec la longitude en notation degrés, minutes, secondes.
+                        (par exemple : 15° 22' 37" Est).<br>
+                        Pour valider cette question 2. il faut obtenir 
+                        <b style="color:teal;">2 bonnes réponses d'affilée</b>.
+                    </p>
+
+                    <form name="saisie_2">
+                        <span id="icone" class="spanquiz" name="span_2" > <img src="images/vide.png" width='20' height='20'> </span>
+                        <label class="saisie">Longitude en notation degrés, minutes, secondes :</label><br>
+                        <input type="text" class="zone_saisie" id="id_2" name="name_2" autocomplete="off" size='35'
+                            onkeypress="javascript:if (event.keyCode == 13) {verif2('saisie_2','name_2');return false;}"/>
+                        &ensp;
+                        <input class="bout" type="button" value="Valider" onClick="verif2('saisie_2','name_2')" 
+                            onFocus="this.blur();" />
+                        &ensp;
+                        <span name="message2"></span>
+                    </form>
+
+                    <span class="sel2" name="reponse" id="nrj2"> </span><br>
+                    <span class="reponse_juste" name="reponse" id="val2"> </span>
+                    <br><br><br>
+
+                <br><br>
+                <input class="bouton" type="button" value="Valider l'exercice" onClick="verif_exo(2)" onFocus="this.blur();" />
+                <br>
+                <br>
+                 <span class="reponse" name="reponse"> </span>
+                <br>
+                <br>
+        </section>
+
+    </body>
+
+    <footer class="exo"> 
+        <script type='text/javascript' language='javascript'>pied();</script>
+    </footer>
+
+</html>

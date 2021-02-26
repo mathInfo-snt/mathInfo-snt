@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="../style/style.css" />
+        <script src="../style/scriptfooter.js"></script>
+        <script src="script/script_ex6.3.js"></script>
+        <script src="script/script6.js"></script>
+    </head>
+
+    <header class="exo"> SNT : Images : Exercice 6.3 </header>
+
+    <body>
+
+        <title>SNT images exercice 6.3</title>
+
+        <nav>
+            <h2>Liens :</h2>
+            <ul>
+                <li> <a href="ima_page6.html">Page 6</a> </li>
+            </ul>
+            <h2>Exercices :</h2>
+                <ul>
+                    <span id='nf'></span>
+                    <script type='text/javascript' language='javascript'>fait();</script>
+                </ul>
+        </nav>
+
+        <section class="sexo">
+            
+            <h1 class="exoh1">Exercice 6.3 : compression LRE de fichier PBM</h1>
+
+                <br>
+
+                <h4>1. On considère le fichier PBM suivant :</h4>
+
+                    &emsp; <span id='ima1'> </span>
+                    <script type='text/javascript' language='javascript'>init1();</script>
+
+                    <p>
+                        &emsp; Modifier le fichier compressé ci-dessous en appliquant le principe 
+                        du codage des répétitions (<b>LRE</b>) :
+                    </p>
+
+                    <form name="s1">
+                        
+                        <div class="tpbmg" id="i0.1" name="n0"> 
+                            &ensp; P1<br>
+                            &ensp; 5&emsp; 5 
+                        </div>
+                        &emsp;                      
+                        <input type="text" class="carB" autocomplete="off" value='0' 
+                            id="i1.1" onChange="verific('i1.1')"
+                            onkeypress="javascript:if (event.keyCode == 13){return false;}" 
+                        /><input type="text" class="carB" autocomplete="off" value='0' 
+                            id="i1.2" onChange="verific('i1.2')" 
+                            onkeypress="javascript:if (event.keyCode == 13){return false;}" 
+                            /> <br>                 
+                        &emsp;                      
+                        <input type="text" class="carB" autocomplete="off" value='0' 
+                            id="i2.1" onChange="verific('i2.1')"
+                            onkeypress="javascript:if (event.keyCode == 13){return false;}" 
+                        /><input type="text" class="carB" autocomplete="off" value='0' 
+                            id="i2.2" onChange="verific('i2.2')" 
+                            onkeypress="javascript:if (event.keyCode == 13){return false;}" 
+                            /> <br>
+                        &emsp;                      
+                        <input type="text" class="carB" autocomplete="off" value='0' 
+                            id="i3.1" onChange="verific('i3.1')"
+                            onkeypress="javascript:if (event.keyCode == 13){return false;}" 
+                        /><input type="text" class="carB" autocomplete="off" value='0' 
+                            id="i3.2" onChange="verific('i3.2')" 
+                            onkeypress="javascript:if (event.keyCode == 13){return false;}" 
+                            /> <br>
+                        &emsp;                      
+                        <input type="text" class="carB" autocomplete="off" value='0' 
+                            id="i4.1" onChange="verific('i4.1')"
+                            onkeypress="javascript:if (event.keyCode == 13){return false;}" 
+                        /><input type="text" class="carB" autocomplete="off" value='0' 
+                            id="i4.2" onChange="verific('i4.2')" 
+                            onkeypress="javascript:if (event.keyCode == 13){return false;}" 
+                            /> <br>
+                        &emsp;                      
+                        <input type="text" class="carB" autocomplete="off" value='0' 
+                            id="i5.1" onChange="verific('i5.1')"
+                            onkeypress="javascript:if (event.keyCode == 13){return false;}" 
+                        /><input type="text" class="carB" autocomplete="off" value='0' 
+                            id="i5.2" onChange="verific('i5.2')" 
+                            onkeypress="javascript:if (event.keyCode == 13){return false;}" 
+                            /> <br>
+                    </form>
+
+                    <br>
+                    <span id="ic1" class="spanquiz" name="span_1" > 
+                        <img src="images/vide.png" width='20' height='20'> 
+                    </span>
+                    &emsp; <input class="bout" type="button" value="Valider" onClick="verif1()" 
+                        onFocus="this.blur();" />
+                    &ensp;
+                    <span id="m1"></span>
+                    <br><br>
+
+                    <form>
+                        <span id="ic3" class="spanquiz" name="span_1" > 
+                            <img src="images/vide.png" width='20' height='20'> 
+                        </span>
+                        &emsp; <label for="volume" style="color:teal;font-size:20px;">
+                                    <b>Le taux de compression est de : </b> </label>
+                        <select id="scim1" name="n1" class="sel4" onChange="verif3()">
+                            <option>10%</option>
+                            <option>20%</option>
+                            <option>30%</option>
+                            <option>40%</option>
+                            <option>50%</option>
+                            <option>60%</option>
+                            <option>70%</option>
+                            <option>80%</option>
+                            <option>90%</option>
+                        </select>
+                        &ensp;
+                        <span id="m3"></span>
+                    </form>
+                
+                <br><br><br>
+
+                <!-- ______________________________________________________________________________________________ -->
+               <h4>2. On considère le fichier PBM suivant :</h4>
+
+                    &emsp; <span id='ima2'> </span>
+                    <script type='text/javascript' language='javascript'>init2();</script>
+
+                    <p>
+                        &emsp; Modifier le fichier compressé ci-dessous en appliquant le principe 
+                        du codage des répétitions (<b>LRE</b>) :
+                    </p>
+
+                    <form name="s2">
+                        
+                        <div class="tpbmg" id="j0.1" name="n0"> 
+                            &ensp; P1<br>
+                            &ensp; 5&emsp; 5 
+                        </div>
+                        &emsp;                      
+                        <input type="text" class="carB" autocomplete="off" value='0' 
+                            id="j1.1" onChange="verific('j1.1')"
+                            onkeypress="javascript:if (event.keyCode == 13){return false;}" 
+                        /><input type="text" class="carB" autocomplete="off" value='0' 
+                            id="j1.2" onChange="verific('j1.2')" 
+                            onkeypress="javascript:if (event.keyCode == 13){return false;}" 
+                            /> <br>                 
+                        &emsp;                      
+                        <input type="text" class="carB" autocomplete="off" value='0' 
+                            id="j2.1" onChange="verific('j2.1')"
+                            onkeypress="javascript:if (event.keyCode == 13){return false;}" 
+                        /><input type="text" class="carB" autocomplete="off" value='0' 
+                            id="j2.2" onChange="verific('j2.2')" 
+                            onkeypress="javascript:if (event.keyCode == 13){return false;}" 
+                            /> <br>
+                        &emsp;                      
+                        <input type="text" class="carB" autocomplete="off" value='0' 
+                            id="j3.1" onChange="verific('j3.1')"
+                            onkeypress="javascript:if (event.keyCode == 13){return false;}" 
+                        /><input type="text" class="carB" autocomplete="off" value='0' 
+                            id="j3.2" onChange="verific('j3.2')" 
+                            onkeypress="javascript:if (event.keyCode == 13){return false;}" 
+                            /> <br>
+                        &emsp;                      
+                        <input type="text" class="carB" autocomplete="off" value='0' 
+                            id="j4.1" onChange="verific('j4.1')"
+                            onkeypress="javascript:if (event.keyCode == 13){return false;}" 
+                        /><input type="text" class="carB" autocomplete="off" value='0' 
+                            id="j4.2" onChange="verific('j4.2')" 
+                            onkeypress="javascript:if (event.keyCode == 13){return false;}" 
+                            /> <br>
+                        &emsp;                      
+                        <input type="text" class="carB" autocomplete="off" value='0' 
+                            id="j5.1" onChange="verific('j5.1')"
+                            onkeypress="javascript:if (event.keyCode == 13){return false;}" 
+                        /><input type="text" class="carB" autocomplete="off" value='0' 
+                            id="j5.2" onChange="verific('j5.2')" 
+                            onkeypress="javascript:if (event.keyCode == 13){return false;}" 
+                            /> <br>
+                        &emsp;                      
+                        <input type="text" class="carB" autocomplete="off" value='0' 
+                            id="j6.1" onChange="verific('j6.1')"
+                            onkeypress="javascript:if (event.keyCode == 13){return false;}" 
+                        /><input type="text" class="carB" autocomplete="off" value='0' 
+                            id="j6.2" onChange="verific('j6.2')" 
+                            onkeypress="javascript:if (event.keyCode == 13){return false;}" 
+                            /> <br>
+                        &emsp;                      
+                        <input type="text" class="carB" autocomplete="off" value='0' 
+                            id="j7.1" onChange="verific('j7.1')"
+                            onkeypress="javascript:if (event.keyCode == 13){return false;}" 
+                        /><input type="text" class="carB" autocomplete="off" value='0' 
+                            id="j7.2" onChange="verific('j7.2')" 
+                            onkeypress="javascript:if (event.keyCode == 13){return false;}" 
+                            /> <br>
+                    </form>
+
+                    <br>
+                    <span id="ic2" class="spanquiz" name="span_1" > 
+                        <img src="images/vide.png" width='20' height='20'> 
+                    </span>
+                    &emsp; <input class="bout" type="button" value="Valider" onClick="verif2()" 
+                        onFocus="this.blur();" />
+                    &ensp;
+                    <span id="m2"></span>
+                    <br><br>
+
+                    <form>
+                        <span id="ic4" class="spanquiz" name="span_1" > 
+                            <img src="images/vide.png" width='20' height='20'> 
+                        </span>
+                        &emsp; <label for="volume" style="color:teal;font-size:20px;">
+                                    <b>Le taux de compression est de : </b> </label>
+                        <select id="scim2" name="n1" class="sel4" onChange="verif4()">
+                            <option>4%</option>
+                            <option>12%</option>
+                            <option>20%</option>
+                            <option>28%</option>
+                            <option>36%</option>
+                            <option>44%</option>
+                            <option>52%</option>
+                            <option>60%</option>
+                            <option>68%</option>
+                            <option>76%</option>
+                            <option>84%</option>
+                            <option>92%</option>
+                        </select>
+                        &ensp;
+                        <span id="m4"></span>
+                    </form>
+
+                <br><br><br>
+
+                <br><br>
+                <input class="bouton" type="button" value="Valider l'exercice" onClick="verif_exo(4)" onFocus="this.blur();" />
+                <br>
+                <br>
+                 <span class="reponse" name="reponse"> </span>
+                <br>
+                <br>
+        </section>
+
+    </body>
+
+    <footer class="exo"> 
+        <script type='text/javascript' language='javascript'>pied();</script>
+    </footer>
+
+</html>

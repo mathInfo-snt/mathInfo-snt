@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="../style/style.css" />
+        <script src="../style/scriptfooter.js"></script>
+        <script src="script/script_ex4.2.js"></script>
+        <script src="script/script4.js"></script>
+    </head>
+
+    <header class="exo"> SNT : Images : Exercice 4.2 </header>
+
+    <body>
+
+        <title>SNT images exercice 4.2</title>
+
+        <nav>
+            <h2>Liens :</h2>
+            <ul>
+                <li> <a href="ima_page4.html">Page 4</a> </li>
+            </ul>
+            <h2>Exercices :</h2>
+                <ul>
+                    <span id='nf'></span>
+                    <script type='text/javascript' language='javascript'>fait();</script>
+                </ul>
+        </nav>
+
+        <section class="sexo">
+            
+            <h1 class="exoh1">Exercice 4.2 : analyser les métadonnées de plusieurs photos</h1>
+
+                <p>
+                    Le samedi 31 août 2019, <b>Tom</b> et <b>Max</b> partent en promenade et photographient les mêmes sites avec leur appareil photo numérique. <br>
+                    Cependant, <b>Tom</b> et <b>Max</b> ne font pas le parcours dans le même ordre. <br>
+                    En analysant les métadonnées de ces photos données en ressource dans le dossier <b>Promenade</b> :<br>
+                    <b style="color:teal;">/Echanges/Votre_Classe/SNT/COURS/Chapitre3-Images/Photos/Promenade/</b>, <br>
+                    retrouver l'ordre chronologique des différentes étapes de la promenade de :
+                    <b style="color:darkgoldenrod;font-size:18px;">
+                        <script type='text/javascript' language='javascript'>init1(0);</script>
+                    </b>.
+                </p>
+                
+                 <form>
+                    <label for="volume" style="color:teal;font-size:24px;"><b>Etape 1 : </b></label>
+                    <select id="s1" name="n1" class="sel3">
+                        <option>moulin</option><option>cascade</option><option>falaise</option><option>chemin</option>
+                        <option>arbre</option><option>glacier</option>
+                        <option>pont</option><option>cabane</option><option>montagne</option>
+                        <option selected="selected">lac</option>
+                    </select><br><br>
+                    <label for="volume" style="color:teal;font-size:24px;"><b>Etape 2 : </b></label>
+                    <select id="s2" name="n2" class="sel3">
+                        <option>moulin</option><option>lac</option><option>cascade</option><option>falaise</option>
+                        <option>chemin</option><option>montagne</option><option>arbre</option>
+                        <option selected="selected">glacier</option>
+                        <option>pont</option><option>cabane</option>
+                    </select><br><br>
+                    <label for="volume" style="color:teal;font-size:24px;"><b>Etape 3 : </b></label>
+                    <select id="s3" name="n3" class="sel3">
+                        <option>montagne</option><option>moulin</option><option>cascade</option>
+                        <option>falaise</option><option>chemin</option><option>lac</option>
+                        <option>pont</option><option>cabane</option>
+                        <option selected="selected">montagne</option>
+                        <option>arbre</option><option>glacier</option>
+                    </select><br><br>
+                    <label for="volume" style="color:teal;font-size:24px;"><b>Etape 4 : </b></label>
+                    <select id="s4" name="n4" class="sel3">
+                        <option>moulin</option><option>cascade</option><option>lac</option>
+                        <option>arbre</option><option>glacier</option>
+                        <option>pont</option><option>cabane</option><option>montagne</option>
+                        <option>falaise</option><option selected="selected">chemin</option>
+                    </select><br><br>
+                    <label for="volume" style="color:teal;font-size:24px;"><b>Etape 5 : </b></label>
+                    <select id="s5" name="n5" class="sel3">
+                        <option>moulin</option><option>cascade</option><option>falaise</option><option>chemin</option>
+                        <option>lac</option><option>montagne</option><option>pont</option><option>cabane</option>
+                        <option selected="selected">arbre</option><option>glacier</option>
+                    </select><br><br>
+                </form><br><br>
+
+                <br><br>
+                <input class="bouton" type="button" value="Valider l'exercice" onClick="verif()" onFocus="this.blur();" />
+                <br>
+                <br>
+                 <span class="reponse" name="reponse"> </span>
+                <br>
+                <br>
+        </section>
+
+    </body>
+
+    <footer class="exo"> 
+        <script type='text/javascript' language='javascript'>pied();</script>
+    </footer>
+
+</html>

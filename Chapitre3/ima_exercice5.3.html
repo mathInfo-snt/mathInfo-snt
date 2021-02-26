@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="../style/style.css" />
+        <script src="../style/scriptfooter.js"></script>
+        <script src="script/script_ex5.3.js"></script>
+        <script src="script/script5.js"></script>
+    </head>
+
+    <header class="exo"> SNT : Images : Exercice 5.3 </header>
+
+    <body>
+
+        <title>SNT images exercice 5.3</title>
+
+        <nav>
+            <h2>Liens :</h2>
+            <ul>
+                <li> <a href="ima_page5.html">Page 5</a> </li>
+            </ul>
+            <h2>Exercices :</h2>
+                <ul>
+                    <span id='nf'></span>
+                    <script type='text/javascript' language='javascript'>fait();</script>
+                </ul>
+        </nav>
+
+        <section class="sexo">
+            
+            <h1 class="exoh1">Exercice 5.3 : Géolocaliser une photo numérique</h1>
+
+                <p class="pexo">
+                    <ul>
+                        <li>
+                            Lancer <b>GIMP 2</b> depuis <b style="color:teal;">Démarrer/Multimedia</b>
+                        </li>
+                        <li>
+                            dans l'onglet <b><u>F</u>ichier</b> cliquer sur <b><u>O</u>uvrir</b> et ouvrir le fichier
+                            <b style="color:darkgoldenrod;font-size:18px;">
+                                <script type='text/javascript' language='javascript'>init1();</script></b>
+                            qui se trouve dans le dossier <b>Photos</b> donné en ressource : <br>
+                            &emsp;&emsp;<b style="color:teal;">/Echanges/Votre_Classe/SNT/COURS/Chapitre3-Images/Photos/</b> ;
+                        </li>
+                        <li>
+                            dans l'onglet <b><u>I</u>mages</b> choisir <b>Métadonnées</b>, puis
+                            <b>Afficher les métadonnées</b> ;
+                        </li>
+                        <li>
+                            cliquer alors sur <b>EXIF</b> et
+                            compléter les zones ci-dessous par les métadonnées 
+                            GPS de cette photographie numérique.
+                        </li>
+                    </ul>
+                </p>
+
+                <form name="saisie_1">
+                    <span class="spanquiz"> <img src="images/vide.png" width='20' height='20'> </span>
+                    <label class="saisie">Latitude en écriture décimale :</label>
+                    <input type="text" class="zone_saisie" name="in" autocomplete="off" size='25'
+                        onkeypress="javascript:if (event.keyCode == 13) {verif('saisie_1',0);return false;}"/>
+                    &ensp;<input class="bout" type="button" value="Valider" onClick="verif('saisie_1',0)" />
+                    <span class="spanmes"></span>
+                </form><br>
+
+                <form name="saisie_2">
+                    <span class="spanquiz"> <img src="images/vide.png" width='20' height='20'> </span>
+                    <label class="saisie">Longitude en écriture décimale :</label>
+                    <input type="text" class="zone_saisie" name="in" autocomplete="off" size='25'
+                        onkeypress="javascript:if (event.keyCode == 13) {verif('saisie_2',1);return false;}"/>
+                    &ensp;<input class="bout" type="button" value="Valider" onClick="verif('saisie_2',1)" />
+                    <span class="spanmes"></span>
+                </form><br>
+
+                <p class="pexo">
+                    <ul>
+                        <li>
+                                Ouvrir le lien suivant :
+                                <a href="https://www.geoportail.gouv.fr" target="_blank" >
+                                    <b style="font-size: 18px;">géoportail</b>
+                                </a>
+                        </li>
+                        <li>
+                            entrer les coordonnées GPS de l'image (ouverte dans GIMP) en notation décimale sous la forme : &ensp;
+                            <b> latitude &ensp; longitude </b> &ensp;<br>
+                            (par exemple, entrer : <b>&emsp;31.2515 &ensp; 15.4855</b>)
+                        </li>
+                        <li>
+                            faire ensuite un <b>clic droit</b> au centre du petit cercle jaune et choisir :
+                            <b style="color:teal;">Adresse/coordonnées du lieu</b>
+                        </li>
+                        <li>
+                            repérer alors le <b>code postale</b> et la <b>commune</b> du lieu du cliché
+                            et compléter les zones ci-dessous :
+                        </li>
+                    </ul>
+                </p>
+
+                <form name="saisie_3">
+                    <span class="spanquiz"> <img src="images/vide.png" width='20' height='20'> </span>
+                    <label class="saisie">Code postale du lieu du cliché :</label>
+                    <input type="text" class="zone_saisie" name="in" autocomplete="off" size='25'
+                        onkeypress="javascript:if (event.keyCode == 13) {verif('saisie_3',2);return false;}"/>
+                    &ensp;<input class="bout" type="button" value="Valider" onClick="verif('saisie_3',2)" />
+                    <span class="spanmes"></span>
+                </form><br>
+
+                <form name="saisie_4">
+                    <span class="spanquiz"> <img src="images/vide.png" width='20' height='20'> </span>
+                    <label class="saisie">Commune du lieu du cliché :</label>
+                    <input type="text" class="zone_saisie" name="in" autocomplete="off" size='25'
+                        onkeypress="javascript:if (event.keyCode == 13) {verif('saisie_4',3);return false;}"/>
+                    &ensp;<input class="bout" type="button" value="Valider" onClick="verif('saisie_4',3)" />
+                    <span class="spanmes"></span>
+                </form><br>
+
+                
+                <br><br>
+                <input class="bouton" type="button" value="Valider l'exercice" onClick="verif_exo(4)" onFocus="this.blur();" />
+                <br>
+                <br>
+                 <span class="reponse" name="reponse"> </span>
+                <br>
+                <br>
+        </section>
+
+    </body>
+
+    <footer class="exo"> 
+        <script type='text/javascript' language='javascript'>pied();</script>
+    </footer>
+
+</html>

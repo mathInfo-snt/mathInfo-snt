@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="../style/style.css" />
+        <script src="../style/scriptfooter.js"></script>
+        <script src="script/script_ex7.3.js"></script>
+        <script src="script/script7.js"></script>
+    </head>
+
+    <header class="exo"> SNT : Images : Exercice 7.3 </header>
+
+    <body>
+
+        <title>SNT images exercice 7.3</title>
+
+        <nav>
+            <h2>Liens :</h2>
+            <ul>
+                <li> <a href="ima_page7.html">Page 7</a> </li>
+            </ul>
+            <h2>Exercices :</h2>
+                <ul>
+                    <span id='nf'></span>
+                    <script type='text/javascript' language='javascript'>derexo();fait();</script>
+                </ul>
+        </nav>
+
+        <section class="sexo">
+            
+            <h1 class="exoh1">Exercice 7.3 : Cacher un mot dans un fichier numérique</h1>
+                
+                <p>
+                    <ul>
+                        <li>
+                            Récupérer le fichier <b style="color:darkgoldenrod;">rectangle-gris.ppm</b> en ressource :
+                            &ensp;<b style="color:teal;">/Echanges/Votre_Classe/SNT/COURS/Chapitre3-Images/Photos/</b> .
+                        </li>
+                        <li>
+                            Enregistrer ce fichier <b style="color:darkgoldenrod;">rectangle-gris.ppm</b> 
+                            sur votre compte dans le dossier <b>Photos</b>.
+                        </li>
+                        <li>
+                            Ouvrir ensuite ce fichier <b style="color:darkgoldenrod;">rectangle-gris.ppm</b> 
+                            avec <b style="color:teal;">notepad++</b> 
+                            (qu'on lance depuis <b>Appli</b>). <br>
+                           
+                        </li>
+                        <li>
+                            Sous <b style="color:teal;">notepad++</b>, modifier les <b>bits de poids faible</b> 
+                            de certaines valeurs dans le fichier 
+                            <b style="color:darkgoldenrod;">rectangle-gris.ppm</b> pour cacher le mot suivant <br>
+                            (on cachera le caractère 'p' dans la ligne 4 du fichier, le caractère 'o' dans la ligne 5 du fichier,
+                            le caractère 'u' dans la ligne 6 du fichier et le caractère 'r' dans la ligne 7 du fichier) :<br><br>
+                            <div class="afficheur1">pour</script></div><br><br><br>
+                         </li>
+                         <li>
+                            Compléter la feuille 6 du cours (<b class="exofeuille">Exercice 7.3 sur la feuille 6</b>)
+                            en vous aidant du convertisseur ci-dessous.
+                        </li>
+                        <li>
+                            Enregistrer le fichier <b style="color:darkgoldenrod;">rectangle-gris.ppm</b> modifié.
+                        </li>
+                        <li>
+                            Ouvrir le fichier <b style="color:darkgoldenrod;">rectangle-gris.ppm</b> modifié avec GIMP 2
+                            et zoomer à 1600%, pour vérifier qu'il s'agit toujours d'un <b>rectangle gris</b> et que les changements
+                            sont imperceptibles à l'oeil nu. 
+                        </li>
+                    </ul>
+                </p>
+
+                <h3 style="text-align: left;">Convertisseur Code ASCII/caractère :</h3>
+
+                        <form action="" class="afficheur3">
+                            <p>
+                                <label for="code"><b>Caractère</b>&#160;: </label> 
+                                <input type="text" id="caractere" name="caractere" autocomplete="off" class="saisir" value='A'
+                                    onkeypress="javascript:if (event.keyCode == 13) {xcar();return false;}" />
+                            </p>
+                            <p>
+                                <label for="code"><b>Code ASCII en décimal</b>&#160;: </label> 
+                                <input type="text" id="decimal" name="decimal" autocomplete="off" class="saisir" value='65'
+                                    onkeypress="javascript:if (event.keyCode == 13) {xdec();return false;}" />
+                            </p>
+                            <p>
+                                <label for="caractere"><b>Code ASCII en binaire</b>&#160;: </label> 
+                                <input type="text" id="binaire" name="binaire" autocomplete="off" class="saisir" value='01000001'
+                                    onkeypress="javascript:if (event.keyCode == 13) {xbin();return false;}" />
+                            </p>                           
+                        </form>
+
+                        <br><br><br><br><br><br><br><br><br><br>
+
+            <div class="affmain"> 
+                <div class="point">Point 7 :</div>
+                Lever la main pour que le professeur vérifie que tous les exercices ont été faits (liste complètement verte à gauche) et que la feuille du cours a été complétée correctement.
+            </div>
+            <br>
+            Ce chapitre est terminé. Vous pouvez passer au chapitre suivant : 
+                <a href="../Chapitre4/chapitre4.html" target="_blank"><b class="exofeuille">Chapitre 4</b></a>.
+            <br><br> 
+
+
+        </section>
+
+    </body>
+
+    <footer class="exo"> 
+        <script type='text/javascript' language='javascript'>pied();</script>
+    </footer>
+
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="../style/style.css" />
+        <script src="../style/scriptfooter.js"></script>
+        <script src="script/script_ex2.3.js"></script>
+        <script src="script/script2.js"></script>
+    </head>
+
+    <header class="exo"> SNT : Images : Exercice 2.3 </header>
+
+    <body>
+
+        <title>SNT images exercice 2.3</title>
+
+        <nav>
+            <h2>Liens :</h2>
+            <ul>
+                <li> <a href="ima_page2.html">Page 2</a> </li>
+            </ul>
+            <h2>Exercices :</h2>
+                <ul>
+                    <span id='nf'></span>
+                    <script type='text/javascript' language='javascript'>fait();</script>
+                </ul>
+        </nav>
+
+        <section class="sexo">
+
+            <h1 class="exoh1">Exercice 2.3 : Dématriçage bilinéaire </h1>
+
+            <h2>Premier exemple</h2>
+
+                <p>
+                    On considère la matrice de photosites ci-dessous, avec le filtre de Bayer. 
+                    Le <b>code RVB</b> du pixel correspondant au <b>photosite central</b> est le suivant :
+                </p>
+
+                <div class="afficheur1">RVB(50,120,80)</div>
+
+                <br><br>
+                <p>
+                    Cliquer sur les photosites une ou plusieurs fois pour changer leur couleur afin qu'elles correspondent au <b>code RVB</b> ci-dessus.
+                </p>
+
+                 <form name="s1">
+                    <input type="button" class="carre2" id="i1.1" name="b" autocomplete="off" value='0' 
+                        onClick="change_color('i1.1')"/>
+                    <input type="button" class="carre2" id="i1.2" name="b" autocomplete="off" value='0' 
+                        onClick="change_color('i1.2')"/>
+                    <input type="button" class="carre2" id="i1.3" name="b" autocomplete="off" value='0' 
+                        onClick="change_color('i1.3')"/>
+                    <br>
+                    <input type="button" class="carre2" id="i2.1" name="b" autocomplete="off" value='0' 
+                        onClick="change_color('i2.1')"/>
+                    <input type="button" class="carre2" id="i2.2" name="b" autocomplete="off" value='0' 
+                        onClick="change_color('i2.2')"/>
+                    <input type="button" class="carre2" id="i2.3" name="b" autocomplete="off" value='0' 
+                        onClick="change_color('i2.3')"/>
+                    <br>
+                    <input type="button" class="carre2" id="i3.1" name="b" autocomplete="off" value='0' 
+                        onClick="change_color('i3.1')"/>
+                    <input type="button" class="carre2" id="i3.2" name="b" autocomplete="off" value='0' 
+                        onClick="change_color('i3.2')"/>
+                    <input type="button" class="carre2" id="i3.3" name="b" autocomplete="off" value='0' 
+                        onClick="change_color('i3.3')"/>
+                </form>
+
+                <script type='text/javascript' language='javascript'>init1();</script>
+
+                <br>
+                <span id="ic1" class="spanquiz" name="span_1" > 
+                    <img src="images/vide.png" width='20' height='20'> 
+                </span>
+                &ensp;
+                <input class="bout" type="button" value="Valider" onClick="verif(0)" onFocus="this.blur();" />
+                &ensp;
+                <span id="m1"></span>
+                <br>
+                <br><br>
+
+
+            <h2>Deuxième exemple</h2>
+
+                <p>
+                    On considère la matrice de photosites ci-dessous, avec le filtre de Bayer. 
+                    Le <b>code RVB</b> du pixel correspondant au <b>photosite central</b> est le suivant :
+                </p>
+
+                <div class="afficheur1">RVB(50,120,80)</div>
+
+                <br><br>
+                <p>
+                    Cliquer sur les photosites une ou plusieurs fois pour changer leur couleur afin qu'elles correspondent au <b>code RVB</b> ci-dessus.
+                </p>
+
+                 <form name="s2">
+                    <input type="text" class="carre2" id="id1.1" name="b" autocomplete="off" value='0' 
+                        onClick="change_color('id1.1')"/>
+                    <input type="text" class="carre2" id="id1.2" name="b" autocomplete="off" value='0' 
+                        onClick="change_color('id1.2')"/>
+                    <input type="text" class="carre2" id="id1.3" name="b" autocomplete="off" value='0' 
+                        onClick="change_color('id1.3')"/>
+                    <br>
+                    <input type="text" class="carre2" id="id2.1" name="b" autocomplete="off" value='0' 
+                        onClick="change_color('id2.1')"/>
+                    <input type="text" class="carre2" id="id2.2" name="b" autocomplete="off" value='0' 
+                        onClick="change_color('id2.2')"/>
+                    <input type="text" class="carre2" id="id2.3" name="b" autocomplete="off" value='0' 
+                        onClick="change_color('id2.3')"/>
+                    <br>
+                    <input type="text" class="carre2" id="id3.1" name="b" autocomplete="off" value='0' 
+                        onClick="change_color('id3.1')"/>
+                    <input type="text" class="carre2" id="id3.2" name="b" autocomplete="off" value='0' 
+                        onClick="change_color('id3.2')"/>
+                    <input type="text" class="carre2" id="id3.3" name="b" autocomplete="off" value='0' 
+                        onClick="change_color('id3.3')"/>
+                </form> 
+
+                <script type='text/javascript' language='javascript'>init2();</script>
+
+                <br>
+                <span id="ic2" class="spanquiz" name="span_1" > 
+                    <img src="images/vide.png" width='20' height='20'> 
+                </span>
+                &ensp;
+                <input class="bout" type="button" value="Valider" onClick="verif(1)" onFocus="this.blur();" />
+                &ensp;
+                <span id="m2"></span>
+                <br>
+
+                <br><br>
+                <input class="bouton" type="button" value="Valider l'exercice" onClick="verif_exo(2)" onFocus="this.blur();" />
+                <br>
+                <br>
+                 <span class="reponse" name="reponse"> </span>
+                <br>
+                <br>
+        </section>
+
+    </body>
+
+    <footer class="exo"> 
+        <script type='text/javascript' language='javascript'>pied();</script>
+    </footer>
+
+</html>

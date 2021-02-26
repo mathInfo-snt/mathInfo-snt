@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="../style/style.css" />
+        <script src="../style/scriptfooter.js"></script>
+        <script src="script/script_ex6.2.js"></script>
+        <script src="script/script6.js"></script>
+    </head>
+
+    <header class="exo"> SNT : Images : Exercice 6.2 </header>
+
+    <body>
+
+        <title>SNT images exercice 6.2</title>
+
+        <nav>
+            <h2>Liens :</h2>
+            <ul>
+                <li> <a href="ima_page6.html">Page 6</a> </li>
+            </ul>
+            <h2>Exercices :</h2>
+                <ul>
+                    <span id='nf'></span>
+                    <script type='text/javascript' language='javascript'>fait();</script>
+                </ul>
+        </nav>
+
+        <section class="sexo">
+            
+            <h1 class="exoh1">Exercice 6.2 : exemple de fichier PGM et PPM</h1>
+
+                <br>
+
+                <h4>1. On considère le fichier PGM suivant :</h4>
+
+                    <form name="s1">
+                        &emsp;
+                        <input type="text" class="caseP" id="i1" name="n1" autocomplete="off" value='   P' 
+                            style="width:240px;text-align:left;"
+                            onkeypress="javascript:if (event.keyCode == 13){return false;}" 
+                        /><br>
+                        &emsp;
+                        <input type="text" class="caseP" id="i2" name="n2" autocomplete="off" value='0' 
+                            style="width:40px;text-align: center;"
+                            onkeypress="javascript:if (event.keyCode == 13){return false;}" 
+                        /><input type="text" class="caseP" id="i3" name="n3" autocomplete="off" value='0' 
+                            style="width:200px;text-align: left;"
+                            onkeypress="javascript:if (event.keyCode == 13){return false;}" 
+                        />
+                        &emsp;
+                        <div class="caseL" id="i4" name="n0" style='width:240px;height:200px;'> 
+                            &ensp; 9 <br>
+                            &ensp; 0 &nbsp; 0 &nbsp; 0 &nbsp; 0 &nbsp; 0 &nbsp; 0 &nbsp; 0 &nbsp; 0 <br>
+                            &ensp; 0 &nbsp; 3 &nbsp; 3 &nbsp; 3 &nbsp; 3 &nbsp; 3 &nbsp; 3 &nbsp; 0 <br>
+                            &ensp; 0 &nbsp; 0 &nbsp; 0 &nbsp; 0 &nbsp; 0 &nbsp; 0 &nbsp; 0 &nbsp; 0 <br>
+                            &ensp; 0 &nbsp; 6 &nbsp; 6 &nbsp; 6 &nbsp; 6 &nbsp; 6 &nbsp; 6 &nbsp; 0 <br>
+                            &ensp; 0 &nbsp; 0 &nbsp; 0 &nbsp; 0 &nbsp; 0 &nbsp; 0 &nbsp; 0 &nbsp; 0 <br>
+                            &ensp; 0 &nbsp; 9 &nbsp; 9 &nbsp; 9 &nbsp; 9 &nbsp; 9 &nbsp; 9 &nbsp; 0 <br>
+                            &ensp; 0 &nbsp; 0 &nbsp; 0 &nbsp; 0 &nbsp; 0 &nbsp; 0 &nbsp; 0 &nbsp; 0 <br>
+                        </div>                      
+                    </form>
+
+                    <p>
+                        &emsp; Modifier les deux premières lignes de ce fichier pour qu'il
+                        soit conforme à la norme des fichiers <b>PGM</b>.<br>
+                        &emsp; Puis sélectionner dans le menu ci-dessous ce que représente cette image.
+                    </p>
+                    <span id="ic1" class="spanquiz" name="span_1" > 
+                        <img src="images/vide.png" width='20' height='20'> 
+                    </span>
+                    &emsp; <input class="bout" type="button" value="Valider" onClick="verif1()" 
+                        onFocus="this.blur();" />
+                    &ensp;
+                    <span id="m1"></span>
+                    <br><br>
+                    <form>
+                        <span id="ic3" class="spanquiz" name="span_1" > 
+                            <img src="images/vide.png" width='20' height='20'> 
+                        </span>
+                        &emsp; <label for="volume" style="color:teal;font-size:20px;"><b>Cette image représente : </b></label>
+                        <select id="scim1" name="n1" class="sel4" onChange="verif3()">
+                            <option  selected="selected" >un carré gris sur fond blanc</option>
+                            <option>un carré gris sur fond noir</option>
+                            <option>trois lignes verticales grises sur fond blanc</option>
+                            <option>trois lignes verticales grises sur fond noir</option>
+                            <option>trois lignes horizontales grises sur fond blanc</option>
+                            <option>trois lignes horizontales grises sur fond noir</option>
+                            <option>un rectangle gris sur fond blanc</option>
+                            <option>un rectangle gris sur fond noir</option>
+                            <option>un triangle gris sur fond blanc</option>
+                            <option>un triangle gris sur fond noir</option>
+                        </select>
+                        &ensp;
+                        <span id="m3"></span>
+                    </form>
+                
+                <br><br><br>
+
+                <!-- ______________________________________________________________________________________________ -->
+               <h4>2. On considère le fichier PPM suivant :</h4>
+
+                    <form name="s2">
+                        &emsp;
+                        <input type="text" class="caseP" id="i1" name="n1" autocomplete="off" value='   P' 
+                            style="width:350px;text-align:left;"
+                            onkeypress="javascript:if (event.keyCode == 13){return false;}" 
+                        /><br>
+                        &emsp;
+                        <input type="text" class="caseP" id="i2" name="n2" autocomplete="off" value='0' 
+                            style="width:40px;text-align: center;"
+                            onkeypress="javascript:if (event.keyCode == 13){return false;}" 
+                        /><input type="text" class="caseP" id="i3" name="n3" autocomplete="off" value='0' 
+                            style="width:310px;text-align: left;"
+                            onkeypress="javascript:if (event.keyCode == 13){return false;}" 
+                        />
+                        &emsp;
+                        <div class="caseL" id="i4" name="n0" style='width:350px;height:180px;'> 
+                            &ensp; 255 <br>
+                            &ensp; 255 0 0 &nbsp; 255 0 0 &nbsp; 0 255 0 &nbsp; 0 255 0 <br>
+                            &ensp; 255 0 0 &nbsp; 255 0 0 &nbsp; 0 255 0 &nbsp; 0 255 0 <br>
+                            &ensp; 0 255 0 &nbsp; 0 255 0 &nbsp; 255 0 0 &nbsp; 255 0 0 <br>
+                            &ensp; 0 255 0 &nbsp; 0 255 0 &nbsp; 255 0 0 &nbsp; 255 0 0 <br>
+                            &ensp; 255 0 0 &nbsp; 255 0 0 &nbsp; 0 255 0 &nbsp; 0 255 0 <br>
+                            &ensp; 255 0 0 &nbsp; 255 0 0 &nbsp; 0 255 0 &nbsp; 0 255 0 <br>
+                        </div>                      
+                    </form>
+
+                    <p>
+                        &emsp; Modifier les deux premières lignes de ce fichier pour qu'il
+                        soit conforme à la norme des fichiers <b>PPM</b>.<br>
+                        &emsp; Puis sélectionner dans le menu ci-dessous ce que représente cette image.
+                    </p>
+                    <span id="ic2" class="spanquiz" name="span_1" > 
+                        <img src="images/vide.png" width='20' height='20'> 
+                    </span>
+                    &emsp; <input class="bout" type="button" value="Valider" onClick="verif2()" 
+                        onFocus="this.blur();" />
+                    &ensp;
+                    <span id="m2"></span>
+                    <br><br>
+
+                     <form>
+                        <span id="ic4" class="spanquiz" name="span_1" > 
+                            <img src="images/vide.png" width='20' height='20'> 
+                        </span>
+                        &emsp; <label for="volume" style="color:teal;font-size:20px;"><b>Cette image représente : </b></label>
+                        <select id="scim2" name="n1" class="sel4" onChange="verif4()">
+                            <option selceted="selected" >un carré rouge sur fond vert</option>
+                            <option>un carré rouge sur fond bleu</option>
+                            <option>un carré bleu sur fond vert</option>
+                            <option>un carré bleu sur fond rouge</option>
+                            <option>un carré vert sur fond rouge</option>
+                            <option>un carré vert sur fond bleu</option>
+                            <option>un damier rouge et vert</option>
+                            <option>un damier rouge et bleu</option>
+                            <option>un damier rouge et blanc</option>
+                            <option>un damier vert et bleu</option>
+                            <option>un damier bleu et blanc</option>
+                        </select>
+                        &ensp;
+                        <span id="m4"></span>
+                    </form>
+
+
+                <br><br>
+                <input class="bouton" type="button" value="Valider l'exercice" onClick="verif_exo(4)" onFocus="this.blur();" />
+                <br>
+                <br>
+                 <span class="reponse" name="reponse"> </span>
+                <br>
+                <br>
+        </section>
+
+    </body>
+
+    <footer class="exo"> 
+        <script type='text/javascript' language='javascript'>pied();</script>
+    </footer>
+
+</html>

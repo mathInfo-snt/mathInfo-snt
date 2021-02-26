@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="../style/style.css" />
+        <script src="../style/scriptfooter.js"></script>
+        <script src="script/script_ex7.1.js"></script>
+        <script src="script/script7.js"></script>
+    </head>
+
+    <header class="exo"> SNT : Images : Exercice 7.1 </header>
+
+    <body>
+
+        <title>SNT images exercice 7.1</title>
+
+        <nav>
+            <h2>Liens :</h2>
+            <ul>
+                <li> <a href="ima_page7.html">Page 7</a> </li>
+            </ul>
+            <h2>Exercices :</h2>
+                <ul>
+                    <span id='nf'></span>
+                    <script type='text/javascript' language='javascript'>fait();</script>
+                </ul>
+        </nav>
+
+        <section class="sexo">
+            
+            <h1 class="exoh1">Exercice 7.1 : exemple de stéganographie informatique</h1>
+
+                <br>
+
+                <h4>1. On considère l'image au format PPM suivante :</h4>
+
+                    &emsp; <span id='ima1'> </span>
+                    <script type='text/javascript' language='javascript'>init1();</script>
+
+                    <p>
+                        &emsp; Déterminer ci-dessous les <b>5 octets</b> cachés dans cette image numériques.
+                    </p>
+
+                    <form name="saisie_1">
+                        <span class="spanquiz"> <img src="images/vide.png" width='20' height='20'> </span>
+                        <label class="saisie">Octet caché dans la 4<sup>ème</sup> ligne :</label>
+                        <input type="text" class="zone_saisie" name="in" autocomplete="off" size='20'
+                            onkeypress="javascript:if (event.keyCode == 13) {verif('saisie_1',0);return false;}"/>
+                        &ensp;<input class="bout" type="button" value="Valider" onClick="verif('saisie_1',0)" />
+                        <span class="spanmes"></span>
+                    </form><br>
+
+                    <form name="saisie_2">
+                        <span class="spanquiz"> <img src="images/vide.png" width='20' height='20'> </span>
+                        <label class="saisie">Octet caché dans la 5<sup>ème</sup> ligne :</label>
+                        <input type="text" class="zone_saisie" name="in" autocomplete="off" size='20'
+                            onkeypress="javascript:if (event.keyCode == 13) {verif('saisie_2',1);return false;}"/>
+                        &ensp;<input class="bout" type="button" value="Valider" onClick="verif('saisie_2',1)" />
+                        <span class="spanmes"></span>
+                    </form><br>
+                   
+                    <form name="saisie_3">
+                        <span class="spanquiz"> <img src="images/vide.png" width='20' height='20'> </span>
+                        <label class="saisie">Octet caché dans la 6<sup>ème</sup> ligne :</label>
+                        <input type="text" class="zone_saisie" name="in" autocomplete="off" size='20'
+                            onkeypress="javascript:if (event.keyCode == 13) {verif('saisie_3',2);return false;}"/>
+                        &ensp;<input class="bout" type="button" value="Valider" onClick="verif('saisie_3',2)" />
+                        <span class="spanmes"></span>
+                    </form><br>
+
+                    <form name="saisie_4">
+                        <span class="spanquiz"> <img src="images/vide.png" width='20' height='20'> </span>
+                        <label class="saisie">Octet caché dans la 7<sup>ème</sup> ligne :</label>
+                        <input type="text" class="zone_saisie" name="in" autocomplete="off" size='20'
+                            onkeypress="javascript:if (event.keyCode == 13) {verif('saisie_4',3);return false;}"/>
+                        &ensp;<input class="bout" type="button" value="Valider" onClick="verif('saisie_4',3)" />
+                        <span class="spanmes"></span>
+                    </form><br>
+                    
+                    <form name="saisie_5">
+                        <span class="spanquiz"> <img src="images/vide.png" width='20' height='20'> </span>
+                        <label class="saisie">Octet caché dans la 8<sup>ème</sup> ligne :</label>
+                        <input type="text" class="zone_saisie" name="in" autocomplete="off" size='20'
+                            onkeypress="javascript:if (event.keyCode == 13) {verif('saisie_5',4);return false;}"/>
+                        &ensp;<input class="bout" type="button" value="Valider" onClick="verif('saisie_5',4)" />
+                        <span class="spanmes"></span>
+                    </form><br>
+
+                    <p>
+                        En utilisant le convertisseur ci-dessous, déterminer le mot qui est caché
+                        dans cette image numérique.
+                    </p>
+
+                    <h3 style="text-align: left;">Convertisseur Code ASCII/caractère :</h3>
+                        <form action="" class="afficheur3">
+                            <p>
+                                <label for="caractere"><b>Code ASCII en binaire</b>&#160;: </label> 
+                                <input type="text" id="binaire" name="binaire" autocomplete="off" class="saisir" value='01000001'
+                                    onkeypress="javascript:if (event.keyCode == 13) {xbin();return false;}" />
+                            </p>
+                            <p>
+                                <label for="code"><b>Code ASCII en décimal</b>&#160;: </label> 
+                                <input type="text" id="decimal" name="decimal" autocomplete="off" class="saisir" value='65'
+                                    onkeypress="javascript:if (event.keyCode == 13) {xdec();return false;}" />
+                            </p>
+                            <p>
+                                <label for="code"><b>Caractère</b>&#160;: </label> 
+                                <input type="text" id="caractere" name="caractere" autocomplete="off" class="saisir" value='A'
+                                    onkeypress="javascript:if (event.keyCode == 13) {xcar();return false;}" />
+                            </p>
+                        </form>
+                        <br><br><br><br><br><br><br><br><br><br>
+
+                    <form name="saisie_6">
+                        <span class="spanquiz"> <img src="images/vide.png" width='20' height='20'> </span>
+                        <label class="saisie">Mot caché dans l'image numérique :</label>
+                        <input type="text" class="zone_saisie" name="in" autocomplete="off" size='20'
+                            onkeypress="javascript:if (event.keyCode == 13) {verif2('saisie_6');return false;}"/>
+                        &ensp;<input class="bout" type="button" value="Valider" onClick="verif2('saisie_6')" />
+                        <span class="spanmes"></span>
+                    </form><br>
+
+                <br><br>
+                <input class="bouton" type="button" value="Valider l'exercice" onClick="verif_exo(6)" onFocus="this.blur();" />
+                <br>
+                <br>
+                 <span class="reponse" name="reponse"> </span>
+                <br>
+                <br>
+        </section>
+
+    </body>
+
+    <footer class="exo"> 
+        <script type='text/javascript' language='javascript'>pied();</script>
+    </footer>
+
+</html>

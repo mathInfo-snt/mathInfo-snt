@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="../style/style.css" />
+        <script src="../style/scriptfooter.js"></script>
+        <script src="script/script_ex3.2.js"></script>
+        <script src="script/script3.js"></script>
+    </head>
+
+    <header class="exo"> SNT : Images : Exercice 3.2 </header>
+
+    <body>
+
+        <title>SNT images exercice 3.2</title>
+
+        <nav>
+            <h2>Liens :</h2>
+            <ul>
+                <li> <a href="ima_page3.html">Page 3</a> </li>
+            </ul>
+            <h2>Exercices :</h2>
+                <ul>
+                    <span id='nf'></span>
+                    <script type='text/javascript' language='javascript'>fait();</script>
+                </ul>
+        </nav>
+
+        <section class="sexo">
+            
+             <h1 class="exoh1">Exercice 3.2 : Utilisation de la pipette de Firefox</h1>
+                    
+                    <center>
+                        <img src="images/dec-hex.png"/>
+                    </center>
+
+                    <p>
+                        Vous allez utiliser la <b>pipette</b> de Firefox pour récupérer le code couleur
+                        des quatre carrés ci-dessous. Pour ouvrir cette <b>pipette</b> il faut :
+                        <ul>
+                            <li> 
+                                dans <b>Firefox</b> cliquer sur <b>Ouvrir le menu</b> 
+                                (les 3 barres horizontales &#8801; en haut à droite sous la croix rouge) ;
+                            </li>
+                            <li>
+                                puis choisir <b>Développement web</b> (Web Developer en Anglais) ;
+                            </li>
+                            <li>
+                                choisir ensuite <b>Pipette</b> (Eyedropper en Anglais) ;
+                            </li>
+                            <li>
+                                et enfin déplacer la souris sur les quatre carrés ci-dessous afin de 
+                                le code couleur.
+                            </li>
+                        </ul>
+                    </p>
+
+                    <center>
+                        <input type="text" class="carre" id="i1.2" name="n1.2" autocomplete="off" value=''
+                            style="background-color: #ff8000;"/>
+                        <input type="text" class="carre" id="i1.3" name="n1.3" autocomplete="off" value=''
+                            style="background-color: #4080ff;"/>
+                        <input type="text" class="carre" id="i1.2" name="n1.2" autocomplete="off" value=''
+                            style="background-color: #80ff40;"/>
+                        <input type="text" class="carre" id="i1.3" name="n1.3" autocomplete="off" value=''
+                            style="background-color: #804020;"/><br>
+                    </center>
+
+                        <h3>Utiliser cette <b>pipette</b> pour remplir les zones ci-dessous, avec les codes RVB 
+                            des couleurs des carrés.</h3>
+
+                    <form name="saisie_1">
+                        <span class="spanquiz"> <img src="images/vide.png" width='20' height='20'> </span>
+                        <label class="saisie">Code couleur RVB du 1er carré :&emsp;</label>
+                        <input type="text" class="zone_saisie" name="in" autocomplete="off" size='20' value='RVB('
+                            onkeypress="javascript:if (event.keyCode == 13) {verif('saisie_1',0);return false;}"/>
+                        &ensp;<input class="bout" type="button" value="Valider" onClick="verif('saisie_1',0)" />
+                        <span class="spanmes"></span>
+                    </form><br>
+
+                    <form name="saisie_2">
+                        <span class="spanquiz"> <img src="images/vide.png" width='20' height='20'> </span>
+                        <label class="saisie">Code couleur RVB du 2ème carré :</label>
+                        <input type="text" class="zone_saisie" name="in" autocomplete="off" size='20' value='RVB('
+                            onkeypress="javascript:if (event.keyCode == 13) {verif('saisie_2',1);return false;}"/>
+                        &ensp;<input class="bout" type="button" value="Valider" onClick="verif('saisie_2',1)" />
+                        <span class="spanmes"></span>
+                    </form><br>
+
+                    <form name="saisie_3">
+                        <span class="spanquiz"> <img src="images/vide.png" width='20' height='20'> </span>
+                        <label class="saisie">Code couleur RVB du 3ème carré : </label>
+                        <input type="text" class="zone_saisie" name="in" autocomplete="off" size='20' value='RVB('
+                            onkeypress="javascript:if (event.keyCode == 13) {verif('saisie_3',2);return false;}"/>
+                        &ensp;<input class="bout" type="button" value="Valider" onClick="verif('saisie_3',2)" />
+                        <span class="spanmes"></span>
+                    </form><br>
+
+                    <form name="saisie_4">
+                        <span class="spanquiz"> <img src="images/vide.png" width='20' height='20'> </span>
+                        <label class="saisie">Code couleur RVB du 4ème carré :</label>
+                        <input type="text" class="zone_saisie" name="in" autocomplete="off" size='20' value='RVB('
+                            onkeypress="javascript:if (event.keyCode == 13) {verif('saisie_4',3);return false;}"/>
+                        &ensp;<input class="bout" type="button" value="Valider" onClick="verif('saisie_4',3)" />
+                        <span class="spanmes"></span>
+                    </form><br>
+
+                <br><br>
+                <input class="bouton" type="button" value="Valider l'exercice" onClick="verif_exo(4)" onFocus="this.blur();" />
+                <br>
+                <br>
+                 <span class="reponse" name="reponse"> </span>
+                <br>
+                <br>
+        </section>
+
+    </body>
+
+    <footer class="exo"> 
+        <script type='text/javascript' language='javascript'>pied();</script>
+    </footer>
+
+</html>
