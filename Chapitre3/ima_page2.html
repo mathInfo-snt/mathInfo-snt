@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8"/>
+        <title>SNT images page 2</title>
+        <link rel="stylesheet" href="../style/style.css"/>
+        <script src="../style/scriptfooter.js"></script>
+        <script src="script/script2.js"></script>
+    </head>
+
+    <header> SNT : Images : page 2 </header>
+
+    <body>
+        
+        <nav>
+            <h2>Liens :</h2>
+                <ul>
+                    <li> <a href="chapitre3.html">Chapitre 3</a> </li>
+                </ul>
+            <h2>Exercices :</h2>
+                <ul>
+                    <span id='nf'></span>
+                    <script type='text/javascript' language='javascript'>fait();</script>
+                </ul>
+        </nav>
+
+        <section>
+
+            <h1>Introduction</h1>
+
+                <p> 
+                    La photographie numérique a remplacé le film photosensible par 
+                    le <b>capteur photosensible</b>. 
+                    Le but d’un capteur est de convertir la lumière (<b>photons</b>) 
+                    en signal électrique (<b>électrons</b>). 
+                    Pour cela les capteurs des appareils photographiques possèdent 
+                    des cellules photosensibles 
+                    appelées <b>photodiodes</b>. La photodiode, entourée de composants électroniques 
+                    (permettant l’amplification et le transport des charges électriques), 
+                    fait partie intégrante d’un <b>photosite</b> qui est la zone délimitée 
+                    par le pas de grille du capteur. Un capteur 12Mpix est ainsi constitué de 
+                    4000 x 3000 photosites. <br><br>
+                    <b class="def">Types de capteurs photosensibles :</b>
+                    Deux types de capteurs coexistent pour les appareils photographiques numériques : 
+                    le <b>capteur CCD</b> (<u>C</u>harge <u>C</u>oupled <u>D</u>evice) et 
+                    capteur <b>CMOS</b> (<u>C</u>omplementary <u>M</u>etal <u>O</u>xyde 
+                    <u>S</u>emiconductors). Les capteurs CMOS sont moins couteux.
+                    <br><br>
+                </p>
+
+            <h1>Les capteurs CCD</h1>
+
+                <center>
+                    <img src="images/capteur-ccd.png"/>
+                </center>
+
+                <p>
+                    Les <b>capteurs CCD</b> sont les premiers à avoir équipé les appareils 
+                    photographiques numériques. 
+                    Dans cette technologie, le capteur transforme le signal lumineux 
+                    en signal électrique grâce à l’effet photoélectrique, puis ce signal électrique 
+                    est numérisé.<br><br>
+                    <b class="def">Composition d'un capteur CCD :</b>
+                    Un <b>capteur CCD</b> est composé de plusieurs éléments :
+                    <ul>
+                        <li>
+                            des <b>filtres</b> notamment pour éliminer le rayonnement infrarouge 
+                            (<b>filtre IR</b>)
+                            invisible à l'oeil humain et les très petits détails de l’image 
+                            qu’il est impossible 
+                            d'enregistrer correctement (<b>filtre AA</b>) ;
+                        </li>
+                        <li>
+                            des <b>microlentilles</b> pour guider les rayons lumineux vers les récepteurs 
+                            appelés <b>photosites</b> ;
+                        </li>
+                        <li>
+                            la <b>matrice de Bayer</b> qui permet de filtrer la lumière selon 
+                            trois composantes 
+                            primaires : <b>rouge</b>, <b>vert</b>, <b>bleu</b> ;
+                        </li>
+                        <li>
+                            une matrice de recepteurs appelés <b>photosites</b> qui permettent de 
+                            transformer un signal
+                            lumineux en signal électrique ;
+                        </li>
+                    </ul>
+                    <center>
+                        <img src="images/dec-capteur-ccd.png"/>
+                    </center>
+                </p><br>
+
+            <h1>Les filtres du capteur</h1>
+
+                <h2>Le filtre Infra Rouge (IR)</h2>
+
+                    <p>
+                        L’oeil humain ne voit que le spectre visible. Un capteur photo va plus loin puisqu’il est 
+                        également sensible aux <b>infrarouges</b>. Pour palier à cela les fabricants utilisent un filtre 
+                        qui empêche le rayonnement infrarouge d’arriver jusqu’aux récepteurs.
+                    </p>
+
+                <h2>Le filtre Anti-Aliasing (AA)</h2>
+                    <p>
+                        Ce filtre limite la taille des plus petits détails qui vont arriver jusqu’au capteur. 
+                        Ce filtre sert à lutter contre des artefacts 
+                        (parasites) qui se créent si l’on tente de photographier des détails 
+                        plus petits que 2 pixels.
+                    </p>
+
+            <h1>Les microlentilles</h1>
+                <p>
+                    Les photosites  n’occupent pas toute la surface du capteur, afin d’éviter que de 
+                    la lumière ne soit perdue (lorsqu'elle arrive à côté d’un récepteur) 
+                    les fabricants utilisent des microlentilles qui font converger les rayons 
+                    vers les photosites. Cela permet d’améliorer le rendement de la conversion 
+                    lumière/électricité. En travaillant cet aspect les capteurs deviennent 
+                    plus sensibles et donc plus performant quand la lumière est faible.
+                    <center>
+                        <img src="images/microlentilles.png"/>
+                    </center>
+                </p>
+
+            <h1>Matrice de Bayer</h1>
+
+                <p>
+                    On peut recréer une couleur en mélangeant plus ou moins de <b>Rouge</b>, 
+                    de <b>Vert</b> et de <b>Bleu</b>, c’est le principe de la 
+                    <b>synthèse additive des couleurs</b>, 
+                    notamment utilisée par l’écran que vous avez en face des yeux.
+                    Un capteur utilise le même principe : les composantes Rouge, Vert et Bleu (RVB) 
+                    de chaque couleur sont enregistrées séparément.
+                    Mais les récepteurs du capteur sont sensibles à un large spectre, 
+                    pour qu'un photosite ne soit sensible qu'au rouge, au vert ou au bleu on utilise 
+                    des <b>filtres colorés</b>.
+                    Ces filtres sont disposés en réseaux, la forme la plus connue est la 
+                    <b>matrice de Bayer</b>.
+                    Les capteurs photographiques étant des photodiodes, ils sont uniquement 
+                    sensibles à l'intensité lumineuse et non à la couleur. 
+                    Une solution pour enregistrer les couleurs est alors de mettre des 
+                    filtres devant chaque photodiode, chacun ne laissant passer qu'une seule 
+                    des composantes RVB (Rouge, Vert, Bleu) du signal. 
+                    La matrice de Bayer est l'ensemble de ces filtres.
+                </p>
+                <center>
+                    <img src="images/bayer2.png"/>
+                </center>
+                <br>
+                <p>
+                    Dans une <b>grille de Bayer</b>, 50% des photosites filtrent la couleur verte, 25% filtrent le rouge
+                    et 25% filtrent le bleu. Il y a plus de vert car l'oeil humain est plus sensible à la couleur verte
+                    qui est située au centre du spectre de la lumière visible.
+                </p><br>
+                <center>
+                    <img src="images/spectre.png"/>
+                </center>
+                <br>
+                <p>
+                    A la fin de l’exposition, chaque photosite aura mesuré la quantité de lumière 
+                    correspondant à une des couleurs primaires sous forme d'une charge électrique, 
+                    qui sera ensuite transformée en tension électrique. Cette tension électrique sera 
+                    alors numérisée par un <b>convertisseur analogique/numérique</b> 
+                    et sera stockée dans le fichier <b>RAW</b>. Il existe d'autre type de réseau, mais la 
+                    <b>matrice de Bayer</b> est le réseau le plus utilisé.
+                </p>
+                <br>
+
+            <h1>Les photosites</h1>
+                <p>
+                    <b class="def">Définition (Photosites) : </b>
+                    Les <b>photosites</b> sont des <b>cellules photoélectriques</b>, qui sont sensibles à la lumière. <br><br>
+                    Plus précisément, les photosites ne sont sensibles qu'à l'intensité lumineuse sans distinction
+                    de la couleur (d'où l'utilisation de filtres colorés dans la matrice de Bayer).
+                    Ce sont des petits carrés ou rectangles de quelques micromètres de côté.
+                    Un photosite accumule une charge électrique proportionnelle à l’intensité de lumière qu’il reçoit.
+                </p>
+                <center>
+                    <img src="images/photosites.png"/>
+                </center>
+                <br>
+
+            <h1>Dématriçage et pixels</h1>
+                <p>
+                    <b class="def">Définition (Fichier RAW) :</b>
+                    Les valeurs bruts d'intensités lumineuses enregistrées par les <b>photosites</b> 
+                    vont être numérisées par un <b>convertisseur analogique/numérique</b> et stockées 
+                    dans un <b>fichier RAW</b> (RAW signifiant "brut" en Français).<br><br>
+                    Dans ce fichier, on enregistre des valeurs proportionnelles à l'intensité 
+                    lumineuse mesurée par les photosites ainsi que la couleur 
+                    (rouge, vert ou bleu) de ce photosite. Le contenu du <b>fichier RAW</b> 
+                    peut être représenté par une matrice de valeurs d'intensité lumineuse rouge, 
+                    verte ou bleue comme dans l'exemple ci-dessous. Plus la couleur est sombre plus 
+                    l'intensité lumineuse mesurée est faible et plus la couleur est claire plus l'intensité 
+                    lumineuse mesurée est grande.
+                    <center>
+                        <img src="images/bayer_raw.png"/>
+                    </center>
+                    <br>
+                    <b class="def">Définition (Dématriçage) :</b>
+                    Le <b>dématriçage</b> c'est la traduction des <b>valeurs bruts</b> du <b>fichier RAW</b> 
+                    en <b>pixels</b> que l'on stocke dans un fichier image (avec l'extension .jpg, .png par exemple).
+                    <br><br>
+                    Un <b>pixel</b> est constitué de <b>trois valeurs</b> codées sur un octet 
+                    (une valeur pour la quantité de <b>rouge</b>, une valeur pour la quantité de <b>vert</b> et 
+                    une valeur pour la quantité de <b>bleu</b>) selon la <b>synthèse additive des couleurs</b>.
+                    Chacune des ces trois valeurs est comprise entre <b>0 et 255</b>.
+                    Ce code en trois valeurs s'appelle le code <b>RVB</b> (<b>RGB</b> en Anglais).<br>
+                    Il existe plusieurs algorithmes différents de <b>dématriçage</b>, c'est à dire pour passer du 
+                    <b>fichier RAW</b> au fichier image (donc des <b>valeurs bruts d'intensité lumineuse</b> 
+                    aux <b>pixels</b>).
+                    Chaque fabricant d'appareils photos numériques a son propre algorithme de dématriçage. 
+                    Il en existe donc beaucoup et ils sont sans cesse améliorés.
+                </p>
+                <br>
+                <br>
+
+            <h1>Exemple d'algorithme de dématriçage</h1>
+
+                <p>
+                    Chaque <b>photosite</b> ne mesure que la quantité de lumière correspondant à une seule couleur
+                    primaire (Rouge, Vert ou bleu). Ainsi nous n’avons que le tiers de l’information pour obtenir 
+                    le code RVB du <b>pixel</b> correspondant. 
+                    Il faut donc faire une interpolation pour obtenir les valeurs des deux autres 
+                    composantstes, c’est ce qu'on appelle le <b>dématriçage</b>. 
+                    Autrement dit, il faut faire une estimation pour les deux autres couleurs primaires. 
+                    De nos jours, il y a de nombreuses techniques de dématriçage. 
+                    Le nombre d’algorithmes est très important. Mais la plupart des algorithmes reprennent les principes 
+                    d'algorithme standard. L'un des plus répandu est <b>l'algorithme bilinéaire</b> que nous allons expliquer ci-après.
+                </p>
+
+                <h2>Algorithme de dématriçage bilinéaire</h2>
+                    <p>
+                        Le principe de l'algorithme bilinéaire est pour un photosite fixé, d'interpoler 
+                        les valeurs des <b>deux couleurs manquantes</b>, 
+                        en calculant la <b>moyenne</b> des valeurs des photosites voisins de cette couleur manquante.
+                        Mais attention pour la couleur du photosite, on ne calcule pas de moyenne, 
+                        on prend directement la valeur du fichier RAW.
+                        <br><br>
+                        <u>Premier exemple :</u><br><br>
+                        <center>
+                            <img src="images/pix1.png"/>
+                        </center>
+                        Dans cet exemple : 
+                        <ul>
+                            <li>
+                                la valeur pour la couleur <b style="color:red;">rouge</b> 
+                                s'obtient en calculant la moyenne des 
+                                quatre valeurs des photosites rouges voisins : <br>
+                                &emsp; <b style="color:red;">(120+100+80+60)/4 = 360/4 = 90</b> ;
+                            </li>
+                            <li>
+                                la valeur pour la couleur <b style="color:green;">verte</b> 
+                                s'obtient de la même façon, 
+                                on calcule la moyenne des quatre valeurs des photosites verts voisins : <br>
+                                &emsp; <b style="color:green;">(60+40+100+40)/4 = 240/4 = 60</b> .
+                            </li>
+                            <li>
+                                la valeur pour la couleur <b style="color:blue;">bleue</b>
+                                est la valeur du fichier RAW, 
+                                ici <b style="color:blue;">150</b>,
+                                car c'est la couleur du filtre de ce photosite. <br>
+                                Il n'y a pas de calcul de moyenne à faire. 
+                            </li>
+                        </ul>
+                        Ainsi le <b>code RVB du pixel</b> correspondant au photosite central est : 
+                        <b style="color:teal;font-size:20px;">rvb(90,60,150)</b>.
+
+                    <br><br>
+                    <u>Deuxième exemple :</u><br><br>
+                    <center>
+                        <img src="images/pix2.png"/>
+                    </center>
+                    Dans cet exemple :
+                    <ul>
+                        <li> 
+                            la valeur pour la couleur <b style="color:red;">rouge</b> 
+                            s'obtient en calculant 
+                            la moyenne des deux valeurs des photosites rouges voisins : <br>
+                            &emsp; <b style="color:red;">(140+100)/2 = 240/2 = 120</b> ;
+                        </li>
+                        <li>
+                            la valeur pour la couleur <b style="color:green;">verte</b>
+                            est la valeur du fichier RAW, 
+                            ici <b style="color:green;">110</b>,
+                            car c'est la couleur du filtre de ce photosite.<br>
+                            Il n'y a pas de calcul de moyenne à faire. 
+                        </li>
+                        <li>
+                            la valeur pour la couleur <b style="color:blue;">bleue</b> 
+                            s'obtient de la même façon, 
+                            on calcule la moyenne des deux valeurs des photosites bleus voisins : <br>
+                            &emsp; <b style="color:blue;">
+                            (130+70)/2 = 200/2 = 100</b> .
+                        </li>
+                    </ul>
+                    Ainsi le <b>code RVB du pixel</b> correspondant au photosite central est : 
+                    <b style="color:teal;font-size:20px;">rvb(120,110,100)</b>.
+                    <br><br>
+
+            <h1>Les capteurs CMOS</h1>
+
+                <br>
+                <center>
+                    <img src="images/capteur-CMOS.png"/>
+                </center>
+                <br>
+                <p>
+                    Les <b>capteurs CMOS</b> (<u>C</u>omplementary <u>M</u>etal-<u>O</u>xide-<u>S</u>emiconductor)
+                    possèdent une qualité d’image proche des <b>capteurs CCD</b>. 
+                    Dans cette technologie, comme pour les capteurs CCD, les photosites acquièrent 
+                    une certaine charge électrique en fonction de la quantité de lumière reçue. 
+                    La différence vient du fait que la charge électrique est directement convertie au niveau 
+                    du photosite en tension utilisable, alors que pour les capteurs CCD cette conversion se fait à l'extérieur du photosite. Le capteur CMOS embarque donc une partie d'électronique que ne contient pas
+                    le capteur CCD.
+                    La sensibilité de ce type de capteur est moins bonne mais leur coût et leur consommation d’énergie sont plus faibles que pour les capteurs CCD.<br>
+                    Les <b>capteurs CCD</b> possèdent une meilleure sensibilité à la lumière et sont utilisés dans les caméras ou recommandés dans le cas de photographies nocturnes. Ils sont aussi plus complexes à mettre en oeuvre et coûtent plus cher que les <b>capteurs CMOS</b>.
+                </p>
+
+                <br>
+                <br>
+                <a class="abas" href="ima_quiz2.html" target="_blank"> Quiz 2 </a>
+                <br>
+                <br>
+                
+        </section>
+    </body>
+
+    <footer> 
+        <script type='text/javascript' language='javascript'>pied();</script>
+    </footer>
+
+</html>

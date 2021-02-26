@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8"/>
+        <title>SNT images page 4</title>
+        <link rel="stylesheet" href="../style/style.css"/>
+        <script src="../style/scriptfooter.js"></script>
+        <script src="script/script4.js"></script>
+    </head>
+
+    <header> SNT : Images : page 4</header>
+
+    <body>
+        
+        <nav>
+            <h2>Liens :</h2>
+                <ul>
+                    <li> <a href="chapitre3.html">Chapitre 3</a> </li>
+                </ul>
+            <h2>Exercices :</h2>
+                <ul>
+                    <span id='nf'></span>
+                    <script type='text/javascript' language='javascript'>fait();</script>
+                </ul>
+        </nav>
+
+        <section>
+
+            <h1>Les métadonnées</h1>
+
+                <p> 
+                    Les photographes méticuleux qui ont connu l’époque de la photographie argentique et qui voulaient
+                    progresser avaient presque tous un carnet. Après chaque photo, ils le sortaient et notaient 
+                    les principaux paramètres de prise de vue (date, vitesse, diaphragme, mémorisation d’exposition etc.).
+                    Cela permettait ainsi d’analyser à postériori les choix qui avaient été faits et de voir, 
+                    quelques jours plus tard une fois la pellicule terminée et développée, 
+                    si les paramètres choisis étaient les bons.<br>
+                    Ces carnets ont bien évidemment disparu le jour ou les appareils photos numériques sont arrivés.
+                    Aujourd’hui, une bonne partie de ces informations sont enregistrées dans votre photo (c'est à dire
+                    dans le fichier image) au moment de la prise de vue. C’est cela que l’on appelle les 
+                    <b>métadonnées</b>. <br><br>
+                    Sous <b>windows</b>, on peut obtenir et modifier une grande partie des métadonnées 
+                    d'une photographie numérique de la façon suivante :
+                    <ul>
+                        <li>1 - <b>sélectionner</b> le fichier image par un simple clic gauche
+                        <li>2 - faire un <b>clic droit</b> sur le fichier image</li>
+                        <li>3 - cliquer ensuite sur <b>Propriétés</b></li>
+                        <li>4 - puis cliquer sur <b>Détails</b></li>
+                    </ul>
+                    <center>
+                        <img src="images/exif2.jpg"/>
+                    </center>
+                </p>
+
+            <h1>Les différents types de métadonnées</h1>
+
+                <h2>Les métadonnées EXIF</h2>
+
+                    <p>
+                        Les métadonnées <b>EXIF</b> (<u>EX</u>changeable <u>I</u>mage <u>F</u>ile) donnent
+                        principalement des informations techniques sur la photographie numérique 
+                        (paramètres de l'appareil photo : ouverture, vitesse d'obturation). 
+                        Elles sont pour la plupart remplies automatiquement par l’appareil photographique.
+                        <br>
+                        <a href="#" onclick="afficheInfo('info1',0);return false;" 
+                             >Plus de précisions</a>
+                        <div id="info1" style="display:none;background-color:mintcream; width:300px;">
+                            <ul>
+                                <li>Marque et Modèle</li>
+                                <li>Date du cliché</li>
+                                <li>Exposition</li>
+                                <li>Ouverture du diaphragme</li>
+                                <li>Sensibilité (ISO)</li>
+                                <li>Distance focale</li>
+                                <li>Objectif</li>
+                                <li>Flash activé ou désactivé</li>
+                                <li>Source lumineuse</li>
+                                <li>Coordonnées GPS</li>
+                                <li>Copyright</li>
+                                <li>...</li>
+                            </ul>
+                        </div>
+                    </p>
+
+                <h2>Les métadonnées IPTC</h2>
+
+                    <p>
+                        Les métadonnées <b>IPTC</b> 
+                        (<u>I</u>nternational <u>P</u>ress <u>T</u>elecommunications <u>C</u>ouncil) donnent
+                        des informations sur l'auteur d'une image et le sujet de la photo (coordonnées, mots clés...). 
+                        Elles sont généralement remplies manuellement par le photographe et complétées par les agences.
+                        <br>
+                        <a href="#" onclick="afficheInfo('info2',1);return false;">Plus de précisions</a>
+                        <div id="info2" style="display:none;background-color:mintcream; width:300px;">
+                            <ul>
+                                <li>Nom de l'auteur</li>
+                                <li>Adresse</li>
+                                <li>Numéro de téléphone</li>
+                                <li>Adresse email</li>
+                                <li>Site web</li>
+                                <li>Licence</li>
+                                <li>Pays où a été pris la photo</li>
+                                <li>Mots-clés</li>
+                                <li>...</li>
+                            </ul>
+                        </div>
+                    </p>
+
+                <h2>Les métadonnées XMP</h2>
+
+                    <p>
+                        La norme <b>XMP</b> (e<u>X</u>tensible <u>M</u>etadata <u>P</u>latform) est la norme
+                        de métadonnées la plus récente. Ce format permet de stocker des informations très variées, 
+                        car il est basé sur XML.
+                        Cette norme reprend l'ensemble des informations de la norme <b>EXIF</b> et de la norme <b>IPTC</b>
+                        et en ajoute de nombreuses autres en plus.
+                    </p>
+
+                <br>
+                <br>
+                <a class="abas" href="ima_quiz4.html" target="_blank"> Quiz 4 </a>
+                <br>
+                <br>
+                
+        </section>
+    </body>
+
+    <footer> 
+        <script type='text/javascript' language='javascript'>pied();</script>
+    </footer>
+
+</html>

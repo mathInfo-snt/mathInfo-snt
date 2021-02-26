@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8"/>
+        <title>SNT images page 3</title>
+        <link rel="stylesheet" href="../style/style.css"/>
+        <script src="../style/scriptfooter.js"></script>
+        <script src="script/script3.js"></script>
+    </head>
+
+    <header> SNT : Images : page 3 </header>
+
+    <body>
+        
+        <nav>
+            <h2>Liens :</h2>
+                <ul>
+                    <li> <a href="chapitre3.html">Chapitre 3</a> </li>
+                </ul>
+            <h2>Exercices :</h2>
+                <ul>
+                    <span id='nf'></span>
+                    <script type='text/javascript' language='javascript'>fait();</script>
+                </ul>
+        </nav>
+
+        <section>
+
+            <h1>Code couleur RVB</h1>
+
+                <p> 
+                    Le <b>codage RVB</b> (<u>R</u>ouge <u>V</u>ert <u>B</u>leu) a été développé en 1931 par la Commission
+                    Internationale de l'Eclairage (CIE). Ce modèle est basé sur la <b>synthèse additive des couleurs</b> puisqu'il consiste à représenter une couleur à partir des trois couleurs primaires :
+                    <ul>
+                        <li style="font-size:22px;color:red;">la couleur rouge </li>
+                        <li style="font-size:22px;color:green;">la couleur verte</li>
+                        <li style="font-size:22px;color:blue;">la couleur bleue</li>
+                    </ul>
+
+                    Chaque couleur est alors considérée comme un <b>mélange</b> de ces trois composantes primaires.<br>
+                    Le <b>code RVB</b> (RGB en Anglais) est le système le plus courant et le plus utilisé, car il 
+                    dérive de la technologie 
+                    employée dans l'industrie du numérique. Ecrans à tube cathodique ou à cristaux liquides, 
+                    appareils photos numériques, scanners, utilisent tous un système RVB basé sur le principe 
+                    additif des trois couleurs primaires, rouge, vert et bleu. <br>
+                    Chacune des composantes (Rouge , Vert, Bleu) est codée sur <b>un octet</b>, on obtient donc 
+                    <b>256 valeurs</b> pour chaque couleur (de <b>0 à 255</b>). Il est donc possible en théorie d'obtenir 256<sup>3</sup>, soit 16 777 216 couleurs différentes, c'est-à-dire beaucoup plus que l'oeil humain n'est capable d'en discerner (environ 350 000). Cette valeur reste cependant souvent théorique, car les écrans 
+                    ne permettent pas d'afficher un tel nombre de couleurs.
+                </p>
+
+                <center>
+                    <img src="images/codeRVB.png"/>
+                </center>
+
+                <h3 style="text-align: left;">Sélecteur de couleur RVB :</h3>
+
+                    <p>
+                        Entre un <b>code RVB</b> dans la zone de gauche puis appuyer sur <b>Entrée</b> pour
+                        que la couleur correspondante s'affiche,<br>
+                        ou cliquer sur le rectangle de couleur de droite, sélectionner une couleur puis cliquer sur 
+                        <b>OK</b> pour que le code RVB s'affiche.
+                    </p><br>
+
+                    <form action="" class="afficheur4">
+                        <p>
+                            <input type="text" id="rvb1" name="rvb" 
+                                class="input1" autocomplete="off" value='rvb(255,0,0)'
+                                onkeypress="javascript:if (event.keyCode == 13) {affichecolor();return false;}" />
+                            <input type="color" id="col1" name="col1" value="#ff0000" class="input2" 
+                                onchange="affichecode()"/>
+                        </p>
+                    </form><br><br><br><br><br><br><br>
+
+                <h3>Valeurs de chaque Composante primaire</h3>
+
+                    <p>
+                        Les valeurs de chaque composante sont codées sur <b>1 octet</b> (<b>8 bits</b>), c'est pourquoi elles sont comprises <b>entre 0 et 255</b>. <br>
+                        Plus la valeur est faible plus la couleur primaire est 
+                        foncée et plus la valeur est grande plus la couleur primaire est claire, comme on peut le voir en
+                        déplaçant le curseur pour les trois composantes ci-dessous. <br>
+                    </p>
+                    <br>
+
+                    <form>
+                        <label for="volume" style="color:red;"><b>Composante rouge</b></label><br>
+                        <input type="color" id="colr" name="colr" value="#ee0000" class="input3" /><br>
+                        <input type="range" id="ir" name="volume" min="0" max="255" class="input4"
+                            oninput="comprouge()" value="238" /><br>
+                            <!-- oninput="document.getElementById('AfficheRange').textContent=value" /><br> -->
+                        <span id="Affr" style="color:red">238</span>
+                    </form>
+
+                    <br><br>
+
+                    <form>
+                        <label for="volume" style="color:green;"><b>Composante verte</b></label><br>
+                        <input type="color" id="colv" name="colv" value="#00cc00" class="input3" />
+                        &emsp;&emsp;
+                        <label for="volume" class="lab1"><b> Couleur RVB : &nbsp;</b></label>
+                        <input type="color" id="rvb2" name="rvb2" value="#eeccaa" class="input5" />
+                        <br>
+                        <input type="range" id="iv" name="volume" min="0" max="255" class="input4"
+                            oninput="compverte()" value="204" /><br>
+                            <!-- oninput="document.getElementById('AfficheRange').textContent=value" /><br> -->
+                        <span id="Affv" style="color:green">204</span>
+                    </form>
+
+                    <br><br>
+
+                    <form>
+                        <label for="volume" style="color:blue;"><b>Composante bleue</b></label><br>
+                        <input type="color" id="colb" name="colb" value="#0000aa" class="input3" /><br>
+                        <input type="range" id="ib" name="volume" min="0" max="255" class="input4"
+                            oninput="compbleu()" value="170" /><br>
+                            <!-- oninput="document.getElementById('AfficheRange').textContent=value" /><br> -->
+                        <span id="Affb" style="color:blue">170</span>
+                    </form>
+
+                <br><br><br>
+
+            <h1>Code couleur hexadécimal</h1>
+                
+                <p>
+                    Le <b>code hexadécimal</b> d'une couleur est simplement le code décimal RVB converti
+                    en <b>hexadécimal</b> et précédé du symbole <b>#</b>.<br> 
+                    En <b>binaire</b>, les trois valeurs de chaque composante primaire sont codées sur 
+                    <b>1 octet</b>, c'est à dire <b>8 bits</b> ce qui donne <b>2 chiffres hexadécimaux</b>. <br>
+                    On rappelle que les chiffres hexadécimaux sont les 16 symboles suivants :
+                    0 ; 1 ; 2 ; 3 ; 4 ; 5 ; 6 ; 7 ; 8 ; 9 ; a ; b ; c ; d ; e ; f . <br>
+                    Par exemple <b>255</b> est codé <b>ff</b> en hexadécimal
+                    et <b>0</b> est codé <b>00</b> en hexadécimal.<br>
+                    Ainsi le code <b>RVB(255,0,0)</b> qui code la <b>couleur rouge</b> va s'écrire <b>#ff0000</b> 
+                    en hexadécimal.<br>
+                </p>
+
+                <h3>Autre exemple :</h3>
+                    <center>
+                        <img src="images/codeCouleurHexa.png"/>
+                    </center>
+                    <br>
+
+            <h1>Les codes couleurs CSS</h1>
+
+                <p>Les codes des principales couleurs possédant un nom en <b>CSS</b> sont donnés dans le tableau ci-dessous.</p>
+                    <center>
+                        <img src="images/codeCouleurCSS.png"/>
+                    </center>
+                <br>
+
+                <br>
+                <br>
+                <a class="abas" href="ima_quiz3.html" target="_blank"> Quiz 3 </a>
+                <br>
+                <br>
+                
+        </section>
+    </body>
+
+    <footer> 
+        <script type='text/javascript' language='javascript'>pied();</script>
+    </footer>
+
+</html>

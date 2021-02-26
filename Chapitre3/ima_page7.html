@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8"/>
+        <title>SNT images page 7</title>
+        <link rel="stylesheet" href="../style/style.css"/>
+        <script src="../style/scriptfooter.js"></script>
+        <script src="script/script7.js"></script>
+    </head>
+
+    <header> SNT : Images : page 7</header>
+
+    <body>
+        
+        <nav>
+            <h2>Liens :</h2>
+                <ul>
+                    <li> <a href="chapitre3.html">Chapitre 3</a> </li>
+                </ul>
+            <h2>Exercices :</h2>
+                <ul>
+                    <span id='nf'></span>
+                    <script type='text/javascript' language='javascript'>fait();</script>
+                </ul>
+        </nav>
+
+        <section>
+
+            <p>
+                La <b>stéganographie</b>, c'est l'art de dissimuler des données dans d'autres données. 
+                Il existe plusieurs techniques différentes qui permettent de faire cela. 
+                La stéganographie existe depuis longtemps, bien avant l'invention de l'ordinateur.<br>
+                Avec l'avénement de l'informatique et le développement des échanges électroniques, 
+                les possibilités de cacher un message se sont multipliées : on peut cacher un message dans une image, 
+                un site internet, un programme, une musique. 
+                La stéganographie a aussi trouvé des applications commerciales, avec le tatouage numérique. 
+                On cache un message dans une image ou une musique, pour identifier son origine, 
+                et aussi pour empêcher qu'elle ne soit dupliquée à l'insu de son propriétaire.
+            </p>
+            
+            <h1>Exemple de stéganographie informatique</h1>
+
+                <p>
+                    On va voir dans ce paragraphe comment on peut cacher des informations dans une <b>image numérique</b>.<br>
+                    Le principe est basé sur la constitution des images numériques sous formes d'une succession d'<b>octets</b> 
+                    qui codent les niveaux de rouge, vert et bleu des <b>pixels</b> de l'image.
+                </p>
+
+                <h2>Octet et bit de poids faible</h2>
+
+                    <p>
+                        Un <b>octet</b> est une succession de 8 bits. Un octet permet de coder en binaire tous les nombres entiers
+                        de 0 à 255 compris.
+                    </p>
+
+                    <h3 style="text-align: left;">Convertisseur Décimal/binaire :</h3>
+
+                        <form action="" class="afficheur3">
+                            <p>
+                                <label for="decimal"><b>Octet en décimal</b>&#160;: </label> 
+                                <input type="text" id="decimal" name="decimal" autocomplete="off" class="saisir" value='255'
+                                    onkeypress="javascript:if (event.keyCode == 13) {xdecimal();return false;}" />
+                            </p>
+                            <p>
+                                <label for="binaire"><b>Octet en binaire</b>&#160;: </label> 
+                                <input type="text" id="binaire" name="binaire" autocomplete="off" class="saisir" value='11111111'
+                                    onkeypress="javascript:if (event.keyCode == 13) {xbinaire();return false;}" />
+                            </p>
+                        </form>
+                        <br><br><br><br><br><br><br>
+
+                    <p>
+                        Dans un <b>octet</b> on appelle <b>bits de poids faible</b> les bits situés à droite dans l'écriture binaire de l'octet.
+                        <img src=".images/.bit-poids-faible.png" alt="" title="bits de poids faible" /><br><br>
+                        Le principe pour cacher des informations dans une image est de cacher les informations dans les bits de poids faible.
+                        En effet, modifier les bits de poids faible entraine une légère modification de la valeur décimale :
+                        <ul>
+                            <li>
+                                de -1 ou +1 si on modifie seulement le bit le plus à droite ;
+                            </li>
+                            <li>
+                                de -3 à +3 si on modifie les deux bits les plus à droite ;
+                            </li>
+                        </ul>
+                        De telles modifications sont mineurs et ne sont pas perceptibles par l'oeil humain.
+                    </p>
+
+                <h2>Code ASCII</h2>
+
+                    <p>
+                        Le <b>code ASCII</b> (<u>A</u>merican <u>S</u>tandard <u>C</u>ode for <u>I</u>nformation <u>I</u>nterchange) 
+                        est un code normalisé. Il associe à chaque <b>caractère</b> un code informatique. 
+                        Il est utile pour le stockage de texte, l'affichage à l'écran mais aussi pour l'impression. 
+                        Le code ASCII prévoit au départ 128 caractères numérotés de 0 à 127, codés en binaire sur 7 bits. 
+                        Par exemple le code ASCII de 'a' est 97, celui de 'A' est 65 et celui de '0' est 48.
+                        Cependant, pour répondre aux besoins des langues européennes comprenant des lettres accentuées (comme à, é, ù...) et d'autres symboles (§, µ, £...), le code ASCII a dû être étendu. 
+                        Le plus souvent, on utilise la norme <b>utf-8</b>.              
+                    </p>
+
+                    <h4>Table ASCII :</h4>
+                        &emsp;&emsp;&emsp;<img src=".images/.ascii_table.gif" alt="" title="Table ASCII" /><br><br>
+
+                    <h3 style="text-align: left;">Convertisseur Caractère/Code ASCII :</h3>
+
+                        <form action="" class="afficheur3">
+                            <p>
+                                <label for="caractere"><b>Caractère</b>&#160;: </label> 
+                                <input type="text" id="caractere" name="caractere" autocomplete="off" class="saisir" value='a'
+                                    onkeypress="javascript:if (event.keyCode == 13) {xcara();return false;}" />
+                            </p>
+                            <p>
+                                <label for="code"><b>Code ASCII</b>&#160;: </label> 
+                                <input type="text" id="code" name="code" autocomplete="off" class="saisir" value='97'
+                                    onkeypress="javascript:if (event.keyCode == 13) {xcode();return false;}" />
+                            </p>
+                        </form>
+                        <br><br><br><br><br><br><br>
+
+                <h2>Exemple de stéganographie sur le bit de poids faible</h2>
+
+                    <p>
+                        Repérer le bit de poids le plus faible est très facile sur l'écriture décimale.
+                        <ul>
+                            <li>Si ce bit est égal à 0 il s'agit d'un nombre pair</li>
+                            <li>Si ce bit est égal à 1 il s'agit d'un nombre impair</li>
+                        </ul>
+                        Par exemple, pour 255 (11111111) le bit de poids faible est 1 et pour 254 (11111110) le bit de poids faible est 0.<br>
+                        Ainsi on utilisera ce principe qu'un nombre pair code un 0 et un nombre impair code un 1.
+                    </p>
+                    
+                    <p>
+                        On considère ci-dessous, le début d'un fichier numérique nommé <b>im1.ppm</b>.
+                        <div id="im1" style="background-color:mintcream; width:400px;">
+                            &ensp;P3<br>
+                            &ensp;100 &ensp;80<br>
+                            &ensp;255<br>
+                            &ensp;180 &ensp; 165 &ensp; 94 &ensp; 194 &ensp; 101 &ensp; 213 &ensp; 89 &ensp; 134<br>
+                            &ensp;...
+                        </div>
+                        <br>
+                        Ainsi sur la 4ème ligne, les 8 premières valeurs de niveau de rouge, vert, bleu 
+                        permettent de coder l'octet suivant : (01001110) qui correspond à 78, 
+                        c'est à dire au caractère N dans le code ASCII.
+                        On a ainsi caché le caractère <b>N</b> dans la 4<sup>ème</sup> ligne du fichier <b>im1.ppm</b> ci-dessus.<br>
+                        On peut donc utiliser ce principe simple : une valeur paire code 0, une valeur impaire
+                        code 1 pour cacher des informations dans une image numérique, quitte à modifier légèrement le fichier
+                        image en changeant les bits de poids faible, ce qui est imperceptible à l'oeil humain.
+                        <br><br>
+                        <u style="color:teal; font-weight:bold;">Changer le bit de poids faible :</u>
+                        Changer le bit de poids faible, revient à :
+                        <ul>
+                            <li> ajouter 1 pour un entier pair, par exemple : 130 devient 131 ;</li>
+                            <li> retrancher 1 pour un entier impair, par exemple : 115 devient 114 .</li> 
+                        </ul>
+                    </p>
+
+                <br>
+                <br>
+                <a class="abas" href="ima_quiz7.html" target="_blank"> Quiz 7 </a>
+                <br>
+                <br>
+                
+        </section>
+    </body>
+
+    <footer> 
+        <script type='text/javascript' language='javascript'>pied();</script>
+    </footer>
+
+</html>

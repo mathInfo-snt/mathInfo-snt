@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8"/>
+        <title>SNT images page 5</title>
+        <link rel="stylesheet" href="../style/style.css"/>
+        <script src="../style/scriptfooter.js"></script>
+        <script src="script/script5.js"></script>
+    </head>
+
+    <header> SNT : Images : page 5</header>
+
+    <body>
+        
+        <nav>
+            <h2>Liens :</h2>
+                <ul>
+                    <li> <a href="chapitre3.html">Chapitre 3</a> </li>
+                </ul>
+            <h2>Exercices :</h2>
+                <ul>
+                    <span id='nf'></span>
+                    <script type='text/javascript' language='javascript'>fait();</script>
+                </ul>
+        </nav>
+
+        <section>
+
+            <h1>Le système GPS</h1>
+
+                <p> 
+                    Le <b>GPS</b> (<u>G</u>lobal <u>P</u>ositioning <u>S</u>ystem) est un système de positionnement 
+                    par satellites.
+                    Il a été mis en place par le département de la Défense des États-Unis à des fins militaires 
+                    à partir de 1973, le système avec 24 satellites est totalement opérationnel en 1995 
+                    et s'ouvre au civil en 2000.<br>
+                    Les coordonnées terrestres calculées par le système <b>GPS</b> se réfèrent au 
+                    <b>système géodésique WGS84</b>.<br>
+                    La position de tout point à la surface de la terre est déterminée par trois données : 
+                    les deux coordonnées géographiques
+                    (la <b>latitude</b> et la <b>longitude</b>) et par son <b>altitude</b>, 
+                    c'est à dire son élévation par rapport au niveau de la mer. <br>
+                    L'ensemble de ces trois données constitue le <b>système géodésique WGS84</b>.
+                </p>
+
+            <h1>La latitude et la longitude</h1>
+
+                <p>
+                    La <b>latitude</b> est un angle dont le sommet est le centre de la terre qui permet de 
+                    repérer sur quel parallèle on se trouve, sachant que le parallèle d'origine (de latitude 0°) 
+                    est <b>l'équateur</b>. <br>
+                    On rappelle qu'un <b>parallèle</b> est un cercle situé sur la surface de la terre et 
+                    parallèle à l'équateur.
+                    <br><br>
+                    La <b>longitude</b> est un deuxième angle dont le sommet est encore le centre de la terre et qui permet
+                    de repérer sur quel méridien on se trouve, sachant que le méridien d'origine (de longitude 0°)
+                    est le <b>méridien de Greenwitch</b>. <br>
+                    On rappelle qu'un <b>méridien</b> est un demi-cercle situé sur la surface de la terre et qui joint 
+                    les deux pôles : le pôle Nord et le pôle Sud.
+                    <center>
+                        <img src="images/angles-lat-lon.png" width="500" height="320"/>
+                        &emsp;&emsp;&emsp;&emsp;
+                        <img src="images/globe1.png" width="330" height="330"/>
+                    </center>
+                </p>
+
+                <h2>La latitude</h2>
+
+                    <p>
+                        On a vu que la <b>latitude</b> est un angle donné en degrés minutes et secondes qui permet de 
+                        repérer sur quel parallèle on se situe. La mesure de cet angle est comprise <b>entre 0° et 90°</b>
+                        et on rajoute l'indication <b>Nord</b> ou <b>N</b> si on se trouve dans l'hémisphère nord et 
+                        <b>Sud</b> ou <b>S</b> si on se trouve dans l'hémisphère sud.
+                    </p>
+
+                    <center>
+                        <img src="images/paralleles.png"/>
+                    </center>
+                    
+                    <p>
+                        Il existe une autre notation pour indiquer la latitude, c'est la <b>notation décimale</b>.
+                    </p>
+
+                    <h4>Exemples de latitude</h4>
+
+                         <center>
+                            <img src="images/exemples-latitude.png"/>
+                        </center>
+
+                        <p>
+                            Ainsi en notation décimale, la latitude est <b>positive</b> si on se trouve dans l'hémisphère nord 
+                            et <b>négative</b> si on se trouve dans l'hémisphère sud.<br>
+                            Puis le calcul de la valeur numérique se fait par la formule :
+                            <center>
+                                <b style="font-size:25px;color:teal;"> degrés + minutes/60 + secondes/3600   </b>
+                            </center>
+                            <br>
+                            Dans l'autre sens, le signe nous indique s'il s'agit de l'hémisphère <b>Nord</b> (<b>signe +</b>) ou 
+                            de l'hémisphère <b>Sud</b> (<b>signe -</b>). <br>
+                            Ensuite la partie entière nous donne le nombre de 
+                            degrés de la mesure de l'angle.<br>
+                            Pour avoir le nombre de minutes, on multiplie la partie décimale par 60 et 
+                            on prend la partie entière.<br>
+                            Enfin pour avoir, le nombre de secondes, on prend la partie décimale du nombre de minutes, 
+                            on multiplie par 60 et on prend la partie entière.<br><br>
+                            <u>Exemple avec <b style="color:DarkgoldenRod;">45,5075</b> :</u>
+                            <ul>
+                                <li>
+                                    le signe est <b>+</b> donc c'est une latitude <b style="color:red;">Nord</b> 
+                                </li>
+                                <li>
+                                    la partie entière est <b>45</b> donc <b style="color:blue;">45°</b> 
+                                </li>
+                                <li>
+                                    on a : <b>0,5075 &#xD7; 60 = 30,45</b>  donc  <b style="color:green;">30'</b> 
+                                </li>
+                                <li>
+                                    on a : <b>0,45 &#xD7; 60 = 27</b>  
+                                    donc <b style="color:darkorange;">27"</b> 
+                                </li>
+                            </ul>
+                            On trouve donc finalement une latitude de : <b style="color:DarkgoldenRod;">45° 30' 27" Nord</b>.
+                        </p>
+
+                <h2>la longitude</h2>
+
+                    <p>
+                        On a vu que la <b>longitude</b> est un angle donné en degrés minutes et secondes qui permet de 
+                        repérer sur quel méridien on se situe. La mesure de cet angle est comprise <b>entre 0° et 180°</b>
+                        et on rajoute l'indication <b>Est</b> ou <b>E</b> si on se trouve à l'Est du méridien de
+                        Greenwitch et <b>Ouest</b> ou <b>O</b> ou <b>W</b> si on se trouve à l'ouest du méridien de
+                        Greenwitch.
+                    </p>
+
+                    <center>
+                        <img src="images/globe2.png"/>
+                    </center>
+
+                    <p>
+                        Il existe une autre notation pour indiquer la longitude, c'est la <b>notation décimale</b>.
+                    </p>
+
+                    <h4>Exemples de longitude</h4>   
+
+                         <center>
+                            <img src="images/exemples-longitude.png"/>
+                        </center>
+
+                        <p>
+                            Ainsi en notation décimale, la longitude est <b>positive</b> si on se trouve à l'<b>Est</b>
+                            du méridien de Greenwitch et <b>négative</b> si on se trouve à l'<b>Ouest</b>
+                            du méridien de Greenwitch.<br>
+                            Puis le calcul de la valeur numérique se fait par la formule :
+                            <center>
+                                <b style="font-size:25px;color:teal;"> degrés + minutes/60 + secondes/3600   </b>
+                            </center>
+                            <br>
+                            Dans l'autre sens, le signe nous indique s'il on se situe à l'<b>Est</b> (<b>signe +</b>) ou 
+                            à l'<b>Ouest</b> (<b>signe -</b>) du méridien de Greenwitch. <br>
+                            Ensuite la partie entière nous donne le nombre de 
+                            degrés de la mesure de l'angle.<br>
+                            Pour avoir le nombre de minutes, on multiplie la partie décimale par 60 et 
+                            on prend la partie entière.<br>
+                            Enfin pour avoir, le nombre de secondes, on prend la partie décimale du nombre de minutes, 
+                            on multiplie par 60 et on prend la partie entière.<br><br>
+                            <u>Exemple avec <b style="color:DarkgoldenRod;">- 24,5625</b> :</u>
+                            <ul>
+                                <li>
+                                    le signe est <b>-</b> donc c'est une longitude <b style="color:red;">Ouest</b> 
+                                </li>
+                                <li>
+                                    la partie entière est <b>24</b> donc <b style="color:blue;">24°</b> 
+                                </li>
+                                <li>
+                                    on a : <b>0,5625 &#xD7; 60 = 33,75</b>  donc  <b style="color:green;">33'</b> 
+                                </li>
+                                <li>
+                                    on a : <b>0,75 &#xD7; 60 = 45</b>  
+                                    donc <b style="color:darkorange;">45"</b> 
+                                </li>
+                            </ul>
+                            On trouve donc finalement une longitude de : <b style="color:DarkgoldenRod;">24° 33' 45" Ouest</b>.
+                        </p>
+
+                <br>
+                <br>
+                <a class="abas" href="ima_quiz5.html" target="_blank"> Quiz 5 </a>
+                <br>
+                <br>
+                
+        </section>
+    </body>
+
+    <footer> 
+        <script type='text/javascript' language='javascript'>pied();</script>
+    </footer>
+
+</html>

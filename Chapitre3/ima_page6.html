@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8"/>
+        <title>SNT images page 6</title>
+        <link rel="stylesheet" href="../style/style.css"/>
+        <script src="../style/scriptfooter.js"></script>
+        <script src="script/script6.js"></script>
+    </head>
+
+    <header> SNT : Images : page 6</header>
+
+    <body>
+        
+        <nav>
+            <h2>Liens :</h2>
+                <ul>
+                    <li> <a href="chapitre3.html">Chapitre 3</a> </li>
+                </ul>
+            <h2>Exercices :</h2>
+                <ul>
+                    <span id='nf'></span>
+                    <script type='text/javascript' language='javascript'>fait();</script>
+                </ul>
+        </nav>
+
+        <section>
+
+            <p>
+                Il est possible de classer les formats d’images en deux grandes familles :
+                <ul>
+                    <li>
+                        Les images dites « <b>matricielles</b> » (<b>BitMap</b> en Anglais), qui peuvent représenter des
+                        photos, des dessins, des plans etc ... Ces images en couleur ou noir et blanc sont constituées 
+                        de tous les points (pixels) de l’image. 
+                        Agrandir ou rétrécir ces images pose certains problèmes afin de déterminer les
+                        pixels de la nouvelle image. Par contre, elles sont souvent d’une grande
+                        qualité car elles contiennent toute l’information.<br>
+                        Ces images sont dites <b>matricielles</b> car elles sont enregistrées dans un fichier sous la forme
+                        d'une <b>matrice</b>, c'est à dire un <b>tableau de pixels</b> à deux dimensions.
+                        Ces images peuvent être compressées à l'aide d'algorithme de compression pour qu'elles prennent moins de place
+                        en mémoire.
+                    </li>
+                    <li>
+                        Les images dites « <b>vectorielles</b> », qui sont formées de courbes qui définissent
+                        des formes à l’aide d’équations mathématiques. Même pour des formes complexes,
+                        les images vectorielles nécessitent moins de place en mémoire que les
+                        images BitMap. De plus elles supportent parfaitement les changements d’échelle.
+                    </li>
+                </ul>
+            </p>
+
+            <h1>Les images matricielles</h1>
+
+            <h2>Définition d'une matrice</h2>
+
+                <p>
+                    Une <b>matrice</b> est un tableau de nombre à deux dimensions.
+                    Sa <b>taille</b> est donnée par deux nombres entiers :
+                    <ul>
+                        <li>
+                            le nombre de colonnes
+                        </li>
+                        <li>
+                            le nombre de lignes
+                        </li>
+                    </ul>
+                    <center>
+                        <img src="images/matrices.png"/>
+                    </center>
+                </p>
+
+            <h2>Les formats non compressés PBM, PGM et PPM</h2> 
+
+                <h3>Le format PBM</h3>
+
+                    <p> 
+                        Le format <b>PBM</b> (<u>P</u>ortable <u>B</u>it<u>M</u>ap) est un format dans
+                        lequel une image est considérée comme une <b>matrice</b> de pixels noirs ou blancs.<br>
+                        Dans le fichier PBM un pixel noir est codé par un 1 et un pixel blanc est codé par un 0.<br>
+                        Ce type de fichier permet de représenter les caractères du code <b>ASCII</b>.
+                    </p>
+                
+                    <center>
+                        <img src="images/F-pbm.png"/>
+                    </center>
+
+                    <p>Ce fichier <b>PBM</b> va afficher l'image ci-dessous :</p>
+
+                    <center>
+                        <img src="images/F.png"/>
+                    </center>
+
+                    <p>
+                        Ce fichier <b>PBM</b> est constitué de la façon suivante :
+                            <ul>
+                                <li>
+                                    sur la première ligne, on indique le <b>numéro</b> du <b>format PBM</b> qui est <b>P1</b> ;
+                                </li>
+                                <li>
+                                    sur la deuxième ligne, on indique les <b>dimensions</b> de l'image dans l'ordre suivant :
+                                    <b>nombre de colonnes</b> puis <b>nombre de ligne</b> ;
+                                </li>
+                                <li>
+                                    sur les lignes suivantes, on écrit la <b>matrice de 0 et de 1</b> qui code les 
+                                    pixels blancs et noirs de l'image. Les bits (0 ou 1) sont séparés 
+                                    soit par un espace, soit par un retour à la ligne.
+                                </li>
+                            </ul>
+                    </p>
+
+                <h3>Le format PGM</h3>
+
+                    <p> 
+                        Le format <b>PGM</b> (<u>P</u>ortable <u>G</u>ray<u>M</u>ap) est un format dans
+                        lequel une image est considérée comme une <b>matrice</b> de pixels gris avec plusieurs niveau de gris allant du blanc au noir. <br>
+                        Dans le fichier PGM le pixel noir est codé 0 et le pixel blanc est codé par une valeur comprise entre 0 et 255
+                        (dans l'exemple ci-dessous le blanc est codé 15). Tous les codes intermédiaires codent des niveaux de gris
+                        (plus le code est élevé plus le gris est clair).
+                    </p>
+
+                    <center>
+                        <img src="images/F-pgm.png"/><br><br>
+                    </center>
+
+                    <p>Ce fichier <b>PGM</b> va afficher l'image ci-dessous :</p>
+                    <center>
+                        <img src="images/HELP.png"/>
+                    </center>
+
+                    <p>
+                        Ce fichier <b>PGM</b> est constitué de la façon suivante :
+                            <ul>
+                                <li>
+                                    sur la première ligne, on indique le <b>numéro</b> du <b>format PGM</b> qui est <b>P2</b> ;
+                                </li>
+                                <li>
+                                    sur la deuxième ligne, on indique les <b>dimensions</b> de l'image dans l'ordre suivant :
+                                    <b>nombre de colonnes</b> puis <b>nombre de lignes</b> ;
+                                </li>
+                                <li>
+                                    sur la troisième ligne, on indique la <b>valeur maximum de niveau de gris</b> 
+                                    comprise entre 0 et 255. Cette valeur maximum code le blanc ;
+                                </li>
+                                <li>
+                                    sur les lignes suivantes, on écrit la <b>matrice des valeurs</b> qui codent 
+                                    les niveaux de gris de chaque pixels.
+                                </li>
+                            </ul>
+                    </p>
+
+                <h3>Le format PPM</h3>
+
+                    <p> 
+                        Le format <b>PPM</b> (<u>P</u>ortable <u>P</u>ix<u>M</u>ap) est un format dans
+                        lequel une image est considérée comme une <b>matrice</b> de pixels, chacun d'eux étant codé en RVB, donc par trois valeurs donnant l'intensité de chaque couleur primaire : rouge, vert, bleue. <br>
+                        Par exemple dans le fichier PPM, un pixel rouge est codé : &ensp;
+                        <b style="color:red;"> 255 0 0 </b> &ensp; un pixel vert est codé : &ensp; 
+                        <b style="color:green;">0 255 0</b> &ensp; et un pixel bleu est codé : &ensp;
+                        <b style="color:blue;"> 0 0 255</b> .
+                    </p>
+
+                    <center>
+                        <img src="images/F-ppm.png"/>
+                    </center>
+
+                    <p>Ce fichier <b>PPM</b> va afficher l'image ci-dessous :</p>
+
+                    <center>
+                        <img src="images/cible.png"/>
+                    </center>
+
+                    <p>
+                        Ce fichier <b>PPM</b> est constitué de la façon suivante :
+                            <ul>
+                                <li>
+                                    sur la première ligne, on indique le <b>numéro</b> du <b>format PPM</b> qui est <b>P3</b> ;
+                                </li>
+                                <li>
+                                    sur la deuxième ligne, on indique les <b>dimensions</b> de l'image dans l'ordre suivant :
+                                    <b>nombre de colonnes</b> puis <b>nombre de lignes</b> ;
+                                </li>
+                                <li>
+                                    sur la troisième ligne, on indique la valeur maximum comprise entre 0 et 255
+                                    de chaque couleur primaire (souvent égale à 255) ;
+                                </li>
+                                <li>
+                                    sur les lignes suivantes, on écrit la <b>matrice des triplets</b> de valeurs, 
+                                    chacun de ces triplets donnant le <b>code RVB</b> des pixels de l'image
+                                    (par exemple le triplet : <b>255 0 0</b> code la couleur rouge).
+                                </li>
+                            </ul>
+                    </p>
+
+            <h2>Les formats compressés</h2>
+
+                <p>
+                    Les formats d’image représentant l’ensemble des pixels sous forme d'une matrice sont très volumineux. 
+                    Il existe plusieurs algorithmes de compression de données qui réduisent la taille des fichiers. 
+                    Il y a deux grandes familles : les méthodes de compression d’image sans perte et celles avec perte.
+                </p>
+
+                <h3>Les formats compressés les plus utilisés</h3>
+
+                    <p>
+                        Les formats compressés les plus utilisés sont : TIFF, GIF, JPEG ou JPG, et PNG.
+                        <ul>
+                            <li>
+                                <b>TIFF</b> (<u>T</u>agged <u>I</u>mage <u>F</u>ile <u>F</u>ormat) : Ce format est orienté 
+                                vers les professionnels (imprimeurs, publicitaires...). 
+                                Il permet d’obtenir une image de très bonne qualité, mais sa taille reste volumineuse.
+                                Ces fichiers TIFF peuvent être compressés (compression LZW).
+                            </li>
+                            <li>
+                                <b>GIF</b> (<u>G</u>raphics <u>I</u>nterchange <u>F</u>ormat) : Ce format est un 
+                                des standards d’internet. Les fichiers sont de petite taille, car les images 
+                                ne contiennent que 256 couleurs. Ce format permet d’avoir des parties d’image transparentes.
+                            </li>
+                            <li>
+                                <b>JPEG</b> (<u>J</u>oint <u>P</u>hotographic <u>E</u>xpert <u>G</u>roup) : Ce format 
+                                offre plusieurs taux de compressions, qui affectent la qualité de l’image. 
+                                Il est devenu le standard des formats d’image sur internet, car on obtient 
+                                des images plus petites grâce à la compression. Ceci permet de les charger rapidement, 
+                                même avec une connexion bas débit.
+                            </li>
+                            <li>
+                                <b>PNG</b> : (<u>P</u>ortable <u>N</u>etwork <u>G</u>raphic) : C’est le futur standard pour internet,
+                                 car il autorise la transparence comme le format GIF et autorise 16.7 millions de couleurs. 
+                                 Il permet aussi la compression de données.
+                            </li>
+                        </ul>
+                    </p>
+
+                <h3>Les compressions sans perte</h3>
+
+                    <p>
+                        Les méthodes les plus importantes de compression d’image sans perte sont :
+                        <ul>
+                            <li>
+                                la méthode du codage des répétitions (comme <b>LRE</b>), 
+                                utilisée sur les premiers scanners et télécopieurs.
+                            </li>
+                            <li>
+                                le codage par <b>quadtree</b> qui utilise une représentation sous forme d'arbre dans lequel
+                                chaque sommet à quatre arêtes ;
+                            </li>
+                            <li>
+                                le codage entropique (comme le <b>code de Huffman</b>) qui utilise un arbre construit 
+                                à partir de la fréquence de chaque caractère de l'image de départ. 
+                                Le but est de coder les caractères plus fréquents en utilisant 
+                                moins de place que les caractères moins fréquent à l'aide 
+                                d'un dictionnaire qui dépends des fréquences de chaque caractère.
+                            </li>
+                            <li>
+                                les algorithmes à dictionnaire adaptable tels que <b>LZW</b>. L’idée de cet algorithme est de
+                                construire une table de traduction à partir des informations à compresser.
+                            </li>
+                        </ul>
+                    </p>
+
+                    <h4>Exemple de compression LRE</h4>
+
+                        <p>
+                            On va appliquer le principe du codage des répétitions (<b>LRE</b>) à un fichier image au format
+                            <b>PBM</b>. <br>
+                            Le principe est de remplacer toutes suites successives de 0 ou de 1 par le 
+                            nombre de 0 ou de 1.<br>
+                            Par exemple :
+                            <ul>
+                                <li> 
+                                    0 0 0 0 0  sera remplacée par : 6 0
+                                </li>
+                                <li>
+                                    1 1 1  sera remplacée par : 3 1
+                                </li>
+                                <li>
+                                    0 0 0 0 <br> 
+                                    0 0 1 1 <br>
+                                    sera remplacée par : <br>
+                                    6 0 <br>
+                                    2 1
+                                </li>
+                            </ul>
+                            Ainsi si on considère le fichier PBM suivant, on obtient : <br><br>
+                            <center>
+                                <b style="font-size:20px; color:teal;">Fichier PBM non compressé</b> <br>
+                                <img src="images/egal.png"/><br><br>
+                                <b style="font-size:20px; color:teal;">Fichier compressé</b> <br>
+                                <img src="images/egalcomp.png"/>
+                            </center>
+                            On a donc remplacé une matrice de 5 &#215; 5 = 25 caractères par une matrice de 
+                            2 &#215; 5 = 10 caractères. <br>
+                            Ce qui nous donne un taux de compression de :  1 - 10/25 = 0,6 = 60%.
+                        </p>
+
+                <h3>Les compressions avec perte</h3>
+
+                    <p>
+                        Il existe de nombreuses techniques de compression avec perte. Le format <b>JPEG</b> utilise un processus 
+                        de compression et de décompression qui comporte six étapes principales. Ce processus est long et 
+                        compliqué à expliquer. Il s'agit d'une compression irréversible, puisqu’il y a perte de données.
+                        Comme il y a des pertes de données, on peut obtenir un <b>taux de compression</b> plus important.
+                    </p>
+
+                    <h4>Formule pour calculer le taux de compression</h4>
+
+                        <p>
+                            Le taux de compression donne le pourcentage de la taille de l'image de départ qui a été gagné.
+                            Il se calcule avec la formule suivante : <br>
+
+                            <center>
+                                <img src="images/taux-comp.png"/>
+                            </center>
+                        </p>
+
+            <h1>Les images vectorielles</h1>
+
+                <p>
+                    Il existe de nombreux formats de fichiers vectoriels, comme <b>Postscript</b>, 
+                    <b>PDF</b>, <b>Adobe Flash</b>, Illustrator ou <b>SVG</b>. 
+                    Aujourd’hui le format standard des images vectorielles est un format PostScript appelé 
+                    l’<b>EPSF</b> (<u>E</u>ncapsulated <u>P</u>ost<u>S</u>cript <u>F</u>ile) ce qui signifie 
+                    PostScript encapsulé. Son extension est <b>.eps</b> ou <b>.epsf</b>.
+                    Les images vectorielles sont moins volumineuses que les images matricielles et 
+                    subissent sans déformation des changements d’échelle. <br>
+                    Ces images sont constituées uniquement d’équations, 
+                    de formules qui permettent de tracer les courbes les constituant.<br>
+                    Voici ci-dessous un exemple d'image vectorielle, qui est constituée de l'équation d'un cercle et 
+                    des équations de deux polygones.
+
+                    <center>
+                        <img src="images/vecto.gif"/>
+                    </center>
+                </p>
+
+                <br>
+                <br>
+                <a class="abas" href="ima_quiz6.html" target="_blank"> Quiz 6 </a>
+                <br>
+                <br>
+                
+        </section>
+    </body>
+
+    <footer> 
+        <script type='text/javascript' language='javascript'>pied();</script>
+    </footer>
+
+</html>
