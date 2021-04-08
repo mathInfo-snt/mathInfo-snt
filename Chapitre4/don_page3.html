@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8"/>
+        <title>SNT données page 3</title>
+        <link rel="stylesheet" href="../style/style.css"/>
+        <script src="../style/scriptfooter.js"></script>
+        <script src="script/script3.js"></script>
+    </head>
+
+    <header> SNT : Données : page 3 : Les principaux formats de données</header>
+
+    <body>
+
+        <nav>
+            <h2>Liens :</h2>
+                <ul>
+                    <li> <a href="chapitre4.html">Chapitre 4</a> </li>
+                </ul>
+            <h2>Exercices :</h2>
+                <ul>
+                    <span id='nf'></span>
+                    <script type='text/javascript' language='javascript'>fait();</script>
+                </ul>
+        </nav>
+
+        <section>
+            <h1>Formats de fichiers</h1>
+				<p> 
+                    Pour assurer la persistance des <b>données</b>, ces dernières sont stockées 
+                    dans des <b>fichiers</b>.<br>
+                    Il y a deux grands types de formats de fichiers.
+                </p>
+                <h2>Le type texte</h2>
+                    <p>
+                        Le <b>type texte</b> regroupe les formats de fichiers lisibles par des 
+                        <b>éditeurs de texte</b>
+                        comme <b>Notepad++</b>, <b>Bloc-Notes</b>, <b>Geany</b>, etc... <br>
+                        Ces fichiers ne contiennent que des <b>caractères alphanumériques</b> 
+                        qui sont codés en respectant une <b>norme d'encodage</b>, telle que 
+                        <b>l'utf-8</b> par exemple, qui est compatible avec le code <b>ASCII</b>.
+                        <br><br>
+                        Voici quelques exemples importants de formats de type texte :
+                        <ul>
+                            <li>
+                                le <b style="color:blue;">format CSV</b> (<u>C</u>omma <u>S</u>eparated <u>V</u>alues) qui signifie
+                                données avec des séparateurs (virgule par exemple). C'est le format le plus universel et le plus simple.<br>
+                                Ces fichiers possèdent l'extension <b>.csv</b>.
+                            </li>
+                            <li>
+                                le <b style="color:blue;">format VCARD</b> (<u>V</u>isit <u>CARD</u>) qui signifie carte de visite. Ce format est utilisé par des appareils mobiles (téléphones mobiles, assistants personnels, GPS) pour échanger des éléments de carnet d'adresses, mais aussi par des logiciels de messagerie instantanée.<br>
+                                Ces fichiers possèdent l'extension <b>.vcf</b>.
+                            </li>
+                            <li>
+                                le <b style="color:blue;">format XML</b> (e<u>X</u>tensible <u>M</u>arkup <u>L</u>anguage) qui signifie un langage de balisage extensible. Ce format de fichier est conçu pour transmettre des informations. 
+                                Il utilise des <b>balises</b> comme dans le langage <b>HTML</b>.<br>
+                                Ces fichiers possèdent l'extension <b>.xml</b>.
+                            </li>
+                            <li>
+                                le <b style="color:blue;">format JSON</b> (<u>J</u>ava<u>S</u>cript <u>O</u>bject <u>N</u>otation) qui signifie notation objet issue de JavaScript. C'est un format léger d'échange de données. JSON est un format texte qui utilise des conventions familières à tout programmeur habitué aux langages descendant du C, comme par exemple : C++, Java, JavaScript, Python et bien d'autres.<br>
+                                Ces fichiers possèdent l'extension <b>.json</b>.
+                            </li>
+                        </ul>
+                    </p>
+                <h2>Le type binaire</h2>
+                    <p>
+                        Ces fichiers ne sont pas lisibles par les éditeurs de texte. Ce sont principalement
+                        les formats des <b>tableurs</b>.
+                        <ul>
+                            <li>
+                                le <b style="color:blue;">format ODS</b> 
+                                (<u>O</u>pen<u>D</u>ocument <u>S</u>preadsheet) qui est le format du tableur
+                                <b>LibreOffice Calc</b>.<br>
+                                Ces fichiers possèdent l'extension <b>.ods</b>.
+                            </li>
+                            <li>
+                                le <b style="color:blue;">format XLS</b> 
+                                (E<u>X</u>ce<u>L</u> <u>S</u>heet) qui est le format du tableur
+                                <b>Excel</b>.<br>
+                                Ces fichiers possèdent l'extension <b>.xls</b>.
+                            </li>
+                        </ul>
+                        Il y a aussi les formats utilisés par les <b>logiciels de bases de données</b> :
+                        <ul>
+                            <li>
+                                le <b style="color:blue;">format DBF</b> qui est le format utilisé
+                                par le logiciel de système de gestion de base de données <b>dBASE</b> 
+                                pour le stockage des données.<br>
+                                Ces fichiers possèdent l'extension <b>.dbf</b>.
+                            </li>
+                            <li>
+                                le <b style="color:blue;">format MYD</b> qui est le format utilisé
+                                par le logiciel de système de gestion de base de données <b>MySQL</b> 
+                                pour le stockage des données.<br>
+                                Ces fichiers possèdent l'extension <b>.myd</b>.
+                            </li>
+                        </ul>
+                    </p>
+            <h1>Reconnaître les différents formats de type texte</h1>
+                <p>On considère la collection de données suivante : 
+				</p>
+					<center>
+						<table>
+  							<tr>
+		    					<th>Nom</th>
+		    					<th>Prénom</th>
+				    		</tr>
+		    				<tr>
+		    					<td>Macron</td>
+		    					<td>Emmanuel</td>
+		    				</tr>
+		    				<tr>
+		    					<td>Hollande</td>
+		    					<td>François</td>
+		    				</tr>
+    					</table>
+    				</center>
+    				<p>
+				    <br>
+					Voici ci-dessous cette collection de données
+					au format <b>CSV</b>, <b>XML</b> et <b>JSON</b> .
+                    <center>
+                        <table>
+                            <tr>
+                                <th>CSV</th>
+                                <th>XML</th>
+                                <th>JSON</th>
+                            </tr>
+                            <tr>
+                                <td valign="top">
+                                    Nom,Prénom<br>
+                                    Macron,Emmanuel<br>
+									Hollande,François<br><br><br>
+                                </td>
+                                <td valign="top">
+                                    &lt;Présidents&gt;<br>
+									&emsp;&emsp;&lt;Président&gt;<br>
+                                    &emsp;&emsp;&emsp;&emsp;&lt;Nom&gt;Macron&lt;/Nom&gt;<br>
+                                    &emsp;&emsp;&emsp;&emsp;&lt;Prénom&gt;Emmanuel&lt;/Prénom&gt;<br>
+                                    &emsp;&emsp;&lt;/Président&gt;<br>
+									&emsp;&emsp;&lt;Président&gt;<br>
+                                    &emsp;&emsp;&emsp;&emsp;&lt;Nom&#8239;>&thinsp;Hollande&#8239;<&#8239;/Nom&#8239;><br>
+                                    &emsp;&emsp;&emsp;&emsp;&lt;Prénom&gt;François&lt;/Prénom&gt;<br>
+                                    &emsp;&emsp;<&#8239;/Président&gt;<br>
+									<&#8239;Présidents&gt;<br>
+                                </td>
+                                <td valign="top">
+                                    [<br>
+									&emsp;{<br>
+                                    &emsp;&emsp;"Nom": "Macron",<br>
+                                    &emsp;&emsp;"Prénom": "Emmanuel"<br>
+                                    &emsp;},<br>
+									&emsp;{<br>
+									&emsp;&emsp;"Nom": "Hollande",<br>
+									&emsp;&emsp;"Prénom": "François"<br>
+									&emsp;}<br>
+									]
+                                </td>
+                            </tr>
+                        </table>
+                    </center>
+
+            <br><br><br>
+                <a class="abas" href="don_quiz3.html" target="_blank"> Quiz 3 </a>
+                <br>
+                <br>
+        </section>
+    </body>
+
+    <footer> 
+        <script type='text/javascript' language='javascript'>pied();</script>
+    </footer> 
+
+</html>

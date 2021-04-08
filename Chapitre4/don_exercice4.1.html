@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="../style/style.css" />
+        <script src="../style/scriptfooter.js"></script>
+        <script src="script/script_ex4.1.js"></script>
+        <script src="script/script4.js"></script>
+    </head>
+
+    <header class="exo"> SNT : Données : Exercice 4.1 </header>
+
+    <body>
+
+        <title>SNT données exercice 4.1</title>
+
+        <nav>
+            <h2>Liens :</h2>
+            <ul>
+                <li> <a href="don_page4.html">Page 4</a> </li>
+            </ul>
+            <h2>Exercices :</h2>
+                <ul>
+                    <span id='nf'></span>
+                    <script type='text/javascript' language='javascript'>fait();</script>
+                </ul>
+        </nav>
+
+        <section class="sexo">
+            <h1 class="exoh1">Exercice 4.1 : Filtrer des données</h1>
+                
+                <ul>
+                    <li>
+                        Sur votre compte dans le dossier <b>/eleves/prenom.nom/Mes documents/SNT/</b> déjà existant, créer un nouveau dossier
+                        nommé <b style="color:blue;">TABLEUR</b>.
+                    </li>
+                    <li>
+                        Ouvrir avec <b>LibreOffice Calc</b>, le fichier <b style="color:blue;">pyramide_des_ages_2020.csv</b>
+                        qui se trouve dans le dossier <b>CSV</b> : donné en ressource et vérifier qu'il s'affiche correctement dans le tableur.
+                    </li>
+                    <li>
+                        Enregistrer ce fichier sur votre compte dans le dossier <b>TABLEUR</b> au format ODS, c'est
+                        à dire avec l'extension <b>.ods</b>.
+                    </li>
+                    <li>
+                        Sélectionner alors la <b>ligne 1</b> des descripteurs de ce fichier ODS, puis cliquer sur l'onglet <b>Données</b>
+                        et choisir ensuite <b>AutoFiltre</b> afin d'afficher les flèches permettant d'effectuer des filtres
+                        pour chaque descripteur.
+                    </li>
+                    <li>
+                        A l'aide du menu de l'<b>AutoFiltre</b> effectuer un filtre sur la colonne <b>TOTAL</b> pour compléter la zone ci-dessous.
+                    </li>
+                </ul>
+                </p>
+    
+                <p>
+                    <b>a.</b> Saisir dans la zone ci-dessous les dix années correspondant au plus grandes classes d'âges,
+                    en ordonnant ces années, dans l'ordre décroissant des effectifs. Saisir une année par ligne.
+                </p>
+
+                 <form name="s1">
+                        &emsp;<label class="saisie" for="lab_1">Top 10 des années :</label><br>
+                        &emsp;
+                        <input type="text" class="caseP" id="i1" name="n1" autocomplete="off" value='' 
+                            style="width:200px;text-align:left;"
+                            onkeypress="javascript:if (event.keyCode == 13){return false;}" 
+                        /><br>
+                        &emsp;
+                        <input type="text" class="caseP" id="i1" name="n1" autocomplete="off" value='' 
+                            style="width:200px;text-align:left;"
+                            onkeypress="javascript:if (event.keyCode == 13){return false;}" 
+                        /><br>
+                        &emsp;
+                        <input type="text" class="caseP" id="i1" name="n1" autocomplete="off" value='' 
+                            style="width:200px;text-align:left;"
+                            onkeypress="javascript:if (event.keyCode == 13){return false;}" 
+                        /><br>
+                        &emsp;
+                        <input type="text" class="caseP" id="i1" name="n1" autocomplete="off" value='' 
+                            style="width:200px;text-align:left;"
+                            onkeypress="javascript:if (event.keyCode == 13){return false;}" 
+                        /><br>
+                        &emsp;
+                        <input type="text" class="caseP" id="i1" name="n1" autocomplete="off" value='' 
+                            style="width:200px;text-align:left;"
+                            onkeypress="javascript:if (event.keyCode == 13){return false;}" 
+                        /><br>
+                        &emsp;
+                        <input type="text" class="caseP" id="i1" name="n1" autocomplete="off" value='' 
+                            style="width:200px;text-align:left;"
+                            onkeypress="javascript:if (event.keyCode == 13){return false;}" 
+                        /><br>
+                        &emsp;
+                        <input type="text" class="caseP" id="i1" name="n1" autocomplete="off" value='' 
+                            style="width:200px;text-align:left;"
+                            onkeypress="javascript:if (event.keyCode == 13){return false;}" 
+                        /><br>
+                        &emsp;
+                        <input type="text" class="caseP" id="i1" name="n1" autocomplete="off" value='' 
+                            style="width:200px;text-align:left;"
+                            onkeypress="javascript:if (event.keyCode == 13){return false;}" 
+                        /><br>
+                        &emsp;
+                        <input type="text" class="caseP" id="i1" name="n1" autocomplete="off" value='' 
+                            style="width:200px;text-align:left;"
+                            onkeypress="javascript:if (event.keyCode == 13){return false;}" 
+                        /><br>
+                        &emsp;
+                        <input type="text" class="caseP" id="i1" name="n1" autocomplete="off" value='' 
+                            style="width:200px;text-align:left;"
+                            onkeypress="javascript:if (event.keyCode == 13){return false;}" 
+                        /><br>
+                    </form>
+
+                    <br>
+                    <span id="ic1" class="spanquiz" name="span_1" > 
+                        <img src="images/vide.png" width='20' height='20'> 
+                    </span>
+                    &emsp; <input class="bout" type="button" value="Valider" onClick="verif1('s1')" 
+                        onFocus="this.blur();" />
+                    &ensp;
+                    <span id="m1"></span>
+                    <br><br>
+
+                <p>
+                    <b>b.</b>
+                        Effectuer un nouveau filtre avec l'<b>Autofiltre</b>, en utilisant un <b>Filtre standard...</b> et une condition bien
+                        choisie, puis un tri, pour compléter ci-dessous le <b>top 5</b> des années
+                        depuis l'an 2000 correspondant aux plus grandes classes d'âges, 
+                        dans l'ordre décroissant des effectifs.
+                        Saisir une année par ligne.
+                </p>
+                <form name="s2">
+                        &emsp;<label class="saisie" for="lab_1">Top 5 des années 2000 :</label><br>
+                        &emsp;
+                        <input type="text" class="caseP" id="i1" name="n1" autocomplete="off" value='' 
+                            style="width:200px;text-align:left;"
+                            onkeypress="javascript:if (event.keyCode == 13){return false;}" 
+                        /><br>
+                        &emsp;
+                        <input type="text" class="caseP" id="i1" name="n1" autocomplete="off" value='' 
+                            style="width:200px;text-align:left;"
+                            onkeypress="javascript:if (event.keyCode == 13){return false;}" 
+                        /><br>
+                        &emsp;
+                        <input type="text" class="caseP" id="i1" name="n1" autocomplete="off" value='' 
+                            style="width:200px;text-align:left;"
+                            onkeypress="javascript:if (event.keyCode == 13){return false;}" 
+                        /><br>
+                        &emsp;
+                        <input type="text" class="caseP" id="i1" name="n1" autocomplete="off" value='' 
+                            style="width:200px;text-align:left;"
+                            onkeypress="javascript:if (event.keyCode == 13){return false;}" 
+                        /><br>
+                        &emsp;
+                        <input type="text" class="caseP" id="i1" name="n1" autocomplete="off" value='' 
+                            style="width:200px;text-align:left;"
+                            onkeypress="javascript:if (event.keyCode == 13){return false;}" 
+                        /><br>
+                        </form>
+                        <br>
+                        <span id="ic2" class="spanquiz" name="span_2" > 
+                            <img src="images/vide.png" width='20' height='20'> 
+                        </span>
+                        &emsp; <input class="bout" type="button" value="Valider" onClick="verif2('s2')" 
+                            onFocus="this.blur();" />
+                        &ensp;
+                        <span id="m2"></span>
+                        <br><br>
+                <p>
+                    <b>c.</b>
+                        Effectuer un nouveau filtre avec l'<b>Autofiltre</b>, en utilisant le <b>Filtre standard...</b> 
+                        pour trouver le nombre d'années pour lesquelles l'effectif est inférieur à 700000,
+                        c'est à dire le nombre de classes d'âge dont l'effectif est inférieur à 700000.
+                </p>
+
+                <form name="saisie_3">
+                    <span class="spanquiz"> <img src="images/vide.png" width='20' height='20'> </span>
+                    <label class="saisie">Nombre de classes d'âge inférieures à 700000 :</label><br>
+                    <input type="text" class="zone_saisie" name="in" autocomplete="off" size='20'
+                        onkeypress="javascript:if (event.keyCode == 13) {verif('saisie_3');return false;}"/>
+                    &ensp; <input class="bout" type="button" value="Valider" onClick="verif('saisie_3')" 
+                                    onFocus="this.blur();" />
+                    &ensp; <span class="spanmes"></span>
+                </form><br>
+
+                           
+                <br><br>
+                <input class="bouton" type="button" value="Valider l'exercice" onClick="verif_exo(3)" onFocus="this.blur();" />
+                <br>
+                <br>
+                 <span class="reponse" name="reponse"> </span>
+                <br>
+                <br>   
+
+        </section>
+
+    </body>
+
+    <footer class="exo"> 
+        <script type='text/javascript' language='javascript'>pied();</script>
+    </footer>
+
+</html>

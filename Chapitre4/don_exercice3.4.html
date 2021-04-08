@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="../style/style.css" />
+        <script src="../style/scriptfooter.js"></script>
+        <script src="script/script_ex3.4.js"></script>
+        <script src="script/script3.js"></script>
+    </head>
+
+    <header class="exo">SNT : Données : Exercice 3.4</header>
+
+    <body>
+
+        <title>SNT données exercice 3.4</title>
+
+        <nav>
+            <h2>Liens :</h2>
+            <ul>
+                <li> <a href="don_page3.html">Page 3</a> </li>
+            </ul>
+            <h2>Exercices :</h2>
+                <ul>
+                    <span id='nf'></span>
+                    <script type='text/javascript' language='javascript'>fait();</script>
+                </ul>
+        </nav>
+
+        <section class="sexo">
+            <h1 class="exoh1">Exercice 3.4 : Fichiers de données </h1>
+                
+                <p>
+                    On considère une collection de données stockée dans 
+                    le fichier suivant.
+                </p>
+                <span id='ima1'> </span>
+                <script type='text/javascript' language='javascript'>init1();</script>
+                <p>
+                    <b>a.</b> Saisir dans la zone ci-dessous le <b>format</b> de ce <b>fichier</b>.
+                </p>
+
+                <form name="saisie_1">
+                    <span class="spanquiz"> <img src="images/vide.png" width='20' height='20'> </span>
+                    <label class="saisie">Format du fichier :</label><br>
+                    <input type="text" class="zone_saisie" name="in" autocomplete="off" size='20'
+                        onkeypress="javascript:if (event.keyCode == 13) {verif('saisie_1');return false;}"/>
+                    &ensp; <input class="bout" type="button" value="Valider" onClick="verif('saisie_1')" 
+                                    onFocus="this.blur();" />
+                    &ensp; <span class="spanmes"></span>
+                </form><br>
+
+                <p>
+                    <b>b.</b> Compléter le <b style="color:blue;">fichier JSON</b> ci-dessous
+                    pour qu'il corresponde à la collection de données du fichier ci-dessus.
+                </p>
+                    <form name="s1">
+                        <div class="tpbm" id="i0.1" name="n0" style="width:700px;" > 
+                            &ensp; [<br>
+                            &ensp; &emsp; {<br> 
+                        </div>
+                        &emsp;  
+                        <input type="text" class="caseP" id="i1" name="n1" autocomplete="off" value='"Nom": ' 
+                            style="width:620px;text-align:left;padding-left:80px;" 
+                            onkeypress="javascript:if (event.keyCode == 13){return false;}" 
+                        /><br>
+                        &emsp;
+                        <input type="text" class="caseP" id="i1" name="n1" autocomplete="off" value='"Prénom": ' 
+                            style="width:620px;text-align:left;padding-left:80px;" 
+                            onkeypress="javascript:if (event.keyCode == 13){return false;}" 
+                        /><br>
+                        &emsp;
+                         <input type="text" class="caseP" id="i1" name="n1" autocomplete="off" value='"email": ' 
+                            style="width:620px;text-align:left;padding-left:80px;" 
+                            onkeypress="javascript:if (event.keyCode == 13){return false;}" 
+                        /><br>
+                        <div class="tpbm" id="i0.1" name="n0" style="width:700px;" > 
+                            &ensp; &emsp; }<br> 
+                            &ensp; &emsp; {<br>  
+                        </div>
+                        &emsp;
+                        <input type="text" class="caseP" id="i1" name="n1" autocomplete="off" value='' 
+                            style="width:620px;text-align:left;padding-left:80px;" 
+                            onkeypress="javascript:if (event.keyCode == 13){return false;}" 
+                        /><br>
+                        &emsp;
+                        <input type="text" class="caseP" id="i1" name="n1" autocomplete="off" value='' 
+                            style="width:620px;text-align:left;padding-left:80px;" 
+                            onkeypress="javascript:if (event.keyCode == 13){return false;}" 
+                        /><br>
+                        &emsp;
+                         <input type="text" class="caseP" id="i1" name="n1" autocomplete="off" value='' 
+                            style="width:620px;text-align:left;padding-left:80px;" 
+                            onkeypress="javascript:if (event.keyCode == 13){return false;}" 
+                        /><br>
+                        <div class="tpbm" id="i0.1" name="n0" style="width:700px;" > 
+                            &ensp; &emsp; }<br> 
+                            &ensp; ]<br>  
+                        </div>
+                        &emsp;
+                    </form>
+                    <br>
+                    <span id="ic1" class="spanquiz" name="span_1" > 
+                        <img src="images/vide.png" width='20' height='20'> 
+                    </span>
+                    &emsp; <input class="bout" type="button" value="Valider" onClick="verif2()" 
+                        onFocus="this.blur();" />
+                    &ensp;
+                    <span id="m1"></span>
+                    <br><br>
+
+           
+                <br><br>
+                <input class="bouton" type="button" value="Valider l'exercice" onClick="verif_exo(2)" onFocus="this.blur();" />
+                <br>
+                <br>
+                 <span class="reponse" name="reponse"> </span>
+                <br>
+                <br>   
+
+        </section>
+
+    </body>
+
+    <footer class="exo"> 
+        <script type='text/javascript' language='javascript'>pied();</script>
+    </footer>
+
+</html>

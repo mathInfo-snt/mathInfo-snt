@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="../style/style.css" />
+        <script src="../style/scriptfooter.js"></script>
+        <script src="script/script_ex2.3.js"></script>
+        <script src="script/script2.js"></script>
+    </head>
+
+    <header class="exo"> SNT : Données : Exercice 2.3</header>
+
+    <body>
+
+        <title>SNT données exercice 2.3</title>
+
+        <nav>
+            <h2>Liens :</h2>
+            <ul>
+                <li> <a href="don_page2.html">Page 2</a> </li>
+            </ul>
+            <h2>Exercices :</h2>
+                <ul>
+                    <span id='nf'></span>
+                    <script type='text/javascript' language='javascript'>fait();</script>
+                </ul>
+        </nav>
+
+        <section class="sexo">
+            <h1 class="exoh1">Exercice 2.3 : Ecrire un fichier VCARD</h1>
+                
+                <p>
+                     On considère un individu Jules Marchand né le dimanche premier octobre 
+                     1978 à Lyon, résidant au 4 Rue Basse 48000 Mende en France.
+                </p>
+                <p>
+                    Compléter le <b>fichier VCARD</b> ci-dessous sur <b>7 lignes</b> 
+                    pour qu'il corresponde à l'individu ci-dessus.
+                </p>
+                    <form name="s1">
+                        &emsp;
+                        <input type="text" class="caseP" id="i1" name="n1" autocomplete="off" value='BEGIN:' 
+                            style="width:600px;text-align:left;"
+                            onkeypress="javascript:if (event.keyCode == 13){return false;}" 
+                        /><br>
+                        &emsp;
+                        <input type="text" class="caseP" id="i1" name="n1" autocomplete="off" value='VERSION:3.0' 
+                            style="width:600px;text-align:left;"
+                            onkeypress="javascript:if (event.keyCode == 13){return false;}" 
+                        /><br>
+                        &emsp;
+                        <input type="text" class="caseP" id="i1" name="n1" autocomplete="off" value='N:' 
+                            style="width:600px;text-align:left;"
+                            onkeypress="javascript:if (event.keyCode == 13){return false;}" 
+                        /><br>
+                        &emsp;
+                        <input type="text" class="caseP" id="i1" name="n1" autocomplete="off" value='FN:Jules Marchand' 
+                            style="width:600px;text-align:left;"
+                            onkeypress="javascript:if (event.keyCode == 13){return false;}" 
+                        /><br>
+                        &emsp;
+                        <input type="text" class="caseP" id="i1" name="n1" autocomplete="off" value='BDAY:' 
+                            style="width:600px;text-align:left;"
+                            onkeypress="javascript:if (event.keyCode == 13){return false;}" 
+                        /><br>
+                        &emsp;
+                        <input type="text" class="caseP" id="i1" name="n1" autocomplete="off" value='ADR:' 
+                            style="width:600px;text-align:left;"
+                            onkeypress="javascript:if (event.keyCode == 13){return false;}" 
+                        /><br>
+                        &emsp;
+                        <input type="text" class="caseP" id="i1" name="n1" autocomplete="off" value='END:' 
+                            style="width:600px;text-align:left;"
+                            onkeypress="javascript:if (event.keyCode == 13){return false;}" 
+                        /><br>
+                    </form>
+                    <br>
+                    <span id="ic1" class="spanquiz" name="span_1" > 
+                        <img src="images/vide.png" width='20' height='20'> 
+                    </span>
+                    &emsp; <input class="bout" type="button" value="Valider" onClick="verif1()" 
+                        onFocus="this.blur();" />
+                    &ensp;
+                    <span id="m1"></span>
+                    <br><br>
+          
+                <br><br>
+                <input class="bouton" type="button" value="Valider l'exercice" onClick="verif_exo(1)" onFocus="this.blur();" />
+                <br>
+                <br>
+                 <span class="reponse" name="reponse"> </span>
+                <br>
+                <br>   
+
+        </section>
+
+    </body>
+
+    <footer class="exo"> 
+        <script type='text/javascript' language='javascript'>pied();</script>
+    </footer>
+
+</html>

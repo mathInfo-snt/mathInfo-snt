@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="../style/style.css" />
+        <script src="../style/scriptfooter.js"></script>
+        <script src="script/script_ex5.1.js"></script>
+        <script src="script/script5.js"></script>
+    </head>
+
+    <header class="exo"> SNT : Données : Exercice 5.1 </header>
+
+    <body>
+
+        <title>SNT données exercice 5.1</title>
+
+        <nav>
+            <h2>Liens :</h2>
+            <ul>
+                <li> <a href="don_page5.html">Page 5</a> </li>
+            </ul>
+            <h2>Exercices :</h2>
+                <ul>
+                    <span id='nf'></span>
+                    <script type='text/javascript' language='javascript'>fait();</script>
+                </ul>
+        </nav>
+
+        <section class="sexo">
+            <h1 class="exoh1">Exercice 5.1 : Calculs de résumés numériques</h1>
+                
+                <p>
+                    <b style="font-size:20px;">Partie 1 :</b> On considère la feuille de calcul ci-dessous.
+                </p>
+                <span id='ima1'> </span>
+                <script type='text/javascript' language='javascript'>init1();</script>
+                <p>
+                    Compléter les zones ci-dessous avec les formules à entrer dans les cellules jaunes de la colonne E.
+                </p>
+
+                <form name="saisie_1">
+                    <span class="spanquiz"> <img src="images/vide.png" width='20' height='20'> </span>
+                    <label class="saisie">Formule dans la cellule <b>E4</b> :</label><br>
+                    <input type="text" class="zone_saisie" name="in" autocomplete="off" size='20'
+                        onkeypress="javascript:if (event.keyCode == 13) {verif1('saisie_1',0);return false;}"/>
+                    &ensp; <input class="bout" type="button" value="Valider" onClick="verif1('saisie_1',0)" 
+                                    onFocus="this.blur();" />
+                    &ensp; <span class="spanmes"></span>
+                </form><br>
+
+                <form name="saisie_2">
+                    <span class="spanquiz"> <img src="images/vide.png" width='20' height='20'> </span>
+                    <label class="saisie">Formule dans la cellule <b>E5</b> :</label><br>
+                    <input type="text" class="zone_saisie" name="in" autocomplete="off" size='20'
+                        onkeypress="javascript:if (event.keyCode == 13) {verif1('saisie_2',1);return false;}"/>
+                    &ensp; <input class="bout" type="button" value="Valider" onClick="verif1('saisie_2',1)" 
+                                    onFocus="this.blur();" />
+                    &ensp; <span class="spanmes"></span>
+                </form><br>
+
+                <form name="saisie_3">
+                    <span class="spanquiz"> <img src="images/vide.png" width='20' height='20'> </span>
+                    <label class="saisie">Formule dans la cellule <b>E6</b> :</label><br>
+                    <input type="text" class="zone_saisie" name="in" autocomplete="off" size='20'
+                        onkeypress="javascript:if (event.keyCode == 13) {verif1('saisie_3',2);return false;}"/>
+                    &ensp; <input class="bout" type="button" value="Valider" onClick="verif1('saisie_3',2)" 
+                                    onFocus="this.blur();" />
+                    &ensp; <span class="spanmes"></span>
+                </form><br>
+
+                <form name="saisie_4">
+                    <span class="spanquiz"> <img src="images/vide.png" width='20' height='20'> </span>
+                    <label class="saisie">Formule dans la cellule <b>E7</b> :</label><br>
+                    <input type="text" class="zone_saisie" name="in" autocomplete="off" size='20'
+                        onkeypress="javascript:if (event.keyCode == 13) {verif1('saisie_4',3);return false;}"/>
+                    &ensp; <input class="bout" type="button" value="Valider" onClick="verif1('saisie_4',3)" 
+                                    onFocus="this.blur();" />
+                    &ensp; <span class="spanmes"></span>
+                </form><br>
+
+                <form name="saisie_5">
+                    <span class="spanquiz"> <img src="images/vide.png" width='20' height='20'> </span>
+                    <label class="saisie">Formule dans la cellule <b>E8</b> :</label><br>
+                    <input type="text" class="zone_saisie" name="in" autocomplete="off" size='20'
+                        onkeypress="javascript:if (event.keyCode == 13) {verif1('saisie_5',4);return false;}"/>
+                    &ensp; <input class="bout" type="button" value="Valider" onClick="verif1('saisie_5',4)" 
+                                    onFocus="this.blur();" />
+                    &ensp; <span class="spanmes"></span>
+                </form><br>
+
+                <form name="saisie_6">
+                    <span class="spanquiz"> <img src="images/vide.png" width='20' height='20'> </span>
+                    <label class="saisie">Formule dans la cellule <b>E9</b> :</label><br>
+                    <input type="text" class="zone_saisie" name="in" autocomplete="off" size='20'
+                        onkeypress="javascript:if (event.keyCode == 13) {verif1('saisie_6',5);return false;}"/>
+                    &ensp; <input class="bout" type="button" value="Valider" onClick="verif1('saisie_6',5)" 
+                                    onFocus="this.blur();" />
+                    &ensp; <span class="spanmes"></span>
+                </form><br>
+
+
+                <p>
+                    <b style="font-size:20px;">Partie 2 :</b> 
+                </p>
+
+                <ul>
+                    <li>
+                        Ouvrir avec <b>LibreOffice Calc</b>, le fichier <b style="color:blue;">salaires-5.1.ods</b> 
+                        qui se trouve en ressource dans le dossier <b>ODS</b>.
+                    </li>
+                    <li>
+                        Sur l'avant dernière ligne en bas du fichier (après le symbole +), cliquer sur 
+                        <b style="color:blue;"><script type='text/javascript' language='javascript'>init2();</script></b>.
+                    </li>
+                    <li>
+                        Suivre alors les consignes données dans ce fichier, puis compléter les zones ci-dessous avec les résultats
+                        obtenus. <br>
+                        Il faut juste entrer la valeur, <b style="color:blue;">ne pas saisir le symbole : &euro;</b>.
+                    </li>
+                </ul>
+                </p>
+
+                <form name="saisie_7">
+                    <span class="spanquiz"> <img src="images/vide.png" width='20' height='20'> </span>
+                    <label class="saisie">Salaire annuel moyen :</label><br>
+                    <input type="text" class="zone_saisie" name="in" autocomplete="off" size='20'
+                        onkeypress="javascript:if (event.keyCode == 13) {verif2('saisie_7',0);return false;}"/>
+                    &ensp; <input class="bout" type="button" value="Valider" onClick="verif2('saisie_7',0)" 
+                                    onFocus="this.blur();" />
+                    &ensp; <span class="spanmes"></span>
+                </form><br>
+                
+                <form name="saisie_8">
+                    <span class="spanquiz"> <img src="images/vide.png" width='20' height='20'> </span>
+                    <label class="saisie">Salaire annuel médian :</label><br>
+                    <input type="text" class="zone_saisie" name="in" autocomplete="off" size='20'
+                        onkeypress="javascript:if (event.keyCode == 13) {verif2('saisie_8',1);return false;}"/>
+                    &ensp; <input class="bout" type="button" value="Valider" onClick="verif2('saisie_8',1)" 
+                                    onFocus="this.blur();" />
+                    &ensp; <span class="spanmes"></span>
+                </form><br>
+
+                <form name="saisie_9">
+                    <span class="spanquiz"> <img src="images/vide.png" width='20' height='20'> </span>
+                    <label class="saisie">Premier quartile :</label><br>
+                    <input type="text" class="zone_saisie" name="in" autocomplete="off" size='20'
+                        onkeypress="javascript:if (event.keyCode == 13) {verif2('saisie_9',2);return false;}"/>
+                    &ensp; <input class="bout" type="button" value="Valider" onClick="verif2('saisie_9',2)" 
+                                    onFocus="this.blur();" />
+                    &ensp; <span class="spanmes"></span>
+                </form><br>
+
+                <form name="saisie_10">
+                    <span class="spanquiz"> <img src="images/vide.png" width='20' height='20'> </span>
+                    <label class="saisie">Troisième quartile :</label><br>
+                    <input type="text" class="zone_saisie" name="in" autocomplete="off" size='20'
+                        onkeypress="javascript:if (event.keyCode == 13) {verif2('saisie_10',3);return false;}"/>
+                    &ensp; <input class="bout" type="button" value="Valider" onClick="verif2('saisie_10',3)" 
+                                    onFocus="this.blur();" />
+                    &ensp; <span class="spanmes"></span>
+                </form><br>
+
+                <form name="saisie_11">
+                    <span class="spanquiz"> <img src="images/vide.png" width='20' height='20'> </span>
+                    <label class="saisie">Salaire maximum :</label><br>
+                    <input type="text" class="zone_saisie" name="in" autocomplete="off" size='20'
+                        onkeypress="javascript:if (event.keyCode == 13) {verif2('saisie_11',4);return false;}"/>
+                    &ensp; <input class="bout" type="button" value="Valider" onClick="verif2('saisie_11',4)" 
+                                    onFocus="this.blur();" />
+                    &ensp; <span class="spanmes"></span>
+                </form><br>
+
+                <form name="saisie_12">
+                    <span class="spanquiz"> <img src="images/vide.png" width='20' height='20'> </span>
+                    <label class="saisie">Salaire minimum :</label><br>
+                    <input type="text" class="zone_saisie" name="in" autocomplete="off" size='20'
+                        onkeypress="javascript:if (event.keyCode == 13) {verif2('saisie_12',5);return false;}"/>
+                    &ensp; <input class="bout" type="button" value="Valider" onClick="verif2('saisie_12',5)" 
+                                    onFocus="this.blur();" />
+                    &ensp; <span class="spanmes"></span>
+                </form><br>
+
+                           
+                <br><br>
+                <input class="bouton" type="button" value="Valider l'exercice" onClick="verif_exo(12)" onFocus="this.blur();" />
+                <br>
+                <br>
+                 <span class="reponse" name="reponse"> </span>
+                <br>
+                <br>   
+
+        </section>
+
+    </body>
+
+    <footer class="exo"> 
+        <script type='text/javascript' language='javascript'>pied();</script>
+    </footer>
+
+</html>

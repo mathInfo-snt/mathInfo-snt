@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8"/>
+        <title>SNT données page 5</title>
+        <link rel="stylesheet" href="../style/style.css"/>
+        <script src="../style/scriptfooter.js"></script>
+        <script src="script/script5.js"></script>
+    </head>
+
+    <header> SNT : Données : page 5 : Calculs avec un tableur</header>
+
+    <body>
+
+        <nav>
+            <h2>Liens :</h2>
+                <ul>
+                    <li> <a href="chapitre4.html">Chapitre 4</a> </li>
+                </ul>
+            <h2>Exercices :</h2>
+                <ul>
+                    <span id='nf'></span>
+                    <script type='text/javascript' language='javascript'>fait();</script>
+                </ul>
+        </nav>
+
+        <section>
+            <h1>Calculs de résumés numériques avec LibreOffice Calc</h1>
+				
+                <h2>Fonctions : </h2>
+                <p> 
+                    Le tableau ci-dessous donne les différentes fonctions de LibreOffice 
+                    permettant de calculer les résumés numériques d'une série de données.
+                </p>
+
+                <center>
+                        <table>
+                            <tr>
+                                <th>Action</th>
+                                <th>Fonction</th>
+                                <th>Syntaxe</th>
+                            </tr>
+                            <tr>
+                                <td>Calculer une moyenne</td>
+                                <td>MOYENNE()</td>
+                                <td>=MOYENNE(plage_de_cellules)</td>
+                            </tr>
+                            <tr>
+                                <td>Calculer une médiane</td>
+                                <td>MEDIANE()</td>
+                                <td>=MEDIANE(plage_de_cellules)</td>
+                            </tr>
+                            <tr>
+                                <td>Calculer un quartile</td>
+                                <td>QUARTILE()</td>
+                                <td>=QUARTILE(plage_de_cellules;numéro_du_quartile)</td>
+                            </tr>
+                            <tr>
+                                <td>Calculer un maximum</td>
+                                <td>MAX()</td>
+                                <td>=MAX(plage_de_cellules)</td>
+                            </tr>
+                            <tr>
+                                <td>Calculer un minimum</td>
+                                <td>MIN()</td>
+                                <td>=MIN(plage_de_cellules)</td>
+                            </tr>
+                        </table>
+                    </center>
+
+                <h2>Plage de cellules : </h2>
+                    <p>
+                        Une <b>plage de cellules</b> est en général :
+                        <ul>
+                            <li>
+                                une plage de cellules réparties dans une <b>colonnes</b> et se note dans ce cas : 
+                                <b style="color:red;">"première_cellule : dernière_cellule"</b>,
+                                par exemple :  <b style="color:blue;">B6:B10</b>
+                            </li>
+                            <li>
+                                une plage de cellules réparties dans une <b>ligne</b> et se note dans ce cas :
+                                <b style="color:red;">"première_cellule : dernière_cellule"</b>,
+                                par exemple :  <b style="color:blue;">B2:M2</b>
+                            </li>
+                            <li>
+                                une plage de cellules réparties dans un <b>tableau</b> et se note dans ce cas : 
+                                <b style="color:red;">"cellule_en_haut_à_gauche : cellule_en_bas_à_droite"</b>,
+                                par exemple :  <b style="color:blue;">B2:M10</b>
+                            </li>
+                        </ul>
+                    </p>
+                <h2>Exemple : </h2>                   
+
+                    <center>
+                        <img src="images/calculs-tableur.png" alt="calculs avec un tableur" 
+                                        title="calculs avec un tableur" />
+                    </center>
+                    <br><br>
+            <h1>Tri avec LibreOffice Calc</h1>  
+                <h2>Procédure : </h2>
+                <p>
+                    Pour effectuer un tri sous LibreOffice Calc, il faut :
+                    <ul>
+                        <li>
+                            sélectionner la <b>plage de cellules</b> que l'on veut trier ;
+                        </li>
+                        <li>
+                            cliquer ensuite sur l'onglet <b>Données</b> ;
+                        </li>
+                        <li>
+                            choisir <b>Tri croissant</b> ou <b>Tri décroissant</b> suivant le tri que l'on veut obtenir ;
+                        </li>
+                        <li>
+                            si demandé, il faut ensuite cliquer sur <b>Sélection active</b> 
+                            si on ne veut trier que les cellules sélectionnées ;
+                        </li>
+                    </ul>
+                </p>   
+                <h2>Exemple : </h2>
+                    <center>
+                        <img src="images/tri-tableur.png" alt="calculs avec un tableur" 
+                                        title="calculs avec un tableur" />
+                    </center>
+                    <br><br>
+            <h1>Dénombrer avec la fonction NB()</h1>
+                <h2>Fonction : </h2>
+                    <p>
+                        Le tableau ci-dessous donne la fonction de LibreOffice 
+                        permettant de dénombrer le nombre de valeurs d'une série.
+                    </p>
+                    <center>
+                        <table>
+                            <tr>
+                                <th>Action</th>
+                                <th>Fonction</th>
+                                <th>Syntaxe</th>
+                            </tr>
+                            <tr>
+                                <td>Dénombrer une série</td>
+                                <td>NB()</td>
+                                <td>=NB(plage_de_cellules)</td>
+                            </tr>
+                        </table>
+                    </center><br><br>
+                <h2>Exemple : </h2>                   
+
+                    <center>
+                        <img src="images/nb-tableur.png" alt="fonction NB()" 
+                                        title="fonction NB()" />
+                    </center>
+                    <br><br>
+
+            <h1>Déterminer le numéro de ligne d'une cellule contenant une valeur fixée</h1>
+                <h2>Fonction : </h2>
+                    <p>
+                        Le tableau ci-dessous donne la fonction de LibreOffice 
+                        permettant de déterminer le numéro de ligne d'une cellule contenant une valeur fixée.
+                    </p>
+                    <center>
+                        <table>
+                            <tr>
+                                <th>Action</th>
+                                <th>Fonction</th>
+                                <th>Syntaxe</th>
+                            </tr>
+                            <tr>
+                                <td>Déterminer le numéro de ligne d'une cellule</td>
+                                <td>EQUIV()</td>
+                                <td>=EQUIV(valeur_fixée;colonne:colonne;0)</td>
+                            </tr>
+                        </table>
+                    </center><br><br>
+                <h2>Exemple : </h2>                   
+
+                    <center>
+                        <img src="images/equiv-tableur.png" alt="fonction NB()" 
+                                        title="fonction NB()" />
+                    </center>
+                    <br><br>
+
+            <h1>Moyenne conditionnelle avec la fonction MOYENNE.SI()</h1>
+                <h2>Fonction : </h2>
+                    <p>
+                        Le tableau ci-dessous donne la fonction de LibreOffice 
+                        permettant de dénombrer le nombre de valeurs d'une série.
+                    </p>
+                    <center>
+                        <table>
+                            <tr>
+                                <th>Action</th>
+                                <th>Fonction</th>
+                                <th>Syntaxe</th>
+                            </tr>
+                            <tr>
+                                <td>Calculer une moyenne conditionnelle</td>
+                                <td>MOYENNE.SI()</td>
+                                <td>=MOYENNE.SI(plage_critère;"critère";plage_série)</td>
+                            </tr>
+                        </table>
+                    </center><br><br>
+                <h2>Exemple : </h2>                   
+
+                    <center>
+                        <img src="images/moyenne.si-tableur.png" alt="fonction MOYENNE.SI()" 
+                                        title="fonction MOYENNE.SI()" />
+                    </center>
+                    <br><br>
+
+
+            <br><br><br>
+                <a class="abas" href="don_quiz5.html" target="_blank">Quiz 5</a>
+                <br>
+                <br>
+        </section>
+    </body>
+
+    <footer> 
+        <script type='text/javascript' language='javascript'>pied();</script>
+    </footer>
+
+</html>

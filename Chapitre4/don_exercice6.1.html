@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="../style/style.css" />
+        <script src="../style/scriptfooter.js"></script>
+        <script src="script/script_ex6.1.js"></script>
+        <script src="script/script6.js"></script>
+    </head>
+
+    <header class="exo"> SNT : Données : Exercice 6.1 </header>
+
+    <body>
+
+        <title>SNT données exercice 6.1</title>
+
+        <nav>
+            <h2>Liens :</h2>
+            <ul>
+                <li> <a href="don_page6.html">Page 6</a> </li>
+            </ul>
+            <h2>Exercices :</h2>
+                <ul>
+                    <span id='nf'></span>
+                    <script type='text/javascript' language='javascript'>fait();</script>
+                </ul>
+        </nav>
+
+        <section class="sexo">
+            <h1 class="exoh1">Exercice 6.1 : Métadonnées d'un fichier CSV</h1>
+                
+                <p>
+                    Dans le dossier <b>CSV</b> sélectionner le fichier suivant :
+                    <b style="color:blue;">
+                        <script type='text/javascript' language='javascript'>init1();</script>
+                    </b>.<br>
+                    A l'aide d'un clic droit faire apparaître les métadonnées de ce fichier.
+                    <br>
+                    Compléter alors les zones ci-dessous.
+                </p>
+
+                <form name="saisie_1">
+                    <span class="spanquiz"> <img src="images/vide.png" width='20' height='20'> </span>
+                    <label class="saisie">Taille du fichier en octets :</label><br>
+                    <input type="text" class="zone_saisie" name="in" autocomplete="off" size='40'
+                        onkeypress="javascript:if (event.keyCode == 13) {verif1('saisie_1',0);return false;}"/>
+                    &ensp; <input class="bout" type="button" value="Valider" onClick="verif1('saisie_1',0)" 
+                                    onFocus="this.blur();" />
+                    &ensp; <span class="spanmes"></span>
+                </form><br>
+
+                <form name="saisie_2">
+                    <span class="spanquiz"> <img src="images/vide.png" width='20' height='20'> </span>
+                    <label class="saisie">Date de la dernière modification au format :
+                        JJ/MM/AAAA</label><br>
+                    <input type="text" class="zone_saisie" name="in" autocomplete="off" size='40'
+                        onkeypress="javascript:if (event.keyCode == 13) {verif1('saisie_2',1);return false;}"/>
+                    &ensp; <input class="bout" type="button" value="Valider" onClick="verif1('saisie_2',1)" 
+                                    onFocus="this.blur();" />
+                    &ensp; <span class="spanmes"></span>
+                </form><br>
+                           
+                <br><br>
+                <input class="bouton" type="button" value="Valider l'exercice" onClick="verif_exo(2)" onFocus="this.blur();" />
+                <br>
+                <br>
+                 <span class="reponse" name="reponse"> </span>
+                <br>
+                <br>   
+
+        </section>
+
+    </body>
+
+    <footer class="exo"> 
+        <script type='text/javascript' language='javascript'>pied();</script>
+    </footer>
+
+</html>

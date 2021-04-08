@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8"/>
+        <title>SNT données page 1</title>
+        <link rel="stylesheet" href="../style/style.css"/>
+        <script src="../style/scriptfooter.js"></script>
+        <script src="script/script1.js"></script>
+    </head>
+
+    <header> SNT : Données et traitements : page 1 </header>
+
+    <body>
+
+        <nav>
+            <h2>Liens :</h2>
+                <ul>
+                    <li> <a href="chapitre4.html">Chapitre 4</a> </li>
+                </ul>
+            <h2>Exercices :</h2>
+                <ul>
+                    <span id='nf'></span>
+                    <script type='text/javascript' language='javascript'>fait();</script>
+                </ul>
+        </nav>
+
+        <section>
+
+            <h1>Généralités sur les données</h1>
+            	<h2>Données</h2>
+				<p>
+                    Une <b>donnée</b> est la représentation d’une information. Bien avant la naissance de l’informatique, 
+                    on a eu besoin de stocker, puis de structurer ces informations, pour pouvoir  les utiliser.
+                    Les données constituent désormais la matière première de toute activité numérique. 
+                    À ce titre, de nouvelles formes de stockage, de structuration et d’exploitation ont vu le jour 
+                    au regard de l’explosion de la quantité de données disponibles, jusqu’à l’émergence d’une science 
+                    du traitement des données : la <b>data science</b>.
+                    Les données sont essentielles pour toute activité numérique (gestion de stock, fiche client…).
+                </p>
+                <p>
+                    <b style="color:blue;">• Définition (données) :</b>
+                    	Une <b>donnée</b> est un élément (chaîne de caractères, nombre, image…) décrivant un <b>objet</b> 
+                    	(individu, société, événement, machine, fichier…). 
+	                    Par exemple, le numéro de téléphone d’un contact est une donnée. 
+                </p>
+                <h2>Data science et données personnelles</h2>
+                <p>
+                    <b style="color:blue;">• Définition (data science) :</b>
+                    	La <b>data science</b> est la science du traitement des données.
+                </p>
+                <p>
+                	<b style="color:blue;">• Définition (données personnelles) :</b>
+                		Une <b>donnée personnelle</b> est une information se rapportant à une personne physique 
+                		identifiée ou identifiable par référence à des éléments qui lui sont propres 
+                		(nom, numéro de sécurité sociale…).
+                </p>
+                <br><br>
+                
+            <h1>Structuration des données</h1>
+            	<p>
+            		Structurer correctement des données permet de les utiliser et exploiter aisément afin de produire de l'information. 
+            		Il faut donc organiser et classer les données.
+            	</p>
+            	<h2>Objets, descripteurs et valeurs</h2>
+            	<p>
+	                <b style="color:blue;">Définition (objet) :</b>
+	                	Un objet est un des <b>individus</b> (éléments) sur lequel on collecte des <b>données</b>.
+	            </p>
+	            <p>
+	            	<b style="color:blue;">Définition (descripteur) :</b>
+	                    Un <b>descripteur</b> permet de préciser la signification des <b>valeurs</b> caractérisant un <b>objet</b>.
+	            </p>
+	            <p>
+	             	<b style="color:blue;">Définition (valeur) :</b>
+	              		Une <b>valeur</b> est une des données caractérisant un <b>objet</b>.
+	            </p>
+	            <p>
+	             		Plusieurs <b>descripteurs</b> peuvent être utiles pour décrire un même <b>objet</b>. <br>
+	                    Par exemple, un passeport français contient plusieurs <b>descripteurs</b> caractérisant un <b>objet</b> 
+	                    qui ici est une personne :
+	                    <ul>
+	                    	<li>le numéro du passeport,</li> 
+	                    	<li>le nom,</li> 
+	                    	<li>les prénoms,</li> 
+	                    	<li>le sexe,</li> 
+	                    	<li>la taille,</li>
+	                    	<li>la couleur des yeux,</li> 
+	                    	<li>la date de naissance,</li> 
+	                    	<li>le lieu de naissance...</li>
+	                    </ul>
+						En particulier, sur le passeport de l'acteur français Pierre Richard :
+						<ul>
+							<li>
+								à côté du <b>descripteur</b> : <i>lieu de naissance</i>, il est inscrit la <b>valeur</b> : <i>Valenciennes</i> ;
+							</li>
+							<li>
+								à côté du <b>descripteur</b> : <i>date de naissance</i>, il est inscrit la <b>valeur</b> : <i>16/08/1934</i>.
+							</li>
+						</ul>
+	                </p>
+
+	                <h2>Collection de données</h2>
+
+                    <p>
+	                <b style="color:blue;">Définition (Collection de données) :</b>
+	                    Une <b>collection de données</b> est un moyen de regrouper de manière structurée des <b>objets</b>
+						partageant les mêmes <b>descripteurs</b>. <br><br>
+                        Elle est généralement représentée sous la forme d'un
+						<b>tableau</b> (appelé aussi <b>table</b>) avec : les <b>descripteurs</b> en tête de colonne, 
+						les <b>objets</b> en ligne et les <b>valeurs</b> dans les cellules de ce <b>tableau</b>.
+						Voici une <b>collection de données</b> contenant <b>deux objets</b>. <b>Quatre descripteurs</b> sont utilisés et 
+						huit <b>valeurs</b> sont visibles.
+					</p>
+					<center>
+						<table>
+  							<tr>
+		    					<th>Nom</th>
+		    					<th>Prénom</th>
+		    					<th>Date de naissance</th>
+		    					<th>Lieu de naissance</th>
+				    		</tr>
+		    				<tr>
+		    					<td>Macron</td>
+		    					<td>Emmanuel</td>
+		    					<td>21 12 1977</td>
+		    					<td>Amiens</td>
+		    				</tr>
+		    				<tr>
+		    					<td>Hollande</td>
+		    					<td>François</td>
+		    					<td>12 08 1954</td>
+		    					<td>Rouen</td>
+		    				</tr>
+    					</table>
+    				</center>
+    				<p>
+    					Ces <b>tableaux</b> peuvent être stockés dans un <b>fichier</b> avec un format spécifique comme le 
+    					<b>format CSV</b> (<u>C</u>omma-<u>S</u>eparated <u>V</u>alues). 
+    					Dans un tel fichier, les données sont sous un format texte simple et séparées les unes des autres par un caractère 
+    					appelé <b>séparateur</b> (souvent la <b>virgule</b>). Chaque ligne correspond à une ligne du tableau.
+    					On peut ouvrir un <b>fichier CSV</b> avec un éditeur de texte basique comme <b>Bloc-notes</b> 
+    					ou <b>Notepad++</b> par exemple. 
+    					Voici ce qu'on obtient :
+    				</p>
+    					<center>
+    					<div id="im1" style="background-color:mintcream; width:400px;text-align: left;">
+                            &ensp;Nom,Prénom,Date de naissance,Lieu de naissance<br>
+                            &ensp;Macron,Emmanuel,21 12 1977,Amiens<br>
+                            &ensp;Hollande,François,12 08 1954,Rouen<br>
+                        </div>
+                        </center>
+                <br> <br>
+                <h2>Base de données</h2>
+                <p>
+                    <b style="color:blue;">Définition (Base de données) :</b>
+                    Une <b>base de données</b> (database en Anglais) est un ensemble 
+                    d'informations structurées accessibles au moyen d'un logiciel. <br><br>
+                    Une base de données permet de stocker et de retrouver l'intégralité
+                    de données brutes ou d'information en rapport avec un thème ou une
+                    activité.<br>
+                    Le système de gestion de base de données (<b>SGBD</b>) est une suite de 
+                    programmes qui manipule la structure de la base de données et dirige 
+                    l'accès aux données qui y sont stockées.
+                </p>
+
+            <h1>Traitement des données structurées</h1>
+            	<p>
+            		<b style="color:blue;">Avec un tableur :</b> 
+            		On peut ouvrir un <b>fichier CSV</b> avec un <b>tableur</b> (Excel ou libre office) qui devrait 
+            		(après lui avoir indiqué que le <b>séparateur</b> utilisé est la <b>virgule</b> par exemple) 
+            		utiliser une colonne par <b>descripteur</b> et une ligne par <b>objet</b>. <br>
+            		On peut alors avec le tableur, traiter ces données, par exemple on peut les trier, les filtrer, les représenter
+            		sous forme de diagramme,...
+            	</p>
+				<p>
+            		<b style="color:blue;">Avec un langage de programmation :</b> 
+            		Le langage <b>Python</b> est un langage adapté au traitement des données.
+            	</p>
+            	<br><br>
+				
+			<h1>Stockage et métadonnées</h1>
+				<p>
+					<b style="color:blue;">Stockage :</b>
+					Les fichiers de données sont stockés sur des supports de trois types différents : 
+					<ul>
+						<li>
+							<b>internes</b> (SSD (<u>S</u>olid <u>S</u>tate <u>D</u>rive) ou disque dur);
+						</li>
+						<li>
+							<b>externes</b> (disque, clé USB);
+						</li>
+						<li>
+							<b>distants</b> (cloud). 
+						</li>
+					</ul>
+					Aujourd’hui, des centres de données (<b>Data centers</b>) hébergent un nombre toujours 
+					croissants de données mais posent des problèmes écologiques :
+					consommation d’énergie en hausse pour fonctionnement des serveurs et 
+					des climatisations nécessaires.
+				</p>
+				<p>
+					<b style="color:blue;">Métadonnées :</b>
+					À tout fichier sont associées des <b>métadonnées</b> qui permettent d’en décrire le contenu. 
+					Ces métadonnées varient selon le type de fichier (date et coordonnées de 
+					géolocalisation d’une photographie, auteur et titre d’un fichier texte, etc.)
+				</p>
+				<br><br>
+
+            <h1>Repères historiques</h1>
+				<p>
+                    <ul>
+                        <li>
+                            <h3>1930 :</h3>
+                            <p>
+                                Utilisation des <b>cartes perforées</b>, premier support de stockage de données numériques.
+                            </p>
+                        </li>
+                        <li>
+                            <h3>1956 :</h3>
+                            <p>
+                                Invention du <b>disque dur</b> permettant de stocker de plus grandes quantités de données, 
+                                avec un accès de plus en plus rapide.
+                            </p>
+                        </li>
+                        <li>
+                            <h3>1970 : </h3>
+                            <p>
+                                Invention du <b>modèle relationnel</b> (E. L. Codd) pour la structuration et l’indexation des 
+                                <b>bases de données</b>.
+                            </p>
+                        </li>
+                        <li>
+                            <h3>1979 :</h3>
+                            <p>
+                                Création du premier <b>tableur</b>, <b>VisiCalc</b>.
+                            </p>
+                        </li>
+                        <li>
+                            <h3>2000 :</h3>
+                            <p>
+                                Emergence de la data science.
+                            </p>
+                        </li>
+                        <li>
+                            <h3>2009 :</h3>
+                            <p>
+                                Open Government Initiative, porté par le président Barak Obama.
+                            </p>
+                        </li>
+                        <li>
+                            <h3>2013 :</h3>
+                            <p>
+                                Charte du G8 pour l’ouverture des données publiques.
+                            </p>
+                        </li>
+                    </ul>
+                </p>
+                <br>
+                <br>
+                <a class="abas" href="don_quiz1.html" target="_blank"> Quiz 1 </a>
+                <br>
+                <br>
+        </section>
+    </body>
+
+    <footer> 
+        <script type='text/javascript' language='javascript'>pied();</script>
+    </footer>
+
+</html>

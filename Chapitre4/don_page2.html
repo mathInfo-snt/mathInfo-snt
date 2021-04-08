@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8"/>
+        <title>SNT données page 2</title>
+        <link rel="stylesheet" href="../style/style.css"/>
+        <script src="../style/scriptfooter.js"></script>
+        <script src="script/script2.js"></script>
+    </head>
+
+    <header> SNT : Données : page 2 : Le format VCARD</header>
+
+    <body>
+
+
+        <nav>
+            <h2>Liens :</h2>
+                <ul>
+                    <li> <a href="chapitre4.html">Chapitre 4</a> </li>
+                </ul>
+            <h2>Exercices :</h2>
+                <ul>
+                    <span id='nf'></span>
+                    <script type='text/javascript' language='javascript'>fait();</script>
+                </ul>
+        </nav>
+
+        <section>
+            <h1>Introduction</h1> 
+				<p> 
+                    Le format <b>VCARD</b> (<u>V</u>isit <u>CARD</u>) est un format standard ouvert d'échange de données personnelles 
+                    qui veut dire <b>carte de visite</b>. <br>
+                    Ce format est utilisé par le logiciel Carnet d'adresses d'<b>Apple</b> ou encore les logiciels de courrier 
+                    électronique comme <b>Mozilla Thunderbird</b> ou <b>Outlook Express</b>. <br>
+                    Le format <b>VCARD</b> est également utilisé par des appareils mobiles (téléphones mobiles, assistants personnels, GPS)
+                    pour échanger des éléments de carnet d'adresses, mais aussi par des logiciels de messagerie instantanée 
+                    comme <b>Jabber</b> ou <b>Skype</b>. <br>
+                    Le fichier <b>VCARD</b> est un format de <b>carnet d'adresses</b> qui peut contenir une ou plusieurs adresses.<br>
+                    <br>
+                    Un <b>fichier VCARD</b> possède une extension <b>.vcf</b> (acronyme de <u>V</u>irtual <u>C</u>ard <u>F</u>ile). 
+                    Son contenu est lisible par n'importe quel éditeur de texte (<b>Bloc Note</b>, <b>Notepad++</b>, ...).
+                    Il est utile pour conserver ou donner ses coordonnées personnelles ou professionnelles.
+                </p>
+                <br>
+            <h1>Exemple de fichier VCARD</h1>
+                <p>
+                    On considère le fichier <b>Paul_Legrand.vcf</b> suivant :
+                    <center>
+                        <div id="im1" style="background-color:mintcream; width:400px;text-align: left;
+                            font-size: 20px;">
+                            &ensp;BEGIN:VCARD<br>
+                            &ensp;VERSION:2.1<br>
+                            &ensp;N:Legrand;Paul<br>
+                            &ensp;FN:Paul Legrand<br>
+                            &ensp;BDAY:19850527<br>
+                            &ensp;ADR:12;Rue;Servan;75011;Paris;France<br>
+                            &ensp;TEL;CELL:060-735-1493<br>
+                            &ensp;TEL;HOME:091-515-6570<br>
+                            &ensp;EMAIL:paul.legrand@laposte.net<br>
+                            &ensp;END:VCARD<br>
+                        </div>
+                    </center>
+                </p><br>
+            <h1>Description détaillé d'un fichier VCARD</h1>
+                <p>
+                    Un <b>fichier VCARD</b> doit commencer par la ligne <b>BEGIN:VCARD</b> 
+                    et se terminer par la ligne <b>END:VCARD</b>.<br>
+                    Le tableau ci-dessous présente les principaux <b>descripteurs</b> du format <b>VCARD</b>.<br>
+                    Les trois premiers descripteurs en bleu sont obligatoires les autres sont optionnels.
+                </p><br>
+                <center>
+                        <table>
+                            <tr>
+                                <th>Nom du descripteur</th>
+                                <th>Description</th>
+                                <th>Signification</th>
+                                <th>Propriétés</th>
+                            </tr>
+                            <tr>
+                                <td><b style="color:blue;">VERSION</b></td>
+                                <td>Version</td>
+                                <td>Version de format VCARD</td>
+                                <td>Un seul champ texte.<br> Il existe 3 versions : 2.1 ; 3.0 et 4.0</td>
+                            </tr>
+                            <tr>
+                                <td><b style="color:blue;">N</b></td>
+                                <td>Nom</td>
+                                <td>
+                                    Une représentation structurée du nom de la personne ou de l'objet 
+                                    associé à la VCARD
+                                </td>
+                                <td>
+                                    Plusieurs champs textes séparés par des points virgules : <br>
+                                    Nom de Famille;Prénom(s);Titre(s);...
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><b style="color:blue;">FN</b></td>
+                                <td>Nom formaté</td>
+                                <td>Une chaîne formatée représentant le nom associé à la VCARD</td>
+                                <td>
+                                    Un seul champ texte
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><b>BDAY</b></td>
+                                <td>Date de naissance</td>
+                                <td>Date de naissance de l'individu associé à la VCARD</td>
+                                <td>
+                                    Un seul champ texte au format :<br>
+                                    AAAAMMJJ
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><b>ADR</b></td>
+                                <td>Adresse</td>
+                                <td>
+                                    Une représentation structurée de l'adresse de l'individu 
+                                    associé à la VCARD
+                                </td>
+                                <td>
+                                    Plusieurs champs textes séparés par des points virgules : <br>
+                                    Numéro de rue;Type de rue;Nom de rue;Code postal;Ville;Pays
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><b>TEL;CELL</b></td>
+                                <td>Téléphone portable</td>
+                                <td>
+                                    Le numéro de téléphone portable de l'individu
+                                    associé à la VCARD
+                                </td>
+                                <td>
+                                    Un seul champ texte au format : <br>
+                                    nnn-nnn-nnnn
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><b>TEL;HOME</b></td>
+                                <td>Téléphone fixe</td>
+                                <td>
+                                    Le numéro de téléphone fixe de l'individu
+                                    associé à la VCARD
+                                </td>
+                                <td>
+                                    Un seul champ texte au format : <br>
+                                    nnn-nnn-nnnn
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><b>EMAIL</b></td>
+                                <td>Adresse mail</td>
+                                <td>
+                                    L'adresse mail de l'individu
+                                    associé à la VCARD
+                                </td>
+                                <td>
+                                    Un seul champ texte
+                                </td>
+                            </tr>
+                        </table>
+                    </center><br>
+            <p>
+                Il existe d'autres descipteurs, vous trouverez une liste plus complète
+                <a href="https://fr.wikipedia.org/wiki/VCard" target="_blank"> ici </a>.
+            </p>
+            <br>
+                <a class="abas" href="don_quiz2.html" target="_blank"> Quiz 2 </a>
+                <br>
+                <br>
+        </section>
+    </body>
+
+    <footer> 
+        <script type='text/javascript' language='javascript'>pied();</script>
+    </footer>
+
+</html>

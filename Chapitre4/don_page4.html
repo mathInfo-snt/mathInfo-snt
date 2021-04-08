@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8"/>
+        <title>SNT données page 4</title>
+        <link rel="stylesheet" href="../style/style.css"/>
+        <script src="../style/scriptfooter.js"></script>
+        <script src="script/script4.js"></script>
+    </head>
+
+    <header> SNT : Données : page 4 : Filtrer des données avec le tableur Calc</header>
+
+    <body>
+
+        <nav>
+            <h2>Liens :</h2>
+                <ul>
+                    <li> <a href="chapitre4.html">Chapitre 4</a> </li>
+                </ul>
+            <h2>Exercices :</h2>
+                <ul>
+                    <span id='nf'></span>
+                    <script type='text/javascript' language='javascript'>fait();</script>
+                </ul>
+        </nav>
+
+        <section>
+            <h1>Filtrage des données</h1>
+				<p> 
+                    <b style="color:blue";>Définition (filtrage) : </b>
+                    Filtrer des données, c'est restreindre ces données, pour n’afficher que celles qui répondent à un ou plusieurs critères.
+                </p><br>
+                <h2>Filtrage avec un AutoFiltre</h2>
+                    <p>
+                        L’utilisation d’un <b>AutoFiltre</b> est une des façons les plus simples de filtrer les données.
+                    </p>
+                    <p>
+                        <b style="color:blue;">Protocole : </b>
+                        Pour filtrer des données avec le tableur <b>Calc</b> à l'aide d'un <b>AutoFiltre</b>, 
+                        il faut suivre le protocole suivant :
+                        <ul>
+                            <li>
+                                ouvrir un fichier de données au format ods (extension .ods) ;
+                            </li>
+                            <li>
+                                sélectionner la ligne des <b>descripteurs</b> en cliquant 
+                                sur le numéro de la ligne en question ;
+                            </li>
+                            <li>
+                                cliquer ensuite sur l'onglet <b>Données</b> puis choisir <b>Autofiltre</b>
+                                ce qui fait apparaître des fléches pour chacun des <b>descripteurs</b> ;
+                            </li>
+                            <li>
+                                il faut ensuite cliquer sur l'une des flèches de l'un des descripteurs et le menu suivant apparaît : 
+                                <br><br>
+                                <center>
+                                    <img src="images/pyram1.png"/>
+                                </center>
+                            </li>
+                        </ul>                       
+                    </p><br><br>
+                <h2>Description du menu de l'AutoFiltre</h2>
+                    <ul>
+                        <li>
+                            les deux premières lignes <b style="color:blue;">Tri croissant</b> et <b style="color:blue;">Tri décroissant</b> permettent
+                            de trier les données en les ordonnant dans l'ordre croissant ou décroissant des valeurs
+                            du <b>descripteur sélectionné</b> ;
+                        </li>
+                        <li>
+                            la troisième ligne <b style="color:blue;">Top 10</b> permet de conserver uniquement les 10 lignes du fichier de données 
+                            correspondant au dix plus grandes valeur du 
+                            <b>descripteur sélectionné</b> ;
+                        </li>
+                        <li>
+                            la quatrième ligne <b style="color:blue;">Vide</b> permet de conserver uniquement les lignes du fichier de données 
+                            dont les cellules correspondant au
+                            <b>descripteur sélectionné</b> sont vides ;
+                        </li>
+                        <li>
+                            la cinquième ligne <b style="color:blue;">Non vide</b> permet de conserver uniquement les lignes du fichier de données 
+                            dont les cellules correspondant au
+                            <b>descripteur sélectionné</b> ne sont pas vides ;
+                        </li>
+                        <li>
+                            la sixième ligne <b style="color:blue;">Filtre standard...</b> permet de définir des conditions sur un ou plusieurs <b>champs</b> (c'est à dire descripteurs) pour filtrer les données ;
+                        </li>
+                        <li>
+                            la dernière partie du menu permet de sélectionner toutes les données ou une partie des données.
+                        </li>
+                    </ul><br><br>
+                <h2>Dénombrer le nombre d'objets trouvés après un filtre</h2>
+                    <ul>
+                        <li>
+                            Faire un filtre dans <b>LibreOffice Calc</b>.
+                        </li>
+                        <li>
+                            Cliquer ensuite sur une cellule quelconque pour désélectionner le tableau de données.
+                        </li>
+                        <li>
+                            Le nombre d'objets trouvés apparaît alors dans une case en bas à gauche.<br><br>
+                            <center>
+                                <img src="images/objets.png"/>
+                            </center>
+                        </li>
+                    </ul><br><br>
+
+                <h2>Appliquer plusieurs filtres</h2>
+                    <ul>
+                        <li>
+                            Sélectionner dans <b>LibreOffice Calc</b>, l'onglet <b>Données</b>, puis <b>AutoFiltre</b>, puis 
+                            <b>Filtre standard...</b>.
+                        </li>
+                        <li>
+                            Choisir un premier filtre.
+                        </li>
+                        <li>
+                            Ajouter ensuite d'autres filtres sur les lignes suivantes du <b>Filtre standard...</b> à l'aide de 
+                            l'opérateur <b>ET</b> le plus souvent ou de l'opérateur OU.
+                        </li>
+                        <li>
+                            Pour suprimer un filtre, il faut dans la fenêtre du <b>Filtre standard</b> cliquer sur le 
+                            premier <b>Nom de champ</b> et choisir <b>-aucun(e)-</b>.
+                        </li>
+                    </ul>
+                    <center>
+                        <img src="images/pyram3.png"/>
+                    </center>
+
+            <br><br><br>
+                <a class="abas" href="don_quiz4.html" target="_blank">Quiz 4</a>
+                <br>
+                <br>
+        </section>
+    </body>
+
+    <footer> 
+        <script type='text/javascript' language='javascript'>pied();</script>
+    </footer>
+
+</html>
