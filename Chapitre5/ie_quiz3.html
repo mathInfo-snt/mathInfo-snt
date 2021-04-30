@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <meta charset="utf-8"/>
+        <title>SNT IE quiz 3</title>
+        <link rel="stylesheet" href="../style/style.css"/>
+        <script src="../style/scriptfooter.js"></script>
+        <script src="script/script_q3.js"></script>
+        <script src="script/script3.js"></script>
+    </head>
+
+    <header class="quizz"> Quiz 3 sur l'informatique embarqué</header>
+
+    <body>
+
+        <nav>
+            <h2>Liens :</h2>
+                <ul>
+                    <li> <a href="ie_page3.html">Page 3</a> </li>
+                </ul>
+            <h2>Exercices :</h2>
+                <ul>
+                    <span id='nf'></span>
+                    <script type='text/javascript' language='javascript'>fait();</script>
+                </ul>
+        </nav>
+
+        <section class="squizz" >
+            <form name="quizz" action="javascript:check();" class="quizzForm">
+                <div name="quiz">
+
+                    <div>
+                        <span class="spanquiz" name="sq"> <img src="images/vide.png" width='20' height='20'> </span>
+                        <h4>Question 1 : Dans un système embarqué, le dispositif qui permet d'obtenir des informations 
+                            du monde extérieur s'appelle :</h4>
+                        <div class="question" id='q1'>
+                            <script type='text/javascript' language='javascript'>init(0);</script>
+                        </div>
+                    </div>
+
+                    <div>
+                        <span class="spanquiz" name="sq"> <img src="images/vide.png" width='20' height='20'> </span>
+                        <h4>Question 2 : Dans un système embarqué, le dispositif qui permet d'agir sur le
+                            monde extérieur s'appelle :</h4>
+                        <div class="question" id='q2'>
+                            <script type='text/javascript' language='javascript'>init(1);</script>
+                        </div>
+                    </div>
+
+                    <div>
+                        <span class="spanquiz" name="sq"> <img src="images/vide.png" width='20' height='20'> </span>
+                        <h4>Question 3 : La norme utilisée pour représenter les organigrammes s'appelle la norme</h4>
+                        <div class="question" id='q3'>
+                            <script type='text/javascript' language='javascript'>init(2);</script>
+                        </div>
+                    </div>
+
+                 </div>
+            </form>
+
+            <br>
+            <input class="bouton" type="button" value="Valider" onClick="verification(3)" />
+            <br>
+            <br>
+            <span id="message"> </span>
+            <br>
+            <br>
+        </section>
+    </body>
+
+    <footer class="quizz"> 
+        <script type='text/javascript' language='javascript'>pied();</script>
+    </footer>
+
+</html>

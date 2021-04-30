@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="../style/style.css" />
+        <title>SNT IE exercice 3.3</title>
+        <script src="../style/scriptfooter.js"></script>
+        <script src="script/script_ex3.3.js"></script>
+        <script src="script/script3.js"></script>
+    </head>
+
+    <header class="exo"> SNT : Informatique embarqué : Exercice 3.3 </header>
+
+    <body>
+
+        <nav>
+            <h2>Liens :</h2>
+            <ul>
+                <li> <a href="ie_page3.html">Page 3</a> </li>
+            </ul>
+            <h2>Exercices :</h2>
+                <ul>
+                    <span id='nf'></span>
+                    <script type='text/javascript' language='javascript'>fait();</script>
+                </ul>
+        </nav>
+
+        <section class="sexo">
+
+            <h1 class="exoh1">Exercice 3.3 : Un capteur infrarouge</h1>
+
+                Voici un exemple de système informatique : un robot suiveur de ligne, avec deux capteurs, programmé avec scratch.<br>
+                On clique d'abord sur le drapeau vert, puis le robot se déplace automatiquement en suivant la ligne noire.
+                <p>
+                    <iframe src="https://scratch.mit.edu/projects/390194594/embed" allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe>
+                    <br><br>
+                </p><br><br>
+                L'objectif est de programmer le robot pour qu'il suive la ligne noire.<br>
+                Pour cela, il faut suivre la procédure suivante :
+                <ul>
+                    <li>
+                        Cliquer sur le lien suivant <a href="https://scratch.mit.edu/projects/390159706" target="_blank">
+                        Robot suiveur de ligne</a>.
+                    </li>
+                    <li>
+                        Cliquer sur le bouton en haut à droite <b>Voir à l'intérieur</b> : <img src="images/voir.png">.
+                    </li>
+                    <li>
+                        Agencer les blocs sélectionnés du sprite <b>Robot</b>, pour programmer ce robot suiveur de ligne.
+                        Le robot doit suivre la ligne noire.
+                    </li>
+                    <li>
+                        Une fois le programme agencé, cliquer sur le <b>drapeau vert</b> et vérifier que le programme fonctionne correctement.                    
+                    </li>
+                    <li>
+                        On rappelle que le sens positif des mesures d'angles est le sens de rotation inverse des aiguilles d'un montre. Et le sens de rotation des aiguilles d'une montre est le sens négatif des mesures d'angles.
+                    </li>
+                </ul>
+                <center>
+                    <img src="images/exo3.3.png">
+                </center><br><br>
+
+                Saisir dans la zone ci-dessous, le message affiché quand le robot a terminé son premier tour.
+                </p>
+
+                <form name="saisie_1">
+                    <span class="spanquiz"> <img src="images/vide.png" width='20' height='20'> </span>
+                    <label class="saisie">Message :</label><br>
+                    <input type="text" class="zone_saisie" name="in" autocomplete="off" size='20'
+                        onkeypress="javascript:if (event.keyCode == 13) {verif1('saisie_1');return false;}"/>
+                    &ensp; <input class="bout" type="button" value="Valider" onClick="verif1('saisie_1')" 
+                                    onFocus="this.blur();" />
+                    &ensp; <span class="spanmes"></span>
+                </form>
+
+                <br><br>
+                <input class="bouton" type="button" value="Valider l'exercice" onClick="verif_exo(1)" onFocus="this.blur();" />
+                <br>
+                <br>
+                 <span class="reponse" name="reponse"> </span>
+                <br>
+                <br>   
+
+        </section>
+
+    </body>
+
+    <footer class="exo"> 
+        <script type='text/javascript' language='javascript'>pied();</script>
+    </footer>
+
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8"/>
+        <title>SNT IE page 3</title>
+        <link rel="stylesheet" href="../style/style.css"/>
+        <script src="../style/scriptfooter.js"></script>
+        <script src="script/script3.js"></script>
+    </head>
+
+    <header> SNT : Informatique embarqué : page 3</header>
+
+    <body>
+
+        <nav>
+            <h2>Liens :</h2>
+                <ul>
+                    <li> <a href="chapitre5.html">Chapitre 5</a> </li>
+                </ul>
+            <h2>Exercices :</h2>
+                <ul>
+                    <span id='nf'></span>
+                    <script type='text/javascript' language='javascript'>fait();</script>
+                </ul>
+        </nav>
+
+        <section>
+
+            <h1>Architecture d'un système embarqué</h1>
+
+                <p>
+                    Un <b>système informatique embarqué</b> reçoit des informations du monde réel par le moyen de <b>capteurs</b>, mémorise et traite ces informations, puis renvoie des informations vers le monde réel par le moyen d'<b>actionneurs</b>.
+                    <br><br>
+                    <b style="color:blue;">Définition (Capteur) :</b> 
+                        Un <b>capteur</b> est un dispositif pour obtenir des informations du monde réel et les envoyer sous forme numérique à un ordinateur (microprocesseur).<br>
+                        <u>Exemples :</u> capteur de température, capteur de vitesse, capteur de présence, ...
+                    <br><br>
+                    <b style="color:blue;">Définition (Actionneur) :</b> 
+                        Un <b>actionneur</b> est un dispositif chargé d'agir sur le monde réel en fonction d'informations recues de l'ordinateur
+                        (microprocesseur).<br>
+                        <u>Exemples :</u> moteur, vanne, vérin, ...
+                    <br><br>
+                    <center>
+                        <img src="images/sie1.png">
+                    </center>
+                </p>
+                <br>
+
+            <h1>Système informatique de contrôle</h1>
+
+                <p>
+                    Quand un <b>système informatique embarqué</b> agit sur un phénomène réel par un <b>actionneur</b> dont l'évolution est mesurée par un <b>capteur</b>, alors le sytème informatique peut contrôler ce phénomène.
+                    <br><br>
+                    <b style="color:blue;">Définition (Système informatique de contrôle) :</b> 
+                        Un <b>système informatique de contrôle</b> est un système embarqué qui commande les actionneurs de telle sorte que les valeurs lues par les capteurs respectent les consignes souhaitées.<br>
+                        <u>Exemples :</u> régulateur de vitesse, porte à ouverture automatique, ...
+                    <br><br>
+                </p>
+
+            <h1>Programmation d'un système embarqué</h1>
+
+                <p>
+                    Un <b>système embarqué</b> est programmé suivant des <b>algorithmes</b> complexes et précis.<br><br>
+                    <b style="color:blue;">Définition (Algorithme) :</b>
+                    Un algorithme est une <b>suite d'instructions</b> ayant pour but de résoudre un problème donné.
+                    <br><br>
+                    Les instructions d'un algorithme doivent être exécutées de façon automatique par le microprocesseur d'un objet connecté.<br>
+                    les algorithmes sont ensuite traduits en langage informatique, c'est à dire en <b>binaire</b> puis sont <b>téléversés</b>
+                    dans les microprocesseurs.<br><br>
+                    L'algorithme le plus courant d'un système informatique embarqué s'écrit de la manière suivante en pseud-code.
+                    <br>
+                    <div style="background-color:white;width:500px;font-size:20px;">
+                        initialiser les actionneurs à leurs positions de départ<br>
+                        Tant que &ensp; Vrai<br>
+                        &emsp;&emsp;lire les informations des capteurs<br>
+                        &emsp;&emsp;traiter ces informations<br>
+                        &emsp;&emsp;calculer les informations pour les actionneurs<br>
+                        &emsp;&emsp;écrire ces informations sur les actionneurs
+                    </div>
+
+                    <br>
+
+                    Il existe deux façons différentes de représenter un algorithme :
+                    <ul>
+                        <li>
+                            <b>le pseudo-code :</b> c'est une représentation textuelle, comme ci-dessus, avec une série de conventions ressemblant à un langage de programmation (Python, C++, Java,...). Cette présentation est facile à transcrire
+                            en langage de programmation.
+                        </li>
+                        <li>
+                            <b>l'organigramme :</b> c'est une représentation graphique, avec des symboles (carrés, losanges, etc...) suivant
+                            une norme bien précise (<b>la norme NF Z 67-010</b>). L'organigramme offre une vue d'ensemble de l'algorithme.
+                            Cette présentation est facile à transcrire dans un logiciel de programmation visuel par bloc (Scratch, mBlock, ...).
+                        </li>
+                    </ul>
+                        <center>
+                            <img src="images/algoCapteurPrésence.png">
+                        </center>
+                    
+                </p><br>
+
+            <h1>La norme NF Z 67-010</h1>
+
+                <p>
+                    Cette norme décrit en détail les différents symboles à utiliser pour représenter un programme informatique de manièrenormalisée. C'est une représentation graphique utilisé pour analyser et décoder un problème.
+                    Chaque symbole correspond à un type d'action donné.
+                    <center>
+                        <img src="images/symbolesNF.png">
+                    </center>
+                </p>
+
+                <br>
+                <br>
+                <a class="abas" href="ie_quiz3.html" target="_blank"> Quiz 3</a>
+                <br>
+                <br>
+
+        </section>
+    </body>
+
+    <footer> 
+        <script type='text/javascript' language='javascript'>pied();</script>
+    </footer>
+
+</html>
