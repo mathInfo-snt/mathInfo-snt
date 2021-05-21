@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="../style/style.css" />
+        <title>SNT GL exercice 4.1</title>
+        <script src="../style/scriptfooter.js"></script>
+        <script src="script/script_ex4.1.js"></script>
+        <script src="script/script4.js"></script>
+    </head>
+
+    <header class="exo"> SNT : Géolocalisation : Exercice 4.1 </header>
+
+    <body>
+
+        <nav>
+            <h2>Liens :</h2>
+            <ul>
+                <li> <a href="gl_page4.html">Page 4</a> </li>
+            </ul>
+            <h2>Exercices :</h2>
+                <ul>
+                    <span id='nf'></span>
+                    <script type='text/javascript' language='javascript'>fait();</script>
+                </ul>
+        </nav>
+
+        <section class="sexo">
+
+            <h1 class="exoh1">Exercice 4.1 : Analyser une trame NMEA 0183</h1>
+                <p>
+                    <br>
+                    <b style="color:blue;font-size:22px;">1.</b> On considère la trame NMEA 0183 suivante.
+                    <div class="afficheur1"><script type='text/javascript' language='javascript'>init1();</script></div>
+                
+                    <br><br><br><br>
+                    <b>A.</b> Saisir dans la zone ci-dessous, <b>l'heure</b> d'acquisition de cette trame au format <b>"14h27m48s"</b> par exemple,<br>
+                        &emsp;(<b style="color:teal;">ne pas saisir cet exemple, mais bien l'heure 
+                        de la trame ci dessus</b>).
+                </p>
+                 <form name="saisie_1">
+                    <span id="icone" class="spanquiz"> <img src="images/vide.png" width='20' height='20'> </span>
+                    <input type="text" class="zone_saisie" id="id_1" name="name_1" autocomplete="off" size='40'
+                        onkeypress="javascript:if (event.keyCode == 13) {verif1('saisie_1','name_1',0);return false;}"/>
+                    &ensp;
+                    <input class="bout" type="button" value="Valider" onClick="verif1('saisie_1','name_1',0)" 
+                        onFocus="this.blur();" />
+                    &ensp;
+                    <span id="red1"></span>
+                </form>
+                
+                
+                <p>              
+                    <b>B.</b> Saisir dans la zone ci-dessous, <b>la latitude</b> au format <b>"42°25'57"Nord"</b> par exemple 
+                    (<b style="color:teal;">ne pas saisir cet exemple</b>).<br>
+                    &emsp;(On rappelle que : <b style="color:teal;">12.30' = 12'+0.30x60" = 12'18"</b>).
+                </p>
+                 <form name="saisie_2">
+                    <span id="icone" class="spanquiz"> <img src="images/vide.png" width='20' height='20'> </span>
+                    <input type="text" class="zone_saisie" id="id_2" name="name_2" autocomplete="off" size='40'
+                        onkeypress="javascript:if (event.keyCode == 13) {verif1('saisie_2','name_2',1);return false;}"/>
+                    &ensp;
+                    <input class="bout" type="button" value="Valider" onClick="verif1('saisie_2','name_2',1)" 
+                        onFocus="this.blur();" />
+                    &ensp;
+                    <span id="red2"></span>
+                </form>
+                
+                <p>              
+                    <b>C.</b> Saisir dans la zone ci-dessous, <b>la longitude</b> au format <b>"42°25'57"Ouest"</b> par exemple
+                    (<b style="color:teal;">ne pas saisir cet exemple</b>).<br>
+                    &emsp;(On rappelle que : <b style="color:teal;">43.80' = 43'+0.80x60" = 43'48"</b>).
+                </p>
+                 <form name="saisie_3">
+                    <span id="icone" class="spanquiz"> <img src="images/vide.png" width='20' height='20'> </span>
+                    <input type="text" class="zone_saisie" id="id_3" name="name_3" autocomplete="off" size='40'
+                        onkeypress="javascript:if (event.keyCode == 13) {verif1('saisie_3','name_3',2);return false;}"/>
+                    &ensp;
+                    <input class="bout" type="button" value="Valider" onClick="verif1('saisie_3','name_3',2)" 
+                        onFocus="this.blur();" />
+                    &ensp;
+                    <span id="red3"></span>
+                </form><br><br>
+
+                <span id="conv1"></span>
+                <span id="conv2"></span>
+                
+                <p>
+                    <b style="color:blue;font-size:22px;">2.</b> On considère la trame NMEA 0183 suivante.
+                    <div class="afficheur1"><script type='text/javascript' language='javascript'>init2();</script></div>
+                
+                    <br><br><br><br>
+                    <b>A.</b> Saisir dans la zone ci-dessous, <b>l'heure</b> d'acquisition de cette trame au format <b>"14h27m48s"</b> par exemple <br>
+                    (<b style="color:teal;">ne pas saisir cet exemple, mais bien l'heure de la trame
+                    ci-dessus</b>).
+                </p>
+                 <form name="saisie_4">
+                    <span id="icone" class="spanquiz"> <img src="images/vide.png" width='20' height='20'> </span>
+                    <input type="text" class="zone_saisie" id="id_4" name="name_4" autocomplete="off" size='40'
+                        onkeypress="javascript:if (event.keyCode == 13) {verif1('saisie_4','name_4',3);return false;}"/>
+                    &ensp;
+                    <input class="bout" type="button" value="Valider" onClick="verif1('saisie_4','name_4',3)" 
+                        onFocus="this.blur();" />
+                    &ensp;
+                    <span id="red4"></span>
+                </form>
+                
+                <p>              
+                    <b>B.</b> Saisir dans la zone ci-dessous, <b>la latitude</b> au format <b>"42°25'57"Nord"</b> par exemple
+                    (<b style="color:teal;">ne pas saisir cet exemple</b>).<br>
+                    &emsp;(On rappelle que : <b style="color:teal;">12.30' = 12'+0.30x60" = 12'18"</b>).
+                </p>
+                 <form name="saisie_5">
+                    <span id="icone" class="spanquiz"> <img src="images/vide.png" width='20' height='20'> </span>
+                    <input type="text" class="zone_saisie" id="id_5" name="name_5" autocomplete="off" size='40'
+                        onkeypress="javascript:if (event.keyCode == 13) {verif1('saisie_5','name_5',4);return false;}"/>
+                    &ensp;
+                    <input class="bout" type="button" value="Valider" onClick="verif1('saisie_5','name_5',4)" 
+                        onFocus="this.blur();" />
+                    &ensp;
+                    <span id="red5"></span>
+                </form>
+                
+                <p>              
+                    <b>C.</b> Saisir dans la zone ci-dessous, <b>la longitude</b> au format <b>"42°25'57"Ouest"</b> par exemple
+                    (<b style="color:teal;">ne pas saisir cet exemple</b>).<br>
+                    &emsp;(On rappelle que : <b style="color:teal;">43.80' = 43'+0.80x60" = 43'48"</b>).
+                </p>
+                 <form name="saisie_6">
+                    <span id="icone" class="spanquiz"> <img src="images/vide.png" width='20' height='20'> </span>
+                    <input type="text" class="zone_saisie" id="id_6" name="name_6" autocomplete="off" size='40'
+                        onkeypress="javascript:if (event.keyCode == 13) {verif1('saisie_6','name_6',5);return false;}"/>
+                    &ensp;
+                    <input class="bout" type="button" value="Valider" onClick="verif1('saisie_6','name_6',5)" 
+                        onFocus="this.blur();" />
+                    &ensp;
+                    <span id="red6"></span>
+                </form>
+
+                <br><br>
+                <input class="bouton" type="button" value="Valider l'exercice" onClick="verif_exo(6)" 
+                		onFocus="this.blur();" />
+                <br>
+                <br>
+                 <span class="reponse" name="reponse"> </span>
+                <br>
+                <br>
+
+        </section>
+
+    </body>
+
+    <footer class="exo"> 
+        <script type='text/javascript' language='javascript'>pied();</script>
+    </footer>
+
+</html>

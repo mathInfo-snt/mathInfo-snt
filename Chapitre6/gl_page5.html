@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8"/>
+        <title>SNT GL page 5</title>
+        <link rel="stylesheet" href="../style/style.css"/>
+        <script src="../style/scriptfooter.js"></script>
+        <script src="script/script5.js"></script>
+    </head>
+
+    <header>SNT : Géolocalisation : page 5</header>
+
+    <body>
+
+        <nav>
+            <h2>Liens :</h2>
+                <ul>
+                    <li> <a href="chapitre6.html">Chapitre 6</a> </li>
+                </ul>
+            <h2>Exercices :</h2>
+                <ul>
+                    <span id='nf'></span>
+                    <script type='text/javascript' language='javascript'>fait();</script>
+                </ul>
+        </nav>
+
+        <section>
+
+            <h1 style="color:red;">Généralités</h1>
+                <p>
+                    Les cartes ont été profondément transformées par l'informatique. 
+                    Elles sont devenues interactives, permettent de changer d'échelle et 
+                    de manipuler un grand nombre d'informations.
+                    Parmi ces cartes numériques, on peut distinguer notamment :
+                    <ul>
+                        <li>
+                            <b>Google Maps</b> qui est l'application la plus utilisée ;
+                        </li>
+                        <li>
+                            <b>Géoportail</b> qui dispose de nombreuses informations d'intérêt public ;
+                        </li>
+                        <li>
+                            <b>OpenStreetMap</b> qui est un projet de cartographie collaboratif et libre d'utilisation.
+                        </li>
+                    </ul>
+                </p>
+                <br>
+
+            <h1>Les couches d'informations géographiques</h1>
+                <p>
+                    Les systèmes de cartographie numérique permettent d'afficher un fond de carte (la carte de base) et d'y superposer des informations regroupées en <b>couches</b>.<br><br>
+                    <b style="color:blue;">Définition (couche d'informations) :</b> Une <b>couche d'information géographiques</b>, c'est un calque que l'on superpose au fond de carte pour lui ajouter un ensemble d'informations cohérentes supplémentaires. Le fond de carte est lui même la première couche d'informations.
+                    <br><br>
+                    Par exemple dans <b>Géoportail</b>, on peut utiliser le menu <b style="color:#0B6BA7;">DONN&Eacute;ES TH&Eacute;MATIQUES</b> situé à gauche, pour rajouter des couches d'informations, comme les délimitations de communes ou de départements, les Hôpitaux ou les écoles, etc...<br>
+                    Dans <b>Géoportail</b>, le bouton situé en haut à droite indique
+                    le nombre de couches actuellement affichées, 4 pour l'exemple ci-dessous :<br>
+                    <img src="images/4couches.png"> 
+                </p>
+                <br>
+
+            <h1>Couches matricielles ou vectorielles</h1>
+                <p>
+                    On distingue deux grandes catégories de couche de données sur les cartes numériques, selon la manière dont l'information est enregistrée.
+                    <ul>
+                        <li>
+                            Les <b style="color:blue;">couches matricielles</b> (ou <b>raster</b>) qui se présentent sous forme d'image matricielle point par point.
+                            L'image est divisée en pixels.<br> 
+                            En zoomant suffisamment, les pixels deviennent visibles.
+                        </li>
+                        <li>
+                            Les <b style="color:blue;">couches vectorielles</b> (ou <b>vector</b>) qui comportent des données qui sont positionnés selon leurs coordonnées (points, lignes, polygones). <br>
+                            Ces objets sont affichés sans pixellisation à toutes les échelles, quelque soit le zoom appliqué.
+                        </li>
+                    </ul>
+                    Typiquement, les images qui servent de fond de carte sont des données de type matriciel et la plupart des couches que l'on superposent par dessus sont de type vectoriel.<br>
+
+                </p><br>
+
+            <h1>Ajouter une couche d'informations dans Géoportail</h1>
+                <p>
+                    Pour rajouter une couche d'information dans géoportail :
+                    <ul>
+                        <li> 
+                            <b>1.</b> cliquer sur le bouton qui se trouve en haut à droite dans Géoportail : <br><br>
+                            &emsp;&emsp;<img src="images/CsGeoportail.png"><br><br>
+                        </li>
+                        <li>
+                            <b>2.</b> cliquer ensuite en dessous sur le bouton 
+                            <b style='color:#0B6BA7;'>+ DE DONN&Eacute;ES</b> :
+                            <br> <br>&emsp;&emsp;<img src="images/+deDonnees.png"> <br><br>
+                        </li>
+                        <li>
+                            <b>3.</b> dans le menu déroulant à gauche <b style="color:#0B6BA7;">DONN&Eacute;ES TH&Eacute;MATIQUES</b>, 
+                            choisir une rubrique, par exemple <b style="color:#0B6BA7;">Territoires et transports</b>.<br><br>
+                        </li>
+                        <li>
+                            <b>4.</b> dans le menu déroulant suivant à gauche, choisir une rubrique, par exemple
+                            <b style="color:#0B6BA7;">Pouvoirs publics</b> :<br><br>
+                        </li>
+                        <li>
+                            <b>5.</b> Choisir alors le type d'information souhaitée.<br><br>
+                        </li>
+                        <li>
+                            <b>6.</b> Pour enlever une couche d'information dans Géoportail, il faut cliquer en haut à droite
+                            sur le bouton <b>pignon</b> comme ci-dessous, puis sur la <b>corbeille</b> :<br><br>
+                            &emsp;&emsp;<img src="images/fermerCouche.png">
+                            &emsp; &emsp; puis &emsp;&emsp;<img src="images/corbeille.png"><br><br>
+                        </li>
+                    </ul>
+                </p><br><br>
+             <h1>Faire des calculs dans Géoportail</h1>
+                <p>
+                    Pour calculer une distance, un dénivelé ou une surface dans Géoportail :
+                    <ul>
+                        <li> 
+                            <b>1.</b> cliquer sur le bouton <b>boîte à outils</b> qui se trouve en haut à droite dans Géoportail : <br><br>
+                            &emsp;&emsp;<img src="images/outils.png"><br><br>
+                        </li>
+                        <li>
+                            <b>2.</b> cliquer ensuite en dessous sur <b style="color:#0B6BA7;">Mesures</b>:<br> <br>
+                            &emsp;&emsp;<img src="images/Mesures.png"> <br><br>
+                        </li>
+                        <li>
+                            <b>3.</b> dans le menu déroulant, choisir la rubrique qui vous intéresse :
+                            <span style="color:#0B6BA7;">Mesurer une distance</span> ou 
+                            <span style="color:#0B6BA7;">Mesurer une surface</span> ou
+                            <span style="color:#0B6BA7;">Etablir un profil altimétrique</span>, ...<br><br>
+                        </li>
+                    </ul>
+                </p>
+                
+
+                <br>
+                <br>
+                <a class="abas" href="gl_quiz5.html" target="_blank">Quiz 5</a>
+                <br>
+                <br>
+        </section>
+    </body>
+
+    <footer> 
+        <script type='text/javascript' language='javascript'>pied();</script>
+    </footer>
+
+</html>

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8"/>
+        <title>SNT GL page 3</title>
+        <link rel="stylesheet" href="../style/style.css"/>
+        <script src="../style/scriptfooter.js"></script>
+        <script src="script/script3.js"></script>
+    </head>
+
+    <header>SNT : Géolocalisation : page 3</header>
+
+    <body>
+
+        <nav>
+            <h2>Liens :</h2>
+                <ul>
+                    <li> <a href="chapitre6.html">Chapitre 6</a> </li>
+                </ul>
+            <h2>Exercices :</h2>
+                <ul>
+                    <span id='nf'></span>
+                    <script type='text/javascript' language='javascript'>fait();</script>
+                </ul>
+        </nav>
+
+        <section>
+
+            <h1>Généralités</h1>
+                <p>
+                    Le <b>système GPS</b> permet de se situer où que l’on soit dans le monde.
+                    Le GPS fonctionne avec une constellation de <b>31 satellites</b> en orbite autour de la Terre. 
+                    Chaque satellite envoie sur Terre des signaux qui comportent :
+                    <ul>
+                        <li>
+                            la position dans l’espace du satellite ;
+                        </li>
+                        <li>
+                            l’heure et la date d’émission du signal.
+                        </li>
+                    </ul>
+
+                    Votre puce GPS, qu’elle soit contenue dans un smartphone ou un boîtier GPS, se contente de capter ces signaux.
+                    Quand votre appareil a reçu les signaux d’un minimum de 4 satellites, il est alors en mesure de calculer sa propre 
+                    <b>latitude</b>, <b>longitude</b> et <b>altitude</b>, et donc de vous dire où vous êtes.
+
+            <h1>Fonctionnement du GPS</h1>
+                <p>
+                    Le positionnement GPS fonctionne grâce à la <b>trilatération</b> (similaire à la <b>triangulation</b>, 
+                    mais n’utilisant que des calculs de distances, et n'utilisant pas de calcul d’angles 
+                    contrairement à la triangulation).<br><br><br>
+
+                    <b style="color:blue;">1. Principe dans le plan :</b><br><br>
+                    <b>a.</b> La puce GPS, noté <b>P</b> reçoit d'abord le signal d’un premier satellite, noté <b>S1</b>. <br>
+                    On connaît :
+                    <ul>
+                        <li>
+                            la date d’émission du signal, notée <b>t1</b> ;
+                        </li>
+                        <li>
+                            la date de réception, notée <b>t2</b> ;
+                        </li>
+                        <li>
+                            par soustraction la durée de parcourt : <b>t</b> = <b>t2</b> - <b>t1</b> ;
+                        </li>
+                        <li>
+                            par produit la distance entre la puce <b>P</b> et le satellite <b>S1</b> :&ensp;
+                            <b>d1</b> = <b>c</b> x <b>t</b> &ensp;avec <b>c</b> la vitesse de la lumière.
+                        </li>
+                    </ul> 
+                    On peut donc en déduire que <b>P</b> se situe sur un cercle <b>C1</b> de rayon <b>d1</b> dont le centre est <b>S1</b>.
+                    <br><br>
+                    <center>
+                        <img src="images/sat1.png">
+                    </center>
+                    <br><br>
+                    <b>b.</b> La puce GPS <b>P</b> reçoit ensuite le signal d’un deuxième satellite, noté <b>S2</b>. <br>
+                    Par le même type de calcul que pour la distance <b>d1</b>, on peut connaître la distance <b>d2</b> qui sépare <b>P</b>
+                    du satellite <b>S2</b>. <br>
+                    On peut donc en déduire dans le plan que <b>P</b> se trouve à l'intersection de du cercle <b>C1</b> de rayon <b>d1</b> et 
+                    de centre <b>S1</b> et du cercle <b>C2</b> de rayon <b>d2</b> et de centre <b>S2</b>.
+                    <br><br>
+                    <center>
+                        <img src="images/sat2.png">
+                    </center>
+                    <br><br>
+                    La position de <b>P</b> n'est pas encore connu, car dans le plan, les cercles <b>C1</b> et <b>C2</b> 
+                    ont deux points d'intersection.<br> 
+                    Dans cet exemple, on ne peut pas savoir si on se trouve au point <b>P</b> ou au point <b>P'</b>.
+                    <br><br>
+                    <b>c.</b> La puce GPS <b>P</b> reçoit enfin le signal d’un troisième satellite, noté <b>S3</b>. <br>
+                    Toujours par le même type de calcul que pour la distance <b>d1</b>, on peut connaître la distance <b>d3</b> 
+                    qui sépare <b>P</b> du satellite <b>S3</b>.<br>
+                    On peut maintenant en déduire la position exacte de <b>P</b> qui se trouve à l'intersection des trois cercle <b>C1</b>, 
+                    <b>C2</b> et <b>C3</b>.
+                    <br><br>
+                    <center>
+                        <img src="images/sat3.png">
+                    </center>
+                    <br><br>
+                    En pratique, un quatrième satellite est utilisé pour plus de précisions et pour connaître aussi l'altitude du point 
+                    <b>P</b>.
+                    <br><br><br>
+                    <b style="color:blue;">1. Principe dans l'espace :</b><br><br>
+                    Le principe est à peu près le même dans l'espace, sauf que l'on remplace les cercles par des sphères.<br><br><br>
+                    <b>a.</b> La puce GPS, noté <b>P</b> reçoit d'abord le signal d’un premier satellite, noté <b>S1</b>. <br>
+                    On sait alors que <b>P</b> se situe sur une sphère <b>SP1</b> de rayon <b>d1</b> et de centre <b>S1</b>.<br><br>
+                    <center>
+                        <img src="images/sate1.png">
+                    </center>
+                    <br><br>
+                    <b>b.</b> La puce GPS, noté <b>P</b> reçoit ensuite le signal d’un deuxième satellite, noté <b>S2</b>. <br>
+                    On sait alors que <b>P</b> se situe sur le cercle <b>C</b> d'intersection des deux sphères <b>SP1</b> et <b>Sp2</b>.<br><br>
+                    <center>
+                        <img src="images/sate2.png">
+                    </center>
+                    <br><br>
+                    <b>c.</b> La puce GPS, noté <b>P</b> reçoit enfin le signal d’un troisième satellite, noté <b>S3</b>. <br>
+                    On sait alors que <b>P</b> se situe à l'intersection des trois sphères <b>SP1</b>, <b>SP2</b> et <b>Sp3</b>.<br>
+                    Il y a alors deux positions possibles pour <b>P</b>, mais on peut écarter l'une d'elle car l'une de ces deux positions est impossible, car soit dans l'espace, soit à l'intérieur de la terre.<br><br>
+                    <center>
+                        <img src="images/sate3.png">
+                    </center>
+                    <br><br>
+                </p>
+                <p>
+                    Cependant, pour la synchronisation de l’horloge du boîtier GPS, il faut la précision d’une <b>horloge atomique</b>. Votre boîtier GPS et votre téléphone n’en ont évidemment pas. Ils vont donc utiliser l’horodatage produite par une horloge atomique à bord d’un quatrième satellite.<br><br>
+                    <b>Pour pouvoir utiliser le GPS, il faut donc un minimum de quatre satellites : trois pour la position, et un supplémentaire pour la synchronisation</b>.
+                    <br><br>
+                    La nécessité des horloges atomiques vient du fait qu’on cherche à avoir une précision très importante sur la position : de l’ordre de quelques mètres sur la surface de la Terre. Il faut donc une très grande précision dans les informations transmises à votre boîtier GPS. Pour donner une idée : une différence d’une microseconde correspond à une erreur de 300 mètres sur la position !
+                    <br>
+                    Mieux, la précision demandée est telle que des phénomènes relativistes (d’habitude négligées) sont à corriger !
+                    Il y en a deux principaux :
+                    <ul>
+                        <li>
+                            le premier est dû à la vitesse de déplacement très grande (14 000 km/h) des satellites : leurs référentiels de temps et d’espace sont différents du nôtre (sur Terre). Leurs horloges sont ainsi retardées de 7 µs par jour.
+                        </li>
+                        <li>
+                            le second provient de la différence dans le champ gravitationnel terrestre auquel les satellites sont soumis, du fait de leur altitude élevée (20 200 km). La relativité implique que l’écoulement du temps est accéléré si le champ gravitationnel diminue. On parle ici de 45 µs par jour pour le satellite.
+                        </li>
+                    </ul>
+                    Ces deux effets cumulés produisent donc un décalage de 38 µs quotidiennement (+45−7=38 µs). Ça semble peu, mais ça suffit à induire une erreur sur la position du satellite supérieure à 11 km.
+                    Les corrections relativistes sont donc à compenser pour que le système GPS soit fonctionnel. Il s’agit là également d’un élément de preuve que la théorie d’Einstein fonctionne : la désynchronisation mesurée sur les horloges en orbitent sont conformes aux prédictions théoriques, et si ces erreurs n’avaient pas été prises en compte (si on avait utilisé un système sans corrections), les système GPS serait déréglé et inopérant.
+                    <br><br>
+                    La <b>constellation GPS</b> est constituée de <b>31 satellites</b>, mais le nombre de satellites en service à une date précise peut varier. La constellation est organisée autour de 24 satellites principaux qui assurent la disponibilité mondiale du GPS, ce qui permet d'avoir au moins quatre satellites visibles du sol partout dans le monde. Depuis 2011, la configuration de la constellation principale est augmentée à 27 emplacements afin de fournir une meilleure couverture mondiale. Leur période de révolution est égale à 11 h 58 min 2 sec, soit un demi-jour sidéral, chaque satellite reprend la même position tous les 2 tours, vu du sol terrestre. Il y a six plans orbitaux pratiquement circulaires à une <b>altitude moyenne de 20 200 km</b>, à <b>une vitesse de 14 000 km/h</b> (3,88 km/s). Chaque orbite inclinée à environ 55 degrés par rapport au plan équatorial comporte 5 ou 6 satellites. Cette constellation fournit à l'utilisateur entre cinq et huit satellites visibles de n'importe quel point sur la terre.
+                    <br><br>
+                    <center>
+                        <img src="images/ConstellationGPS.gif">
+                    </center>
+                    <br><br>
+                    Enfin, pour terminer, ajoutons que le système GPS est américain et est géré par le département de la défense des USA. L’usage de ce système par tous les autres pays que les États-Unis est souvent considéré comme une dépendance qui ne plaît pas toujours (pour des raisons géopolitiques). Ainsi, différents états prévoient leur propres système de positionnement par satellite :
+                    <ul>
+                        <li>
+                            La Russie a son système Glonass ;
+                        </li>
+                        <li>
+                            L’Europe met actuellement en place les satellites du système Galileo ;
+                        </li>
+                        <li>
+                            La Chine a son système Beidu ;
+                        </li>
+                        <li>
+                            L'Inde et le Japon ont également en projet leur système régional.
+                        </li>
+                    </ul>
+                </p>
+
+                <br>
+                <br>
+                <a class="abas" href="gl_quiz3.html" target="_blank">Quiz 3</a>
+                <br>
+                <br>
+        </section>
+    </body>
+
+    <footer> 
+        <script type='text/javascript' language='javascript'>pied();</script>
+    </footer>
+
+</html>

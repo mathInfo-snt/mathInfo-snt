@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="../style/style.css" />
+        <title>SNT GL exercice 3.1</title>
+        <script src="../style/scriptfooter.js"></script>
+        <script src="script/script_ex3.1.js"></script>
+        <script src="script/script3.js"></script>
+    </head>
+
+    <header class="exo"> SNT : Géolocalisation : Exercice 3.1 </header>
+
+    <body>
+
+        <nav>
+            <h2>Liens :</h2>
+            <ul>
+                <li> <a href="gl_page3.html">Page 3</a> </li>
+            </ul>
+            <h2>Exercices :</h2>
+                <ul>
+                    <span id='nf'></span>
+                    <script type='text/javascript' language='javascript'>fait();</script>
+                </ul>
+        </nav>
+
+        <section class="sexo">
+
+            <h1 class="exoh1">Exercice 3.1 : Exemple de trilatération</h1>
+                <p>
+            		Le principe de base de la localisation des <b>séismes</b> est celui de la <b>trilatération</b>, 
+                    comme pour le <b>système GPS</b>. 
+                    C'est en regroupant et en comparant les informations fournies par les enregistrements 
+                    de plusieurs stations que l'on parvient à localiser avec précision un tremblement de terre.<br>
+                    Les données utilisées sont principalement les temps d'arrivée <b>TP</b> et <b>TS</b> aux stations 
+                    des <b>ondes élastiques primaires et secondaires</b>, émises dans toutes les directions lors du séisme. 
+                    On connaît les vitesses de propagation de ces deux types d'ondes à travers la Terre, 
+                    on peut calculer la longueur du trajet qu'elles ont parcouru, et donc la 
+                    distance entre le foyer du séisme et une station.<br>
+                    Une formule approchée pour le calcul de cette distance est : &ensp;  d &simeq; 8 &times; (TS - TP) .<br>
+                    Ainsi avec trois stations, on peut localiser l'<b>épicentre du séisme</b>.
+                    <br>
+                    <ul>
+                        <li>
+                            Cliquer sur le lien suivant <a href="https://www.geogebra.org/m/etwjpcwx" target="blank">trilatération 1</a>.
+                        </li>
+                        <li>
+                            Pour les trois exemples ci-dessous, utiliser les curseurs situés à droite pour localiser l'épicentre du séisme, en tenant compte des distances obtenues à chaque station.
+                        </li>
+                        <li>
+                            Pour régler le curseur vous pouvez utiliser la souris, puis <b style='color:teal;'>les flèches gauche et droite</b> pour un réglage plus précis.
+                        </li>
+                        <li>
+                            Choisir alors dans la liste le point correcpondant.
+                        </li>
+                    </ul>
+
+
+                </p>
+
+                <b>1.</b> Les distances obtenues à chaque station sont 
+                    <span id="v1"></span>. L'épicentre est le point :<br><br>
+                <form name="saisie1" id="s1"></form>
+                <script type='text/javascript' language='javascript'>init(0);initd(0);</script>
+                <br>
+
+                <b>2.</b> Les distances obtenues à chaque station sont 
+                    <span id="v2"></span>. L'épicentre est le point :<br><br>
+                <form name="saisie2" id="s2"></form>
+                <script type='text/javascript' language='javascript'>init(1);initd(1);</script>
+                <br>
+
+                <b>3.</b> Les distances obtenues à chaque station sont
+                    <span id="v3"></span>. L'épicentre est le point :<br><br>
+                <form name="saisie3" id="s3"></form>
+                <script type='text/javascript' language='javascript'>init(2);initd(2);</script>
+                <br>
+
+                   <span id="icone" class="spanquiz"> <img src="images/vide.png" width='20' height='20'> </span>
+                    &ensp;
+                    <input class="bout" type="button" value="Valider" onClick="verif()" 
+                        onFocus="this.blur();" />
+                    &ensp;
+                    <span id="reponse" class="reponse2"> </span>
+
+                <br><br>
+
+                <input class="bouton" type="button" value="Valider l'exercice" onClick="verif_exo(1)" 
+                		onFocus="this.blur();" />
+                <br>
+                <br>
+                 <span class="reponse" name="reponse"> </span>
+                <br>
+                <br>
+
+        </section>
+
+    </body>
+
+    <footer class="exo"> 
+        <script type='text/javascript' language='javascript'>pied();</script>
+    </footer>
+
+</html>
